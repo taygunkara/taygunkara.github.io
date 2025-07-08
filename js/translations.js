@@ -131,18 +131,18 @@ const translations = {
         
         // Proje 1: Selenium Hybrid Framework
         projectSeleniumTitle: "Selenium Qacart Todo Project - Taygun Kara",
-        projectSeleniumTitleHeader: "🚀 A Robust Hybrid Testing Framework with Selenium + API to Tackle Flaky UI Tests",
+        projectSeleniumTitleHeader: "A Robust Hybrid Testing Framework with Selenium + API to Tackle Flaky UI Tests",
         projectSeleniumIntro: "One of the most frustrating aspects of test automation for me was dealing with slow and constantly breaking (“flaky”) UI tests. This project is the result of that pursuit: a solid hybrid test framework that combines the speed of API testing with the end-user validation power of Selenium.",
-        projectSeleniumArchTitle: "🔧 So, How Does This System Work? The Core Building Blocks",
+        projectSeleniumArchTitle: "So, How Does This System Work? The Core Building Blocks",
         projectSeleniumArchPoints: [
             `<strong>Everything in Its Place: A Modular and Layered Architecture</strong><p>I designed the project with a layered structure: <code>/pages</code> for UI elements (POM), <code>/testcases</code> for test logic, <code>/apis</code> for API clients, and <code>/factory</code> for critical components like DriverFactory.</p>`,
             `<strong>Speed Meets Reliability: The Power of a Hybrid Approach</strong><p>Instead of logging in via the UI, a test user is created via an API call and its token is injected into the browser. This method made tests up to <strong>70% faster</strong> and immune to login form changes.</p>`,
             `<strong>Environment-Ready with One Command</strong><p>Running <code>mvn test -Denv=PRODUCTION</code> is enough. The <code>ConfigUtils</code> class automatically fetches the correct configuration for the selected environment.</p>`,
             `<strong>Reports That Speak for Themselves</strong><p>With <strong>Allure Report</strong>, test results are transformed into interactive reports that include every step, API call, and even screenshots on failure.</p>`
         ],
-        projectSeleniumChallengeTitle: "⚠️ The Biggest Challenge (And Most Valuable Lesson)",
+        projectSeleniumChallengeTitle: "The Biggest Challenge (And Most Valuable Lesson)",
         projectSeleniumChallengeText: "The toughest problem was managing WebDriver instances in parallel tests. My initial Singleton approach caused chaos. This painful experience led me to adopt a <code>ThreadLocal</code>-based <code>DriverFactory</code>, a crucial lesson for stable parallel execution.",
-        projectSeleniumFutureTitle: "📚 A Project Is Never Finished, Only Improved: What’s Next?",
+        projectSeleniumFutureTitle: "A Project Is Never Finished, Only Improved: What’s Next?",
         projectSeleniumFuturePoints: [
             `<strong>Smart Wait System: <code>WaitUtils</code></strong><p>I’ll replace scattered waits with a centralized utility class to offer readable methods, reduce code duplication, and simplify maintenance.</p>`,
             `<strong>Better Debugging Through Logging</strong><p>I’ll integrate <strong>SLF4J</strong> for structured logging to make it much easier to pinpoint what went wrong, especially in CI/CD environments.</p>`,
@@ -152,16 +152,16 @@ const translations = {
 
         // Proje 2: Rest Assured API Framework
         projectRestAssuredTitle: "Restful-Booker API Automation - Taygun Kara",
-        projectRestAssuredTitleHeader: "🏗️ Building a Sustainable and Scalable API Test Architecture with Rest Assured",
+        projectRestAssuredTitleHeader: "Building a Sustainable and Scalable API Test Architecture with Rest Assured",
         projectRestAssuredIntro: "As I progressed in test automation, I realized that writing a working test is only the first step. The real challenge lies in building a structure that scales, is easy to maintain, and is so intuitive that even a new team member can understand and contribute within 30 minutes. This project is a case study I built from the ground up based on lessons learned.",
-        projectRestAssuredArchTitle: "🔧 A Tour Through the Architecture: How This Framework Works",
+        projectRestAssuredArchTitle: "A Tour Through the Architecture: How This Framework Works",
         projectRestAssuredArchPoints: [
             `<strong>Layered Structure: Everyone Does Their Own Job</strong><p>The project is based on the Single Responsibility Principle (SRP), with separate layers for <code>/tests</code> (business logic), <code>/apis/applicationApi</code> (facade), <code>/apis/RestResources</code> (HTTP operations), and <code>/apis/SpecBuilder</code> (reusable specs).</p>`,
             `<strong>Golden Rule of Reliability: Atomic and Independent Tests</strong><p>Each test creates its own data (e.g., a new booking), performs the validation, and leaves no trace. This ensures that the entire test suite consistently produces reliable results without a domino effect.</p>`,
             `<strong>Dynamic Data and Comprehensive Coverage</strong><p>Thanks to the <strong>JavaFaker</strong> library, each test runs with realistic but unique data. My test suite includes all CRUD operations and a <code>HealthCheck</code> test.</p>`,
             `<strong>Readable and Insightful Reports</strong><p>Test results are turned into visual, step-by-step, interactive reports using <strong>Allure Report</strong>, making it easy to pinpoint issues within minutes.</p>`
         ],
-        projectRestAssuredFutureTitle: "🚀 A Project is Never Done: My Roadmap for Future Improvements",
+        projectRestAssuredFutureTitle: "A Project is Never Done: My Roadmap for Future Improvements",
         projectRestAssuredFuturePoints: [
             `<strong>Observability: Making Debugging a Matter of Seconds</strong><p>My first task is to implement detailed logging using <strong>SLF4J</strong> to record every request and response, making debugging significantly easier.</p>`,
             `<strong>Architectural Refinement: Sharpening Responsibilities</strong><p>I’ll refine the structure by splitting helper classes into a <strong><code>TestDataFactory</code></strong> (for data generation) and <strong><code>BookingAssertions</code></strong> (for validations).</p>`,
@@ -171,7 +171,7 @@ const translations = {
 
         // Proje 3: BDD Cucumber
         projectCucumberTitle: "BDD Trendyol Project - Taygun Kara",
-        projectCucumberTitleHeader: "📈 My BDD Journey with Trendyol UI Testing – The Evolution of a Project",
+        projectCucumberTitleHeader: "My BDD Journey with Trendyol UI Testing – The Evolution of a Project",
         projectCucumberIntro: "This project marks my first step into the world of Behavior-Driven Development (BDD). For me, this project is less a finished job and more a living lab where I learned the subtleties of automation and how 'bad habits' can make a project fragile.",
         projectCucumberInitialStateTitle: "The Starting Point: My First Encounter with BDD",
         projectCucumberInitialStatePoints: [
@@ -196,7 +196,7 @@ const translations = {
 
         // Proje 4: Spotify API Test
         projectSpotifyTitle: "Spotify API Test Automation - Taygun Kara",
-        projectSpotifyTitleHeader: "🎵 Spotify API Test Automation: Evolving from Scratch to a Modular Framework",
+        projectSpotifyTitleHeader: "Spotify API Test Automation: Evolving from Scratch to a Modular Framework",
         projectSpotifyIntro: "This Spotify API test project became a hands-on workshop where I discovered how to conceptualize, build, and gradually mature a test framework from the ground up. This project is a living proof of my journey from writing 'good' code to building something excellent.",
         projectSpotifyTechMapTitle: "What’s Under the Hood? A Technical Tour of the Project",
         projectSpotifyTechMapPoints: [
@@ -218,7 +218,7 @@ const translations = {
 
         // Proje 5: Trello API / Postman
         projectTrelloTitle: "Trello API Automation - Taygun Kara",
-        projectTrelloTitleHeader: "🚀 From Postman to CI/CD: End-to-End Automation with Trello API",
+        projectTrelloTitleHeader: "From Postman to CI/CD: End-to-End Automation with Trello API",
         projectTrelloIntro: "I needed a concrete project that showed how I could carry a testing process from scratch all the way to CI/CD integration. This Trello project was born precisely for that purpose, evolving a few manual clicks in Postman into a full-fledged automated suite.",
         projectTrelloTechDetailsTitle: "What’s Inside the Collection? Technical Details",
         projectTrelloTechDetailsPoints: [
@@ -421,18 +421,18 @@ const translations = {
         
         // Proje 1: Selenium Hibrit Framework
         projectSeleniumTitle: "Selenium Qacart Todo Projesi - Taygun Kara",
-        projectSeleniumTitleHeader: "🚀 UI Flaky Test Sorununa Çözüm: Selenium + API ile Dayanıklı Hibrit Test Altyapısı",
+        projectSeleniumTitleHeader: "UI Flaky Test Sorununa Çözüm: Selenium + API ile Dayanıklı Hibrit Test Altyapısı",
         projectSeleniumIntro: "Test otomasyonunda en çok canımı sıkan şeylerden biri, yavaş ve sürekli bozulan ('flaky') UI testleriydi. Bu proje, bu soruna bulduğum çözümün bir ürünü: API'nin ham hızıyla Selenium'un kullanıcı gözünden doğrulama gücünü birleştiren, hem hızlı hem de kaya gibi sağlam bir hibrit test iskeleti.",
-        projectSeleniumArchTitle: "🔧 Peki, Bu Sistem Nasıl Çalışıyor? Mimarinin Temel Taşları",
+        projectSeleniumArchTitle: "Peki, Bu Sistem Nasıl Çalışıyor? Mimarinin Temel Taşları",
         projectSeleniumArchPoints: [
             `<strong>Her Şeyin Bir Yeri Var: Modüler ve Katmanlı Yapı</strong><p>Projeyi katmanlı bir yapıda tasarladım: <code>/pages</code> (POM), <code>/testcases</code> (test mantığı), <code>/apis</code> (API istemcileri) ve <code>/factory</code> (DriverFactory gibi kritik bileşenler).</p>`,
             `<strong>Hız ve Güvenilirlik Bir Arada: Hibrit Yaklaşımın Gücü</strong><p>UI üzerinden login yapmak yerine, bir test kullanıcısı API ile yaratılıp token'ı tarayıcıya enjekte ediliyor. Bu yöntemle testler %70'e varan oranda hızlandı ve login formu değişikliklerinden etkilenmez hale geldi.</p>`,
             `<strong>Farklı Ortamlarda Tek Komutla Test</strong><p><code>mvn test -Denv=PRODUCTION</code> komutunu çalıştırmak yeterli. <code>ConfigUtils</code> sınıfı, seçilen ortam için doğru yapılandırmayı otomatik olarak getiriyor.</p>`,
             `<strong>Sonuçları Konuşan Raporlar</strong><p><strong>Allure Report</strong> ile test sonuçlarını, her adımı, API çağrılarını ve hata anındaki ekran görüntülerini içeren interaktif raporlara dönüştürüyorum.</p>`
         ],
-        projectSeleniumChallengeTitle: "⚠️ Yolda Karşılaştığım En Büyük Zorluk (ve En Değerli Ders)",
+        projectSeleniumChallengeTitle: "Yolda Karşılaştığım En Büyük Zorluk (ve En Değerli Ders)",
         projectSeleniumChallengeText: "En büyük zorluk, paralel testlerde WebDriver'ı yönetmekti. Başlangıçtaki Singleton yapım kaosa neden oldu. Bu acı tecrübe, beni stabil paralel koşumlar için kritik olan <code>ThreadLocal</code> tabanlı bir <code>DriverFactory</code> kurmaya itti.",
-        projectSeleniumFutureTitle: "📚 Bir Proje Asla Bitmez, Sadece Gelişir: Gelecek Planlarım",
+        projectSeleniumFutureTitle: "Bir Proje Asla Bitmez, Sadece Gelişir: Gelecek Planlarım",
         projectSeleniumFuturePoints: [
             `<strong>Akıllı Bekleme Sistemi: <code>WaitUtils</code></strong><p>Dağınık bekleme komutlarını, okunabilir metotlar sunan, kod tekrarını azaltan ve bakımı kolaylaştıran merkezi bir yardımcı sınıfla değiştireceğim.</p>`,
             `<strong>Daha İyi Hata Ayıklama için Loglama</strong><p>Özellikle CI/CD ortamlarında nerede neyin yanlış gittiğini net bir şekilde görmek için <strong>SLF4J</strong> ile yapılandırılmış loglama entegre edeceğim.</p>`,
@@ -442,16 +442,16 @@ const translations = {
 
         // Proje 2: Rest Assured API Mimarisi
         projectRestAssuredTitle: "Restful-Booker API Otomasyonu - Taygun Kara",
-        projectRestAssuredTitleHeader: "🏗️ Rest Assured ile Sürdürülebilir ve Ölçeklenebilir API Test Mimarisinin İnşası",
+        projectRestAssuredTitleHeader: "Rest Assured ile Sürdürülebilir ve Ölçeklenebilir API Test Mimarisinin İnşası",
         projectRestAssuredIntro: "Test otomasyonunda yol aldıkça anladım ki, çalışan bir test yazmak işin sadece ilk adımı. Asıl meydan okuma; büyüyen, bakımı kolay ve yeni bir ekip arkadaşının bile yarım saat içinde anlayıp katkı sunabileceği bir yapı kurmakta yatıyor. Bu proje, bu felsefeyle inşa ettiğim bir vaka analizidir.",
-        projectRestAssuredArchTitle: "🔧 Mimarinin Katmanları Arasında Bir Gezinti: Bu Çerçeve Nasıl Çalışıyor?",
+        projectRestAssuredArchTitle: "Mimarinin Katmanları Arasında Bir Gezinti: Bu Çerçeve Nasıl Çalışıyor?",
         projectRestAssuredArchPoints: [
             `<strong>Katmanlı Yapı: Herkes Kendi İşini Yapsın</strong><p>Proje, Tek Sorumluluk Prensibi (SRP) üzerine kurulu olup, <code>/tests</code> (iş mantığı), <code>/apis/applicationApi</code> (kolaylaştırıcı katman), <code>/apis/RestResources</code> (HTTP operasyonları) ve <code>/apis/SpecBuilder</code> (tekrar kullanılabilir yapılandırmalar) gibi katmanlara sahiptir.</p>`,
             `<strong>Güvenilirliğin Altın Kuralı: Atomik ve Bağımsız Testler</strong><p>Her test, kendi verisini (örneğin yeni bir rezervasyon) yaratır, doğrulamasını yapar ve arkasında iz bırakmaz. Bu, domino etkisiyle oluşan hataları engeller ve tüm test suitinin güvenilirliğini sağlar.</p>`,
             `<strong>Dinamik Veri ve Kapsamlı Testler</strong><p><strong>JavaFaker</strong> kütüphanesi sayesinde her test, gerçekçi ama benzersiz verilerle çalışır. Testlerim tüm CRUD operasyonlarını ve bir <code>HealthCheck</code> testini kapsar.</p>`,
             `<strong>Anlaşılır Raporlar</strong><p>Test sonuçlarını, <strong>Allure Report</strong> ile iş gereksinimlerine göre gruplandırılmış, adım adım ilerleyen, görsel ve interaktif raporlara dönüştürüyorum.</p>`
         ],
-        projectRestAssuredFutureTitle: "🚀 Bir Proje Asla Bitmez: Geliştirme Yol Haritam",
+        projectRestAssuredFutureTitle: "Bir Proje Asla Bitmez: Geliştirme Yol Haritam",
         projectRestAssuredFuturePoints: [
             `<strong>Gözlemlenebilirlik: Hata Ayıklamayı Saniyelere İndirmek</strong><p>İlk işim, her isteği ve yanıtı kaydeden detaylı bir loglama mekanizması kurmak için <strong>SLF4J</strong>'i entegre etmek.</p>`,
             `<strong>Mimaride İnce Ayar: Sorumlulukları Keskinleştirmek</strong><p>Yardımcı sınıfları <strong><code>TestDataFactory</code></strong> (veri üretimi için) ve <strong><code>BookingAssertions</code></strong> (doğrulamalar için) olarak ikiye ayırarak mimariyi daha da temiz hale getireceğim.</p>`,
@@ -461,7 +461,7 @@ const translations = {
 
         // Proje 3: BDD Cucumber
         projectCucumberTitle: "BDD Trendyol Projesi - Taygun Kara",
-        projectCucumberTitleHeader: "📈 Trendyol UI Testi ile BDD’ye Giriş: Gerçek Hayattan Derslerle Gelişen Bir Otomasyon Çerçevesi",
+        projectCucumberTitleHeader: "Trendyol UI Testi ile BDD’ye Giriş: Gerçek Hayattan Derslerle Gelişen Bir Otomasyon Çerçevesi",
         projectCucumberIntro: "Bu proje, benim için 'bitti' dediğim bir işten çok, otomasyonun inceliklerini ve 'kötü alışkanlıkların' bir projeyi nasıl kırılgan hale getirdiğini öğrendiğim, canlı bir laboratuvardır.",
         projectCucumberInitialStateTitle: "İlk Hali: BDD'ye Merhaba Dediğim Nokta",
         projectCucumberInitialStatePoints: [
@@ -486,7 +486,7 @@ const translations = {
 
         // Proje 4: Spotify API Test
         projectSpotifyTitle: "Spotify API Test Otomasyonu - Taygun Kara",
-        projectSpotifyTitleHeader: "🎵 Spotify API Test Otomasyonu: Sıfırdan Modüler Bir Framework’e Evrim",
+        projectSpotifyTitleHeader: "Spotify API Test Otomasyonu: Sıfırdan Modüler Bir Framework’e Evrim",
         projectSpotifyIntro: "Bu Spotify API test projesi, benim için bir test çerçevesinin nasıl düşünülmesi, kurulması ve zamanla nasıl olgunlaştırılması gerektiğini öğrendiğim bir atölye oldu. 'İyi' çalışan bir kodu, 'mükemmel' hale getirme yolculuğumun canlı bir kanıtı.",
         projectSpotifyTechMapTitle: "Kodun İçinde Neler Oluyor? Projenin Teknik Haritası",
         projectSpotifyTechMapPoints: [
@@ -508,7 +508,7 @@ const translations = {
 
         // Proje 5: Trello API / Postman
         projectTrelloTitle: "Trello API Otomasyonu - Taygun Kara",
-        projectTrelloTitleHeader: "🚀 Postman’den CI/CD’ye: Trello API ile Uçtan Uca Otomasyon Süreci",
+        projectTrelloTitleHeader: "Postman’den CI/CD’ye: Trello API ile Uçtan Uca Otomasyon Süreci",
         projectTrelloIntro: "Bu Trello projesi, bir test sürecini en başından en sonuna, yani CI/CD entegrasyonuna kadar nasıl taşıyabildiğimi kanıtlamak amacıyla doğdu. Postman'de elle yapılan birkaç tıklamayla başlayan süreci, Newman ile komut satırından koşan tam teşekküllü bir otomasyon suitine dönüştürdüm.",
         projectTrelloTechDetailsTitle: "Peki, Bu Koleksiyonun İçinde Ne Var? Teknik Detaylar",
         projectTrelloTechDetailsPoints: [
