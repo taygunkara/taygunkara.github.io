@@ -1,0 +1,564 @@
+[
+    {
+        "question": "Which of the following is one of the main purposes of a test plan?",
+        "options": [
+            "A. Only documenting the test execution schedule.",
+            "B. Helping to ensure that the performed test activities will meet the established criteria.",
+            "C. Selecting the tools to be used for test automation.",
+            "D. Eliminating all project risks completely."
+        ],
+        "correctAnswer": 1,
+        "explanation": "According to Text 5.1.1, one purpose of a test plan is 'Helps to ensure that the performed test activities will meet the established criteria'. A test plan also documents resources, processes, serves as a communication means, and demonstrates adherence to test policy/strategy.",
+        "topic": "Chapter 5.1 - Test Planning (Purpose and Content - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following content is typically covered in a test plan?",
+        "options": [
+            "A. Detailed instructions on how developers should perform unit tests.",
+            "B. Product marketing strategy and customer support plans.",
+            "C. Topics such as the context of testing (scope, objectives, constraints, test basis), stakeholders, risk register, and test approach.",
+            "D. Competitor analysis and market trend reports."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.1.1 lists the typical content of a test plan, including 'Context of testing, Assumptions and constraints of the test project, Stakeholders, Communication, Risk register, Test approach, Budget and schedule'.",
+        "topic": "Chapter 5.1 - Test Planning (Purpose and Content - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following best exemplifies the purpose of a test plan?",
+        "options": [
+            "A. Providing a detailed list of all defects found by the project team.",
+            "B. Documenting the means, resources, schedule, and approach required to achieve test objectives, and communicating this to stakeholders.",
+            "C. Explaining step-by-step how end-users should use the software.",
+            "D. Containing all the scripts written for test automation."
+        ],
+        "correctAnswer": 1,
+        "explanation": "As stated in Text 5.1.1, a test plan describes objectives, resources, and processes. It serves as a means of communication and documents the means (tools, schedule, approach etc.) to achieve objectives. A defect list, user manual, or automation scripts are not the test plan itself.",
+        "topic": "Chapter 5.1 - Test Planning (Purpose and Content - K2, Scenario)",
+        "kLevel": "K2"
+    },   
+    {
+        "question": "In iterative SDLCs (e.g., Agile), how do testers add value to iteration planning?",
+        "options": [
+            "A. By only writing automated test scripts.",
+            "B. By participating in detailed risk analysis, determining user story testability, and estimating test effort for testing tasks.",
+            "C. By defining user stories and acceptance criteria by themselves.",
+            "D. By only setting up the test environment."
+        ],
+        "correctAnswer": 1,
+        "explanation": "According to Text 5.1.2, testers involved in iteration planning 'participate in the detailed risk analysis of user stories, determine the testability of user stories, break down user stories into tasks (particularly testing tasks), estimate test effort for all testing tasks'.",
+        "topic": "Chapter 5.1 - Test Planning (Tester's Contribution - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "During release planning, a tester contributes to which of the following?",
+        "options": [
+            "A. Compiling the code.",
+            "B. Participating in writing testable user stories and acceptance criteria.",
+            "C. Answering customer support requests.",
+            "D. Designing the database schema."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.1.2 states that testers involved in release planning 'participate in writing testable user stories and acceptance criteria', participate in risk analyses, estimate test effort, determine the test approach, and plan the testing for the release.",
+        "topic": "Chapter 5.1 - Test Planning (Tester's Contribution - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What is the key difference between entry criteria and exit criteria?",
+        "options": [
+            "A. Entry criteria define what must be achieved to complete an activity, while exit criteria define the preconditions for starting an activity.",
+            "B. Entry criteria define the preconditions for starting an activity, while exit criteria define what must be achieved to declare an activity completed.",
+            "C. Entry criteria are only used in the test planning phase, while exit criteria are only used in the test execution phase.",
+            "D. Entry criteria involve quantitative measures, while exit criteria involve qualitative measures."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.1.3 distinguishes by stating, 'Entry criteria define the preconditions for undertaking a given activity.' and 'Exit criteria define what must be achieved in order to declare an activity completed.' Not meeting entry criteria makes the activity more difficult and riskier.",
+        "topic": "Chapter 5.1 - Test Planning (Entry and Exit Criteria - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "The statement 'Required test environment is ready and verified' for a test level represents what?",
+        "options": [
+            "A. A typical exit criterion.",
+            "B. A typical entry criterion.",
+            "C. A testing principle.",
+            "D. A test metric."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.1.3 lists the availability of resources (including environments) among typical entry criteria. The readiness of the test environment is a precondition for starting the test execution activity, hence it's an entry criterion.",
+        "topic": "Chapter 5.1 - Test Planning (Entry and Exit Criteria - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is an example of a typical **exit criterion** for a testing activity?",
+        "options": [
+            "A. Availability of the test basis documents.",
+            "B. The test team having received the necessary training.",
+            "C. The target level of code coverage has been achieved.",
+            "D. The test data has been prepared."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.1.3 lists typical exit criteria as 'measures of thoroughness (e.g., achieved level of coverage...)' and 'completion criteria (e.g., planned tests have been executed...)'. Achieved coverage level is a measure required for completing the activity. The other options are typically entry criteria.",
+        "topic": "Chapter 5.1 - Test Planning (Entry and Exit Criteria - K2)",
+        "kLevel": "K2"
+    },   
+    {
+        "question": "In a previous similar project, the ratio of development effort to test effort was determined to be 2:1. If the development effort for the current project is expected to be 300 person-days, what is the estimated test effort using the 'Estimation based on ratios' technique?",
+        "options": [
+            "A. 100 person-days.",
+            "B. 150 person-days.",
+            "C. 200 person-days.",
+            "D. 600 person-days."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Similar to the example in Text 5.1.4: If the Development/Test ratio is 2/1, then Test Effort = Development Effort / 2. With Development Effort = 300 person-days, the estimated Test Effort is 300 / 2 = 150 person-days.",
+        "topic": "Chapter 5.1 - Test Planning (Estimation Techniques - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "An Agile team estimates the test effort for the upcoming sprint by using the average test effort from the last three sprints. This is an example of which estimation technique?",
+        "options": [
+            "A. Estimation based on ratios.",
+            "B. Extrapolation.",
+            "C. Wideband Delphi.",
+            "D. Three-point estimation."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.1.4 describes Extrapolation as 'measurements are made as early as possible in the current project to gather the data' and 'the effort required for the remaining work can be approximated by extrapolating this data'. Using the average of past iterations to predict the next is an example of this.",
+        "topic": "Chapter 5.1 - Test Planning (Estimation Techniques - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "You are using the Three-point estimation technique to estimate test effort for a project. Your optimistic (a) estimate is 80 person-hours, the most likely (m) estimate is 120 person-hours, and the pessimistic (b) estimate is 220 person-hours. Using the common formula E = (a + 4m + b) / 6, what is the estimated test effort (E) in person-hours?",
+        "options": [
+            "A. 130 person-hours.",
+            "B. 126.67 person-hours.",
+            "C. 140 person-hours.",
+            "D. 420 person-hours."
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Three-point estimation formula is E = (a + 4m + b) / 6. Calculating with the given values: E = (80 + 4 * 120 + 220) / 6 = (80 + 480 + 220) / 6 = 780 / 6 = 130 person-hours. Option A provides the correct calculation.",
+        "topic": "Chapter 5.1 - Test Planning (Estimation Techniques - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Your team uses Planning Poker (a variant of Wideband Delphi) for estimation. Three experts provide the following effort estimates (in story points) for a user story: 5, 8, 13. What is a likely next step according to this technique?",
+        "options": [
+            "A. Take the average: (5+8+13)/3 = 8.67, use 9 points.",
+            "B. Use the lowest estimate: 5 points.",
+            "C. The experts discuss the reasons for their different estimates and then re-estimate.",
+            "D. Use the highest estimate: 13 points."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.1.4 describes Wideband Delphi (and its variant Planning Poker) as an iterative expert-based technique. If estimates differ significantly ('out of range of the agreed upon boundaries'), 'the experts discuss their current estimates. Each expert is then asked to make a new estimation based on that feedback... This process is repeated until a consensus is reached'. Discussion is the key next step.",
+        "topic": "Chapter 5.1 - Test Planning (Estimation Techniques - K3, Scenario)",
+        "kLevel": "K3"
+    },   
+    {
+        "question": "A risk analysis for a project identified the 'Payment Processing' module as having the highest risk. According to the Risk-based prioritization strategy, which test cases should be executed first?",
+        "options": [
+            "A. The test cases that are easiest to automate.",
+            "B. The test cases that achieve the highest code coverage.",
+            "C. The test cases covering the 'Payment Processing' module.",
+            "D. The test cases for the most recently added requirements."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.1.5 defines Risk-based prioritization as a strategy where 'the order of test execution is based on the results of risk analysis' and 'Test cases covering the most important risks are executed first.' In this case, tests for the highest-risk 'Payment Processing' module should be prioritized.",
+        "topic": "Chapter 5.1 - Test Planning (Test Case Prioritization - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "When prioritizing test cases, if a high-priority test case (TS_High) depends on a lower-priority test case (TS_Low) (e.g., TS_Low must run first for TS_High to work), what should be the approach?",
+        "options": [
+            "A. TS_High should always be executed first.",
+            "B. TS_Low must be executed first to resolve the dependency.",
+            "C. Both test cases should be skipped.",
+            "D. A random order should be chosen."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.1.5 notes that while ideally tests run by priority, 'this practice may not work if the test cases or the features being tested have dependencies.' It explicitly states: 'If a test case with a higher priority is dependent on a test case with a lower priority, the lower priority test case must be executed first.'",
+        "topic": "Chapter 5.1 - Test Planning (Test Case Prioritization - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "You have the following test cases in a project. You need to determine the order of test execution using the Requirements-based prioritization strategy. Requirement priorities are provided by stakeholders as follows:\n\nRequirement 1 (Priority: High) -> Test Cases TS_A, TS_B\nRequirement 2 (Priority: Medium) -> Test Case TS_C\nRequirement 3 (Priority: High) -> Test Cases TS_D, TS_E\nRequirement 4 (Priority: Low) -> Test Case TS_F\n\nAssuming no dependencies prevent it, which test cases should be executed first according to this strategy?",
+        "options": [
+            "A. TS_F, TS_C, TS_A.",
+            "B. TS_A, TS_B, TS_D, TS_E.",
+            "C. TS_C, TS_F.",
+            "D. TS_B, TS_C, TS_E."
+        ],
+        "correctAnswer": 1,
+        "explanation": "In Requirements-based prioritization, test cases are ordered based on the priorities of the requirements they are traced to. Test cases linked to the most important requirements are executed first. Test cases associated with High priority requirements (1 and 3) are TS_A, TS_B, TS_D, and TS_E. These should come before test cases linked to medium or low priority requirements (TS_C, TS_F).",
+        "topic": "Chapter 5.1 - Test Planning (Test Case Prioritization - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "According to the Test Pyramid model, what are the typical characteristics of tests in the bottom layers (e.g., unit tests)?",
+        "options": [
+            "A. Complex, high-level, end-to-end, and slow.",
+            "B. Small, isolated, fast, and checking a small piece of functionality.",
+            "C. Executable only manually.",
+            "D. Fewest in number, providing the broadest coverage."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.1.6 states that tests in the bottom layer 'are small, isolated, fast, and check a small piece of functionality, so usually a lot of them are needed to achieve a reasonable coverage.'",
+        "topic": "Chapter 5.1 - Test Planning (Test Pyramid - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What does the Test Pyramid concept represent regarding test automation and effort allocation?",
+        "options": [
+            "A. That different test levels (e.g., unit, service, UI) have different levels of granularity, isolation, and speed, and generally there are more tests at lower layers and fewer at higher layers.",
+            "B. That all tests should require the same level of automation.",
+            "C. That only manual tests should be organized in a pyramid structure.",
+            "D. That test effort should be concentrated at the very end of the project."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 5.1.6 describes the Test Pyramid as 'a model showing that different tests may have different granularity'. The pyramid layers support different levels of test automation. Lower layers (unit tests) are smaller, isolated, and faster (more numerous), while upper layers (UI tests) are more complex and slower (fewer).",
+        "topic": "Chapter 5.1 - Test Planning (Test Pyramid - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "In the Testing Quadrants model, which quadrant is business-facing and critiques the product?",
+        "options": [
+            "A. Quadrant Q1.",
+            "B. Quadrant Q2.",
+            "C. Quadrant Q3.",
+            "D. Quadrant Q4."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.1.7 describes Quadrant Q3 as 'business facing, critique the product' and notes it 'contains exploratory testing, usability testing, user acceptance testing. These tests are user-oriented and often manual.'",
+        "topic": "Chapter 5.1 - Test Planning (Testing Quadrants - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the primary purpose of the Testing Quadrants model?",
+        "options": [
+            "A. To determine which test tool to use.",
+            "B. To help visualize test management by grouping test levels with appropriate test types, activities, and work products.",
+            "C. To estimate the number of defects only in Agile projects.",
+            "D. To evaluate the performance of testers."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.1.7 states the model 'supports test management in visualizing these to ensure that all appropriate test types and test levels are included in the SDLC'. It also helps understand relationships between test types/levels and describe them to stakeholders.",
+        "topic": "Chapter 5.1 - Test Planning (Testing Quadrants - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which TWO types of tests are typically found in Quadrant Q2 (Business facing, Support the team) of the Testing Quadrants model?",
+        "options": [
+            "A. Component integration tests.",
+            "B. Functional tests / Examples / User story tests.",
+            "C. Usability testing.",
+            "D. API testing.",
+            "E. Performance tests."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 5.1.7 lists for Quadrant Q2: 'functional tests, examples, user story tests, user experience prototypes, API testing, and simulations'. Component integration tests are Q1, Usability is Q3, Performance tests are typically Q4.",
+        "topic": "Chapter 5.1 - Test Planning (Testing Quadrants - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "The risk level is determined by the combination of which two factors of a risk?",
+        "options": [
+            "A. Risk definition and risk control.",
+            "B. Risk likelihood and risk impact.",
+            "C. Project risk and product risk.",
+            "D. Risk identification and risk assessment."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.2.1 states that a risk can be characterized by two factors: 'Risk likelihood – the probability of the risk occurrence' and 'Risk impact (harm) – the consequences of this occurrence'. These two factors express the risk level.",
+        "topic": "Chapter 5.2 - Risk Management (Risk Definition and Attributes - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "A key team member leaving the software project is an example of what type of risk?",
+        "options": [
+            "A. Product Risk.",
+            "B. Project Risk.",
+            "C. Technical Risk (Sub-category of Project Risk).",
+            "D. Quality Risk (Related to Product Risk)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.2.2 defines project risks as relating to project management and control, and lists 'People issues (e.g., insufficient skills, conflicts, communication problems, shortage of staff)' as examples. A key member leaving falls into this category.",
+        "topic": "Chapter 5.2 - Risk Management (Project Risks and Product Risks - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is an example of a **project risk**?",
+        "options": [
+            "A. The software performing incorrect calculations.",
+            "B. Inadequate user experience.",
+            "C. Delays in work product deliveries (e.g., delayed specifications).",
+            "D. Security vulnerabilities."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.2.2 states that project risks are related to project management and control. Examples include organizational issues (e.g., delays in work product deliveries, inaccurate estimates, cost-cutting), people issues, technical issues, and supplier issues. Incorrect calculations, user experience, and security vulnerabilities are product risks.",
+        "topic": "Chapter 5.2 - Risk Management (Project Risks and Product Risks - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What are product risks typically related to, and what kind of negative consequences might they lead to?",
+        "options": [
+            "A. They are related to project management and affect the budget and schedule.",
+            "B. They are related to product quality characteristics and can lead to consequences like user dissatisfaction, loss of revenue, and reputation.",
+            "C. They are only related to mistakes made during the development process and cause only code defects.",
+            "D. They are only related to environmental factors and cause hardware failures."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.2.2 states that product risks are 'related to the product quality characteristics' and when they occur, they 'may result in various negative consequences, including: User dissatisfaction, Loss of revenue, trust, reputation', etc.",
+        "topic": "Chapter 5.2 - Risk Management (Project Risks and Product Risks - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "If a product risk analysis identifies a specific feature as high-risk (high likelihood and high impact), how should this influence the testing process for that feature?",
+        "options": [
+            "A. Less testing should be performed for this feature.",
+            "B. Testing for this feature should be skipped entirely.",
+            "C. Tests targeting this feature should be prioritized and performed more thoroughly/in-depth.",
+            "D. Only developers should test this feature."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.2.3 states that product risk analysis is used 'to focus the testing effort in a way that minimizes the residual level of product risk'. Areas assessed as high-risk require more testing effort (more thorough, in-depth, prioritized) to find critical defects as early as possible.",
+        "topic": "Chapter 5.2 - Risk Management (Product Risk Analysis - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "How can product risk analysis influence the testing process?",
+        "options": [
+            "A. It mandates the use of test automation.",
+            "B. It influences the thoroughness and scope of testing, allowing test effort to be focused in a way that minimizes the residual risk level.",
+            "C. It requires that only manual testing techniques are used.",
+            "D. It removes all uncertainty from the testing process."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.2.3 states that the goal of product risk analysis is 'to provide an awareness of product risk in order to focus the testing effort in a way that minimizes the residual level of product risk'. The results of the analysis are used to determine the thoroughness and scope of testing.",
+        "topic": "Chapter 5.2 - Risk Management (Product Risk Analysis - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What are TWO measures that can be taken to mitigate product risks through testing? (Select TWO options)",
+        "options": [
+            "A. Ignoring the risk completely.",
+            "B. Applying appropriate test types addressing the affected quality characteristics.",
+            "C. Reducing the level of independence to speed up testing.",
+            "D. Conducting reviews and performing static analysis.",
+            "E. Transferring the risk to another company."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 5.2.4 lists actions to mitigate product risks by testing. These include 'Apply the appropriate test types addressing the affected quality characteristics' and 'Conduct reviews and perform static analysis'. Reducing independence generally contradicts risk mitigation. Ignoring or transferring risk are response options, but not mitigation *through testing*.",
+        "topic": "Chapter 5.2 - Risk Management (Product Risk Control - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which measures can be taken in response to analyzed product risks?",
+        "options": [
+            "A. Only accepting the risk.",
+            "B. Transferring, avoiding, or simply ignoring the risk.",
+            "C. Risk mitigation (including testing activities), risk acceptance, risk transfer, or contingency plan.",
+            "D. Only changing the responsible developer."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.2.4 states that there are several response options to analyzed product risks, including: 'risk mitigation (by testing), risk acceptance, risk transfer, or contingency plan'. Testing activities like selecting appropriate testers, level of independence, reviews, static analysis, test techniques, test types, and dynamic testing are part of risk mitigation.",
+        "topic": "Chapter 5.2 - Risk Management (Product Risk Control - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is a typical test metric related to the cost of testing?",
+        "options": [
+            "A. Number of defects found.",
+            "B. Percentage of requirements coverage.",
+            "C. Cost of testing or organizational cost of quality.",
+            "D. Average response time."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.3.1 lists 'Cost metrics (e.g., cost of testing, organizational cost of quality)' among common test metrics.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Metrics - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following is an example of a test metric that can be used to measure **test progress**?",
+        "options": [
+            "A. Number of lines of code written per developer.",
+            "B. Test environment preparation progress and number of test cases run/not run.",
+            "C. The average age of the project team.",
+            "D. Total budget spent on marketing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.3.1 lists common test metrics. 'Test progress metrics (e.g., test case implementation progress, test environment preparation progress, number of test cases run/not run, passed/failed, test execution time)' are included in this list.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Metrics - K1)",
+        "kLevel": "K1"
+    },
+     {
+        "question": "What does the defect density metric represent?",
+        "options": [
+            "A. The total number of defects found within a specific time period.",
+            "B. The number of defects found per unit of work product size (e.g., per thousand lines of code).",
+            "C. How long it takes to fix a defect.",
+            "D. The percentage of the most critical defects."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The list in Text 5.3.1 includes 'defect density' among the defect metrics. It is typically expressed as the number of defects per unit (e.g., per thousand lines of code or per function point).",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Metrics - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "When is a test completion report typically prepared, and what information does it usually include?",
+        "options": [
+            "A. Before testing starts; includes the risk register.",
+            "B. Daily during test execution; includes only failed tests.",
+            "C. When a project, test level, or iteration is completed; includes test summary, deviations from plan, metrics, and lessons learned.",
+            "D. When development is complete; includes only code coverage results."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.3.2 states a test completion report is 'prepared during test completion, when a project, test level, or test type is complete and when, ideally, its exit criteria have been met'. Typical contents include 'Test summary, Testing and product quality evaluation based on the original test plan..., Deviations from the test plan..., Testing impediments..., Test metrics..., Unmitigated risks..., Lessons learned...'.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Test Reports - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Why might the content and frequency of test reports vary for different stakeholders?",
+        "options": [
+            "A. Because all stakeholders always need the same level of detail.",
+            "B. Because different stakeholders require different information, influencing the degree of formality and frequency of reporting.",
+            "C. Because testers dislike writing reports.",
+            "D. Because reporting standards are identical for every project."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.3.2 states, 'Different audiences require different information in the reports, and influence the degree of formality and the frequency of reporting.' For example, reporting to team members might be frequent and informal, while reporting to management or clients might be more formal and summary-oriented.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Test Reports - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the primary purpose of test progress reports?",
+        "options": [
+            "A. To only provide a list of defects found.",
+            "B. To support the ongoing control of testing and provide sufficient information to allow modification to the test schedule, resources, or test plan when needed due to deviation from the plan or changed circumstances.",
+            "C. To only document the success of test automation.",
+            "D. To pressure developers to speed up their work."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.3.2 states the purpose of test progress reports is 'to support the ongoing control of the testing and must provide enough information to make modifications to the test schedule, resources, or test plan, when such changes are needed due to deviation from the plan or changed circumstances.' They are generated regularly to keep stakeholders informed.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Test Reports - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "In an Agile team, what visual communication tool is often used to show sprint progress and the amount of work remaining?",
+        "options": [
+            "A. Formal Test Completion Report.",
+            "B. Burn-down chart.",
+            "C. User Manual.",
+            "D. Risk Register."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.3.3 lists 'Dashboards (e.g., CI/CD dashboards, task boards, and burn-down charts)' as options for communicating test status. Burn-down charts are commonly used, especially in agile teams, to visualize remaining work and progress.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Communicating Status - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "How should the status of testing be communicated to different stakeholders (e.g., others in the same team vs. a project manager)?",
+        "options": [
+            "A. Reporting should always be done with the same level of formality and frequency.",
+            "B. Communication should be tailored based on the type of information and frequency of reporting required by the stakeholders.",
+            "C. Only test completion reports should be generated.",
+            "D. Only verbal communication should be used."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.3.3 states, 'Different audiences require different information in the reports, and influence the degree of formality and the frequency of reporting.' It explicitly mentions that 'communication should be tailored accordingly'. Reporting within the same team might be frequent and informal, while reporting for completed projects follows a set template and occurs once.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Communicating Status - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What are some examples of communication methods that can be used to convey the status of testing?",
+        "options": [
+            "A. Only formal test completion reports.",
+            "B. Only test case documentation.",
+            "C. Verbal communication, dashboards, electronic communication channels (email, chat), and formal test reports.",
+            "D. Only source code reviews."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.3.3 lists options for communicating test status: 'Verbal communication', 'Dashboards (e.g., CI/CD dashboards, task boards, and burn-down charts)', 'Electronic communication channels (e.g., email, chat)', 'Online documentation', and 'Formal test reports'.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Communicating Status - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "How does Configuration Management (CM) support testing?",
+        "options": [
+            "A. By only automating the deployment of the software.",
+            "B. By providing a discipline for identifying, controlling, and tracking work products such as test plans, test strategies, test cases, and test results, helping to maintain traceability.",
+            "C. By automatically writing test automation scripts.",
+            "D. By ensuring that all defects are automatically fixed."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.4 states that CM supports testing by providing 'a discipline for identifying, controlling, and tracking work products such as test plans, test strategies, test conditions, test cases, test scripts, test results, test logs, and test reports as configuration items'. This helps maintain traceability.",
+        "topic": "Chapter 5.4 - Configuration Management (CM Support for Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is a benefit of using Configuration Management (CM) for testing?",
+        "options": [
+            "A. It always ensures fewer test cases are written.",
+            "B. It makes it possible to revert to a previous baseline to reproduce previous test results.",
+            "C. It automatically reduces the test execution time.",
+            "D. It makes manual testing unnecessary."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.4 mentions as a benefit of CM that 'It is possible to revert to a previous baseline to reproduce previous test results.' It also helps maintain traceability and unambiguously reference items in test documentation.",
+        "topic": "Chapter 5.4 - Configuration Management (CM Support for Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Why is it important for Configuration Management (CM) to ensure that test items (parts of the test object) are uniquely identified and version controlled?",
+        "options": [
+            "A. To increase the number of defects found.",
+            "B. To allow the marketing team to track features.",
+            "C. To ensure traceability can be maintained throughout the test process and relate testware to the correct version of the test item.",
+            "D. To automatically generate test data."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 5.4 states that CM ensures 'All configuration items, including test items..., are uniquely identified, version controlled, tracked for changes, and related to other configuration items so that traceability can be maintained throughout the test process'. This linkage is crucial for accurate testing and reporting.",
+        "topic": "Chapter 5.4 - Configuration Management (CM Support for Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A tester detects an anomaly during dynamic testing and prepares a defect report. Which of the following pieces of information is **essential** in the report to help developers reproduce and resolve the issue?",
+        "options": [
+            "A. The tester's personal opinions and feelings about the software.",
+            "B. A description of the failure, including steps to reproduce the anomaly, and any relevant logs or screenshots.",
+            "C. The license key for the test automation tool used.",
+            "D. The total budget for the project."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.5 states that a typical defect report should include a 'Description of the failure to enable reproduction and resolution including the steps that detected the anomaly, and any relevant test logs, database dumps, screenshots, or recordings'. This information is critical for the developer to understand and fix the problem.",
+        "topic": "Chapter 5.5 - Defect Management (Defect Report Content - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "What does the 'Severity' field in a defect report typically indicate?",
+        "options": [
+            "A. How urgently the defect needs to be fixed.",
+            "B. The degree of impact the defect has on the interests of stakeholders or requirements.",
+            "C. The experience level of the tester who found the defect.",
+            "D. The test level at which the defect was found."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 5.5 lists 'Severity of the defect (degree of impact) on the interests of stakeholders or requirements' as content for a defect report. Urgency is typically indicated by 'Priority'.",
+        "topic": "Chapter 5.5 - Defect Management (Defect Report Content - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Which TWO pieces of information should be included in a defect report logged during dynamic testing? (Select TWO options)",
+        "options": [
+            "A. Unique identifier for the defect.",
+            "B. Minutes from the test team's weekly meeting.",
+            "C. Expected result and actual result.",
+            "D. Analysis of competitor products.",
+            "E. Contact information for the project manager."
+        ],
+        "correctAnswer": [0, 2],
+        "explanation": "Text 5.5 lists the typical contents of a dynamic testing defect report, including 'Unique identifier' and 'Expected results and actual results'. Meeting minutes, competitor analysis, or PM contact info are not typically standard fields of a defect report itself.",
+        "topic": "Chapter 5.5 - Defect Management (Defect Report Content - K3, Format: Select TWO)",
+        "kLevel": "K3"
+    }
+]

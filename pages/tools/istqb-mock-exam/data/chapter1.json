@@ -1,0 +1,732 @@
+[
+    {
+        "question": "Aşağıdakilerden hangisi, yazılım testi için **geçerli İKİ** test hedefidir?",
+        "options": [
+            "A. Yazılımda hiç kusur (defect) kalmadığını kanıtlamak.",
+            "B. Test nesnesinin kalitesine olan güveni artırmak.",
+            "C. Geliştirme ekibinin verimliliğini ölçmek.",
+            "D. Belirtilen gereksinimlerin karşılanıp karşılanmadığını doğrulamak."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Metin 1.1.1'de 'güven oluşturmak' ve 'belirtilen gereksinimlerin karşılanıp karşılanmadığını doğrulamak' tipik test hedefleri olarak listelenmiştir. Kusurların yokluğunu kanıtlamak testin amacı değildir (Prensip 1). Geliştirici verimliliğini ölçmek doğrudan bir test hedefi değildir.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi tipik bir test hedefidir?",
+        "options": [
+            "A. Hataları (defect) bulmak ve başarısızlıkları (failure) tetiklemek.",
+            "B. Tüm olası girdileri ve önkoşulları test etmek.",
+            "C. Test edilen nesnede (test object) hiç hata kalmadığını kanıtlamak.",
+            "D. Geliştirme ekibinin performansını ölçmek."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 1.1.1 altında 'Hataları bulma ve başarısızlıkları tetikleme' açıkça bir hedef olarak listelenmiştir. Kapsamlı test genellikle imkansızdır (Prensip 2). Test, hataların yokluğunu kanıtlayamaz (Prensip 1). Geliştirici performansı ölçümü doğrudan bir test hedefi değildir.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, paydaşlara bilgi sağlamakla ilgili tipik bir test hedefidir?",
+        "options": [
+            "A. Test senaryolarının yürütülmesini otomatikleştirmek.",
+            "B. Paydaşların bilinçli kararlar almalarını sağlamak için bilgi sağlamak.",
+            "C. Hata ayıklama sürecini hızlandırmak.",
+            "D. Test ekibinin teknik becerilerini geliştirmek."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.1.1'deki hedefler listesinde 'Paydaşların bilinçli kararlar almalarını sağlamak için bilgi sağlama' maddesi yer almaktadır.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Metne göre, test nesnesinin kalitesine olan güveni artırmak aşağıdakilerden hangisidir?",
+        "options": [
+            "A. Bir test prensibi.",
+            "B. Bir test aktivitesi.",
+            "C. Tipik bir test hedefi.",
+            "D. Testte bağımsızlığın bir dezavantajı."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.1.1'de 'Test nesnesinin kalitesine güven oluşturma' tipik bir test hedefi olarak listelenmiştir.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, test nesnesinin (test object) sözleşmesel, yasal ve düzenleyici gerekliliklere uygunluğunu doğrulamakla ilgilidir?",
+        "options": [
+            "A. Bir hata ayıklama (debugging) aktivitesi.",
+            "B. Bir test prensibi.",
+            "C. Tipik bir test hedefi.",
+            "D. Bir test otomasyon aracı özelliği."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.1.1'deki hedefler listesinde 'test nesnesinin sözleşmesel, yasal ve düzenleyici gerekliliklere uyduğunu doğrulamak' maddesi yer almaktadır. Bu, testin tipik hedeflerinden biridir.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bir ekip üyesi, bir online alışveriş sitesindeki bir ödeme hatasını raporladıktan sonra, hatanın nedenini bulmak için kodda hata ayıklama (debugging) yapıyor ve ardından sorunu çözmek için kodu değiştiriyor. Bu süreçteki 'test etme (testing)' aktivitesi hangisidir?",
+        "options": [
+            "A. Hatanın nedenini bulmak için kodu analiz etme.",
+            "B. Sorunu çözmek için kodu değiştirme.",
+            "C. Ödeme hatasının ilk raporlanması (başarısızlığın tespiti).",
+            "D. Düzeltmenin sorunu çözüp çözmediğini doğrulamak için yapılan onay testi (confirmation testing)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Test etme (testing), kusurları bulmaya veya başarısızlıkları tetiklemeye odaklanır (Metin 1.1.2). Ödeme hatasının raporlanması, test sırasında bir başarısızlığın tespit edildiği andır. Kodu analiz etme ve düzeltme hata ayıklama (debugging) adımlarıdır. Onay testi ise düzeltme sonrası yapılan bir test aktivitesidir.",
+        "topic": "Chapter 1.1 - What is Testing? (Testing and Debugging - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test etme (testing) ve hata ayıklama (debugging) arasındaki temel farkı en iyi açıklayan ifade hangisidir?",
+        "options": [
+            "A. Test etme hataları bulmaya veya başarısızlıkları tetiklemeye odaklanırken, hata ayıklama bu başarısızlıkların veya hataların nedenlerini bulup analiz etme ve düzeltme faaliyetidir.",
+            "B. Hata ayıklama yalnızca dinamik test sırasında yapılırken, test etme hem statik hem de dinamik olabilir.",
+            "C. Test etme yazılımı çalıştırmayı içerirken, hata ayıklama yalnızca kodu incelemeyi içerir.",
+            "D. Test etme ve hata ayıklama eş anlamlıdır ve proje zaman çizelgesinde aynı adımları ifade eder."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 1.1.2'de bu ayrım net bir şekilde açıklanmıştır: Test başarısızlığı tetikler veya hatayı bulur; hata ayıklama ise nedenini bulur, analiz eder ve düzeltir. Hata ayıklama statik testte bulunan hatalar için de yapılır ve genellikle yazılımı çalıştırmayı da içerir. Metin açıkça ayrı aktiviteler olduğunu belirtir.",
+        "topic": "Chapter 1.1 - What is Testing? (Testing and Debugging - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Statik test sırasında bir kusur (defect) bulunduğunda, hata ayıklama (debugging) süreci genellikle neyi içerir?",
+        "options": [
+            "A. Başarısızlığın yeniden üretilmesi ve kök nedenin teşhisi.",
+            "B. Kusurun doğrudan ortadan kaldırılması (düzeltilmesi).",
+            "C. Onay testi (confirmation testing) ve regresyon testi.",
+            "D. Test senaryolarının yürütülmesi ve sonuçların karşılaştırılması."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.1.2'de belirtildiği gibi, statik test bir kusuru doğrudan bulduğunda, hata ayıklama yeniden üretim veya teşhis gerektirmeden kusurun kaldırılmasıyla ilgilenir.",
+        "topic": "Chapter 1.1 - What is Testing? (Testing and Debugging - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Onay testi (confirmation testing) genellikle kim tarafından ve ne amaçla yapılır?",
+        "options": [
+            "A. Geliştirici tarafından, yeni özelliklerin beklendiği gibi çalıştığını doğrulamak için.",
+            "B. Bağımsız bir test ekibi tarafından, sistemin performansını ölçmek için.",
+            "C. Tercihen ilk testi yapan kişi tarafından, yapılan düzeltmenin sorunu çözüp çözmediğini kontrol etmek için.",
+            "D. Son kullanıcılar tarafından, yazılımın kullanılabilirliğini değerlendirmek için."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.1.2'ye göre, onay testi düzeltmenin sorunu çözüp çözmediğini kontrol eder ve tercihen ilk testi yapan kişi tarafından gerçekleştirilir.",
+        "topic": "Chapter 1.1 - What is Testing? (Testing and Debugging - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir bankacılık uygulamasının geliştirilmesinde test neden gereklidir? Aşağıdakilerden hangisi bu gerekliliği **en iyi** açıklar?",
+        "options": [
+            "A. Geliştiricilerin daha hızlı kod yazmasını sağlamak için.",
+            "B. Test araçlarının satışını artırmak için.",
+            "C. Yazılım hatalarının finansal kayıplara veya itibar zedelenmesine yol açma riskini azaltmak ve yasal düzenlemelere uyumu sağlamak için.",
+            "D. Proje takvimini doldurmak için ek bir aktivite sağlamak amacıyla."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.1 ve 1.2.1, yazılımdaki hataların para kaybı, itibar kaybı gibi ciddi sorunlara yol açabileceğini ve testin bu riskleri azaltmaya yardımcı olduğunu belirtir. Ayrıca, bankacılık gibi düzenlemeye tabi sektörlerde yasal uyumluluk için test gereklidir. Diğer seçenekler testin temel amaçları değildir.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test etmenin başarıya olan katkılarından biri aşağıdakilerden hangisidir?",
+        "options": [
+            "A. Hataları (defect) bularak ve bunların kaldırılmasını (hata ayıklama yoluyla) sağlayarak dolaylı yoldan daha yüksek kaliteli test nesnelerine katkıda bulunmak.",
+            "B. Proje yöneticisinin görevlerini tamamen üstlenmek.",
+            "C. Yazılımın asla başarısız olmayacağını garanti etmek.",
+            "D. Kullanıcıların doğrudan geliştirme sürecine katılmasını sağlamak."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 1.2.1, testin kusurları tespit etmek için uygun maliyetli bir yol sağladığını ve bu kusurların (hata ayıklama ile) kaldırılmasıyla dolaylı olarak daha yüksek kaliteye katkıda bulunduğunu belirtir. Test, proje yönetimine destek olur ancak görevlerini üstlenmez, başarısızlık olmayacağını garanti edemez ve kullanıcıları genellikle dolaylı olarak temsil eder.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, testin gerekli olmasının yaygın bir nedenini örneklendirir?",
+        "options": [
+            "A. Projenin kasıtlı olarak ertelenmesi.",
+            "B. Test ekibinin sürekli meşgul tutulması.",
+            "C. Yasal veya düzenleyici standartlara uymak.",
+            "D. Geliştiricilere ek iş yükü çıkarmak."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.2.1'de 'Test etme, sözleşmesel veya yasal gereklilikleri karşılamak veya düzenleyici standartlara uymak için de gerekebilir.' ifadesi yer almaktadır. Bu, testin gerekliliğine bir örnektir.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test etmenin, Yazılım Geliştirme Yaşam Döngüsü (SDLC) içerisindeki karar verme süreçlerine katkısı nasıl örneklendirilebilir?",
+        "options": [
+            "A. Test uzmanlarının hangi test araçlarını kullanacağına karar vermesiyle.",
+            "B. Geliştiricilerin hangi programlama dilini kullanacağını belirlemesiyle.",
+            "C. Test sonuçlarının, projenin bir sonraki aşamaya geçip geçemeyeceği (örn. sürüm kararı) gibi kararları desteklemek için kullanılmasıyla.",
+            "D. Test planının proje yöneticisi tarafından onaylanmasıyla."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.2.1'de belirtildiği gibi, test kaliteyi doğrudan değerlendirme imkanı sunar ve bu ölçümler, SDLC'de bir sonraki aşamaya geçme (örn. sürüm kararı) gibi kararları destekleyen proje yönetimi faaliyetlerinin bir parçası olarak kullanılır.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Metne göre, test uzmanları kullanıcılara nasıl dolaylı bir temsil sağlar?",
+        "options": [
+            "A. Kullanıcı arayüzünü tasarlayarak.",
+            "B. Geliştirme yaşam döngüsü boyunca kullanıcıların ihtiyaçlarına dair anlayışlarının dikkate alınmasını sağlayarak.",
+            "C. Kullanıcı eğitim materyallerini hazırlayarak.",
+            "D. Son kullanıcıları doğrudan geliştirme ekibine dahil ederek."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.2.1'de 'Test, kullanıcılara dolaylı temsil sağlar... Test uzmanları, kullanıcı ihtiyaçlarına dair anlayışlarının geliştirme yaşam döngüsü boyunca dikkate alınmasını sağlar.' ifadesi yer alır.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Kalite Kontrol (QC) ve Kalite Güvencesi (QA) arasındaki ilişki göz önüne alındığında, aşağıdakilerden hangisi **doğrudur**?",
+        "options": [
+            "A. QA, hataları bulmaya odaklanan QC'nin bir parçasıdır.",
+            "B. Test etme, süreçleri iyileştirmeye odaklanan QA'nın bir parçasıdır.",
+            "C. QC (örneğin test etme), ürün kalitesini doğrulamaya odaklanırken, QA genel süreçlerin kalitesini sağlamaya ve iyileştirmeye odaklanır.",
+            "D. QA ve QC, yalnızca son ürünü kontrol eden eş anlamlı faaliyetlerdir."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.2.2'ye göre, test etme bir QC faaliyetidir (ürün odaklı, düzeltici). QA ise süreç odaklı ve önleyicidir, genel süreç kalitesini hedefler. Dolayısıyla QC, QA'nın hedeflerine ulaşmasına yardımcı olur ancak QA daha geniş bir kavramdır.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Testing and Quality Assurance - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test etme (testing) ve Kalite Güvencesi (QA) arasındaki ilişki nasıldır?",
+        "options": [
+            "A. Test etme, bir tür Kalite Kontrol (QC) faaliyetidir ve QA, hem geliştirme hem de test süreçlerinin iyileştirilmesine odaklanan daha geniş bir kavramdır.",
+            "B. QA, test etmenin bir alt kümesidir ve yalnızca test sonuçlarının raporlanmasıyla ilgilenir.",
+            "C. Test etme ve QA tamamen aynı süreçlerdir ve birbirlerinin yerine kullanılabilirler.",
+            "D. Test etme süreç odaklıyken, QA ürün odaklıdır."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 1.2.2'de 'Test etme bir Kalite Kontrol (QC) biçimidir' ve 'QA süreç odaklı, önleyici bir yaklaşımdır...' ifadeleri bulunur. Test, QC'nin bir parçasıdır ve QA daha geniş, süreç odaklı bir çerçevedir. Metin açıkça aynı olmadıklarını ve odak noktalarının farklı olduğunu belirtir.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Testing and Quality Assurance - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Kalite Kontrol (QC) faaliyetlerinin temel odak noktası nedir?",
+        "options": [
+            "A. Süreçlerin sürekli iyileştirilmesi.",
+            "B. Uygun kalite seviyelerine ulaşmayı destekleyen ürün odaklı, düzeltici faaliyetler.",
+            "C. Proje risklerinin yönetilmesi.",
+            "D. Test ekibinin eğitimi ve geliştirilmesi."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.2.2'de QC, 'uygun kalite seviyelerinin başarılmasını destekleyen faaliyetlere odaklanan ürün odaklı, düzeltici bir yaklaşım' olarak tanımlanır.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Testing and Quality Assurance - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "QA (Kalite Güvencesi) yaklaşımının temel dayanağı nedir?",
+        "options": [
+            "A. İyi bir süreç doğru şekilde takip edilirse, iyi bir ürün ortaya çıkaracağı varsayımı.",
+            "B. Mümkün olan en fazla sayıda hatayı bulma hedefi.",
+            "C. Yazılımın yayınlanmadan önce kapsamlı bir şekilde test edilmesi gerekliliği.",
+            "D. Müşteri memnuniyetini sağlamak için tüm hataların düzeltilmesi zorunluluğu."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 1.2.2'de QA için 'İyi bir süreç doğru şekilde takip edilirse iyi bir ürün üreteceği temelinde çalışır.' denmektedir.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Testing and Quality Assurance - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bir e-ticaret sitesinde, kullanıcı 'Sepete Ekle' butonuna tıkladığında (1) bir hata mesajı alıyor (2). İnceleme sonucunda, butonun tıklandığında çağırması gereken fonksiyonun kodda eksik olduğu (3) anlaşılıyor. Bu eksikliğin nedeninin ise geliştiricinin ilgili gereksinimi yanlış anlaması (4) olduğu belirleniyor. Bu senaryoda Hata (Error), Kusur (Defect) ve Başarısızlık (Failure) kavramları sırasıyla hangilerine karşılık gelir?",
+        "options": [
+            "A. Hata (4), Kusur (2), Başarısızlık (3).",
+            "B. Hata (1), Kusur (3), Başarısızlık (2).",
+            "C. Hata (4), Kusur (3), Başarısızlık (2).",
+            "D. Hata (3), Kusur (4), Başarısızlık (1)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.2.3'e göre: Geliştiricinin yanlış anlaması bir insan hatasıdır (Error - 4). Bu hata, kodda eksik fonksiyona, yani bir kusura (Defect - 3) yol açmıştır. Kullanıcının butona tıklayıp hata mesajı alması ise sistemin beklendiği gibi çalışmaması, yani bir başarısızlıktır (Failure - 2). Kullanıcının tıklaması (1) bir olaydır.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir yazılımın, bekleneni yapması gerekirken yanlış bir sonuç üretmesi veya yapmaması gereken bir şeyi yapması durumu nedir?",
+        "options": [
+            "A. Hata (Error).",
+            "B. Kusur (Defect).",
+            "C. Başarısızlık (Failure).",
+            "D. Kök Neden (Root Cause)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.2.3'te 'Eğer koddaki bir kusur yürütülürse, sistem yapması gerekeni yapmayabilir veya yapmaması gereken bir şeyi yapabilir, bu da bir başarısızlığa neden olur.' denmektedir. Bu tanım 'başarısızlık' (failure) terimine karşılık gelir.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir yazılımda bulunan bir kusurun (defect) her zaman bir başarısızlığa (failure) yol açmamasının nedeni ne olabilir?",
+        "options": [
+            "A. Çünkü tüm kusurlar aslında önemsizdir.",
+            "B. Çünkü hata ayıklama (debugging) her zaman başarısızlığı önler.",
+            "C. Çünkü kusurun bulunduğu kodun yürütülmesi belirli koşullara bağlı olabilir veya hiç yürütülmeyebilir.",
+            "D. Çünkü Kalite Güvencesi (QA) süreçleri başarısızlıkları engeller."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.2.3'te belirtildiği gibi, 'Koddaki bir kusur yürütülürse sistem başarısız olabilir... Bazı kusurlar yürütülürse her zaman başarısızlıkla sonuçlanırken, diğerleri yalnızca belirli durumlarda başarısızlığa neden olur ve bazıları hiçbir zaman başarısızlığa yol açmayabilir.' Bu durum, kusurun yürütülmesinin koşullara bağlı olmasından kaynaklanır.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Yazılım başarısızlıklarının (failures) tek nedeni hatalar (errors) ve kusurlar (defects) mıdır? Açıklayınız.",
+        "options": [
+            "A. Evet, tüm başarısızlıklar doğrudan insan hatalarından kaynaklanan kusurlardan ileri gelir.",
+            "B. Hayır, başarısızlıklar çevresel koşullar (örn. radyasyon, elektromanyetik alan) gibi faktörlerden de kaynaklanabilir.",
+            "C. Evet, ancak yalnızca dinamik test sırasında bulunan kusurlar başarısızlığa yol açar.",
+            "D. Hayır, çünkü bazen test araçlarındaki hatalar da başarısızlığa neden olabilir."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.2.3'te 'Hatalar ve kusurlar başarısızlıkların tek nedeni değildir. Başarısızlıklar çevresel koşullardan da kaynaklanabilir...' denmektedir.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test ekibi, yeni bir mobil uygulama için çok sayıda test senaryosu yürütmüş ve hiçbir kusur bulamamıştır. Yönetici, uygulamanın tamamen hatasız olduğunu düşünmektedir. Bu durum, hangi test prensibiyle ilgili bir **yanılgıya** işaret eder?",
+        "options": [
+            "A. Erken test zaman ve para tasarrufu sağlar.",
+            "B. Test bağlama bağlıdır.",
+            "C. Kapsamlı test imkansızdır.",
+            "D. Test, kusurların varlığını gösterir, yokluğunu değil (ve Hataların Yokluğu Yanılgısı)."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Hiçbir kusur bulunmaması, yazılımın kusursuz olduğu anlamına gelmez. Testler, mevcut tüm kusurları bulmayı garanti edemez. Bu durum, Prensip 1 ('Test, kusurların varlığını gösterir, yokluğunu değil') ve Prensip 7 ('Hataların yokluğu yanılgısı') ile doğrudan ilişkilidir. Kusur bulunamaması, kalan riskin azaldığını gösterebilir ancak yokluğunu kanıtlamaz.",
+        "topic": "Chapter 1.3 - Testing Principles (Absence-of-defects fallacy - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdaki ifadelerden hangisi 'Test, hataların (defects) varlığını gösterir, yokluğunu değil' (Testing shows the presence, not the absence of defects) prensibini en iyi açıklar?",
+        "options": [
+            "A. Testler ne kadar kapsamlı olursa olsun, yazılımda hiç hata kalmadığını %100 garanti edemez.",
+            "B. Testler yalnızca önceden bilinen hataları bulabilir.",
+            "C. Eğer testler sırasında hiç hata bulunamazsa, yazılım hatasızdır.",
+            "D. Testler, yazılımın tüm gereksinimleri karşıladığını kanıtlamak için yapılır."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Prensip 1'in açıklaması, testin hataları bulabileceğini ancak tüm hataların bulunduğunu veya başka hata olmadığını kanıtlayamayacağını belirtir. 'Testler ne kadar kapsamlı olursa olsun, yazılımda hiç hata kalmadığını %100 garanti edemez' ifadesi bu prensibi doğru yansıtır. Testler yeni, bilinmeyen hataları da ortaya çıkarabilir. Testlerde hiç hata bulunmaması yazılımın hatasız olduğu anlamına gelmez. Testler gereksinimlerin karşılanıp karşılanmadığını doğrulamaya yardımcı olur ancak mutlak 'kanıtlamak' (özellikle hatasızlık anlamında) prensibe aykırıdır.",
+        "topic": "Chapter 1.3 - Testing Principles (Principle 1 - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "'Erken test zaman ve para tasarrufu sağlar' (Early testing saves time and money) prensibi neden önemlidir?",
+        "options": [
+            "A. Çünkü erken bulunan hataları düzeltmek daha zordur.",
+            "B. Çünkü erken test, test otomasyonunu zorunlu kılar.",
+            "C. Çünkü erken bulunan ve düzeltilen hatalar, yaşam döngüsünün ilerleyen aşamalarında daha fazla hataya veya daha maliyetli başarısızlıklara yol açmaz.",
+            "D. Çünkü erken test, projenin daha hızlı tamamlanmasını garanti eder."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Prensip 3'ün açıklaması (Metin 1.3), erken bulunan hataların türetilmiş iş ürünlerinde sonraki hatalara neden olmayacağını ve daha az başarısızlık olacağı için kalite maliyetinin düşeceğini belirtir. Bu nedenle 'erken bulunan ve düzeltilen hatalar, yaşam döngüsünün ilerleyen aşamalarında daha fazla hataya veya daha maliyetli başarısızlıklara yol açmaz' ifadesi prensibin önemini açıklar.",
+        "topic": "Chapter 1.3 - Testing Principles (Principle 3 - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "'Test bağlama bağlıdır' (Testing is context dependent) prensibi ne anlama gelir?",
+        "options": [
+            "A. Tüm yazılım projeleri için geçerli tek bir en iyi test yaklaşımı vardır.",
+            "B. Farklı projeler (örn. emniyet kritik sistem vs. web sitesi) farklı test yaklaşımları, teknikleri ve yoğunluğu gerektirir.",
+            "C. Testin etkinliği yalnızca kullanılan test araçlarına bağlıdır.",
+            "D. Test her zaman yazılım geliştirme bağlamından bağımsız olarak yürütülmelidir."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Prensip 6'nın açıklaması (Metin 1.3), testin evrensel olarak uygulanabilir tek bir yaklaşımı olmadığını ve farklı bağlamlarda (örn. projenin türü, risk seviyesi) farklı şekillerde yapıldığını belirtir. Dolayısıyla 'farklı projeler farklı test yaklaşımları gerektirir' ifadesi bu prensibi açıklar.",
+        "topic": "Chapter 1.3 - Testing Principles (Principle 6 - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdaki aktivitelerden hangisi, test sürecindeki 'Test Analizi' ana aktivite grubuna bir örnektir?",
+        "options": [
+            "A. Test senaryolarını öncelik sırasına göre yürütmek.",
+            "B. Gereksinim dokümanını inceleyerek test koşullarını (test conditions) belirlemek.",
+            "C. Test ortamını kurmak ve doğrulamak.",
+            "D. Bulunan bir kusur için kusur raporu (defect report) oluşturmak."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.4.1'e göre Test Analizi, 'test temelini (örn. gereksinim dokümanı) analiz ederek test edilebilir özellikleri ve ilgili test koşullarını tanımlamayı' içerir. Diğer seçenekler Test Yürütme (A), Test Uygulama (C) ve Test Yürütme/Kusur Yönetimi (D) aktiviteleriyle ilgilidir.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test sürecindeki hangi ana aktivite grubu, test senaryolarının (test cases) çalıştırılmasını, sonuçların beklenen sonuçlarla karşılaştırılmasını ve farklılıkların (anomalies) kaydedilmesini içerir?",
+        "options": [
+            "A. Test Analizi (Test Analysis).",
+            "B. Test Tasarımı (Test Design).",
+            "C. Test Uygulaması (Test Implementation).",
+            "D. Test Yürütme (Test Execution)."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Metin 1.4.1'de Test Yürütme aktivitesi 'testleri çalıştırmayı... Gerçek test sonuçları beklenen sonuçlarla karşılaştırılır. Test sonuçları kaydedilir. Anomaliler analiz edilir...' olarak tanımlanır.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Test sürecindeki hangi ana aktivite grubu, test hedeflerini tanımlamayı ve bu hedeflere ulaşmak için en iyi yaklaşımı seçmeyi içerir?",
+        "options": [
+            "A. Test Planlama (Test Planning).",
+            "B. Test İzleme ve Kontrol (Test Monitoring and Control).",
+            "C. Test Analizi (Test Analysis).",
+            "D. Test Tasarımı (Test Design)."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 1.4.1'de Test Planlama, 'test hedeflerini tanımlamayı ve ardından hedeflere en iyi ulaşan bir yaklaşımı seçmeyi...' içerir şeklinde tanımlanır.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "'Test Tamamlama' (Test Completion) aktiviteleri genellikle ne zaman gerçekleşir ve neleri içerir?",
+        "options": [
+            "A. Test yürütme başlamadan hemen önce; test verilerinin hazırlanmasını içerir.",
+            "B. Test tasarımı sırasında; test senaryolarının önceliklendirilmesini içerir.",
+            "C. Proje kilometre taşlarında (örn. sürüm sonu); test çıktılarının arşivlenmesini, öğrenilen derslerin çıkarılmasını ve test tamamlama raporunun oluşturulmasını içerir.",
+            "D. Test analizi sırasında; test koşullarının belirlenmesini içerir."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.1'de Test Tamamlama aktivitelerinin 'genellikle proje kilometre taşlarında (örn. sürüm, iterasyon sonu...) gerçekleştiği' ve 'gelecekte faydalı olabilecek test çıktılarının belirlenip arşivlenmesi... öğrenilen dersler... Bir test tamamlama raporu oluşturulur...' gibi görevleri içerdiği belirtilir.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Test senaryolarının (test cases) test prosedürleri (test procedures) halinde organize edilmesi ve test takımları (test suites) olarak bir araya getirilmesi hangi ana test aktivitesi sırasında yapılır?",
+        "options": [
+            "A. Test Analizi (Test Analysis).",
+            "B. Test Tasarımı (Test Design).",
+            "C. Test Uygulaması (Test Implementation).",
+            "D. Test Yürütme (Test Execution)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.1'de Test Uygulaması (Test Implementation) aktivitesi altında 'Test senaryoları test prosedürleri halinde organize edilebilir ve sıklıkla test takımları (test suites) olarak bir araya getirilir.' ifadesi bulunur.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Emniyet açısından kritik bir hava trafik kontrol sistemi ile basit bir kişisel blog web sitesinin test süreçleri neden farklılık gösterir?",
+        "options": [
+            "A. Çünkü blog sitesinin testi daha fazla otomasyon gerektirir.",
+            "B. Çünkü hava trafik kontrol sisteminin test edilmesi imkansızdır.",
+            "C. Çünkü 'Test bağlama bağlıdır' (Prensip 6) ilkesi gereği, risk seviyesi, yasal gereklilikler ve iş alanı gibi bağlamsal faktörler test yaklaşımını, derinliğini ve resmiyetini etkiler.",
+            "D. Çünkü blog sitesinde daha fazla test uzmanı çalışır."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.2, testin bağlama bağlı olduğunu vurgular. İş alanı (kritiklik, yasal düzenlemeler), riskler, paydaş ihtiyaçları gibi faktörler test stratejisini, tekniklerini, dokümantasyon seviyesini vb. etkiler. Hava trafik kontrol sistemi (yüksek risk, katı düzenlemeler) çok daha kapsamlı, resmi ve derinlemesine test gerektirirken, kişisel blog sitesi (düşük risk) daha esnek bir yaklaşımla test edilebilir. Bu, Prensip 6 ile doğrudan ilgilidir.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Process in Context - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, test sürecinin proje bağlamından (context) nasıl etkilendiğini **açıklamaz**?",
+        "options": [
+            "A. Emniyet kritik bir sistemin testi, bir e-ticaret sitesinin testinden daha fazla resmiyet ve dokümantasyon gerektirebilir.",
+            "B. Çevik (Agile) bir projede test yaklaşımı, Geleneksel (Waterfall) bir projeye göre daha esnek ve daha az dokümantasyon odaklı olabilir.",
+            "C. Test uzmanının kişisel tercihleri, proje bağlamından bağımsız olarak her zaman test stratejisini belirler.",
+            "D. Projenin bütçesi ve zaman kısıtlamaları, kullanılabilecek test araçlarını ve uygulanabilecek test kapsamını etkileyebilir."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.2'de listelenen bağlam faktörleri (risk, SDLC, kısıtlamalar, ekip becerileri vb.) test sürecini etkiler. Emniyet kritik sistem örneği, Çevik vs. Geleneksel örneği ve bütçe/zaman kısıtlamaları örneği bu etkinin örnekleridir. 'Test uzmanının kişisel tercihleri... her zaman belirler' ifadesi ise yanlıştır; proje bağlamı test stratejisini belirlemede ana etkendir.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Process in Context - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Bir projedeki 'Takım üyelerinin beceri, bilgi ve deneyim seviyesi' gibi faktörler, test sürecini nasıl etkileyebilir?",
+        "options": [
+            "A. Yalnızca projenin bütçesini belirler.",
+            "B. Kullanılacak test tekniklerini, gereken otomasyon seviyesini ve test dokümantasyonunun detayını etkileyebilir.",
+            "C. Test edilecek yazılımın türünü değiştirir.",
+            "D. Yasal düzenlemelere uyum gerekliliğini ortadan kaldırır."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.4.2'de 'Takım üyeleri (beceriler, bilgi, deneyim seviyesi...)' bir bağlam faktörü olarak listelenir ve bu faktörlerin 'test stratejisi, kullanılan test teknikleri, otomasyon derecesi, gereken kapsama seviyesi, test dokümantasyonunun detay seviyesi, raporlama vb.' gibi konuları etkileyeceği belirtilir.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Process in Context - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi genellikle bir 'Test Tasarımı' çıktısı (testware) **değildir**?",
+        "options": [
+            "A. Test senaryoları (Test cases).",
+            "B. Test verisi gereksinimleri (Test data requirements).",
+            "C. Test ilerleme raporu (Test progress report).",
+            "D. Test ortamı gereksinimleri (Test environment requirements)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.3, Test Tasarımı iş ürünlerini listelerken test senaryolarını, test charter'larını, kapsama öğelerini, test verisi ve test ortamı gereksinimlerini içerir. Test ilerleme raporu ise Test İzleme ve Kontrol (Test Monitoring and Control) aktivitesinin bir çıktısıdır.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Testware - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdaki test çıktılarından (testware) hangisi genellikle Test Planlama (Test Planning) aktivitesi sırasında veya sonucunda ortaya çıkar?",
+        "options": [
+            "A. Test Günlükleri (Test Logs).",
+            "B. Otomatik Test Betikleri (Automated Test Scripts).",
+            "C. Test Planı (Test Plan) ve Risk Listesi (Risk Register).",
+            "D. Hata Raporları (Defect Reports)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.3 altında listelenen test planlama iş ürünleri arasında 'Test Planı, Test Programı (schedule), Risk Listesi (risk register) ve giriş/çıkış kriterleri' bulunur. Test Planı ve Risk Listesi bu aktivite ile doğrudan ilişkilidir.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Testware - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "'Test Tasarımı' (Test Design) aktivitesinin tipik çıktıları (testware) arasında hangileri bulunur?",
+        "options": [
+            "A. Test ilerleme raporları ve kontrol direktifleri.",
+            "B. (Önceliklendirilmiş) test senaryoları, test charter'ları ve test verisi gereksinimleri.",
+            "C. Test günlükleri ve hata raporları.",
+            "D. Test planı ve test programı (schedule)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.4.3'te 'Test tasarımı iş ürünleri şunları içerir: (önceliklendirilmiş) test senaryoları, test charter'ları, kapsama öğeleri, test verisi gereksinimleri ve test ortamı gereksinimleri.' listelenmiştir. Dolayısıyla ikinci seçenek bu çıktılara örnektir.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Testware - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test ortamı elemanları (örn. stub'lar, driver'lar, simülatörler) hangi test aktivitesi sırasında oluşturulur, edinilir veya kurulur?",
+        "options": [
+            "A. Test Analizi (Test Analysis).",
+            "B. Test Tasarımı (Test Design).",
+            "C. Test Uygulaması (Test Implementation).",
+            "D. Test Yürütme (Test Execution)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.3'te 'Test uygulama iş ürünleri şunları içerir: ... test ortamı elemanları.' denmektedir. Ayrıca Metin 1.4.1'deki aktivite tanımlarına göre Test Tasarımı ortamı *tasarlar*, Test Uygulaması ise onu *kurar*, doğrular veya *edinir*.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Testware - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test temeli (örn. gereksinimler) ile test senaryoları arasında izlenebilirlik (traceability) sağlamak, aşağıdakilerden hangilerini yapmayı **kolaylaştırır? (İKİ SEÇENEK SEÇİN)**",
+        "options": [
+            "A. Tüm testleri otomatikleştirmeyi.",
+            "B. Bir gereksinim değiştiğinde hangi test senaryolarının etkileneceğini belirlemeyi.",
+            "C. Test ekibinin moralini yükseltmeyi.",
+            "D. Hangi gereksinimlerin hangi test senaryoları tarafından kapsandığını değerlendirmeyi.",
+            "E. Tüm kusurları bulmayı garanti etmeyi."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Metin 1.4.4, izlenebilirliğin faydalarını açıklar. Bunlar arasında 'değişikliklerin etkisini belirlemeyi mümkün kılmak' ve 'kapsam değerlendirmesini desteklemek' (örn. gereksinimlerin test senaryoları tarafından kapsandığını doğrulamak) bulunur. Otomasyonu, morali veya tüm kusurları bulmayı doğrudan etkilemez.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Traceability - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test temeli (test basis), test koşulları (test conditions), test senaryoları (test cases) ve hata raporları (defect reports) arasında çift yönlü izlenebilirliğin (traceability) sağladığı temel fayda aşağıdakilerden hangisidir?",
+        "options": [
+            "A. Test kapsamının değerlendirilmesini (örn. hangi gereksinimlerin test edildiğini görmek) ve değişikliklerin etkisini analiz etmeyi kolaylaştırır.",
+            "B. Test ekibinin performansını bireysel olarak ölçmeyi sağlar.",
+            "C. Tüm testlerin otomatikleştirilmesini garanti eder.",
+            "D. Hata ayıklama (debugging) süresini her zaman yarıya indirir."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 1.4.4'te izlenebilirliğin faydaları arasında 'kapsam değerlendirmesini destekler' ve 'değişikliklerin etkisini belirlemeyi mümkün kılar' açıkça belirtilmiştir. 'Test kapsamının değerlendirilmesi ve değişiklik etkisinin analizi' ifadesi bu faydaları özetler.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Traceability - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "İzlenebilirlik (traceability), BT yönetişim (IT governance) kriterlerinin karşılanmasına nasıl yardımcı olur?",
+        "options": [
+            "A. Tüm testlerin zamanında bitirilmesini sağlayarak.",
+            "B. Test maliyetlerini otomatik olarak hesaplayarak.",
+            "C. Test denetimlerini (audits) kolaylaştırarak ve gereksinimlerin kapsandığını göstererek.",
+            "D. Geliştiricilerin kod kalitesini artırarak."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.4'te 'iyi izlenebilirlik... test denetimlerini kolaylaştırır ve BT yönetişim kriterlerinin karşılanmasına yardımcı olur.' ifadesi yer almaktadır.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Traceability - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "İzlenebilirlik (traceability) kullanılarak, test sonuçları ile ilişkilendirilerek neyin seviyesi değerlendirilebilir?",
+        "options": [
+            "A. Geliştiricilerin kodlama becerisi.",
+            "B. Test nesnesindeki kalan risk (residual risk).",
+            "C. Projenin toplam maliyeti.",
+            "D. Kullanıcı memnuniyeti."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.4.4'te bir örnek olarak 'Test sonuçlarının risklerle izlenebilirliği, bir test nesnesindeki kalan risk seviyesini değerlendirmek için kullanılabilir.' ifadesi yer alır.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Traceability - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir Çevik (Agile) takımda, Test Yönetimi (Test Management) rolüne ait bazı sorumluluklar kimler tarafından üstlenilebilir?",
+        "options": [
+            "A. Yalnızca dışarıdan atanmış resmi bir Test Yöneticisi tarafından.",
+            "B. Yalnızca Scrum Master tarafından.",
+            "C. Takım lideri, Test Yöneticisi, Geliştirme Yöneticisi veya Çevik takımın kendisi tarafından (paylaşılmış sorumluluk).",
+            "D. Yalnızca Ürün Sahibi (Product Owner) tarafından."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.4.5, Test Yönetimi rolünün farklı kişiler tarafından (takım lideri, test yöneticisi, geliştirme yöneticisi vb.) üstlenilebileceğini belirtir. Ayrıca Çevik geliştirmede, bazı test yönetimi görevlerinin Çevik takım tarafından ele alınabileceğini de ekler.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Roles in Testing - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Test Yönetimi rolü ile Test Uzmanı (Testing) rolü arasındaki temel fark aşağıdakilerden hangisinde doğru olarak ifade edilmiştir?",
+        "options": [
+            "A. Test Yönetimi rolü genel test sürecinden, planlamadan, izlemeden ve kontrolden sorumlu iken; Test Uzmanı rolü testin analizi, tasarımı, uygulanması ve yürütülmesi gibi teknik mühendislik yönlerinden sorumludur.",
+            "B. Test Yönetimi rolü yalnızca manuel testleri yönetirken, Test Uzmanı rolü yalnızca otomasyon testlerini geliştirir.",
+            "C. Test Uzmanı rolü projenin genel kalite stratejisini belirlerken, Test Yönetimi rolü bu stratejiyi detaylandırır.",
+            "D. Test Yönetimi rolü hataları bulmaktan, Test Uzmanı rolü ise bu hataları düzeltmekten (debugging) sorumludur."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 1.4.5'te bu iki rolün sorumluluk alanları açıkça ayrılmıştır: Test Yönetimi genel sorumluluğu alır ve planlama, izleme, kontrol, tamamlama aktivitelerine odaklanır. Test Uzmanı rolü ise testin mühendislik (teknik) yönünden sorumludur ve analiz, tasarım, uygulama, yürütme aktivitelerine odaklanır.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Roles in Testing - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Test uzmanı rolü (testing role) temel olarak hangi test aktivitelerine odaklanır?",
+        "options": [
+            "A. Test planlama, test izleme ve kontrol ve test tamamlama.",
+            "B. Test analizi, test tasarımı, test uygulaması ve test yürütme.",
+            "C. Risk yönetimi, konfigürasyon yönetimi ve bütçeleme.",
+            "D. Kullanıcı eğitimi, dokümantasyon yazımı ve müşteri desteği."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.4.5, test uzmanı rolünün 'temel olarak test analizi, test tasarımı, test uygulaması ve test yürütme faaliyetlerine odaklandığını' belirtir.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Roles in Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, bir test uzmanının etkili olabilmesi için sahip olması gereken **İKİ** önemli genel beceridir?",
+        "options": [
+            "A. Proje yönetimi sertifikası.",
+            "B. Merak ve detaylara dikkat.",
+            "C. Belirli bir programlama dilinde uzmanlık.",
+            "D. Analitik düşünme ve problem çözme.",
+            "E. Grafik tasarım yeteneği."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Metin 1.5.1, test uzmanları için gerekli genel becerileri listeler. 'Merak, dikkatlilik, detaylara özen' ve 'Analitik düşünme, eleştirel düşünme' bu listede yer alır. Programlama dilinde uzmanlık veya proje yönetimi sertifikası her test uzmanı için genel bir gereklilik değildir. Grafik tasarım ise genellikle test uzmanının birincil becerisi değildir.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Generic Skills - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi bir test uzmanında bulunması beklenen temel becerilerden birine örnek **değildir**?",
+        "options": [
+            "A. Detaylara dikkat etme ve meraklı olma.",
+            "B. İyi iletişim ve takım çalışması becerileri.",
+            "C. Analitik ve eleştirel düşünme yeteneği.",
+            "D. Belirli bir programlama dilinde uzman seviyesinde kod yazma yeteneği."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Metin 1.5.1'de test uzmanı için gerekli genel beceriler listelenmiştir (merak, dikkat, iletişim, analitik düşünme, teknik bilgi, alan bilgisi vb.). Teknik bilgi gerekliyken, 'belirli bir programlama dilinde uzman seviyesinde kod yazma' her test uzmanı için genel bir gereklilik değildir ve listelenen *generic* (genel) beceriler arasında bu spesifiklikte yer almaz.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Generic Skills - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test uzmanının, bulduğu hataları ve başarısızlıkları yapıcı bir şekilde iletmesi neden önemlidir?",
+        "options": [
+            "A. Hataların ciddiyetini abartmak için.",
+            "B. Testin yıkıcı bir faaliyet olarak algılanmasını önlemek ve proje başarısına katkısını vurgulamak için.",
+            "C. Hata ayıklama sürecini yavaşlatmak için.",
+            "D. Geliştiriciler üzerinde baskı kurmak için."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.5.1'de belirtildiği gibi, bazı insanlar testi yıkıcı bir faaliyet olarak algılayabilir. Bu görüşü iyileştirmek için kusurlar ve başarısızlıklar hakkındaki bilgilerin yapıcı bir şekilde iletilmesi önemlidir.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Generic Skills - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test uzmanlarının iletişim becerilerinin kritik olmasının bir nedeni nedir?",
+        "options": [
+            "A. Çünkü test uzmanları her zaman projenin lideridir.",
+            "B. Çünkü test sonuçları ve bulunan hatalar, ürünün veya yazarının eleştirisi olarak algılanabilir ve yapıcı bir şekilde iletilmelidir.",
+            "C. Çünkü test uzmanları tüm proje dokümantasyonunu yazmaktan sorumludur.",
+            "D. Çünkü iletişim becerileri test otomasyonu için gereklidir."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.5.1, test uzmanlarının genellikle kötü haber taşıyıcısı olduğunu, test sonuçlarının eleştiri olarak algılanabileceğini ve onaylama önyargısının (confirmation bias) bilgiyi kabul etmeyi zorlaştırabileceğini belirtir. Bu nedenle, kusurlar ve başarısızlıklar hakkındaki bilgilerin yapıcı bir şekilde iletilmesi için iletişim becerileri çok önemlidir.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Generic Skills - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bütün ekip yaklaşımının (whole team approach) temel avantajı nedir?",
+        "options": [
+            "A. Herkesin kendi işine odaklanmasını sağlaması.",
+            "B. Kalite sorumluluğunun sadece test uzmanlarına ait olması.",
+            "C. Takım içindeki farklı beceri setlerinin projenin yararına kullanılmasını sağlayarak sinerji yaratması.",
+            "D. Daha fazla dokümantasyon üretilmesini teşvik etmesi."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.5.2, bütün ekip yaklaşımının 'takım dinamiklerini iyileştirdiğini, takım içinde iletişim ve işbirliğini artırdığını ve takım içindeki çeşitli beceri setlerinin projenin yararına kullanılmasını sağlayarak sinerji yarattığını' belirtir. Kalite herkesin sorumluluğudur.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Whole Team Approach - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bütün ekip yaklaşımının (whole team approach) temel avantajlarından biri aşağıdakilerden hangisidir?",
+        "options": [
+            "A. Test uzmanlarının tamamen bağımsız çalışmasını sağlaması.",
+            "B. Kalite sorumluluğunun tüm ekip üyeleri arasında paylaşılması.",
+            "C. Proje dokümantasyonunun miktarını her zaman artırması.",
+            "D. Test süreçlerinin standartlaştırılmasını zorunlu kılması."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.5.2'de 'herkes kaliteden sorumludur' ifadesi bütün ekip yaklaşımının temel bir ilkesi ve avantajı olarak belirtilmiştir. Bu yaklaşım işbirliğini artırır, genellikle dokümantasyonu azaltabilir (bağlama göre değişir) ve standartlaşmadan çok işbirliği ve esnekliğe vurgu yapar.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Whole Team Approach - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bütün ekip yaklaşımında (whole team approach) ekip üyelerinin aynı fiziksel veya sanal çalışma alanını paylaşmasının (co-location) amacı nedir?",
+        "options": [
+            "A. Maliyetleri düşürmek.",
+            "B. Bireysel performansı izlemeyi kolaylaştırmak.",
+            "C. İletişimi ve etkileşimi kolaylaştırmak.",
+            "D. Ekip üyelerinin yalnızca bir göreve odaklanmasını sağlamak."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.5.2'de 'Ekip üyeleri aynı çalışma alanını (fiziksel veya sanal) paylaşır, çünkü co-location iletişimi ve etkileşimi kolaylaştırır.' ifadesi bulunur.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Whole Team Approach - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bir projede testler, ürünü geliştiren ekibin dışından, farklı bir departmandaki bağımsız bir test ekibi tarafından yapılıyor. Bu durumun potansiyel bir **avantajı** ve potansiyel bir **dezavantajı** sırasıyla hangileri olabilir?",
+        "options": [
+            "A. Avantaj: Geliştiricilerin kalite sorumluluğunu kaybetmesi; Dezavantaj: Farklı hataların bulunması.",
+            "B. Avantaj: Geliştiricilerin varsayımlarını sorgulama yeteneği; Dezavantaj: Geliştirme ekibiyle iletişim sorunları yaşanması.",
+            "C. Avantaj: İşbirliği eksikliği; Dezavantaj: Farklı bakış açıları.",
+            "D. Avantaj: Maliyetlerin düşmesi; Dezavantaj: Test sürecinin yavaşlaması."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 1.5.3'e göre, bağımsızlığın bir faydası 'bağımsız bir testçinin paydaşlar tarafından belirtim ve uygulama sırasında yapılan varsayımları doğrulayabilmesi, sorgulayabilmesi veya çürütebilmesidir'. Bir dezavantajı ise 'geliştirme ekibinden izole olma, bu da işbirliği eksikliğine, iletişim sorunlarına... yol açabilir'.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Independence of Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Testte bağımsızlığın (independence of testing) temel faydası nedir?",
+        "options": [
+            "A. Test maliyetlerini her zaman artırır.",
+            "B. Geliştiricilerin kalite sorumluluğunu tamamen ortadan kaldırır.",
+            "C. Bağımsız test uzmanlarının farklı bakış açıları ve önyargıları nedeniyle geliştiricilere kıyasla farklı türde başarısızlıkları ve kusurları tanıma olasılığının daha yüksek olmasıdır.",
+            "D. Test sürecini her zaman yavaşlatır."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.5.3, bağımsızlığın ana faydasını 'bağımsız test uzmanlarının farklı geçmişleri, teknik bakış açıları ve önyargıları nedeniyle geliştiricilere kıyasla farklı türde başarısızlıkları ve kusurları tanıma olasılığının daha yüksek olması' olarak açıklar.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Independence of Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi testte yüksek derecede bağımsızlığın potansiyel bir **dezavantajıdır**?",
+        "options": [
+            "A. Geliştiricilerin yaptığı varsayımları doğrulama, sorgulama veya çürütme yeteneği.",
+            "B. Yazarın ve testçinin farklı bilişsel önyargılara sahip olması.",
+            "C. Bağımsız test uzmanlarının geliştirme ekibinden izole olması, işbirliği eksikliği veya iletişim sorunları yaşaması.",
+            "D. Farklı test seviyelerinde (bileşen, sistem, kabul) farklı bağımsızlık seviyelerinin kullanılması."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.5.3, bağımsızlığın dezavantajları arasında 'bağımsız test uzmanları geliştirme ekibinden izole olabilir, bu da işbirliği eksikliğine, iletişim sorunlarına veya geliştirme ekibiyle düşmanca bir ilişkiye yol açabilir' maddesini sayar. Diğer seçenekler genellikle bağımsızlığın faydaları veya iyi uygulamalarıdır.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Independence of Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Testte farklı bağımsızlık seviyeleri (örn. yazarın kendisi, aynı takımdan meslektaş, dış test ekibi) kullanılmasının önerilmesinin nedeni nedir?",
+        "options": [
+            "A. Proje maliyetini en aza indirmek için.",
+            "B. Test sürecini mümkün olduğunca hızlandırmak için.",
+            "C. Farklı seviyelerdeki testlerin (örn. bileşen testi, sistem testi, kabul testi) farklı bağımsızlık derecelerinden faydalanmasını sağlamak için.",
+            "D. Her seviyede aynı tür hataların bulunmasını garantilemek için."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 1.5.3'te 'Çoğu proje için genellikle birden fazla bağımsızlık seviyesiyle test yapmak en iyisidir (örn. geliştiricilerin bileşen testi yapması, test ekibinin sistem testi yapması ve iş temsilcilerinin kabul testi yapması).' denmektedir. Bu, farklı test seviyelerinin farklı bağımsızlık derecelerinden faydalanabileceğini ve bunun önerildiğini gösterir.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Independence of Testing - K2)",
+        "kLevel": "K2"
+    }
+]

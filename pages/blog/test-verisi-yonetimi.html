@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Otomasyonunda Veri Yönetimi ve Ortam Farkları</title> <!-- Başlık güncellendi -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Kod Bloğu Stili Eklendi -->
+    <style>
+        /* Blog içerisindeki kod blokları için stil */
+        pre {
+            background-color: #f4f4f9; /* Açık gri arkaplan */
+            border: 1px solid #ddd;    /* İnce kenarlık */
+            border-left: 5px solid #667eea; /* Sol tarafta vurgu rengi */
+            color: #333;               /* Koyu metin rengi */
+            padding: 16px;             /* İç boşluk */
+            margin: 20px 0;            /* Üst ve alt dış boşluk */
+            border-radius: 5px;        /* Köşeleri yuvarlatma */
+            overflow-x: auto;          /* Uzun kod satırları için yatay kaydırma */
+            white-space: pre;          /* Boşlukları ve satır sonlarını koruma */
+        }
+        pre code {
+            font-family: 'Courier New', Courier, monospace; /* Kod için monospaced yazı tipi */
+            font-size: 0.95em;         /* Yazı tipi boyutu */
+            background-color: transparent; /* Arkaplanı şeffaf yap */
+            padding: 0;                /* İç boşluğu sıfırla */
+            border: none;              /* Kenarlığı kaldır */
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+    <!-- Header (Mevcut yapı korundu) -->
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html#home" class="nav-logo" data-translate="navLogo">Adınız Soyadınız</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html#home" class="nav-link" data-translate="navHome">Home</a></li>
+                    <li><a href="../../index.html#about" class="nav-link" data-translate="navAbout">About</a></li>
+                    <li><a href="../../index.html#skills" class="nav-link" data-translate="navSkills">Skills</a></li>
+                    <li><a href="../../index.html#projects" class="nav-link" data-translate="navProjects">Projects</a></li>
+                    <li><a href="../../index.html#experience" class="nav-link" data-translate="navExperience">Experience</a></li>
+                    <li><a href="../../index.html#education" class="nav-link" data-translate="navEducation">Education</a></li>
+                    <li><a href="../../pages/blog.html" class="nav-link active" data-translate="navBlog">Blog</a></li>
+                    <li><a href="../../pages/tools.html" class="nav-link" data-translate="navTools">Tools</a></li>
+                    <li><a href="../../index.html#contact" class="nav-link" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+             <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="language-toggle" class="lang-btn" aria-label="Change Language">
+                    TR
+                </button>
+            </div>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="container">
+                <div class="detail-page-container">
+
+                    <!-- Yazı Başlığı -->
+                    <h1>Test Otomasyonunda Veri Yönetimi ve Ortam Farkları: Gerçekçi Testler İçin Ne Bilmeliyiz?</h1>
+
+                    <!-- Yazının Giriş Paragrafı -->
+                    <p class="section-intro" style="text-align: left; max-width: none; margin-top: 0; margin-bottom: 2rem; font-size: 1rem;">Merhaba,</p>
+                    <p>Test otomasyonu projelerinde başarının temel taşlarından biri, doğru test verisi yönetimi ve ortamların amacına uygun kullanımıdır. Özellikle e-ticaret gibi karmaşık sistemlerde, testlerin güvenilirliği büyük ölçüde test verisinin kalitesi ve ortamların doğru seçimine bağlıdır. Bugün kendi deneyimlerimden yola çıkarak bu kritik konuyu detaylı şekilde paylaşmak istiyorum.</p>
+
+                    <!-- Alt Başlık -->
+                    <h2>Test Verisi Neden Bu Kadar Önemli?</h2>
+                    <p>E-ticaret platformları çok sayıda bileşen içerir: kullanıcı hesapları, ürün stokları, siparişler, kampanyalar ve daha fazlası birbirine bağlıdır. Testlerin amacı, bu bileşenlerin tutarlı ve doğru çalıştığını garanti etmektir. Ancak bunu başarabilmek için elimizde doğru ve yeterli test verisi olmalıdır.</p>
+                    <p>Geçmişte şu gibi sorunlarla sıkça karşılaştım:</p>
+                    <ul>
+                        <li>“Test için kampanya kodu olan kullanıcı lazım ama veri tabanında böyle bir kayıt yok.”</li>
+                        <li>“Aynı kullanıcı ile test yapınca veriler birbirine karışıyor, hangi test neyi bozdu anlayamıyoruz.”</li>
+                    </ul>
+                    <p>Bu sorunlar testlerin güvenilirliğini ve sürdürülebilirliğini olumsuz etkiler.</p>
+
+                    <!-- Alt Başlık -->
+                    <h2>Test Ortamları: Test, Staging ve Production Arasındaki Kritik Farklar</h2>
+                    <p>Aynı uygulamayı kullanıyor olsak da test yaptığımız ortamlar, veri ve yapılandırma açısından birbirinden farklıdır:</p>
+                    <ul>
+                        <li><strong>Test Ortamı (QA):</strong><br>Burada genellikle tamamen sahte ve dinamik verilerle test yapılır. İstediğim gibi veri oluşturabilir, silebilir, ortamı yeniden kurabilirim. Bu ortam, esneklik ve hız için tasarlanmıştır.</li>
+                        <li><strong>Staging Ortamı:</strong><br>Prod’a en yakın ortamdır. Burada veriler gerçekçi ve önceden hazırlanmıştır. Veri üzerinde oynamak kısıtlıdır çünkü burası canlı sisteme açılmadan önceki son duraktır.</li>
+                        <li><strong>Production (Canlı) Ortam:</strong><br>Gerçek kullanıcıların gerçek verileri bulunur. Test yapmak büyük risk taşır, çünkü canlı müşterilere zarar verebilir.</li>
+                    </ul>
+                    <p>Bu farkları bilmeden yapılan testler, beklenmedik hatalara ve güven sorunlarına yol açabilir.</p>
+
+                    <!-- Alt Başlık -->
+                    <h2>Dinamik Veri Üretimi ve API Kullanımı: Test İzolasyonunu Sağlamak</h2>
+                    <p>Testlerde karşılaştığım en büyük zorluklardan biri, verilerin testler arasında karışmasıydı. Sabit kullanıcılar ve veriler, testlerin bağımsızlığını engelliyordu. Bunu aşmak için şunları yaptım:</p>
+                    <ul>
+                        <li>
+                            <strong>Faker Kütüphanesi ile Dinamik Veri Üretimi:</strong><br>
+                            Faker ile isim, e-posta, adres gibi verileri otomatik olarak oluşturuyorum. Örneğin, Türkçe karakter seti ile gerçekçi kullanıcı isimleri ve kullanıcı adları üretmek için:
+<pre><code>Faker faker = new Faker(new Locale("tr-TR"));
+String name = faker.name().fullName();
+String username = faker.name().username();</code></pre>
+                        </li>
+                        <li>
+                            <strong>API Üzerinden Veri Hazırlığı ve Temizliği:</strong><br>
+                            Test öncesi API çağrıları ile ihtiyaç duyduğum kullanıcı, ürün, kupon gibi verileri dinamik olarak oluşturuyorum. Test bittikten sonra bu verileri yine API aracılığıyla temizliyorum. Böylece her test izole, birbirinden bağımsız ve güvenilir hale geliyor.
+                        </li>
+                    </ul>
+
+                    <!-- Alt Başlık -->
+                    <h2>Kısa Bir Başarı Hikayesi: Test Verisi Yönetimindeki İyileştirme</h2>
+                    <p>Daha önce “favorilere ekleme” testi yaparken sabit kullanıcı ve ürün verisi kullanıyordum. Aynı ürün zaten favorilere ekli olduğu için testler başarısız oluyordu ve veri kirliliği nedeniyle hataların kaynağını bulmak zordu.</p>
+                    <p>Dinamik veri üretme ve API ile veri temizliği uygulamaya başladıktan sonra;</p>
+                    <ul>
+                        <li>Her test kendi benzersiz verisini oluşturdu,</li>
+                        <li>Test sonrası veriler silindi,</li>
+                        <li>Testler tamamen izole hale geldi.</li>
+                    </ul>
+                    <p>Sonuç olarak test güvenilirliği arttı, hata ayıklama kolaylaştı ve testlerin yeniden koşulabilirliği sağlandı.</p>
+
+                    <!-- Alt Başlık -->
+                    <h2>Ortam Ayrımı ve Gerçekçi Veri Yönetiminin Önemi</h2>
+                    <p>Sadece test ortamında veri oluşturmak ve test yapmak, küçük ve orta ölçekli projeler için pratik olabilir. Ancak daha büyük sistemlerde ve üretim ortamına yakın yapılarda, staging ortamında gerçekçi ve kontrollü verilerle test yapmak gerekir.</p>
+                    <p>Staging’de veriyi değiştirmek kısıtlıdır; çünkü burada canlıya çıkmadan önce son testler yapılır. Test ortamı ise hızlı, özgür ve esnek bir laboratuvar gibidir.</p>
+                    <p>Bu yüzden ortamların amaçları ve sınırları iyi anlaşılmalı, test stratejileri buna göre şekillendirilmelidir.</p>
+
+                    <!-- Alt Başlık -->
+                    <h2>Sonuç ve Öneriler</h2>
+                    <ul>
+                        <li>Test verisi yönetimi test sürecinin temelidir.</li>
+                        <li>Testlerin bağımsızlığı için her test kendi verisini oluşturmalı ve temizlemelidir.</li>
+                        <li>Faker ve API kullanımını birleştirmek, hem veri yönetiminde esneklik hem de test izolasyonu sağlar.</li>
+                        <li>Ortamlar arasındaki farkları bilmek, test stratejilerinin başarıyla uygulanmasını sağlar.</li>
+                        <li>Gerçekçi test verisi, testlerin başarısını doğrudan etkiler.</li>
+                    </ul>
+                    <p>Umarım bu yazı deneyimlerimi paylaşarak test otomasyonu ve veri yönetimi konusunda faydalı olur. Sorularınız ve görüşleriniz için iletişime geçebilirsiniz.</p>
+
+                    <!-- Geri dön linki (Mevcut yapı korundu) -->
+                    <div class="detail-page-actions">
+                        <a href="../blog.html" class="btn btn-outline" data-translate="backToBlog"><i class="fas fa-arrow-left"></i> Tüm Yazılara Geri Dön</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Mevcut yapı korundu) -->
+    <footer class="footer">
+        <div class="container">
+             <p class="footer-disclaimer" data-translate="footerDisclaimer">
+                Blog yazıları ve araçlarda sunulan bilgiler yalnızca bilgilendirme amaçlıdır ve hatalar içerebilir. Kullanım kendi sorumluluğunuzdadır. Herhangi bir sorumluluk kabul edilmez.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS Dosyaları (Mevcut yapı korundu) -->
+    <script src="../../js/translations.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+
+</body>
+</html>

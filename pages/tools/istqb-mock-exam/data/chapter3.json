@@ -1,0 +1,290 @@
+[
+    {
+        "question": "Statik test, aşağıdaki iş ürünlerinden hangilerinin incelenmesi için **uygundur**? (İKİ SEÇENEK SEÇİN)",
+        "options": [
+            "A. Derlenmiş ve çalıştırılabilir bir program.",
+            "B. Bir test planı dokümanı.",
+            "C. Kaynak kod dosyaları.",
+            "D. Veritabanı yedek dosyaları.",
+            "E. Test yürütme sırasında oluşturulan performans ölçüm sonuçları."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "Metin 3.1.1, statik testin gereksinimler, kaynak kod, test planları, modeller gibi okunabilir ve anlaşılabilir hemen hemen her iş ürününe uygulanabileceğini belirtir. Çalıştırılabilir dosyalar (özellikle 3. parti) ve dinamik test sonuçları (performans ölçümleri) statik testin tipik hedefleri değildir.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Work Products Examinable - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Statik test teknikleri aşağıdaki iş ürünlerinden hangisine uygulanabilir?",
+        "options": [
+            "A. Yalnızca çalıştırılabilir (executable) kod dosyalarına.",
+            "B. Gereksinim belirtimleri, kaynak kod, test planları ve modeller gibi okunabilir ve anlaşılabilir iş ürünlerine.",
+            "C. Yalnızca üçüncü parti (3rd party) yazılımların çalıştırılabilir dosyalarına.",
+            "D. Yalnızca test yürütme günlüklerine (test execution logs)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 3.1.1'e göre, statik test, gereksinim belirtimleri, kaynak kod, test planları, test senaryoları, ürün iş listesi öğeleri, test charter'ları, proje dokümantasyonu, sözleşmeler ve modeller dahil olmak üzere hemen hemen her iş ürününe uygulanabilir. Okunabilir ve anlaşılabilir olması önemlidir. Üçüncü parti çalıştırılabilir kodlar genellikle yasal nedenlerle analiz edilmez.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Work Products Examinable - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Statik analizin uygulanabilmesi için iş ürününün genellikle ne tür bir özelliğe sahip olması gerekir?",
+        "options": [
+            "A. Mükemmel bir şekilde yazılmış olması.",
+            "B. Dinamik testten geçmiş olması.",
+            "C. Kontrol edilebilecek bir yapıya sahip olması (örn. modeller, kod veya biçimsel sözdizimine sahip metin).",
+            "D. Yalnızca metin formatında olması."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.1.1, statik analiz için iş ürünlerinin 'kontrol edilebilecekleri bir yapıya sahip olması gerektiğini (örn. modeller, kod veya biçimsel bir sözdizimine sahip metin)' belirtir.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Work Products Examinable - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bir ekip, projenin çok erken bir aşamasında, henüz kod yazılmamışken, gereksinim dokümanlarını gözden geçirerek (review) potansiyel belirsizlikleri ve eksiklikleri tespit ediyor. Bu durum, statik testin hangi temel değerini **örneklemektedir**?",
+        "options": [
+            "A. Yazılımın performansını ölçme yeteneği.",
+            "B. Dinamik testin bulamayacağı tüm kusurları bulma garantisi.",
+            "C. Erken test prensibini uygulayarak kusurların SDLC'de erken tespit edilmesini sağlama.",
+            "D. Test otomasyonu ihtiyacını ortadan kaldırma."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.1.2, statik testin değerlerinden birinin 'SDLC'nin en erken aşamalarında kusurları tespit edebilmesi ve erken test prensibini yerine getirmesi' olduğunu belirtir. Gereksinimlerin erken gözden geçirilmesi tam olarak bu değere örnektir.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Value of Static Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Statik test, dinamik testin bulamayacağı ne tür kusurları belirleyebilir?",
+        "options": [
+            "A. Yalnızca performans sorunlarını.",
+            "B. Çalıştırılamayan iş ürünlerindeki kusurları (örn. gereksinimlerdeki eksiklikler) veya erişilemeyen kod gibi sorunları.",
+            "C. Yalnızca kullanıcı arayüzündeki görsel hataları.",
+            "D. Yalnızca donanım uyumluluğu sorunlarını."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 3.1.2'de statik testin, dinamik test ile tespit edilemeyen kusurları (örn. erişilemeyen kod, istenildiği gibi uygulanmayan tasarım desenleri, çalıştırılamayan iş ürünlerindeki kusurlar) da belirleyebildiği ifade edilir.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Value of Static Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Statik testin maliyet açısından sağladığı avantaj nedir?",
+        "options": [
+            "A. Gözden geçirmelerin (review) uygulanması maliyetli olsa da, kusurların daha sonra düzeltilmesi için harcanacak zaman ve çaba azaldığından genel proje maliyetlerinin genellikle daha düşük olmasıdır.",
+            "B. Her zaman dinamik testten daha pahalı olmasıdır.",
+            "C. Proje maliyetleri üzerinde hiçbir etkisinin olmamasıdır.",
+            "D. Yalnızca küçük projelerde maliyet avantajı sağlamasıdır."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 3.1.2, gözden geçirmelerin maliyetli olabilmesine rağmen, 'genel proje maliyetlerinin genellikle gözden geçirme yapılmadığı duruma göre çok daha düşük olduğunu, çünkü kusurların daha sonra düzeltilmesi için daha az zaman ve çaba harcanması gerektiğini' belirtir.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Value of Static Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Statik test ve dinamik testin karşılaştırılmasıyla ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": [
+            "A. Statik test kusurları doğrudan bulurken, dinamik test analiz gerektiren başarısızlıklara neden olur.",
+            "B. Statik test, dinamik testin aksine, çalıştırılamayan iş ürünlerine (örn. gereksinimler) uygulanabilir.",
+            "C. Dinamik test, statik testin aksine, kodun nadiren yürütülen yollarındaki kusurları daha kolay tespit edebilir.",
+            "D. Her iki test türü de kusurların tespitini destekleme gibi benzer hedeflere sahip olabilir."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.1.3'teki karşılaştırmaya göre, statik test, nadiren yürütülen veya ulaşılması zor yollardaki kusurları dinamik teste göre daha kolay tespit *edebilir*. Seçenek C bunun tersini iddia ettiği için yanlıştır. A, B ve D metindeki karşılaştırmalarla uyumludur.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Differences between Static and Dynamic Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdaki kusur türlerinden hangisi genellikle statik test ile daha kolay ve/veya daha ucuza bulunur?",
+        "options": [
+            "A. Yanlış zamanlama ve bellek sızıntıları gibi performans kusurları.",
+            "B. Gereksinimlerdeki tutarsızlıklar, belirsizlikler veya eksiklikler.",
+            "C. Yüksek stres altındaki sistem kararlılığı sorunları.",
+            "D. Farklı tarayıcılardaki uyumluluk sorunları."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 3.1.3, statik test ile daha kolay/ucuz bulunan tipik kusurlar arasında 'Gereksinimlerdeki kusurlar (örn. tutarsızlıklar, belirsizlikler, çelişkiler, ihmaller, yanlışlıklar, tekrarlar)' maddesini listeler. Diğer seçenekler genellikle dinamik test ile daha iyi tespit edilir.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Differences between Static and Dynamic Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdaki kalite özelliklerinden hangisi genellikle statik test ile, hangisi dinamik test ile ölçülür?",
+        "options": [
+            "A. Statik: Performans Verimliliği; Dinamik: Sürdürülebilirlik (Maintainability).",
+            "B. Statik: Sürdürülebilirlik (Maintainability); Dinamik: Performans Verimliliği.",
+            "C. Statik: Güvenilirlik (Reliability); Dinamik: Güvenlik (Security).",
+            "D. Statik: Kullanılabilirlik (Usability); Dinamik: Taşınabilirlik (Portability)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 3.1.3, statik testin kodun yürütülmesine bağlı olmayan kalite özelliklerini (örn. sürdürülebilirlik) ölçmek için kullanılabileceğini, dinamik testin ise kodun yürütülmesine bağlı olanları (örn. performans verimliliği) ölçmek için kullanılabileceğini belirtir.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Differences between Static and Dynamic Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Erken ve sık paydaş geri bildiriminin temel faydası nedir?",
+        "options": [
+            "A. Proje maliyetlerini her zaman artırmak.",
+            "B. Geliştirme ekibinin motivasyonunu düşürmek.",
+            "C. Gereksinimler hakkındaki yanlış anlaşılmaları önlemek ve değişikliklerin daha erken anlaşılıp uygulanmasını sağlamak.",
+            "D. Test sürecini tamamen ortadan kaldırmak."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.2.1'e göre, erken ve sık geri bildirim 'gereksinimler hakkındaki yanlış anlaşılmaları önleyebilir ve gereksinimlerdeki değişikliklerin daha erken anlaşılmasını ve uygulanmasını sağlayabilir'.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Benefits of Early Feedback - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Paydaşların geliştirme yaşam döngüsüne (SDLC) yeterince dahil olmaması durumunda ortaya çıkabilecek potansiyel bir sorun nedir?",
+        "options": [
+            "A. Projenin beklenenden daha erken bitmesi.",
+            "B. Geliştirilen ürünün paydaşın orijinal veya mevcut vizyonunu karşılamaması.",
+            "C. Test maliyetlerinin azalması.",
+            "D. Yazılım kalitesinin otomatik olarak artması."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 3.2.1, 'Eğer SDLC sırasında az paydaş katılımı olursa, geliştirilmekte olan ürün paydaşın orijinal veya mevcut vizyonunu karşılamayabilir.' ifadesini kullanır. Bu durum maliyetli yeniden çalışmalara veya proje başarısızlığına yol açabilir.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Benefits of Early Feedback - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "ISO/IEC 20246 standardına göre tanımlanan genel gözden geçirme (review) sürecinin aktiviteleri hangi sırayla gerçekleşir?",
+        "options": [
+            "A. Planlama -> Bireysel Gözden Geçirme -> Gözden Geçirmeyi Başlatma -> İletişim ve Analiz -> Düzeltme ve Raporlama.",
+            "B. Gözden Geçirmeyi Başlatma -> Planlama -> Bireysel Gözden Geçirme -> Düzeltme ve Raporlama -> İletişim ve Analiz.",
+            "C. Planlama -> Gözden Geçirmeyi Başlatma -> Bireysel Gözden Geçirme -> İletişim ve Analiz -> Düzeltme ve Raporlama.",
+            "D. Bireysel Gözden Geçirme -> İletişim ve Analiz -> Planlama -> Gözden Geçirmeyi Başlatma -> Düzeltme ve Raporlama."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.2.2, gözden geçirme sürecindeki aktiviteleri şu sırayla listeler: Planlama, Gözden Geçirmeyi Başlatma, Bireysel Gözden Geçirme, İletişim ve Analiz, Düzeltme ve Raporlama.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Process Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Gözden geçirme (review) sürecindeki 'İletişim ve Analiz' aktivitesinin temel amacı nedir?",
+        "options": [
+            "A. Gözden geçirilecek iş ürününün kapsamını ve amacını tanımlamak.",
+            "B. Gözden geçirenlerin bireysel olarak anormallikleri bulması.",
+            "C. Belirlenen anormalliklerin statüsünü, sahipliğini ve gereken eylemleri tartışmak ve karara bağlamak.",
+            "D. Kusur raporları oluşturmak ve gözden geçirme sonuçlarını raporlamak."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.2.2'ye göre, 'İletişim ve analiz' sırasında 'belirlenen anormallikler mutlaka kusur olmadığından, tüm bu anormalliklerin analiz edilmesi ve tartışılması gerekir. Her anormallik için statüsü, sahipliği ve gereken eylemler hakkında karar verilmelidir.' Bu genellikle bir gözden geçirme toplantısında yapılır.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Process Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Gözden geçirme sürecinde, gözden geçirilecek iş ürününü oluşturan ve bulunan kusurları düzelten rol hangisidir?",
+        "options": [
+            "A. Yönetici (Manager).",
+            "B. Moderatör (Moderator).",
+            "C. Yazar (Author).",
+            "D. Yazman (Scribe)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.2.3'teki rol tanımlarına göre, 'Yazar (Author) - gözden geçirilecek iş ürününü oluşturur ve düzeltir'.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Roles and Responsibilities - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Gözden geçirme toplantılarının etkili bir şekilde yürütülmesini sağlayan, zaman yönetimini yapan ve herkesin özgürce konuşabildiği güvenli bir ortam yaratan rol hangisidir?",
+        "options": [
+            "A. Gözden Geçiren (Reviewer).",
+            "B. Yazar (Author).",
+            "C. Gözden Geçirme Lideri (Review Leader).",
+            "D. Moderatör (Moderator / Facilitator)."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Metin 3.2.3, 'Moderatör (kolaylaştırıcı olarak da bilinir) - arabuluculuk, zaman yönetimi ve herkesin özgürce konuşabileceği güvenli bir gözden geçirme ortamı dahil olmak üzere gözden geçirme toplantılarının etkili bir şekilde yürütülmesini sağlar.' şeklinde tanımlar.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Roles and Responsibilities - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bir gözden geçirmede, gözden geçirenlerden gelen anormallikleri derleyen ve toplantı sırasında alınan kararları kaydeden rol kimdir?",
+        "options": [
+            "A. Yönetici (Manager).",
+            "B. Yazar (Author).",
+            "C. Yazman (Scribe / Recorder).",
+            "D. Moderatör (Moderator)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.2.3, Yazman (Scribe veya recorder olarak da bilinir) rolünü 'gözden geçirenlerden gelen anormallikleri derler ve gözden geçirme toplantısı sırasında kararlar ve yeni anormallikler gibi gözden geçirme bilgilerini kaydeder' şeklinde tanımlar.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Roles and Responsibilities - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Hangi gözden geçirme türü, yazar tarafından yönetilir ve temel amacı anormallikleri tespit etmenin yanı sıra katılımcıları eğitmek ve fikir birliği sağlamak olabilir?",
+        "options": [
+            "A. Gayri Resmi Gözden Geçirme (Informal Review).",
+            "B. Teknik Gözden Geçirme (Technical Review).",
+            "C. Denetim (Inspection).",
+            "D. Gözden Geçirme (Walkthrough)."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Metin 3.2.4, Gözden Geçirme'nin (Walkthrough) yazar tarafından yönetildiğini ve anormallik tespitinin yanı sıra kalite değerlendirme, güven oluşturma, gözden geçirenleri eğitme, fikir birliği sağlama gibi birçok amaca hizmet edebileceğini belirtir.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Teknik olarak kalifiye gözden geçirenler tarafından gerçekleştirilen ve moderatör tarafından yönetilen, temel amacı teknik bir sorun hakkında fikir birliği sağlamak ve karar vermek olan gözden geçirme türü hangisidir?",
+        "options": [
+            "A. Gayri Resmi Gözden Geçirme (Informal Review).",
+            "B. Teknik Gözden Geçirme (Technical Review).",
+            "C. Denetim (Inspection).",
+            "D. Gözden Geçirme (Walkthrough)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 3.2.4, Teknik Gözden Geçirmeyi 'teknik olarak kalifiye gözden geçirenler tarafından gerçekleştirilir ve bir moderatör tarafından yönetilir. Teknik bir gözden geçirmenin amaçları fikir birliği sağlamak ve teknik bir sorunla ilgili kararlar almaktır...' şeklinde tanımlar.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "En resmi gözden geçirme türü olan ve temel amacı maksimum sayıda anormallik bulmak olan gözden geçirme türü hangisidir?",
+        "options": [
+            "A. Gözden Geçirme (Walkthrough).",
+            "B. Denetim (Inspection).",
+            "C. Teknik Gözden Geçirme (Technical Review).",
+            "D. Gayri Resmi Gözden Geçirme (Informal Review)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 3.2.4, Denetimi (Inspection) 'en resmi gözden geçirme türü' olarak tanımlar ve 'Ana amacın maksimum sayıda anormallik bulmak olduğunu' belirtir. Ayrıca metriklerin toplandığını ve yazarın lider veya yazman olamayacağını da ekler.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi başarılı bir gözden geçirme için önemli bir başarı faktörüdür?",
+        "options": [
+            "A. Katılımcıların performansını değerlendirmeyi ana hedef yapmak.",
+            "B. Gözden geçirmeleri mümkün olan en büyük iş ürünü parçaları üzerinde yapmak.",
+            "C. Verilen hedeflere ulaşmak için uygun gözden geçirme türünü seçmek.",
+            "D. Gözden geçirme için hazırlık süresi vermemek."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 3.2.5'te listelenen başarı faktörlerinden biri 'Verilen hedeflere ulaşmak ve iş ürünü türüne, gözden geçirme katılımcılarına, proje ihtiyaçlarına ve bağlama uygun olması için uygun gözden geçirme türünü seçmektir'. Katılımcı değerlendirmesi bir hedef olmamalıdır, küçük parçalar halinde gözden geçirme ve yeterli hazırlık süresi önerilir.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Success Factors - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Başarılı gözden geçirmeler için aşağıdakilerden hangisi **gerekli değildir**?",
+        "options": [
+            "A. Açık hedeflerin ve ölçülebilir çıkış kriterlerinin tanımlanması.",
+            "B. Gözden geçirme sürecinin yönetim tarafından desteklenmesi.",
+            "C. Gözden geçirmelerin kuruluş kültürünün bir parçası haline getirilmesi.",
+            "D. Gözden geçirmeyi yapan tüm katılımcıların yazılım geliştirici olması."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Metin 3.2.5, başarılı gözden geçirmeler için açık hedefler/kriterler, yönetim desteği ve kültürel entegrasyon gibi faktörleri listeler. Ancak gözden geçirenlerin (reviewer) yalnızca geliştiriciler olması gerektiği belirtilmez; iş uzmanları, konu uzmanları veya diğer paydaşlar da gözden geçiren olabilir (Metin 3.2.3).",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Success Factors - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Gözden geçirmelerin başarılı olması için kritik olan faktörler nelerdir? (İKİ SEÇENEK SEÇİN)",
+        "options": [
+            "A. Toplantıları mümkün olduğunca uzun tutmak.",
+            "B. Gözden geçirmeleri küçük parçalar halinde yapmak.",
+            "C. Tüm katılımcılara rollerini nasıl yerine getireceklerini bilmeleri için yeterli eğitim sağlamak.",
+            "D. Gözden geçirme hedeflerini belirsiz bırakmak.",
+            "E. Geri bildirimi sadece yazarlara vermek."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "Metin 3.2.5 başarı faktörlerini listeler. Bunlar arasında 'Gözden geçirmeleri küçük parçalar halinde yapmak' ve 'Tüm katılımcılara rollerini nasıl yerine getireceklerini bilmeleri için yeterli eğitim sağlamak' bulunur. Uzun toplantılar, belirsiz hedefler ve geri bildirimin sadece yazarlarla sınırlı kalması önerilmez.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Success Factors - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    }
+]

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="projectsMainTitle">Projeler - Taygun Kara</title>
+    <!-- Ana portfolyo CSS yolu ayarlandı (pages'den src'ye 1 seviye yukarı) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font Awesome ve Google Fonts (Inter) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+
+    <!-- Portfolyo Header -->
+    <header class="navbar">
+        <div class="container">
+            <a href="../index.html#home" class="nav-logo" data-translate="navLogo">Taygun Kara</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html#home" class="nav-link" data-translate="navHome">Home</a></li>
+                    <li><a href="../index.html#about" class="nav-link" data-translate="navAbout">About</a></li>
+                    <li><a href="../index.html#skills" class="nav-link" data-translate="navSkills">Skills</a></li>
+                    <!-- Projects linki aktif olarak işaretlendi -->
+                    <li><a href="../index.html#projects" class="nav-link active" data-translate="navProjects">Projects</a></li>
+                    <li><a href="../index.html#experience" class="nav-link" data-translate="navExperience">Experience</a></li>
+                    <li><a href="../index.html#education" class="nav-link" data-translate="navEducation">Education</a></li>
+                    <li><a href="./blog.html" class="nav-link" data-translate="navBlog">Blog</a></li>
+                    <li><a href="../index.html#tools" class="nav-link" data-translate="navTools">Tools</a></li>
+                    <li><a href="../index.html#contact" class="nav-link" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+             <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="language-toggle" class="lang-btn" aria-label="Change Language">
+                    TR
+                </button>
+            </div>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ana İçerik Alanı -->
+    <main>
+         <!-- Tüm Projeler Sayfa Başlığı -->
+         <section class="page-header">
+              <div class="container">
+                   <h1 data-translate="allProjectsHeaderTitle">Tüm Projelerim</h1>
+                   <p data-translate="allProjectsHeaderSubtitle">İşte üzerinde çalıştığım bazı projelerim.</p>
+               </div>
+         </section>
+
+         <!-- Proje Listesi Alanı -->
+         <section class="content-section bg-alternate" id="all-projects">
+              <div class="container">
+                   <div class="card-grid">
+
+                       <!-- Proje Kartı 1: Selenium Hybrid Framework -->
+                       <a href="./projects/selenium-qacart-todo-projesi.html" class="card">
+                           <div class="card-content">
+                               <h3>🚀 <span data-translate="projectCardSeleniumTitle">Hybrid Test Framework (Selenium + API)</span></h3>
+                               <p data-translate="projectCardSeleniumDesc">A robust hybrid test framework combining Selenium (UI) and API testing to overcome flaky tests and dramatically increase execution speed.</p>
+                               <div class="tech-stack">
+                                   <span data-translate="techSelenium">Selenium</span>
+                                   <span data-translate="techRestAssured">Rest Assured</span>
+                                   <span data-translate="techJava">Java</span>
+                                   <span data-translate="techTestNG">TestNG</span>
+                                   <span data-translate="techMaven">Maven</span>
+                               </div>
+                                <div class="card-buttons">
+                                    <span data-translate="projectCardDetails">Detaylar</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </div>
+                           </div>
+                       </a>
+
+                       <!-- Proje Kartı 2: Rest Assured API Architecture -->
+                       <a href="./projects/rest-assured-api-framework-projesi.html" class="card">
+                           <div class="card-content">
+                               <h3>🏗️ <span data-translate="projectCardRestAssuredTitle">Scalable API Test Architecture</span></h3>
+                               <p data-translate="projectCardRestAssuredDesc">A case study on building a maintainable and scalable API test framework with Rest Assured, focusing on clean architecture and reliability.</p>
+                               <div class="tech-stack">
+                                    <span data-translate="techRestAssured">Rest Assured</span>
+                                    <span data-translate="techJava">Java</span>
+                                    <span data-translate="techTestNG">TestNG</span>
+                                    <span data-translate="techMaven">Maven</span>
+                                    <span data-translate="techAllure">Allure Report</span>
+                               </div>
+                                <div class="card-buttons">
+                                    <span data-translate="projectCardDetails">Detaylar</span>
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </div>
+                           </div>
+                       </a>
+                       
+                       <!-- Proje Kartı 3: BDD Cucumber -->
+                       <a href="./projects/bdd-cucumber-trendyol-projesi.html" class="card">
+                           <div class="card-content">
+                               <h3>📈 <span data-translate="projectCardCucumberTitle">My BDD Journey with Trendyol UI Testing</span></h3>
+                               <p data-translate="projectCardCucumberDesc">A case study on evolving a BDD framework, learning from real-world mistakes to build a robust and reliable automation solution.</p>
+                               <div class="tech-stack">
+                                   <span data-translate="techCucumber">Cucumber</span>
+                                   <span data-translate="techSelenium">Selenium</span>
+                                   <span data-translate="techJava">Java</span>
+                                   <span data-translate="techMaven">Maven</span>
+                               </div>
+                               <div class="card-buttons">
+                                   <span data-translate="projectCardDetails">Detaylar</span>
+                                   <i class="fas fa-arrow-right ml-2"></i>
+                               </div>
+                           </div>
+                       </a>
+
+                       <!-- Proje Kartı 4: Spotify API -->
+                       <a href="./projects/spotify-api-test-projesi.html" class="card">
+                           <div class="card-content">
+                               <h3>🎵 <span data-translate="projectCardSpotifyTitle">Spotify API Test Automation</span></h3>
+                               <p data-translate="projectCardSpotifyDesc">A project showcasing the evolution of a test framework, from initial code to a mature, modular, and reliable structure.</p>
+                               <div class="tech-stack">
+                                   <span data-translate="techRestAssured">Rest Assured</span>
+                                   <span data-translate="techJava">Java</span>
+                                   <span data-translate="techTestNG">TestNG</span>
+                                   <span data-translate="techAllure">Allure Report</span>
+                               </div>
+                               <div class="card-buttons">
+                                   <span data-translate="projectCardDetails">Detaylar</span>
+                                   <i class="fas fa-arrow-right ml-2"></i>
+                               </div>
+                           </div>
+                       </a>
+
+                       <!-- Proje Kartı 5: Trello API -->
+                       <a href="./projects/trello-api-projesi.html" class="card">
+                           <div class="card-content">
+                               <h3>🚀 <span data-translate="projectCardTrelloTitle">End-to-End Trello API Automation</span></h3>
+                               <p data-translate="projectCardTrelloDesc">From Postman to a CI/CD-ready suite, this project demonstrates a full end-to-end API testing process using Newman and structured collections.</p>
+                               <div class="tech-stack">
+                                   <span>Postman</span>
+                                   <span>Newman</span>
+                                   <span>JavaScript</span>
+                               </div>
+                               <div class="card-buttons">
+                                   <span data-translate="projectCardDetails">Detaylar</span>
+                                   <i class="fas fa-arrow-right ml-2"></i>
+                               </div>
+                           </div>
+                       </a>
+
+                   </div>
+               </div>
+         </section>
+    </main>
+
+    <!-- Portfolyo Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-disclaimer" data-translate="footerDisclaimer">
+                Blog yazıları ve araçlarda sunulan bilgiler yalnızca bilgilendirme amaçlıdır ve hatalar içerebilir. Kullanım kendi sorumluluğunuzdadır. Herhangi bir sorumluluk kabul edilmez.
+            </p>
+            <p>© <span id="current-year"></span> <span data-translate="navLogo">Taygun Kara</span>. <span data-translate="footerText">Tüm hakları saklıdır.</span></p>
+            <p class="footer-made-with">Minimalist theme inspired by simplicity.</p>
+        </div>
+    </footer>
+
+    <!-- JS Dosyaları -->
+    <script src="../js/translations.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title artık translation.js'ten gelecek anahtarı kullanacak -->
+    <title data-translate="istqbMainTitle">ISTQB® Temel Seviye Deneme Sınavı - Adınız Soyadınız</title>
+    <!-- Ana portfolyo CSS yolu ayarlandı (pages/tools/istqb-mock-exam'den src'ye 3 seviye yukarı) -->
+    <link rel="stylesheet" href="../../../css/style.css">
+    <!-- Font Awesome ve Google Fonts (Inter) ana siteden kopyalandı -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS bağlantısı ve config kaldırıldı -->
+    <!-- ISTQB'ye özel CSS linki kaldırıldı, stilleri ana CSS'e veya ayrı bir dosyaya taşıyacağız -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        /* Geçiş Animasyonları (ISTQB'nin kendi CSS'inden taşındı) */
+        .question-container { display: none; }
+        .question-container.active { display: block; animation: fadeIn 0.5s; }
+        .result-container, #exam-main-content { display: none; }
+        .welcome-container { display: block; } /* Başlangıçta welcome görünür */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+         /* Yükleme Göstergesi (ISTQB'nin kendi CSS'inden taşındı) */
+        #loading-indicator {
+           /* flex yerine none olarak başlayacak, JS ile gösterilecek */
+           display: none;
+           align-items: center;
+           justify-content: center;
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           /* Arkaplan rengi ve z-index portfolyo stiliyle uyumlu hale getirilebilir */
+           background-color: rgba(255, 255, 255, 0.8); /* Light mode */
+           z-index: 50;
+        }
+        body.dark-mode #loading-indicator {
+            background-color: rgba(17, 24, 39, 0.8); /* Dark mode */
+        }
+        #loading-indicator .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #3b82f6; /* primary-light */
+            animation: spin 1s ease infinite;
+        }
+         body.dark-mode #loading-indicator .spinner {
+             border-color: rgba(255, 255, 255, 0.2);
+             border-left-color: #60a5fa; /* primary-dark */
+         }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Bazı temel layout stilleri (Tailwind'den veya ISTQB CSS'inden adapte edildi) */
+        /* Bu sınıfların çoğu artık ana CSS'te tanımlandı veya override edildi, ancak HTML'de kullanılıyor */
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .md\:flex-row { /* media query ile */ }
+        .gap-6 { gap: 1.5rem; } /* Ana CSS'te yoksa buraya eklenebilir */
+        .space-y-3 > * + * { margin-top: 0.75rem; } /* space-y-3 - Ana CSS'te yoksa buraya eklenebilir */
+        .space-x-2 > * + * { margin-left: 0.5rem; } /* space-x-2 - Ana CSS'te yoksa buraya eklenebilir */
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+        .max-w-7xl { max-width: 80rem; }
+        .w-full { width: 100%; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .shadow-lg { box-shadow: var(--shadow-lg); /* Ana CSS shadow değişkeni kullanıldı */ }
+        .p-8 { padding: 2rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+        .font-bold { font-weight: var(--font-weight-bold); }
+        .text-primary-light { color: var(--color-primary); } /* Ana CSS değişkeni kullanıldı */
+        .dark\:text-primary-dark { color: var(--color-primary-dark); } /* Ana CSS dark mode değişkeni kullanıldı */
+        .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .text-gray-700 { color: var(--text-light-primary); } /* Ana CSS değişkeni kullanıldı */
+        .dark\:text-gray-300 { color: var(--text-dark-secondary); } /* Ana CSS dark mode değişkeni kullanıldı */
+        .welcome-section { border-top: 1px solid var(--border-light); padding-top: 1rem; margin-top: 1.5rem; }
+        body.dark-mode .welcome-section { border-top-color: var(--border-dark); }
+        .welcome-section h3 { font-size: 1.125rem; font-weight: var(--font-weight-semibold); margin-bottom: 0.75rem; color: var(--text-light-primary); }
+        body.dark-mode .welcome-section h3 { color: var(--text-dark-primary); }
+         .welcome-section li i { margin-right: 0.6rem; color: var(--color-primary); width: 1.1em; text-align: center;}
+         body.dark-mode .welcome-section li i { color: var(--color-primary-dark); }
+         .welcome-section p { margin-bottom: 1rem; color: var(--text-light-secondary); }
+         body.dark-mode .welcome-section p { color: var(--text-dark-secondary); }
+         .welcome-section a { color: var(--color-primary); text-decoration: underline; }
+         body.dark-mode .welcome-section a { color: var(--color-primary-dark); }
+         .welcome-section strong { color: var(--text-light-primary); }
+         body.dark-mode .welcome-section strong { color: var(--text-dark-primary); }
+
+        .grid { display: grid; }
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .sm\:grid-cols-3 { /* media query ile */ }
+        .gap-4 { gap: 1rem; } /* Ana CSS'te yoksa buraya eklenebilir */
+        .mt-8 { margin-top: 2rem; }
+        .text-center { text-align: center; }
+        .mt-4 { margin-top: 1rem; }
+        .text-red-500 { color: #ef4444; } /* danger-light */
+        .dark\:text-red-400 { color: #f87171; } /* danger-dark */
+        .text-sm { font-size: 0.875rem; }
+        .hidden { display: none; }
+        .flex-grow { flex-grow: 1; }
+        .mb-4 { margin-bottom: 1rem; }
+        .text-gray-600 { color: var(--text-light-secondary); }
+        .dark\:text-gray-300 { color: var(--text-dark-secondary); }
+        .w-full { width: 100%; }
+        .h-2\.5 { height: 0.625rem; }
+        .bg-gray-200 { background-color: #e5e7eb; }
+        .dark\:bg-gray-700 { background-color: #374151; }
+        .rounded-full { border-radius: 9999px; }
+         .bg-blue-600 { background-color: var(--color-primary); }
+         .dark\:bg-blue-500 { background-color: var(--color-primary-dark); }
+        .absolute { position: absolute; } .top-0 { top: 0; } .left-0 { left: 0; }
+        .flex-col { flex-direction: column; }
+        .items-center { align-items: center; } .justify-center { justify-content: center; }
+        .w-40 { width: 10rem; } .h-40 { height: 10rem; }
+        .relative { position: relative; }
+        .text-gray-200 { color: #e5e7eb; }
+        .dark\:text-gray-700 { color: #374151; }
+        .text-gray-800 { color: var(--text-light-primary); }
+        .dark\:text-gray-100 { color: var(--text-dark-primary); }
+        .border { border-width: 1px; }
+        .border-gray-200 { border-color: #e5e7eb; }
+        .dark\:border-gray-800 { border-color: #1f2937; }
+        .bg-green-100 { background-color: #d1fae5; } /* secondary-light-lighter */
+        .dark\:bg-green-900\/30 { background-color: rgba(16, 185, 129, 0.3); } /* secondary-light opacity */
+        .text-green-700 { color: #047857; } /* secondary-light-darker */
+         .dark\:text-green-400 { color: #4ade80; } /* secondary-dark-lighter */
+         .bg-red-100 { background-color: #fee2e2; } /* danger-light-lighter */
+        .dark\:bg-red-900\/30 { background-color: rgba(239, 68, 68, 0.3); } /* danger-light opacity */
+         .text-red-700 { color: #b91c1c; } /* danger-light-darker */
+         .dark\:text-red-400 { color: #f87171; } /* danger-dark */
+        .p-4 { padding: 1rem; }
+        .rounded-lg { border-radius: 0.5rem; }
+        .mb-3 { margin-bottom: 0.75rem; }
+        .border-t { border-top-width: 1px; } .pb-4 { padding-bottom: 1rem; } .pt-4 { padding-top: 1rem;}
+        .border-b { border-bottom-width: 1px; }
+        .space-y-6 > * + * { margin-top: 1.5rem; }
+        .text-xs { font-size: 0.75rem; } .italic { font-style: italic; }
+        .ml-1 { margin-left: 0.25rem; } .ml-2 { margin-left: 0.5rem; } .mr-2 { margin-right: 0.5rem; }
+        .font-medium { font-weight: var(--font-weight-medium); }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .text-gray-500 { color: var(--text-light-secondary); }
+        .dark\:text-gray-400 { color: var(--text-dark-secondary); }
+         .px-2 { padding-left: 0.5rem; padding-right: 0.5rem;} .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem;}
+         .text-red-600 { color: #dc2626; } /* danger-light-darker */
+         .dark\:text-red-400 { color: #f87171; } /* danger-dark */
+         .bg-gray-50 { background-color: #f9fafb; } /* bg-light */
+         .dark\:bg-gray-700\/30 { background-color: rgba(55, 65, 81, 0.3); } /* gray-700 opacity */
+         .text-gray-700 { color: var(--text-light-primary); }
+         .dark\:text-gray-300 { color: var(--text-dark-secondary); }
+        .p-3 { padding: 0.75rem; }
+         .rounded { border-radius: 0.25rem; }
+
+        /* Review option colors - need to handle dark mode */
+        /* Re-added colors with variables */
+         .review-option.correct {
+             background-color: var(--secondary-light-lighter); /* Use derived lighter green */
+             border-color: var(--secondary-light-darker); /* Use derived darker green */
+             color: #047857; /* Green text color */
+             font-weight: var(--font-weight-medium);
+         }
+         body.dark-mode .review-option.correct {
+              background-color: var(--secondary-dark-lighter); /* Use derived lighter dark green */
+              border-color: var(--secondary-dark); /* Use derived green */
+              color: #10b981; /* Dark green text color */
+         }
+        .review-option.incorrect-user {
+            background-color: var(--danger-light-lighter); /* Use derived lighter red */
+            border-color: var(--danger-light-darker); /* Use derived darker red */
+            color: #b91c1c; /* Red text color */
+        }
+        body.dark-mode .review-option.incorrect-user {
+            background-color: var(--danger-dark-lighter); /* Use derived lighter dark red */
+            border-color: var(--danger-dark); /* Use derived red */
+             color: #ef4444; /* Dark red text color */
+        }
+         .review-option.plain {
+             border-color: var(--border-light);
+             color: var(--text-light-primary);
+         }
+        body.dark-mode .review-option.plain {
+             border-color: var(--border-dark);
+             color: var(--text-dark-primary);
+        }
+
+         /* Derived colors if needed (can add to root in style.css) */
+         /* THESE ARE NOW DEFINED IN ROOT VARIABLES IN MAIN CSS */
+         /*
+         :root {
+            --secondary-light-lighter: #d1fae5; // Tailwind green-100
+            --secondary-light-darker: #047857; // Tailwind green-700
+            --secondary-dark-lighter: #4ade80; // Tailwind green-400 // Adjusted for dark mode
+             --danger-light-lighter: #fee2e2; // Tailwind red-100
+             --danger-light-darker: #b91c1c; // Tailwind red-700
+             --danger-dark-lighter: #f87171; // Tailwind red-400 // Adjusted for dark mode
+         }
+         body.dark-mode {
+             --secondary-light-lighter: var(--secondary-dark-lighter);
+             --secondary-light-darker: var(--secondary-dark); // Use secondary-dark from root
+             --danger-light-lighter: var(--danger-dark-lighter);
+             --danger-light-darker: var(--danger-dark); // Use danger-dark from root
+         }
+         */
+
+
+        /* Question Navigator (Tailwind classes replaced or adapted) */
+        #question-navigator-container { flex-shrink: 0; }
+        #exam-container { flex-grow: 1; }
+        #question-navigator {
+            display: grid;
+             gap: 0.25rem; /* gap-1 */
+             justify-content: center; /* justify-center */
+        }
+        .nav-item {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #d1d5db; /* gray-300 */
+            border-radius: 4px; /* rounded */
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+            font-size: 0.75rem; /* text-xs */
+            margin: 1px; /* margin 1px to prevent border collapse issues */
+            line-height: 1;
+             background-color: #ffffff; /* bg-white */
+             color: #4b5563; /* gray-600 */
+             border-color: #d1d5db; /* gray-300 */
+        }
+        body.dark-mode .nav-item {
+            background-color: #1f2937; /* bg-gray-800 */
+            color: #9ca3af; /* gray-400 */
+            border-color: #4b5563; /* gray-600 */
+        }
+        .nav-item:hover:not(.current):not(.answered):not(.incorrect):not(.correct) { /* Added not(.correct) */
+            background-color: #f3f4f6; /* gray-100 */
+            border-color: #9ca3af; /* gray-400 */
+            color: #374151; /* gray-700 */
+        }
+        body.dark-mode .nav-item:hover:not(.current):not(.answered):not(.incorrect):not(.correct) { /* Added not(.correct) */
+            background-color: #374151; /* gray-700 */
+            border-color: #6b7280; /* gray-600 */
+            color: #d1d5db; /* gray-300 */
+        }
+        .nav-item.current {
+            background-color: var(--color-primary); /* primary-light */
+            color: white;
+            border-color: var(--color-primary);
+             font-weight: var(--font-weight-bold);
+        }
+        body.dark-mode .nav-item.current {
+            background-color: var(--color-primary-dark); /* primary-dark */
+            color: white;
+            border-color: var(--color-primary-dark);
+        }
+        .nav-item.answered { /* Answered during exam */
+            background-color: #fcd34d; /* yellow-300 */
+             color: #92400e; /* yellow-800 */
+             border-color: #f59e0b; /* amber-500 */
+             font-weight: var(--font-weight-medium);
+        }
+         body.dark-mode .nav-item.answered {
+             background-color: #facc15; /* amber-400 */
+             color: #78350f; /* amber-900 */
+             border-color: #f59e0b; /* amber-500 */
+         }
+         .nav-item.correct { /* Correct after exam */
+              background-color: #a7f3d0; /* green-200 */
+              color: #047857; /* green-700 */
+              border-color: #34d399; /* green-400 */
+              font-weight: var(--font-weight-medium);
+         }
+        body.dark-mode .nav-item.correct {
+             background-color: #10b981; /* green-500 */
+             color: #d1fae5; /* green-100 */
+             border-color: #10b981; /* green-500 */
+        }
+         .nav-item.incorrect { /* Incorrect after exam */
+              background-color: #fecaca; /* red-200 */
+              color: #b91c1c; /* red-700 */
+              border-color: #f87171; /* red-400 */
+              font-weight: var(--font-weight-medium);
+         }
+        body.dark-mode .nav-item.incorrect {
+             background-color: #ef4444; /* red-500 */
+             color: #fee2e2; /* red-100 */
+             border-color: #ef4444; /* red-500 */
+        }
+
+
+        /* Result Filter Buttons (Tailwind classes replaced or adapted) */
+        .filter-button {
+            padding: 0.25rem 1rem; /* px-4 py-1 */
+            border-radius: 0.25rem; /* rounded */
+            font-size: 0.875rem; /* text-sm */
+            transition: all 0.2s ease;
+             cursor: pointer;
+             background-color: #e5e7eb; /* bg-gray-200 */
+             color: #4b5563; /* text-gray-600 */
+             border: none; /* or border: 1px solid transparent; */
+        }
+        body.dark-mode .filter-button {
+            background-color: #374151; /* bg-gray-700 */
+             color: #d1d5db; /* text-gray-300 */
+        }
+         .filter-button:hover {
+             background-color: #d1d5db; /* gray-300 */
+             color: #374151; /* gray-700 */
+         }
+        body.dark-mode .filter-button:hover {
+             background-color: #4b5563; /* gray-600 */
+             color: #e5e7eb; /* gray-300 */
+        }
+        .filter-button.active {
+            background-color: var(--color-primary); /* primary-light */
+            color: white;
+             font-weight: var(--font-weight-semibold);
+        }
+        body.dark-mode .filter-button.active {
+            background-color: var(--color-primary-dark); /* primary-dark */
+            color: white;
+        }
+
+        /* Option Selection Styles (Tailwind classes replaced or adapted) */
+         .options-list label.option {
+             border: 1px solid #d1d5db; /* border-gray-300 */
+             border-radius: 0.5rem; /* rounded-lg */
+             cursor: pointer;
+             transition: all 0.2s ease;
+             background-color: #ffffff; /* bg-white */
+             color: #1f2937; /* text-gray-900 */
+         }
+         body.dark-mode .options-list label.option {
+             border-color: #4b5563; /* border-gray-600 */
+             background-color: #1f2937; /* bg-gray-800 */
+             color: #f3f4f6; /* text-gray-100 */
+         }
+         .options-list label.option:hover {
+             background-color: #f3f4f6; /* bg-gray-100 */
+         }
+         body.dark-mode .options-list label.option:hover {
+             background-color: #374151; /* bg-gray-700 */
+         }
+         .options-list label.option input { /* Hide default radio/checkbox */
+             /* Tailwind form styles (h-4 w-4 text-primary-light border-gray-300 focus:ring-primary-light ...)
+                Need to be replaced with custom or a form library */
+         }
+
+         /* Custom styles for selected options - Match theme colors */
+         .options-list label.option.selected {
+             background-color: rgba(59, 130, 246, 0.1); /* primary-light with opacity */
+             border-color: var(--color-primary); /* primary-light */
+             /* Add other styles if needed, e.g., bold text */
+         }
+         body.dark-mode .options-list label.option.selected {
+              background-color: rgba(96, 165, 250, 0.15); /* primary-dark with opacity */
+             border-color: var(--color-primary-dark); /* primary-dark */
+         }
+
+        /* Checkbox/Radio button custom appearance */
+        /* This requires more complex CSS to replace browser defaults */
+        /* For simplicity in this step, we rely on the label background/border change */
+        /* and keep the native input */
+
+
+        /* Responsive (ISTQB CSS'inden taşındı ve adapte edildi) */
+        @media (min-width: 768px) {
+            /* md\:flex-row */
+            #exam-main-content .flex.flex-col.md\:flex-row { flex-direction: row; }
+            #question-navigator-container { width: 16rem; } /* md:w-64 */
+            #question-navigator { grid-template-columns: repeat(6, minmax(0, 1fr)); } /* md:grid-cols-6 */
+             .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+        @media (max-width: 767px) {
+            /* flex-col order-1/2 */
+             #exam-main-content .flex.flex-col.md\:flex-row { flex-direction: column; }
+             #question-navigator-container { order: 2; width: 100%;}
+             #exam-container { order: 1;}
+             #question-navigator {
+                 grid-template-columns: repeat(auto-fill, minmax(32px, 1fr)); /* auto-fill for small items */
+                 max-height: none;
+                 overflow-y: visible;
+             }
+        }
+
+         /* Override some default tailwind reset on lists */
+        .welcome-section ul, .detail-page-container ul { list-style: none; padding-left: 0; }
+        .welcome-section li, .detail-page-container li { list-style: none; }
+        /* Add bullets back for review lists if needed */
+         .review-option { list-style: none !important; } /* Ensure review options don't get bullets */
+
+        /* Footer styles (from ISTQB index.html - need to match main footer) */
+         /* This footer will be replaced by the main footer */
+          /*
+         footer {
+              font-size: 0.75rem;
+              color: #6b7280;
+              margin-top: auto;
+              padding: 1rem 0;
+              text-align: center;
+              border-top: 1px solid #e5e7eb;
+         }
+         footer a {
+              text-decoration: underline;
+              color: #3b82f6;
+              margin-left: 0.5rem;
+              margin-right: 0.5rem;
+         }
+         */
+
+
+    </style>
+
+</head>
+<!-- body class'ları ana portfolyo'nun body'si tarafından yönetilecek -->
+<body class="light-mode">
+
+    <!-- Portfolyo Header (Ortak yapıdan, linkler ana dizine göre ayarlandı) -->
+    <header class="navbar">
+        <div class="container">
+            <!-- Navigasyon linkleri ana dizindeki index.html'e yönlendirildi -->
+            <!-- ISTQB sayfası pages/tools/istqb-mock-exam altında, src'ye 3 seviye yukarı -->
+            <a href="../../../index.html#home" class="nav-logo" data-translate="navLogo">Adınız Soyadınız</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html#home" class="nav-link" data-translate="navHome">Home</a></li>
+                    <li><a href="../../../index.html#about" class="nav-link" data-translate="navAbout">About</a></li>
+                    <li><a href="../../../index.html#skills" class="nav-link" data-translate="navSkills">Skills</a></li>
+                    <li><a href="../../../index.html#projects" class="nav-link" data-translate="navProjects">Projects</a></li>
+                    <li><a href="../../../index.html#experience" class="nav-link" data-translate="navExperience">Experience</a></li>
+                    <li><a href="../../../index.html#education" class="nav-link" data-translate="navEducation">Education</a></li>
+                    <li><a href="../../../pages/blog.html" class="nav-link" data-translate="navBlog">Blog</a></li>
+                    <!-- Tools linki aktif olarak işaretlendi (pages/tools.html'e veya index.html#tools'a gidebilir) -->
+                    <!-- Bu sayfa ISTQB aracının kendisi olduğu için, nav'daki Tools linkini ana sitedeki Tools listeleme sayfasına
+                         veya ana sayfadaki Tools bölümüne yönlendirmek daha mantıklı.
+                         Şimdilik ana sayfadaki Tools bölümüne yönlendirip aktif class'ı koruyoruz. -->
+                    <li><a href="../../../index.html#tools" class="nav-link active" data-translate="navTools">Tools</a></li>
+                    <li><a href="../../../index.html#contact" class="nav-link" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+             <div class="nav-controls">
+                 <!-- Tema ve Dil değiştirme butonları (ID'leri ana script.js tarafından dinlenecek) -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="language-toggle" class="lang-btn" aria-label="Change Language">
+                    TR
+                </button>
+            </div>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ana İçerik Alanı -->
+    <main>
+         <!-- Uygulama içeriğini kapsayacak bir section veya div -->
+         <!-- `.content-section` ve `.detail-page-container` sınıfları portfolyo CSS'inden geldi -->
+         <section class="content-section">
+              <div class="container">
+                   <div class="detail-page-container" id="istqb-app-container">
+                       <!-- ISTQB Uygulamasının Mevcut Body İçeriği Buraya Gelecek -->
+
+                       <div id="loading-indicator">
+                           <div class="bg-white dark:bg-gray-800 p-5 rounded-lg shadow-md flex items-center">
+                               <div class="spinner"></div>
+                               <!-- data-translate anahtarı translation.js'ten gelecek -->
+                               <span class="ml-3 text-sm font-medium text-gray-700 dark:text-gray-300" data-translate="loadingText">Sorular yükleniyor...</span>
+                           </div>
+                       </div>
+
+                       <div id="welcome-container" class="welcome-container">
+                             <div class="flex justify-between items-center mb-6">
+                                <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                <h1 class="text-3xl font-bold text-primary-light dark:text-primary-dark" data-translate="mainTitleNew">ISTQB® Temel Seviye Deneme Sınavı</h1>
+                                <!-- Tema ve dil butonları header'a taşındı, burası boş kalacak -->
+                                <div class="flex space-x-2">
+                                     <!-- Bu butonlar yukarıdaki header'a taşındı ve ortak ID'leri kullanıyor -->
+                                </div>
+                            </div>
+                            <!-- data-translate anahtarları translation.js'ten gelecek -->
+                            <div class="mb-8 text-gray-700 dark:text-gray-300">
+                                 <p class="text-lg text-left mb-6" data-translate="welcomeIntroNew">
+                                     Temel Seviye (v4.0) için kendinizi test etmenize yardımcı olacak bir deneme sınavı. Her sayfa yenilendiğinde, soru havuzundan bilişsel seviye (K-Level) ve chapter dağılımı dikkate alınarak yeni bir sınav oluşturulacaktır.
+                                 </p>
+                                 <div class="welcome-section">
+                                     <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                     <h3 data-translate="examInfoTitle"><i class="fas fa-info-circle mr-2"></i>Sınav Bilgileri</h3>
+                                      <ul class="list-none p-0">
+                                           <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                          <li class="flex items-center mb-2"><i class="fas fa-clock fa-fw"></i><span class="ml-2" data-translate="ruleDurationLabel">Süre:</span><strong class="ml-1">60 dakika</strong></li>
+                                           <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                          <li class="flex items-center mb-2"><i class="fas fa-list-ol fa-fw"></i><span class="ml-2" data-translate="ruleNumQuestionsLabel">Soru Sayısı:</span><strong class="ml-1">40</strong></li>
+                                           <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                          <li class="flex items-center"><i class="fas fa-percentage fa-fw"></i><span class="ml-2" data-translate="rulePassingLabel">Geçme Notu:</span><strong class="ml-1">%65 (26 doğru)</strong></li>
+                                      </ul>
+                                 </div>
+                                 <div class="welcome-section">
+                                      <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                     <h3 data-translate="importantNotesTitle"><i class="fas fa-exclamation-triangle mr-2"></i>Dikkat Edilmesi Gerekenler</h3>
+                                     <ul class="list-none p-0">
+                                          <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                         <li class="flex items-center mb-2"><i class="fas fa-hourglass-end fa-fw"></i><span class="ml-2" data-translate="noteTime">Süre dolduğunda sınav otomatik olarak sona erer.</span></li>
+                                          <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                         <li class="flex items-center mb-2"><i class="fas fa-flag fa-fw"></i><span class="ml-2" data-translate="noteReview">Emin olmadığınız soruları soru gezgininden takip edip sonra dönebilirsiniz.</span></li>
+                                          <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                         <li class="flex items-center"><i class="fas fa-book-open fa-fw"></i><span class="ml-2" data-translate="noteSyllabus">Başarılı olmak için Syllabus'u gözden geçirmeyi unutmayın.</span></li>
+                                     </ul>
+                                 </div>
+                                  <div class="welcome-section">
+                                      <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                     <h3 data-translate="officialLinksTitle"><i class="fas fa-link mr-2"></i>Resmi Web Siteleri</h3>
+                                     <ul class="list-none p-0 text-sm">
+                                         <li class="mb-2"><i class="fas fa-globe fa-fw"></i><a class="ml-2" href="https://www.turkishtestingboard.org/" target="_blank" rel="noopener noreferrer">Turkish Testing Board (TTB/ISTQB Türkiye)</a></li>
+                                          <li><i class="fas fa-globe fa-fw"></i><a class="ml-2" href="https://www.istqb.org/" target="_blank" rel="noopener noreferrer">International Software Testing Qualifications Board (ISTQB®)</a></li>
+                                     </ul>
+                                 </div>
+                             </div>
+                              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+                                   <!-- Buton stilleri ana CSS ile uyumlu hale getirildi -->
+                                   <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                  <button id="start-exam" class="btn btn-primary px-6 py-3 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                                      <i class="fas fa-play mr-2"></i> <span data-translate="startButton">Sınavı Başlat</span>
+                                  </button>
+                                   <!-- Buton stilleri ana CSS ile uyumlu hale getirildi -->
+                                   <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                  <!-- Syllabus yolları ayarlandı (pages/tools/istqb-mock-exam'den Syllabus_TR.pdf'e) -->
+                                  <a href="./Syllabus.pdf" target="_blank" id="download-syllabus-btn" class="btn btn-outline px-6 py-3 text-center">
+                                      <i class="fas fa-download mr-2"></i> <span data-translate="downloadButton">Syllabus (EN)</span>
+                                  </a>
+                                   <!-- Buton stilleri ana CSS ile uyumlu hale getirildi -->
+                                   <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                  <a href="./Syllabus_TR.pdf" target="_blank" id="download-syllabus-tr-btn" class="btn btn-outline px-6 py-3 text-center">
+                                      <i class="fas fa-download mr-2"></i> <span data-translate="downloadButtonTR">Syllabus (TR)</span>
+                                  </a>
+                              </div>
+                               <!-- data-translate anahtarı translation.js'ten gelecek -->
+                              <p id="welcome-error" class="text-red-500 dark:text-red-400 text-sm mt-4 hidden"></p>
+                       </div>
+
+                       <div id="exam-main-content">
+                           <header class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-6">
+                                <div class="flex justify-between items-center mb-4">
+                                   <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                   <h1 class="text-2xl font-bold text-primary-light dark:text-primary-dark" data-translate="examTitleHeader">ISTQB Temel Seviye Pratik Sınavı</h1>
+                                    <!-- Tema ve dil butonları header'a taşındı -->
+                                   <div class="flex space-x-2">
+                                        <!-- Bu butonlar yukarıdaki header'a taşındı -->
+                                   </div>
+                               </div>
+                                <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                <div class="flex justify-between items-center mt-4">
+                                   <div class="text-gray-600 dark:text-gray-300">
+                                       <span data-translate="questionLabel">Soru</span> <span id="current-question">1</span> / <span id="total-questions">40</span>
+                                   </div>
+                                   <div class="text-red-500 dark:text-red-400 font-bold" id="timer">60:00</div>
+                               </div>
+                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mt-2">
+                                    <div id="progress-bar" class="progress-bar bg-blue-600 dark:bg-blue-500 rounded-full" style="width: 0%"></div>
+                                </div>
+                           </header>
+                            <!-- Flex ve gap sınıfları burada tutuldu, ana CSS'te tanımlanmalı/uyarlanmalı -->
+                           <div class="flex flex-col md:flex-row gap-6">
+                               <div id="exam-container" class="flex-grow">
+                                   <div id="questions-wrapper"></div>
+                                    <!-- Buton stilleri ana CSS ile uyumlu hale getirildi -->
+                                    <!-- Fix 2: gap-4 sınıfı eklendi -->
+                                   <div class="flex justify-between items-center gap-4 mt-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4">
+                                        <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                        <button id="prev-btn" class="btn btn-outline px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                                            <i class="fas fa-arrow-left mr-2"></i><span data-translate="prevButton">Önceki</span>
+                                        </button>
+                                         <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                        <button id="finish-btn" class="btn btn-secondary px-4 py-2">
+                                            <i class="fas fa-flag-checkered mr-2"></i><span data-translate="finishButton">Sınavı Bitir</span>
+                                        </button>
+                                         <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                        <button id="next-btn" class="btn btn-primary px-4 py-2">
+                                            <span data-translate="nextButton">Sonraki</span><i class="fas fa-arrow-right ml-2"></i>
+                                        </button>
+                                   </div>
+                               </div>
+                                <!-- flex-shrink-0 vb. gibi layout sınıfları burada tutuldu, ana CSS'te tanımlanmalı/uyarlanmalı -->
+                                <!-- data-translate anahtarı translation.js'ten gelecek -->
+                               <div id="question-navigator-container" class="md:w-64 flex-shrink-0 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 order-first md:order-last">
+                                   <h3 class="text-md font-semibold mb-3 text-center text-gray-800 dark:text-gray-100" data-translate="navigatorTitle">Soru Gezgini</h3>
+                                    <!-- grid, gap, justify-center gibi sınıflar burada tutuldu, ana CSS'te tanımlanmalı/uyarlanmalı -->
+                                   <div id="question-navigator" class="grid grid-cols-6 gap-1 justify-center"></div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div id="result-container" class="result-container max-w-4xl mx-auto">
+                             <div class="flex justify-between items-center mb-6">
+                                <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100" data-translate="resultsTitle">Sınav Sonuçları</h2>
+                                 <!-- Tema butonu header'a taşındı -->
+                                 <div class="flex space-x-2">
+                                     <!-- Bu buton yukarıdaki header'a taşındı -->
+                                 </div>
+                            </div>
+                             <div class="flex justify-center mb-8">
+                                  <!-- Tailwind width/height, relative, top/left sınıfları burada tutuldu, ana CSS'te tanımlanmalı/uyarlanmalı -->
+                                  <div class="relative w-40 h-40">
+                                       <svg class="w-full h-full" viewBox="0 0 100 100">
+                                          <!-- Tailwind text-gray-200/700 sınıfları renk için, stroke-width/cap/color/fill/r/cx/cy/pathLength/stroke-dasharray/transform SVG özellikleri -->
+                                         <circle class="text-gray-200 dark:text-gray-700" stroke-width="10" stroke="currentColor" fill="transparent" r="40" cx="50" cy="50" />
+                                          <!-- Tailwind text-primary-light/dark sınıfları renk için -->
+                                          <circle id="score-circle" class="text-primary-light dark:text-primary-dark transition-all duration-1000 ease-out" stroke-width="10" stroke-linecap="round" stroke="currentColor" fill="transparent" r="40" cx="50" cy="50" pathLength="100" stroke-dasharray="0 100" transform="rotate(-90 50 50)" />
+                                      </svg>
+                                       <!-- Tailwind absolute, top/left, w/h-full, flex, flex-col, items/justify-center sınıfları burada tutuldu -->
+                                      <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+                                           <!-- Tailwind text-3xl, font-bold, text-gray-800/100 sınıfları burada tutuldu -->
+                                          <span id="score-percent" class="text-3xl font-bold text-gray-800 dark:text-gray-100">0%</span>
+                                           <!-- Tailwind text-sm sınıfları burada tutuldu -->
+                                           <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                          <span id="pass-fail" class="text-sm" data-translate="failed">Başarısız</span>
+                                      </div>
+                                  </div>
+                              </div>
+                               <!-- grid, grid-cols-2, gap sınıfları burada tutuldu -->
+                              <div class="grid grid-cols-2 gap-4 mb-6">
+                                   <!-- Renk, padding, border, rounded, text-center sınıfları burada tutuldu -->
+                                  <div class="bg-green-100 dark:bg-green-900/30 p-4 rounded-lg text-center border border-green-200 dark:border-green-800">
+                                       <!-- Tailwind text-2xl, font-bold, text-green sınıfları burada tutuldu -->
+                                      <div class="text-2xl font-bold text-green-700 dark:text-green-400" id="correct-count">0</div>
+                                       <!-- Tailwind text-green sınıfları burada tutuldu -->
+                                       <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                      <div class="text-green-600 dark:text-green-400" data-translate="correctLabel">Doğru</div>
+                                  </div>
+                                   <!-- Renk, padding, border, rounded, text-center sınıfları burada tutuldu -->
+                                  <div class="bg-red-100 dark:bg-red-900/30 p-4 rounded-lg text-center border border-red-200 dark:border-red-800">
+                                       <!-- Tailwind text-2xl, font-bold, text-red sınıfları burada tutuldu -->
+                                      <div class="text-2xl font-bold text-red-700 dark:text-red-400" id="incorrect-count">0</div>
+                                       <!-- Tailwind text-red sınıfları burada tutuldu -->
+                                       <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                      <div class="text-red-600 dark:text-red-400" data-translate="incorrectLabel">Yanlış</div>
+                                  </div>
+                              </div>
+
+                             <div class="mb-4 flex justify-center space-x-2">
+                                 <!-- Buton stilleri ana CSS ile uyumlu hale getirildi -->
+                                 <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                 <button class="filter-button btn btn-sm btn-outline active" data-filter="all" data-translate="filterAll">Tümü</button>
+                                 <button class="filter-button btn btn-sm btn-outline" data-filter="correct" data-translate="filterCorrect">Doğrular</button>
+                                 <button class="filter-button btn btn-sm btn-outline" data-filter="incorrect" data-translate="filterIncorrect">Yanlışlar</button>
+                             </div>
+                             <div class="mb-6">
+                                  <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                 <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100" data-translate="reviewTitle">Soru Değerlendirmesi</h3>
+                                 <!-- Tailwind border, pt sınıfları burada tutuldu -->
+                                 <div id="question-review" class="space-y-6 border-t border-gray-200 dark:border-gray-700 pt-4">
+                                     <!-- Review items JS tarafından oluşturulacak -->
+                                 </div>
+                             </div>
+                              <!-- Buton stilleri ana CSS ile uyumlu hale getirildi -->
+                              <div class="text-center flex justify-center gap-4 mt-8">
+                                   <!-- Anasayfa linki güncellendi -->
+                                   <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                   <button id="homepage-btn" class="btn btn-secondary px-6 py-2">
+                                      <i class="fas fa-home mr-2"></i><span data-translate="homepageButton">Anasayfa</span>
+                                  </button>
+                                   <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                  <button id="restart-btn" class="btn btn-primary px-6 py-2">
+                                      <i class="fas fa-redo mr-2"></i><span data-translate="restartButton">Tekrar Başla</span>
+                                  </button>
+                              </div>
+                       </div>
+
+                        <!-- Modal (Tailwind sınıfları burada tutuldu, ana CSS'te uyarlanmalı) -->
+                       <div id="confirm-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 px-4">
+                             <!-- Renk, rounded, padding, max-w, w-full, shadow sınıfları burada tutuldu -->
+                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 max-w-md w-full shadow-2xl">
+                                  <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                  <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-gray-100" data-translate="confirmTitle">Sınavı Bitir?</h3>
+                                   <!-- data-translate anahtarı translation.js'ten gelecek -->
+                                  <p class="mb-6 text-gray-600 dark:text-gray-300" data-translate="confirmMessage">Sınavı bitirmek istediğinizden emin misiniz? Gönderdikten sonra cevaplarınızı değiştirebilirsiniz.</p>
+                                   <!-- Flex, justify-end, space-x sınıfları burada tutuldu -->
+                                  <div class="flex justify-end space-x-3">
+                                       <!-- Buton stilleri ana CSS ile uyumlu hale getirildi -->
+                                       <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                      <button id="cancel-finish" class="btn btn-outline px-4 py-2" data-translate="cancelButton">İptal</button>
+                                      <button id="confirm-finish" class="btn btn-primary px-4 py-2" data-translate="confirmFinishButton">Sınavı Bitir</button>
+                                  </div>
+                             </div>
+                         </div>
+
+                   </div>
+               </div>
+         </section>
+    </main>
+
+    <!-- Portfolyo Footer (Ortak yapıdan) -->
+    <footer class="footer">
+        <div class="container">
+             <!-- Yeni Sorumluluk Reddi Beyanı -->
+             <!-- data-translate anahtarları translation.js'ten gelecek -->
+            <p class="footer-disclaimer" data-translate="footerDisclaimer">
+                Blog yazıları ve araçlarda sunulan bilgiler yalnızca bilgilendirme amaçlıdır ve hatalar içerebilir. Kullanım kendi sorumluluğunuzdadır. Herhangi bir sorumluluk kabul edilmez.
+            </p>
+             <!-- data-translate anahtarları translation.js'ten gelecek -->
+            <p>© <span id="current-year"></span> <span data-translate="footerText">Adınız Soyadınız. Tüm hakları saklıdır.</span></p>
+            <p class="footer-made-with">Minimalist theme inspired by simplicity.</p>
+             <!-- ISTQB index.html'den gelen footer linkleri kaldırıldı, ana footer'a taşınabilir veya kaldırılabilir -->
+             <!--
+             <div class="mt-2">
+                 <a href="https://www.linkedin.com/in/taygunkara/" target="_blank" rel="noopener noreferrer" class="text-xl text-gray-500 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark mx-2" title="Taygun Kara LinkedIn">
+                     <i class="fab fa-linkedin"></i>
+                 </a>
+                 <a href="https://github.com/taygunkara/" target="_blank" rel="noopener noreferrer" class="text-xl text-gray-500 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark mx-2" title="Taygun Kara GitHub">
+                     <i class="fab fa-github"></i>
+                 </a>
+             </div>
+             -->
+        </div>
+    </footer>
+
+
+    <!-- JS Dosyaları -->
+    <!-- Ana portfolyo translations.js ve script.js ilk yüklenecek -->
+    <!-- ISTQB sayfası pages/tools/istqb-mock-exam altında, src'ye 3 seviye yukarı -->
+    <script src="../../../js/translations.js" defer></script>
+    <script src="../../../js/script.js" defer></script>
+    <!-- ISTQB uygulamasına özel script en son yüklenecek -->
+    <!-- script.js dosyasının yolu, bulunduğu klasöre göre ayarlandı -->
+    <script src="./script.js" defer></script>
+
+</body>
+</html>

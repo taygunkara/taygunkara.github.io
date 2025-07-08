@@ -1,0 +1,147 @@
+[
+    {
+        "question": "SDLC, gereksinimler, testler, kusurlar ve konfigürasyon yönetimini kolaylaştırarak test süreç verimliliğini artırmaya yardımcı olan araçlar hangi kategoriye girer?",
+        "options": [
+            "A. Statik test araçları.",
+            "B. Test yürütme ve kapsama araçları.",
+            "C. Yönetim araçları.",
+            "D. Fonksiyonel olmayan test araçları."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 6.1, Yönetim araçlarının 'SDLC, gereksinimler, testler, kusurlar, konfigürasyon yönetimini kolaylaştırarak test süreç verimliliğini artırdığını' belirtir.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test uzmanı, kodun belirli standartlara uygunluğunu otomatik olarak kontrol etmek ve potansiyel hataları (örn. tanımlanmamış değişkenler) bulmak için bir araç kullanıyor. Bu araç hangi test aktivitesini destekler?",
+        "options": [
+            "A. Test Yönetimi.",
+            "B. Statik Test (Statik Analiz).",
+            "C. Test Tasarımı ve Uygulaması.",
+            "D. Fonksiyonel Olmayan Test."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 6.1, Statik test araçlarının 'test uzmanını gözden geçirmeleri ve statik analizi gerçekleştirmede desteklediğini' belirtir. Kod standartlarını kontrol etmek ve potansiyel kodlama hatalarını bulmak statik analizin tipik kullanım alanlarıdır.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Otomatik test yürütmeyi ve kod kapsamı gibi ölçümlerin toplanmasını kolaylaştıran araçlar hangi **İKİ** genel amaca hizmet eder?",
+        "options": [
+            "A. Test senaryosu oluşturmak.",
+            "B. Test yürütmeyi otomatikleştirmek.",
+            "C. Statik analizi desteklemek.",
+            "D. Kapsamı ölçmek.",
+            "E. Kusurları yönetmek."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Metin 6.1, 'Test yürütme ve kapsama araçları' kategorisini 'otomatik test yürütmeyi ve kapsama ölçümünü kolaylaştırır' şeklinde tanımlar.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Gözden geçirmeleri (reviews) ve statik analizi gerçekleştirmede test uzmanına destek olan araçlar hangi kategoriye girer?",
+        "options": [
+            "A. Yönetim araçları.",
+            "B. Test tasarımı ve uygulama araçları.",
+            "C. Statik test araçları.",
+            "D. DevOps araçları."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 6.1, Statik test araçlarının 'test uzmanını gözden geçirmeleri ve statik analizi gerçekleştirmede desteklediğini' belirtir.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test senaryolarının, test verilerinin ve test prosedürlerinin oluşturulmasını kolaylaştıran araçlar hangi amaca hizmet eder?",
+        "options": [
+            "A. Test sürecinin yönetimini otomatikleştirmek.",
+            "B. Fonksiyonel olmayan testleri gerçekleştirmek.",
+            "C. Test tasarımını ve uygulamasını desteklemek.",
+            "D. CI/CD boru hattını yönetmek."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 6.1, Test tasarımı ve uygulama araçlarının 'test senaryolarının, test verilerinin ve test prosedürlerinin oluşturulmasını kolaylaştırdığını' ifade eder.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Manuel olarak gerçekleştirilmesi zor veya imkansız olan performans veya güvenlik gibi testleri yapmak için kullanılan araçlar hangi kategoriye girer?",
+        "options": [
+            "A. Yönetim araçları.",
+            "B. Statik test araçları.",
+            "C. Test yürütme ve kapsama araçları.",
+            "D. Fonksiyonel olmayan test araçları."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Metin 6.1, Fonksiyonel olmayan test araçlarının 'test uzmanının manuel olarak gerçekleştirmesi zor veya imkansız olan fonksiyonel olmayan testleri yapmasına olanak tanıdığını' belirtir.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi test otomasyonu kullanmanın potansiyel bir faydasıdır?",
+        "options": [
+            "A. Aracın tanıtımı, bakımı ve eğitimi için gereken eforu tamamen ortadan kaldırmak.",
+            "B. Tekrarlayan manuel işleri (örn. regresyon testlerini çalıştırma) azaltarak zaman kazanmak.",
+            "C. Manuel testin daha uygun olduğu durumları ortadan kaldırmak.",
+            "D. Test uzmanlarının eleştirel düşünme ihtiyacını azaltmak."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 6.2, test otomasyonunun potansiyel faydaları arasında 'tekrarlayan manuel işleri azaltarak zaman tasarrufu (örn. regresyon testlerini çalıştırma, aynı test verilerini yeniden girme...)' maddesini listeler. Diğer seçenekler ya riskleri ya da yanlış beklentileri ifade eder.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Benefits - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Test otomasyonu, hangi yolla basit insan hatalarının önlenmesine yardımcı olabilir?",
+        "options": [
+            "A. Testleri her zaman farklı sıralarda ve farklı frekanslarda çalıştırarak.",
+            "B. Test uzmanlarının daha az dikkatli olmasına izin vererek.",
+            "C. Daha fazla tutarlılık ve tekrarlanabilirlik sağlayarak (örn. testlerin sistematik olarak türetilmesi, aynı sırada/frekansta yürütülmesi).",
+            "D. Tüm testleri otomatik olarak tasarlayarak."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 6.2'deki faydalardan biri 'daha fazla tutarlılık ve tekrarlanabilirlik yoluyla basit insan hatalarının önlenmesi (örn. testler gereksinimlerden tutarlı bir şekilde türetilir... testler bir araç tarafından aynı sırada aynı frekansta yürütülür)' şeklindedir.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Benefits - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi test otomasyonu kullanmanın potansiyel bir **riskidir**?",
+        "options": [
+            "A. Daha objektif değerlendirme (örn. kod kapsamı) sağlamak.",
+            "B. Test uzmanlarına yeni ve daha derin testler tasarlamak için daha fazla zaman tanımak.",
+            "C. Araç satıcısına bağımlılık (örn. satıcının iflas etmesi veya yetersiz destek sağlaması).",
+            "D. Daha hızlı geri bildirim ve pazara daha hızlı çıkış süresi sağlamak."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 6.2, test otomasyonu kullanmanın potansiyel riskleri arasında 'İşini bırakabilecek, aracı emekliye ayırabilecek... veya yetersiz destek sağlayabilecek araç satıcısına bağımlılık' maddesini listeler. Diğer seçenekler potansiyel faydalardır.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Risks - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, test otomasyonu araçlarını kullanırken karşılaşılabilecek potansiyel bir riski ifade eder?",
+        "options": [
+            "A. İnsanların türetmesi karmaşık olan ölçümler sağlamak.",
+            "B. Bir aracın faydaları (işlevsellik ve kullanım kolaylığı dahil) hakkında gerçekçi olmayan beklentiler.",
+            "C. Daha erken kusur tespiti.",
+            "D. Test yönetimi ve raporlamayı desteklemek için testle ilgili bilgilere daha kolay erişim."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 6.2'de listelenen risklerden biri 'Bir aracın faydaları hakkında gerçekçi olmayan beklentiler (işlevsellik ve kullanım kolaylığı dahil).' şeklindedir. Diğer seçenekler potansiyel faydalardır.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Risks - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Test otomasyonunun potansiyel **İKİ** faydası nedir? (İKİ SEÇENEK SEÇİN)",
+        "options": [
+            "A. İnsanların eleştirel düşünme ihtiyacını göz ardı etmek.",
+            "B. Daha objektif değerlendirme (örn. kapsama) sağlamak.",
+            "C. Aracı tanıtmak ve sürdürmek için gereken zaman ve maliyet tahminlerini yanlış yapmak.",
+            "D. Daha erken kusur tespiti ve daha hızlı geri bildirim sağlamak için test yürütme sürelerini azaltmak.",
+            "E. Manuel testin daha uygun olduğu durumlarda bile otomasyon aracı kullanmak."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Metin 6.2 faydaları listeler: 'Daha objektif değerlendirme (örn. kapsama)...' ve 'Daha erken kusur tespiti, daha hızlı geri bildirim ve pazara daha hızlı çıkış süresi sağlamak için azaltılmış test yürütme süreleri'. A, C ve E potansiyel riskleri ifade eder.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Benefits & Risks - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    }
+]

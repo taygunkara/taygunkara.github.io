@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "ch1_scope_glossary",
+    "english": "Scope",
+    "turkish": "Kapsam",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "The scope of testing defines what will be tested and what will not, including features and quality characteristics.",
+    "exampleSentenceTR": "Test kapsamı, özellikler ve kalite karakteristikleri dahil olmak üzere neyin test edileceğini ve neyin edilmeyeceğini tanımlar.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_debugging_glossary",
+    "english": "Debugging",
+    "turkish": "Hata Ayıklama",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Debugging is the process of finding, analyzing, and removing the causes of failures (defects) in software.",
+    "exampleSentenceTR": "Hata ayıklama, yazılımdaki başarısızlıkların (kusurların) nedenlerini bulma, analiz etme ve ortadan kaldırma sürecidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_defect_glossary",
+    "english": "Defect",
+    "turkish": "Hata (Kusur)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A defect is a flaw in a component or system that can cause it to fail to perform its required function.",
+    "exampleSentenceTR": "Bir kusur (hata), bir bileşenin veya sistemin gerekli işlevini yerine getirmesini engelleyebilecek bir bozukluktur.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_error_mistake_glossary",
+    "english": "Error (Mistake)",
+    "turkish": "Yanlışlık (İnsan Hatası)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "An error (mistake) is a human action that produces an incorrect result, potentially leading to a defect.",
+    "exampleSentenceTR": "Bir yanlışlık (insan hatası), potansiyel olarak bir kusura yol açabilen, yanlış bir sonuç üreten insan eylemidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_failure_glossary",
+    "english": "Failure",
+    "turkish": "Arıza (Başarısızlık)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A failure is the deviation of the component or system from its expected delivery, service or result.",
+    "exampleSentenceTR": "Bir arıza, bileşenin veya sistemin beklenen teslimat, hizmet veya sonucundan sapmasıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_quality_glossary",
+    "english": "Quality",
+    "turkish": "Kalite",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Quality is the degree to which a component, system or process meets specified requirements and/or user/customer needs and expectations.",
+    "exampleSentenceTR": "Kalite, bir bileşenin, sistemin veya sürecin belirtilen gereksinimleri ve/veya kullanıcı/müşteri ihtiyaç ve beklentilerini karşılama derecesidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_quality_assurance_glossary",
+    "english": "Quality Assurance (QA)",
+    "turkish": "Kalite Güvencesi (KG)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Quality Assurance is part of quality management focused on providing confidence that quality requirements will be fulfilled.",
+    "exampleSentenceTR": "Kalite Güvencesi, kalite gereksinimlerinin karşılanacağına dair güven sağlamaya odaklanan kalite yönetiminin bir parçasıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_root_cause_glossary",
+    "english": "Root Cause",
+    "turkish": "Kök Neden",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A root cause is an underlying cause of a defect, such that if it is removed, the occurrence of the defect type is decreased or removed.",
+    "exampleSentenceTR": "Kök neden, bir kusurun altında yatan, ortadan kaldırıldığında kusur türünün oluşumunun azaldığı veya ortadan kalktığı bir sebeptir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_analysis_glossary",
+    "english": "Test Analysis",
+    "turkish": "Test Analizi",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test analysis is the activity of identifying test conditions from the test basis.",
+    "exampleSentenceTR": "Test analizi, test temelinden test koşullarını belirleme faaliyetidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_basis_glossary",
+    "english": "Test Basis",
+    "turkish": "Test Esası (Test Temeli)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "The test basis is all documents from which the requirements of a component or system can be inferred.",
+    "exampleSentenceTR": "Test temeli, bir bileşenin veya sistemin gereksinimlerinin çıkarılabileceği tüm dokümanlardır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_case_glossary",
+    "english": "Test Case",
+    "turkish": "Test Senaryosu",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A test case is a set of preconditions, inputs, actions, expected results and postconditions, developed to a specific objective or test condition.",
+    "exampleSentenceTR": "Bir test senaryosu, belirli bir hedef veya test koşuluna yönelik olarak geliştirilmiş bir dizi önkoşul, girdi, eylem, beklenen sonuç ve sonkoşuldur.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_completion_glossary",
+    "english": "Test Completion",
+    "turkish": "Test Tamamlama",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test completion is an activity that makes testware available for later use and communicates the results of testing.",
+    "exampleSentenceTR": "Test tamamlama, test yazılımlarını daha sonraki kullanımlar için hazır hale getiren ve test sonuçlarını ileten bir faaliyettir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_condition_glossary",
+    "english": "Test Condition",
+    "turkish": "Test Koşulu",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A test condition is an item or event of a component or system that could be verified by one or more test cases.",
+    "exampleSentenceTR": "Bir test koşulu, bir veya daha fazla test senaryosu ile doğrulanabilecek bir bileşen veya sistemin bir öğesi veya olayıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_control_glossary",
+    "english": "Test Control",
+    "turkish": "Test Kontrolü",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test control is a test management task that applies corrective actions when a test project deviates from what was planned.",
+    "exampleSentenceTR": "Test kontrolü, bir test projesi planlanandan saptığında düzeltici eylemler uygulayan bir test yönetimi görevidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_data_glossary",
+    "english": "Test Data",
+    "turkish": "Test Verisi",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test data is data that exists before a test is executed and that affects or is affected by the component or system under test.",
+    "exampleSentenceTR": "Test verisi, bir test yürütülmeden önce var olan ve test edilen bileşeni veya sistemi etkileyen ya da ondan etkilenen verilerdir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_design_glossary",
+    "english": "Test Design",
+    "turkish": "Test Tasarımı",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test design is the activity of deriving and specifying test cases from test conditions.",
+    "exampleSentenceTR": "Test tasarımı, test koşullarından test senaryoları türetme ve belirtme faaliyetidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_execution_glossary",
+    "english": "Test Execution",
+    "turkish": "Test Koşumu (Test Yürütme)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test execution is the process of running a test on the component or system under test, producing actual result(s).",
+    "exampleSentenceTR": "Test yürütme, test edilen bileşen veya sistem üzerinde bir test çalıştırma ve gerçek sonuç(lar) üretme sürecidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_implementation_glossary",
+    "english": "Test Implementation",
+    "turkish": "Test Uyarlama (Test Uygulaması)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test implementation is the activity that prepares the testware needed for test execution based on test analysis and design.",
+    "exampleSentenceTR": "Test uyarlama, test analizi ve tasarımına dayalı olarak test yürütme için gereken test yazılımlarını hazırlama faaliyetidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_monitoring_glossary",
+    "english": "Test Monitoring",
+    "turkish": "Test Gözetimi (Test İzleme)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test monitoring involves the on-going checking of all test activities and comparing actual progress against the plan.",
+    "exampleSentenceTR": "Test izleme, tüm test faaliyetlerinin sürekli kontrolünü ve fiili ilerlemenin plana göre karşılaştırılmasını içerir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_object_glossary",
+    "english": "Test Object (Test Item)",
+    "turkish": "Test Nesnesi (Test Öğesi)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "The test object is the component or system to be tested.",
+    "exampleSentenceTR": "Test nesnesi, test edilecek bileşen veya sistemdir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_objective_glossary",
+    "english": "Test Objective",
+    "turkish": "Test Hedefi",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A test objective is a reason or purpose for designing and executing a test.",
+    "exampleSentenceTR": "Bir test hedefi, bir testi tasarlamak ve yürütmek için bir neden veya amaçtır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_planning_glossary",
+    "english": "Test Planning",
+    "turkish": "Test Planlama",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test planning is the activity of establishing or updating a test plan.",
+    "exampleSentenceTR": "Test planlama, bir test planı oluşturma veya güncelleme faaliyetidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_procedure_glossary",
+    "english": "Test Procedure (Test Script)",
+    "turkish": "Test Prosedürü (Test Betiği)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A test procedure is a sequence of actions for the execution of a test, often documented.",
+    "exampleSentenceTR": "Bir test prosedürü, bir testin yürütülmesi için genellikle belgelenmiş bir eylem dizisidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_result_glossary",
+    "english": "Test Result",
+    "turkish": "Test Sonucu",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A test result is the consequence or outcome of the execution of a test.",
+    "exampleSentenceTR": "Bir test sonucu, bir testin yürütülmesinin sonucu veya çıktısıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_testware_glossary",
+    "english": "Testware",
+    "turkish": "Test Çalışma Ürünleri (Test Yazılımı)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Testware refers to all artifacts produced during the test process required to plan, design, and execute tests.",
+    "exampleSentenceTR": "Test çalışma ürünleri, testleri planlamak, tasarlamak ve yürütmek için test süreci boyunca üretilen tüm eserleri ifade eder.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_verification_glossary",
+    "english": "Verification",
+    "turkish": "Doğrulama",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Verification is confirmation by examination and provision of objective evidence that specified requirements have been fulfilled.",
+    "exampleSentenceTR": "Doğrulama, belirtilen gereksinimlerin karşılandığına dair inceleme ve nesnel kanıt sunma yoluyla yapılan teyittir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_validation_glossary",
+    "english": "Validation",
+    "turkish": "Geçerleme (Sağlama)",
+    "source": "Chapter 1 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Validation is confirmation by examination and objective evidence that the requirements for a specific intended use have been fulfilled.",
+    "exampleSentenceTR": "Geçerleme, belirli bir amaçlanan kullanım için gereksinimlerin karşılandığına dair inceleme ve nesnel kanıtla yapılan teyittir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_stakeholder_glossary",
+    "english": "Stakeholder",
+    "turkish": "Paydaş",
+    "source": "Chapter 1 Text / ISTQB Glossary",
+    "exampleSentenceEN": "A stakeholder is an individual or group having an interest in a component or system.",
+    "exampleSentenceTR": "Paydaş, bir bileşen veya sistemde çıkarı olan bir birey veya gruptur.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_quality_control_glossary",
+    "english": "Quality Control (QC)",
+    "turkish": "Kalite Kontrol (KK)",
+    "source": "Chapter 1 Text / ISTQB Glossary",
+    "exampleSentenceEN": "Quality control is a part of quality management focused on fulfilling quality requirements, including test activities.",
+    "exampleSentenceTR": "Kalite Kontrol, test faaliyetleri dahil olmak üzere kalite gereksinimlerini karşılamaya odaklanan kalite yönetiminin bir parçasıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_testing_principles_glossary",
+    "english": "Testing Principles",
+    "turkish": "Test Prensipleri",
+    "source": "Chapter 1 Text",
+    "exampleSentenceEN": "The seven testing principles provide general guidelines that are applicable to all testing.",
+    "exampleSentenceTR": "Yedi test prensibi, tüm testler için geçerli olan genel yönergeler sunar.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_exhaustive_testing_glossary",
+    "english": "Exhaustive Testing",
+    "turkish": "Kapsamlı (Tükenene Kadar) Test",
+    "source": "Chapter 1 Text (Principle 2) / ISTQB Glossary",
+    "exampleSentenceEN": "Exhaustive testing, i.e., testing all combinations of inputs and preconditions, is impossible except for trivial cases.",
+    "exampleSentenceTR": "Kapsamlı test, yani tüm girdi ve önkoşul kombinasyonlarının test edilmesi, önemsiz durumlar dışında imkansızdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_early_testing_glossary",
+    "english": "Early Testing",
+    "turkish": "Erken Test",
+    "source": "Chapter 1 Text (Principle 3) / ISTQB Glossary",
+    "exampleSentenceEN": "The principle of early testing states that to find defects early, both static and dynamic testing should be started as early as possible.",
+    "exampleSentenceTR": "Erken test prensibi, kusurları erken bulmak için hem statik hem de dinamik testin mümkün olduğunca erken başlatılması gerektiğini belirtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_defects_cluster_glossary",
+    "english": "Defects Cluster Together",
+    "turkish": "Hatalar Kümelenir",
+    "source": "Chapter 1 Text (Principle 4)",
+    "exampleSentenceEN": "The 'defects cluster together' principle indicates that a small number of system components usually contain most of the defects.",
+    "exampleSentenceTR": "'Hatalar kümelenir' prensibi, genellikle az sayıda sistem bileşeninin kusurların çoğunu içerdiğini gösterir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_pesticide_paradox_glossary",
+    "english": "Pesticide Paradox (Tests Wear Out)",
+    "turkish": "Pestisit Paradoksu (Testler Eskir)",
+    "source": "Chapter 1 Text (Principle 5) / ISTQB Glossary",
+    "exampleSentenceEN": "The pesticide paradox means that if the same tests are repeated many times, they become less effective at detecting new defects.",
+    "exampleSentenceTR": "Pestisit paradoksu, aynı testler birçok kez tekrarlanırsa, yeni kusurları tespit etmede daha az etkili hale geldikleri anlamına gelir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_context_dependent_glossary",
+    "english": "Testing is Context Dependent",
+    "turkish": "Test Bağlama Bağlıdır",
+    "source": "Chapter 1 Text (Principle 6)",
+    "exampleSentenceEN": "'Testing is context dependent' means there is no single universally applicable approach to testing; it is done differently in different contexts.",
+    "exampleSentenceTR": "'Test bağlama bağlıdır' prensibi, test için evrensel olarak uygulanabilir tek bir yaklaşım olmadığı, testin farklı bağlamlarda farklı şekillerde yapıldığı anlamına gelir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_absence_of_errors_fallacy_glossary",
+    "english": "Absence-of-Defects Fallacy",
+    "turkish": "Kusurların Yokluğu Yanılgısı",
+    "source": "Chapter 1 Text (Principle 7)",
+    "exampleSentenceEN": "The 'absence-of-defects fallacy' is the misconception that if all specified requirements are tested and all defects fixed, the system is successful.",
+    "exampleSentenceTR": "'Kusurların yokluğu yanılgısı', tüm belirtilen gereksinimler test edilir ve tüm kusurlar düzeltilirse sistemin başarılı olacağı yanılgısıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_process_glossary",
+    "english": "Test Process",
+    "turkish": "Test Süreci",
+    "source": "Chapter 1 Text / ISTQB Glossary",
+    "exampleSentenceEN": "The fundamental test process comprises test planning, monitoring and control, analysis, design, implementation, execution, and completion.",
+    "exampleSentenceTR": "Temel test süreci, test planlama, izleme ve kontrol, analiz, tasarım, uyarlama, yürütme ve tamamlamayı içerir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_traceability_glossary",
+    "english": "Traceability",
+    "turkish": "İzlenebilirlik",
+    "source": "Chapter 1 Text / ISTQB Glossary",
+    "exampleSentenceEN": "Traceability is the ability to identify related items in documentation and software, such as requirements with associated tests.",
+    "exampleSentenceTR": "İzlenebilirlik, gereksinimler ve ilişkili testler gibi dokümantasyon ve yazılımdaki ilgili öğeleri tanımlama yeteneğidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_test_management_role_glossary",
+    "english": "Test Management Role",
+    "turkish": "Test Yönetimi Rolü",
+    "source": "Chapter 1 Text",
+    "exampleSentenceEN": "The test management role is mainly focused on test planning, monitoring, control, and completion activities.",
+    "exampleSentenceTR": "Test yönetimi rolü temel olarak test planlama, izleme, kontrol ve tamamlama faaliyetlerine odaklanır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_testing_role_glossary",
+    "english": "Testing Role",
+    "turkish": "Test Etme Rolü (Test Uzmanı Rolü)",
+    "source": "Chapter 1 Text",
+    "exampleSentenceEN": "The testing role is mainly focused on test analysis, design, implementation, and execution.",
+    "exampleSentenceTR": "Test etme rolü temel olarak test analizi, tasarımı, uygulaması ve yürütülmesine odaklanır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_skill_glossary",
+    "english": "Skill (Testing Skill)",
+    "turkish": "Beceri (Test Becerisi)",
+    "source": "Chapter 1 Text",
+    "exampleSentenceEN": "Generic skills for testers include thoroughness, analytical thinking, and good communication.",
+    "exampleSentenceTR": "Test uzmanları için genel beceriler arasında titizlik, analitik düşünme ve iyi iletişim bulunur.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_whole_team_approach_glossary",
+    "english": "Whole Team Approach",
+    "turkish": "Bütün Ekip Yaklaşımı",
+    "source": "Chapter 1 Text",
+    "exampleSentenceEN": "In the whole team approach, quality is the responsibility of everyone in the team, not just the testers.",
+    "exampleSentenceTR": "Bütün ekip yaklaşımında kalite, sadece test uzmanlarının değil, ekipteki herkesin sorumluluğundadır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch1_independence_of_testing_glossary",
+    "english": "Independence of Testing",
+    "turkish": "Testin Bağımsızlığı",
+    "source": "Chapter 1 Text / ISTQB Glossary",
+    "exampleSentenceEN": "Independence of testing encourages objective testing and can lead to finding more defects due to different perspectives.",
+    "exampleSentenceTR": "Testin bağımsızlığı, nesnel testi teşvik eder ve farklı bakış açıları nedeniyle daha fazla kusurun bulunmasına yol açabilir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter1"
+  },
+  {
+    "id": "ch2_acceptance_testing_glossary",
+    "english": "Acceptance Testing",
+    "turkish": "Kabul Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Acceptance testing is formal testing with respect to user needs, requirements, and business processes to determine whether a system satisfies the acceptance criteria.",
+    "exampleSentenceTR": "Kabul testi, bir sistemin kabul kriterlerini karşılayıp karşılamadığını belirlemek için kullanıcı ihtiyaçları, gereksinimleri ve iş süreçlerine göre yapılan resmi testtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_black_box_testing_glossary",
+    "english": "Black-box Testing",
+    "turkish": "Kara Kutu Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Black-box testing is testing, either functional or non-functional, without reference to the internal structure of the component or system.",
+    "exampleSentenceTR": "Kara kutu testi, bileşenin veya sistemin iç yapısına başvurmadan yapılan fonksiyonel veya fonksiyonel olmayan testtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_component_integration_testing_glossary",
+    "english": "Component Integration Testing",
+    "turkish": "Bileşen Entegrasyon Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Component integration testing focuses on testing the interfaces and interactions between components after component testing.",
+    "exampleSentenceTR": "Bileşen entegrasyon testi, bileşen testinden sonra bileşenler arasındaki arayüzleri ve etkileşimleri test etmeye odaklanır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_component_testing_glossary",
+    "english": "Component Testing (Unit Testing)",
+    "turkish": "Bileşen Testi (Birim Testi)",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Component testing, also known as unit testing, focuses on testing components in isolation.",
+    "exampleSentenceTR": "Bileşen testi, birim testi olarak da bilinir, bileşenleri izole bir şekilde test etmeye odaklanır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_confirmation_testing_glossary",
+    "english": "Confirmation Testing (Re-testing)",
+    "turkish": "Onaylama Testi (Yeniden Test Etme)",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Confirmation testing (re-testing) is testing that runs test cases that failed the last time they were run, in order to verify the success of corrective actions.",
+    "exampleSentenceTR": "Onaylama testi (yeniden test etme), düzeltici eylemlerin başarısını doğrulamak amacıyla, en son çalıştırıldıklarında başarısız olan test senaryolarını çalıştıran testtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_functional_testing_glossary",
+    "english": "Functional Testing",
+    "turkish": "Fonksiyonel Test",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Functional testing evaluates the functions that a component or system should perform ('what' the system does).",
+    "exampleSentenceTR": "Fonksiyonel test, bir bileşenin veya sistemin gerçekleştirmesi gereken fonksiyonları (sistemin 'ne' yaptığını) değerlendirir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_integration_testing_glossary",
+    "english": "Integration Testing",
+    "turkish": "Entegrasyon Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Integration testing is testing performed to expose defects in the interfaces and in the interactions between integrated components or systems.",
+    "exampleSentenceTR": "Entegrasyon testi, entegre edilmiş bileşenler veya sistemler arasındaki arayüzlerdeki ve etkileşimlerdeki kusurları ortaya çıkarmak için yapılan testtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_maintenance_testing_glossary",
+    "english": "Maintenance Testing",
+    "turkish": "Bakım Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Maintenance testing is testing the changes to an operational system or the impact of a changed environment to an operational system.",
+    "exampleSentenceTR": "Bakım testi, çalışan bir sistemdeki değişiklikleri veya değişen bir ortamın çalışan bir sistem üzerindeki etkisini test etmektir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_non_functional_testing_glossary",
+    "english": "Non-functional Testing",
+    "turkish": "Fonksiyonel Olmayan Test",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Non-functional testing is testing to determine 'how well' the system behaves, e.g., performance, usability.",
+    "exampleSentenceTR": "Fonksiyonel olmayan test, sistemin 'ne kadar iyi' davrandığını (örn. performans, kullanılabilirlik) belirlemek için yapılan testtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_regression_testing_glossary",
+    "english": "Regression Testing",
+    "turkish": "Regresyon Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Regression testing is testing of a previously tested program following modification to ensure that defects have not been introduced or uncovered in unchanged areas.",
+    "exampleSentenceTR": "Regresyon testi, değiştirilmemiş alanlarda kusurların oluşmadığından veya ortaya çıkmadığından emin olmak için, değişiklik sonrası önceden test edilmiş bir programın test edilmesidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_shift_left_glossary",
+    "english": "Shift-Left Approach",
+    "turkish": "Sola Kaydırma Yaklaşımı",
+    "source": "Chapter 2 Keywords / Text",
+    "exampleSentenceEN": "Shift-left is an approach where testing is performed earlier in the software development lifecycle than it might otherwise occur.",
+    "exampleSentenceTR": "Sola kaydırma, testin yazılım geliştirme yaşam döngüsünde normalde olacağından daha erken gerçekleştirildiği bir yaklaşımdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_system_integration_testing_glossary",
+    "english": "System Integration Testing",
+    "turkish": "Sistem Entegrasyon Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "System integration testing focuses on testing the interfaces of the system under test with other systems and external services.",
+    "exampleSentenceTR": "Sistem entegrasyon testi, test edilen sistemin arayüzlerini diğer sistemler ve harici servislerle test etmeye odaklanır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_system_testing_glossary",
+    "english": "System Testing",
+    "turkish": "Sistem Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "System testing is testing an integrated system to verify that it meets specified requirements.",
+    "exampleSentenceTR": "Sistem testi, entegre bir sistemin belirtilen gereksinimleri karşıladığını doğrulamak için yapılan testtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_white_box_testing_glossary",
+    "english": "White-box Testing",
+    "turkish": "Beyaz Kutu Testi",
+    "source": "Chapter 2 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "White-box testing is testing based on an analysis of the internal structure of the component or system.",
+    "exampleSentenceTR": "Beyaz kutu testi, bileşenin veya sistemin iç yapısının analizine dayanan testtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_sdlc_glossary",
+    "english": "Software Development Lifecycle (SDLC)",
+    "turkish": "Yazılım Geliştirme Yaşam Döngüsü (YGYD)",
+    "source": "Chapter 2 Text / ISTQB Glossary",
+    "exampleSentenceEN": "An SDLC model defines how different development phases and activities relate to each other.",
+    "exampleSentenceTR": "Bir YGYD modeli, farklı geliştirme aşamalarının ve faaliyetlerinin birbirleriyle nasıl ilişkili olduğunu tanımlar.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_tdd_glossary",
+    "english": "Test-Driven Development (TDD)",
+    "turkish": "Test Güdümlü Geliştirme (TDD)",
+    "source": "Chapter 2 Text / ISTQB Glossary",
+    "exampleSentenceEN": "In TDD, tests are written first, then code is written to satisfy the tests, and then the tests and code are refactored.",
+    "exampleSentenceTR": "TDD'de önce testler yazılır, sonra testleri karşılamak için kod yazılır ve ardından testler ve kod yeniden düzenlenir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_devops_glossary",
+    "english": "DevOps",
+    "turkish": "DevOps",
+    "source": "Chapter 2 Text / ISTQB Glossary",
+    "exampleSentenceEN": "DevOps requires a cultural shift to bridge the gaps between development (including testing) and operations.",
+    "exampleSentenceTR": "DevOps, geliştirme (test dahil) ve operasyonlar arasındaki boşlukları kapatmak için kültürel bir değişim gerektirir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_ci_glossary",
+    "english": "Continuous Integration (CI)",
+    "turkish": "Sürekli Entegrasyon (SE)",
+    "source": "Chapter 2 Text / ISTQB Glossary",
+    "exampleSentenceEN": "CI promotes a shift-left approach in testing by encouraging developers to submit high quality code accompanied by component tests.",
+    "exampleSentenceTR": "SE, geliştiricileri bileşen testleriyle birlikte yüksek kaliteli kod göndermeye teşvik ederek testte sola kaydırma yaklaşımını destekler.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_cd_glossary",
+    "english": "Continuous Delivery/Deployment (CD)",
+    "turkish": "Sürekli Teslimat/Dağıtım (ST/SD)",
+    "source": "Chapter 2 Text / ISTQB Glossary",
+    "exampleSentenceEN": "CD enables teams to build, test, and release high-quality code faster through a DevOps delivery pipeline.",
+    "exampleSentenceTR": "ST/SD, ekiplerin bir DevOps teslimat hattı aracılığıyla daha hızlı yüksek kaliteli kod oluşturmasını, test etmesini ve yayınlamasını sağlar.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch2_retrospective_glossary",
+    "english": "Retrospective",
+    "turkish": "Retrospektif (Geriye Dönük Değerlendirme)",
+    "source": "Chapter 2 Text / ISTQB Glossary",
+    "exampleSentenceEN": "Retrospectives are often held at the end of an iteration to discuss what was successful and what could be improved.",
+    "exampleSentenceTR": "Retrospektifler, neyin başarılı olduğunu ve neyin iyileştirilebileceğini tartışmak üzere genellikle bir iterasyonun sonunda yapılır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter2"
+  },
+  {
+    "id": "ch3_anomaly_glossary",
+    "english": "Anomaly",
+    "turkish": "Anomali",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "An anomaly is any condition that deviates from expectation, often found during reviews or testing.",
+    "exampleSentenceTR": "Anomali, genellikle gözden geçirme veya test sırasında bulunan, beklentiden sapan herhangi bir durumdur.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_dynamic_testing_glossary",
+    "english": "Dynamic Testing",
+    "turkish": "Dinamik Test",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Dynamic testing involves the execution of the software of a component or system to observe its behavior.",
+    "exampleSentenceTR": "Dinamik test, davranışını gözlemlemek için bir bileşenin veya sistemin yazılımının çalıştırılmasını içerir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_formal_review_glossary",
+    "english": "Formal Review",
+    "turkish": "Resmi Gözden Geçirme",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A formal review, such as an inspection, follows a defined process with documented outputs and entry/exit criteria.",
+    "exampleSentenceTR": "Denetim gibi resmi bir gözden geçirme, belgelenmiş çıktılar ve giriş/çıkış kriterleri ile tanımlanmış bir süreci izler.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_informal_review_glossary",
+    "english": "Informal Review",
+    "turkish": "Gayri Resmi Gözden Geçirme",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "An informal review does not follow a defined process and does not require a formal documented output.",
+    "exampleSentenceTR": "Gayri resmi bir gözden geçirme tanımlanmış bir süreci izlemez ve resmi belgelenmiş bir çıktı gerektirmez.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_inspection_glossary",
+    "english": "Inspection",
+    "turkish": "Teftiş (Denetim)",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "An inspection is the most formal review type, with the main objective to find the maximum number of anomalies.",
+    "exampleSentenceTR": "Denetim, ana amacı maksimum sayıda anormallik bulmak olan en resmi gözden geçirme türüdür.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_review_glossary",
+    "english": "Review",
+    "turkish": "Gözden Geçirme",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A review is a static testing technique where a work product is evaluated by individuals to detect issues.",
+    "exampleSentenceTR": "Gözden geçirme, bir iş ürününün sorunları tespit etmek amacıyla bireyler tarafından değerlendirildiği bir statik test tekniğidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_static_analysis_glossary",
+    "english": "Static Analysis",
+    "turkish": "Statik Analiz",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Static analysis evaluates a component or system without executing it, often using tools.",
+    "exampleSentenceTR": "Statik analiz, bir bileşeni veya sistemi genellikle araçlar kullanarak çalıştırmadan değerlendirir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_static_testing_glossary",
+    "english": "Static Testing",
+    "turkish": "Statik Test",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Static testing is testing of a work product (e.g., code, requirements) without executing it.",
+    "exampleSentenceTR": "Statik test, bir iş ürününün (örn. kod, gereksinimler) çalıştırılmadan test edilmesidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_technical_review_glossary",
+    "english": "Technical Review",
+    "turkish": "Teknik Gözden Geçirme",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A technical review is performed by technically qualified reviewers, led by a moderator, to gain consensus on a technical problem.",
+    "exampleSentenceTR": "Teknik bir gözden geçirme, teknik bir sorun üzerinde fikir birliği sağlamak amacıyla, teknik olarak kalifiye gözden geçirenler tarafından, bir moderatör liderliğinde yapılır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_walkthrough_glossary",
+    "english": "Walkthrough",
+    "turkish": "Üzerinden Geçme (Gözden Geçirme)",
+    "source": "Chapter 3 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A walkthrough is a review led by the author of the work product to gather information and establish a common understanding.",
+    "exampleSentenceTR": "Üzerinden geçme, bilgi toplamak ve ortak bir anlayış oluşturmak amacıyla iş ürününün yazarı tarafından yönetilen bir gözden geçirmedir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_work_product_glossary",
+    "english": "Work Product",
+    "turkish": "Çalışma Ürünü (İş Ürünü)",
+    "source": "Chapter 3 Text / ISTQB Glossary",
+    "exampleSentenceEN": "A work product is any artifact produced during the software development lifecycle, such as a document or code.",
+    "exampleSentenceTR": "Bir çalışma ürünü, doküman veya kod gibi yazılım geliştirme yaşam döngüsü sırasında üretilen herhangi bir eserdir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_definition_of_ready_glossary",
+    "english": "Definition of Ready (DoR)",
+    "turkish": "Hazır Tanımı (DoR)",
+    "source": "Chapter 3 Text",
+    "exampleSentenceEN": "The Definition of Ready outlines criteria that a user story must meet before development or testing can begin.",
+    "exampleSentenceTR": "Hazır Tanımı, bir kullanıcı hikayesinin geliştirme veya test faaliyetleri başlayabilmesi için karşılaması gereken kriterleri belirtir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch3_review_process_glossary",
+    "english": "Review Process",
+    "turkish": "Gözden Geçirme Süreci",
+    "source": "Chapter 3 Text",
+    "exampleSentenceEN": "The review process includes planning, initiation, individual review, communication/analysis, and fixing/reporting activities.",
+    "exampleSentenceTR": "Gözden geçirme süreci; planlama, başlatma, bireysel gözden geçirme, iletişim/analiz ve düzeltme/raporlama faaliyetlerini içerir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter3"
+  },
+  {
+    "id": "ch4_acceptance_criteria_glossary",
+    "english": "Acceptance Criteria",
+    "turkish": "Kabul Kriterleri",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Acceptance criteria are the exit criteria that a component or system must satisfy to be accepted by a user, customer, or other authorized entity.",
+    "exampleSentenceTR": "Kabul kriterleri, bir bileşenin veya sistemin bir kullanıcı, müşteri veya diğer yetkili birim tarafından kabul edilmesi için karşılaması gereken çıkış kriterleridir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_atdd_glossary",
+    "english": "Acceptance Test-Driven Development (ATDD)",
+    "turkish": "Kabul Testi Güdümlü Geliştirme (ATDD)",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "ATDD is a collaborative test-first approach where team members create test cases from acceptance criteria before implementing the user story.",
+    "exampleSentenceTR": "ATDD, ekip üyelerinin kullanıcı hikayesini uygulamadan önce kabul kriterlerinden test senaryoları oluşturduğu işbirlikçi bir önce-test-et yaklaşımıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_black_box_test_technique_glossary",
+    "english": "Black-box Test Technique",
+    "turkish": "Kara Kutu Test Tekniği",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A black-box test technique is a procedure to derive and/or select test cases based on an analysis of the specification of a component or system without reference to its internal structure.",
+    "exampleSentenceTR": "Kara kutu test tekniği, bir bileşenin veya sistemin iç yapısına başvurmadan belirtiminin analizine dayalı olarak test senaryoları türetme ve/veya seçme prosedürüdür.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_boundary_value_analysis_glossary",
+    "english": "Boundary Value Analysis (BVA)",
+    "turkish": "Sınır Değer Analizi (SDA)",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "BVA is a black-box test design technique in which test cases are designed based on boundary values of equivalence partitions.",
+    "exampleSentenceTR": "SDA, test senaryolarının eşdeğerlik bölümlerinin sınır değerlerine göre tasarlandığı bir kara kutu test tasarım tekniğidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_branch_coverage_glossary",
+    "english": "Branch Coverage",
+    "turkish": "Dal Kapsamı",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Branch coverage is the percentage of branches in a control flow graph that have been exercised by a test suite.",
+    "exampleSentenceTR": "Dal kapsamı, bir kontrol akış grafiğindeki bir test takımı tarafından çalıştırılan dalların yüzdesidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_checklist_based_testing_glossary",
+    "english": "Checklist-Based Testing",
+    "turkish": "Kontrol Listesine Dayalı Test Etme",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Checklist-based testing is an experience-based technique where a tester uses a high-level list of items to check against a product.",
+    "exampleSentenceTR": "Kontrol listesine dayalı test, bir test uzmanının bir ürüne karşı kontrol etmek için üst düzey bir öğe listesi kullandığı deneyim tabanlı bir tekniktir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_coverage_glossary",
+    "english": "Coverage (Test Coverage)",
+    "turkish": "Kapsam (Test Kapsamı)",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test coverage is the degree, expressed as a percentage, to which a specified coverage item has been exercised by a test suite.",
+    "exampleSentenceTR": "Test kapsamı, belirtilen bir kapsama öğesinin bir test takımı tarafından çalıştırılma derecesidir ve yüzde olarak ifade edilir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_decision_table_testing_glossary",
+    "english": "Decision Table Testing",
+    "turkish": "Karar Tablosu Testi",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Decision table testing is a black-box technique in which test cases are designed to execute combinations of inputs shown in a decision table.",
+    "exampleSentenceTR": "Karar tablosu testi, test senaryolarının bir karar tablosunda gösterilen girdi kombinasyonlarını yürütmek üzere tasarlandığı bir kara kutu tekniğidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_equivalence_partitioning_glossary",
+    "english": "Equivalence Partitioning (EP)",
+    "turkish": "Denklik Paylarına Ayırma (DPA)",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "EP is a black-box technique that divides an input or output domain into partitions from which test cases can be derived.",
+    "exampleSentenceTR": "DPA, bir girdi veya çıktı alanını test senaryolarının türetilebileceği bölümlere ayıran bir kara kutu tekniğidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_error_guessing_glossary",
+    "english": "Error Guessing",
+    "turkish": "Hata Tahminleme",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Error guessing is an experience-based test design technique where the tester uses knowledge to anticipate potential defects.",
+    "exampleSentenceTR": "Hata tahminleme, test uzmanının potansiyel kusurları tahmin etmek için bilgisini kullandığı deneyim tabanlı bir test tasarım tekniğidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_exploratory_testing_glossary",
+    "english": "Exploratory Testing",
+    "turkish": "Keşif Testi",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "In exploratory testing, the tester actively controls the design of tests as those tests are performed and uses information gained while testing to design new tests.",
+    "exampleSentenceTR": "Keşif testinde, test uzmanı testler gerçekleştirilirken testlerin tasarımını aktif olarak kontrol eder ve yeni testler tasarlamak için test sırasında elde edilen bilgiyi kullanır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_state_transition_testing_glossary",
+    "english": "State Transition Testing",
+    "turkish": "Durum Geçişi Testi",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "State transition testing is a black-box technique in which test cases are designed to execute valid and invalid state transitions.",
+    "exampleSentenceTR": "Durum geçişi testi, test senaryolarının geçerli ve geçersiz durum geçişlerini yürütmek üzere tasarlandığı bir kara kutu tekniğidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_statement_coverage_glossary",
+    "english": "Statement Coverage",
+    "turkish": "Deyim (Komut) Kapsamı",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Statement coverage is the percentage of executable statements in the source code that have been exercised by a test suite.",
+    "exampleSentenceTR": "Deyim kapsamı, kaynak koddaki bir test takımı tarafından çalıştırılan yürütülebilir deyimlerin yüzdesidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch4_white_box_test_technique_glossary",
+    "english": "White-box Test Technique",
+    "turkish": "Beyaz Kutu Test Tekniği",
+    "source": "Chapter 4 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A white-box test technique is a procedure to derive and/or select test cases based on an analysis of the internal structure of a component or system.",
+    "exampleSentenceTR": "Beyaz kutu test tekniği, bir bileşenin veya sistemin iç yapısının analizine dayalı olarak test senaryoları türetme ve/veya seçme prosedürüdür.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter4"
+  },
+  {
+    "id": "ch5_defect_management_glossary",
+    "english": "Defect Management",
+    "turkish": "Kusur (Hata) Yönetimi",
+    "source": "Chapter 5 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Defect management is the process of recognizing, investigating, taking action and disposing of defects.",
+    "exampleSentenceTR": "Kusur yönetimi, kusurları tanıma, araştırma, eyleme geçme ve bertaraf etme sürecidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch5_entry_criteria_glossary",
+    "english": "Entry Criteria",
+    "turkish": "Giriş Kriterleri",
+    "source": "Chapter 5 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Entry criteria define the preconditions for undertaking a given activity, e.g., a test phase.",
+    "exampleSentenceTR": "Giriş kriterleri, bir test aşaması gibi belirli bir faaliyete başlamak için önkoşulları tanımlar.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch5_exit_criteria_glossary",
+    "english": "Exit Criteria (Definition of Done)",
+    "turkish": "Çıkış Kriterleri (Tamamlandı Tanımı)",
+    "source": "Chapter 5 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Exit criteria (often called Definition of Done in Agile) define what must be achieved to declare an activity completed.",
+    "exampleSentenceTR": "Çıkış kriterleri (Çevik metodolojilerde genellikle Tamamlandı Tanımı olarak adlandırılır), bir faaliyeti tamamlanmış ilan etmek için neyin başarılması gerektiğini tanımlar.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch5_product_risk_glossary",
+    "english": "Product Risk",
+    "turkish": "Ürün Riski",
+    "source": "Chapter 5 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Product risks are risks directly related to the test object, such as a failure of a required function.",
+    "exampleSentenceTR": "Ürün riskleri, gerekli bir fonksiyonun başarısızlığı gibi doğrudan test nesnesiyle ilgili risklerdir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch5_project_risk_glossary",
+    "english": "Project Risk",
+    "turkish": "Proje Riski",
+    "source": "Chapter 5 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Project risks are risks related to the management and control of the (test) project, e.g., lack of staffing or strict deadlines.",
+    "exampleSentenceTR": "Proje riskleri, personel eksikliği veya katı teslim tarihleri gibi (test) projesinin yönetimi ve kontrolü ile ilgili risklerdir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch5_risk_glossary",
+    "english": "Risk",
+    "turkish": "Risk",
+    "source": "Chapter 5 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Risk is a factor that could result in future negative consequences; usually expressed as impact and likelihood.",
+    "exampleSentenceTR": "Risk, gelecekte olumsuz sonuçlara yol açabilecek bir faktördür; genellikle etki ve olasılık olarak ifade edilir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch5_test_plan_glossary",
+    "english": "Test Plan",
+    "turkish": "Test Planı",
+    "source": "Chapter 5 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "A test plan is a document describing the scope, approach, resources, and schedule of intended test activities.",
+    "exampleSentenceTR": "Bir test planı, amaçlanan test faaliyetlerinin kapsamını, yaklaşımını, kaynaklarını ve programını açıklayan bir belgedir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch5_test_pyramid_glossary",
+    "english": "Test Pyramid",
+    "turkish": "Test Piramidi",
+    "source": "Chapter 5 Keywords",
+    "exampleSentenceEN": "The test pyramid is a model showing that different types of tests should have different granularity and volume.",
+    "exampleSentenceTR": "Test piramidi, farklı test türlerinin farklı ayrıntı düzeylerine ve hacimlerine sahip olması gerektiğini gösteren bir modeldir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch5_testing_quadrants_glossary",
+    "english": "Testing Quadrants",
+    "turkish": "Test Çeyrekleri",
+    "source": "Chapter 5 Keywords",
+    "exampleSentenceEN": "The testing quadrants model groups test types based on whether they are business or technology facing, and whether they support the team or critique the product.",
+    "exampleSentenceTR": "Test çeyrekleri modeli, test türlerini iş veya teknoloji odaklı olmalarına ve ekibi desteklemelerine veya ürünü eleştirmelerine göre gruplandırır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter5"
+  },
+  {
+    "id": "ch6_test_automation_glossary",
+    "english": "Test Automation",
+    "turkish": "Test Otomasyonu",
+    "source": "Chapter 6 Keywords / ISTQB Glossary",
+    "exampleSentenceEN": "Test automation is the use of software to perform or support test activities, such as test execution, test data generation, and results analysis.",
+    "exampleSentenceTR": "Test otomasyonu, test yürütme, test verisi oluşturma ve sonuç analizi gibi test faaliyetlerini gerçekleştirmek veya desteklemek için yazılım kullanımıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter6"
+  },
+  {
+    "id": "ch6_test_tool_glossary",
+    "english": "Test Tool",
+    "turkish": "Test Aracı",
+    "source": "Chapter 6 Text / ISTQB Glossary",
+    "exampleSentenceEN": "A test tool is a software product that supports one or more test activities, such as test management, design, execution or analysis.",
+    "exampleSentenceTR": "Bir test aracı, test yönetimi, tasarımı, yürütülmesi veya analizi gibi bir veya daha fazla test faaliyetini destekleyen bir yazılım ürünüdür.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "chapter6"
+  },
+  {
+    "id": "glossary_audit_general",
+    "english": "Audit",
+    "turkish": "Denetim",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "An audit is an independent evaluation of software products or processes to ascertain compliance to standards or guidelines.",
+    "exampleSentenceTR": "Denetim, standartlara veya yönergelere uygunluğu saptamak için yazılım ürünlerinin veya süreçlerinin bağımsız bir değerlendirmesidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_baseline_general",
+    "english": "Baseline",
+    "turkish": "Temel Çizgi",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "A baseline is a specification or product that has been formally reviewed and agreed upon, and thereafter serves as the basis for further development.",
+    "exampleSentenceTR": "Temel çizgi, resmi olarak gözden geçirilmiş ve üzerinde anlaşmaya varılmış, daha sonraki geliştirme için temel teşkil eden bir belirtim veya üründür.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_coverage_general",
+    "english": "Coverage (Test Coverage)",
+    "turkish": "Kapsam (Test Kapsamı)",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "Coverage is the degree, expressed as a percentage, to which specified coverage items have been exercised by a test suite.",
+    "exampleSentenceTR": "Kapsam, belirtilen kapsama öğelerinin bir test takımı tarafından çalıştırılma derecesidir ve yüzde olarak ifade edilir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_requirement_general",
+    "english": "Requirement",
+    "turkish": "Gereksinim",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "A requirement is a condition or capability needed by a user to solve a problem or achieve an objective that must be met by a system.",
+    "exampleSentenceTR": "Gereksinim, bir kullanıcının bir sorunu çözmesi veya bir hedefi başarması için bir sistem tarafından karşılanması gereken bir koşul veya yetenektir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_usability_general",
+    "english": "Usability",
+    "turkish": "Kullanılabilirlik",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "Usability is the capability of the software product to be understood, learned, used and attractive to the user when used under specified conditions.",
+    "exampleSentenceTR": "Kullanılabilirlik, yazılım ürününün belirtilen koşullar altında kullanıldığında kullanıcı için anlaşılır, öğrenilebilir, kullanılabilir ve çekici olma yeteneğidir.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_test_oracle_general",
+    "english": "Test Oracle",
+    "turkish": "Test Sonucunu Bilen (Test Kahini)",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "A test oracle is a source to determine expected results to compare with the actual result of the software under test.",
+    "exampleSentenceTR": "Bir test kahini, test edilen yazılımın gerçek sonucuyla karşılaştırmak üzere beklenen sonuçları belirlemek için bir kaynaktır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_test_environment_general",
+    "english": "Test Environment",
+    "turkish": "Test Ortamı",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "The test environment consists of hardware, software, and other support elements needed to conduct a test.",
+    "exampleSentenceTR": "Test ortamı, bir testi yürütmek için gereken donanım, yazılım ve diğer destekleyici unsurlardan oluşur.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_test_harness_general",
+    "english": "Test Harness",
+    "turkish": "Test Kuluçkası",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "A test harness is a test environment comprised of stubs and drivers needed to execute a test.",
+    "exampleSentenceTR": "Bir test kuluçkası, bir testi yürütmek için gereken stub ve driver'lardan oluşan bir test ortamıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_stub_general",
+    "english": "Stub",
+    "turkish": "Stub (Taklit Uygulama - Çağrılan)",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "A stub is a skeletal or special-purpose implementation of a software component, used to develop or test a component that calls it.",
+    "exampleSentenceTR": "Bir stub, kendisini çağıran bir bileşeni geliştirmek veya test etmek için kullanılan, bir yazılım bileşeninin iskelet veya özel amaçlı bir uygulamasıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  },
+  {
+    "id": "glossary_driver_general",
+    "english": "Driver (Test Driver)",
+    "turkish": "Driver (Test Sürücüsü - Çağıran)",
+    "source": "ISTQB Glossary",
+    "exampleSentenceEN": "A driver is a software component or test tool that replaces a component that takes care of the control and/or the calling of a component or system.",
+    "exampleSentenceTR": "Bir driver, bir bileşenin veya sistemin kontrolünü ve/veya çağrılmasını üstlenen bir bileşenin yerini alan bir yazılım bileşeni veya test aracıdır.",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "general_terms"
+  }
+]

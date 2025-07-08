@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="pageTitle">Taygun Kara - Test Otomasyon Mühendisi Portfolyosu</title>
+    <!-- CSS yolu güncellendi -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-logo" data-translate="navLogo">Taygun Kara</a>
+            <nav>
+                <ul class="nav-menu">
+                    <!-- ANASAYFA NAVİGASYON LİNKLERİ: KENDİ SECTİON'LARINA YÖNLENDİRİLDİ -->
+                    <li><a href="#home" class="nav-link active" data-translate="navHome">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-translate="navAbout">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-translate="navSkills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-translate="navProjects">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" data-translate="navExperience">Experience</a></li>
+                    <li><a href="#education" class="nav-link" data-translate="navEducation">Education</a></li>
+                    <!-- Blog ve Tools linkleri, ana sayfadayken kendi section'larına yönlendirildi -->
+                    <li><a href="#blog" class="nav-link" data-translate="navBlog">Blog</a></li>
+                    <li><a href="#tools" class="nav-link" data-translate="navTools">Tools</a></li>
+                    <li><a href="#contact" class="nav-link" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="language-toggle" class="lang-btn" aria-label="Change Language">
+                    TR
+                </button>
+            </div>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Home Section -->
+        <section id="home" class="hero">
+             <div class="container hero-content">
+                 <!-- Görsel yolu güncellendi -->
+                 <img src="assets/images/profile.jpg" alt="Profil Fotoğrafı" class="profile-pic">
+                 <h1 data-translate="homeTitle">Merhaba, Ben Taygun Kara</h1>
+                 <p class="subtitle" data-translate="homeSubtitle">Test Otomasyon Mühendisi</p>
+                 <p class="description" data-translate="homeDescription">Yazılım kalitesini otomasyonun gücü ve titiz bir yaklaşımla artırmaya odaklanmış bir Test Mühendisiyim. Detaylara verdiğim önemle, kullanıcı deneyimini merkezine alan, verimli ve sürdürülebilir test çözümleri geliştiriyorum.</p>
+                 <!-- Projelerim linki ana sayfadaki projeler bölümüne gidiyor -->
+                 <a href="#projects" class="btn btn-primary" data-translate="homeViewProjects">Projelerimi Gör</a>
+             </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="content-section">
+             <div class="container">
+                 <h2 data-translate="aboutTitle">Hakkımda</h2>
+                 <div class="section-content-box">
+                     <div class="about-content">
+                         <div class="about-text">
+                             <p data-translate="aboutText1">Mekatronik mühendisliği altyapımı yazılım test mühendisliği tutkumla birleştiren, ISTQB sertifikalı bir profesyonelim. E-ticaret girişimciliğinden edindiğim deneyimle, kurucu ortağı olduğum startup ve yönettiğim B2B/B2C projelerde test süreçlerinin kurulumu ve otomasyonu konusunda uzmanlaştım. Java, Selenium, Rest Assured ile uçtan uca test otomasyon framework’leri geliştiriyor; POM yapısıyla sürdürülebilir altyapılar kuruyorum.</p>
+                             <p data-translate="aboutText2"> GitHub’da bağımsız projeler geliştiriyor, blog yazıyor ve ISTQB & TTB müfredat gözden geçirme ekiplerinde yer alıyorum. Amacım, kullanıcı odaklı ve güvenilir test çözümleriyle yazılım kalitesini en üst seviyeye taşımak.</p>
+                             <div class="cv-download">
+                                 <h3 data-translate="cvDownloadTitle">Özgeçmişim</h3>
+                                 <!-- CV yolu güncellendi -->
+                                 <a href="assets/cv/TaygunKara_CV_TR.pdf" download class="btn btn-secondary" data-translate="cvDownloadTR"><i class="fas fa-download"></i> CV İndir (TR)</a>
+                                 <!-- CV yolu güncellendi -->
+                                 <a href="assets/cv/TaygunKara_CV_EN.pdf" download class="btn btn-secondary" data-translate="cvDownloadEN"><i class="fas fa-download"></i> Download CV (EN)</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="content-section bg-alternate">
+             <div class="container">
+                 <h2 data-translate="skillsTitle"><i class="fas fa-shapes"></i> Yeteneklerim & <span data-translate="skillsAbilities">Becerilerim</span></h2>
+                 <div class="skills-grid-icons" id="skillsContainer">
+                      <div class="skill-item"> <i class="fab fa-java skill-icon java"></i> <span class="skill-name">Java</span> </div>
+                      <div class="skill-item"> <i class="fab fa-python skill-icon python"></i> <span class="skill-name">Python</span> </div>
+                      <div class="skill-item"> <i class="fab fa-js-square skill-icon js"></i> <span class="skill-name">JavaScript</span> </div>
+                      <div class="skill-item"> <i class="fas fa-vial skill-icon selenium"></i> <span class="skill-name">Selenium WebDriver</span> </div>
+                      <div class="skill-item"> <i class="fas fa-code-branch skill-icon cypress"></i> <span class="skill-name">Cypress</span> </div>
+                      <div class="skill-item"> <i class="fas fa-cloud skill-icon rest"></i> <span class="skill-name">RestAssured</span> </div>
+                      <div class="skill-item"> <i class="fas fa-plug skill-icon api"></i> <span class="skill-name">API Testing</span> </div>
+                      <div class="skill-item"> <i class="fab fa-git-alt skill-icon git"></i> <span class="skill-name">Git</span> </div>
+                      <div class="skill-item"> <i class="fab fa-github skill-icon github"></i> <span class="skill-name">GitHub/GitLab</span> </div>
+                      <div class="skill-item"> <i class="fab fa-jenkins skill-icon jenkins"></i> <span class="skill-name">Jenkins</span> </div>
+                      <div class="skill-item"> <i class="fab fa-docker skill-icon docker"></i> <span class="skill-name">Docker</span> </div>
+                      <div class="skill-item"> <i class="fas fa-cogs skill-icon maven"></i> <span class="skill-name">Maven/Gradle</span> </div>
+                      <div class="skill-item"> <i class="fas fa-database skill-icon sql"></i> <span class="skill-name">SQL</span> </div>
+                      <div class="skill-item"> <i class="fab fa-jira skill-icon jira"></i> <span class="skill-name">Jira</span> </div>
+                      <div class="skill-item"> <i class="fas fa-clipboard-list skill-icon testing"></i> <span class="skill-name">TestNG / JUnit</span> </div>
+                      <div class="skill-item"> <i class="fas fa-tasks skill-icon bdd"></i> <span class="skill-name">BDD (Cucumber)</span> </div>
+                      <div class="skill-item"> <i class="fas fa-sitemap skill-icon pom"></i> <span class="skill-name">POM</span> </div>
+                      <div class="skill-item"> <i class="fas fa-users skill-icon agile"></i> <span class="skill-name">Agile/Scrum</span> </div>
+                      <div class="skill-item"> <i class="fas fa-rocket skill-icon ci-cd"></i> <span class="skill-name">CI/CD</span> </div>
+                      <div class="skill-item"> <i class="fas fa-certificate skill-icon istqb"></i> <span class="skill-name">ISTQB Principles</span> </div>
+                 </div>
+             </div>
+        </section>
+
+         <!-- 4. Projects Section -->
+         <section id="projects" class="content-section">
+             <div class="container">
+                 <h2 data-translate="projectsTitle">Öne Çıkan Projelerim</h2>
+                 <div class="section-content-box">
+                     <div class="card-grid project-grid">
+                         
+                         <!-- Proje 1: Restful-Booker -->
+                         <div class="card project-card">
+                             <img src="assets/images/projects-restfull-booker.jpg" alt="Restful-Booker API Automation Thumbnail" class="card-image">
+                             <div class="card-content">
+                                 <h3 data-translate="projectCardRestAssuredTitle">Restful-Booker API Automation</h3>
+                                 <p data-translate="projectCardRestAssuredDesc">Rest Assured ile bakımı kolay ve ölçeklenebilir bir API test altyapısının nasıl kurulacağına dair, temiz mimari ve güvenilirliğe odaklanan bir vaka analizi.</p>
+                                 <div class="card-buttons">
+                                     <a href="pages/projects/rest-assured-api-framework-projesi.html" class="btn btn-sm btn-outline" data-translate="projectCardDetails">Detaylar <i class="fas fa-arrow-right"></i></a>
+                                     <a href="https://github.com/taygunkara/rest-assured-restful-booker-tests" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary icon-only" aria-label="GitHub" data-translate-title="projectGitHub"><i class="fab fa-github"></i></a>
+                                 </div>
+                             </div>
+                         </div>
+                         
+                         <!-- Proje 2: Spotify -->
+                         <div class="card project-card">
+                             <img src="assets/images/projects-spotify.jpg" alt="Spotify API Automation Thumbnail" class="card-image">
+                              <div class="card-content">
+                                 <h3 data-translate="projectCardSpotifyTitle">Spotify API Test Automation Framework</h3>
+                                 <p data-translate="projectCardSpotifyDesc">Bir test çerçevesinin ilk koddan olgun, modüler ve güvenilir bir yapıya evrimini gösteren bir proje.</p>
+                                 <div class="card-buttons">
+                                     <a href="pages/projects/spotify-api-test-projesi.html" class="btn btn-sm btn-outline" data-translate="projectCardDetails">Detaylar <i class="fas fa-arrow-right"></i></a>
+                                     <a href="https://github.com/taygunkara/spotify-rest-assured" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary icon-only" aria-label="GitHub" data-translate-title="projectGitHub"><i class="fab fa-github"></i></a>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <!-- Proje 3: Selenium Qacart Todo -->
+                         <div class="card project-card">
+                              <img src="assets/images/projects-qacart.jpg" alt="Selenium Qacart Todo Thumbnail" class="card-image">
+                              <div class="card-content">
+                                 <h3 data-translate="projectCardSeleniumTitle">Selenium Qacart Todo</h3>
+                                 <p data-translate="projectCardSeleniumDesc">Selenium (UI) ve API testlerini birleştiren, flaky test sorununu çözen ve test hızını dramatik şekilde artıran hibrit test altyapısı.</p>
+                                 <div class="card-buttons">
+                                     <a href="pages/projects/selenium-qacart-todo-projesi.html" class="btn btn-sm btn-outline" data-translate="projectCardDetails">Detaylar <i class="fas fa-arrow-right"></i></a>
+                                     <a href="https://github.com/taygunkara/selenium-qacart-todo" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary icon-only" aria-label="GitHub" data-translate-title="projectGitHub"><i class="fab fa-github"></i></a>
+                                 </div>
+                             </div>
+                         </div>
+
+                     </div>
+                     <div class="see-all-link">
+                         <!-- Tüm Projeler sayfasına giden link güncellendi -->
+                         <a href="pages/projects.html" class="btn btn-outline" data-translate="projectsSeeAll">Tüm Projeleri Gör <i class="fas fa-chevron-right"></i></a>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+        <!-- 5. Experience Section -->
+        <section id="experience" class="content-section bg-alternate">
+            <div class="container">
+                <h2 data-translate="experienceTitle">Deneyim</h2>
+                 <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 data-translate="expJob1Title">Bağımsız Yazılım Test Mühendisi</h3>
+                            <p class="timeline-details"><span data-translate="expJob1Company">Profesyonel Gelişim ve Bağımsız Çalışmalar</span> | <span data-translate="expJob1Location">Uzaktan / İstanbul</span> | <span data-translate="expJob1Dates">Haziran 2024 - Halen</span></p>
+                            <ul data-translate="expJob1Resp"></ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 data-translate="expJob2Title">Yazılım Test Mühendisi</h3>
+                            <p class="timeline-details"><span data-translate="expJob2Company">Çağdaş Otomat (Su Armatürleri E-Ticaret)</span> | <span data-translate="expJob2Location">İstanbul</span> | <span data-translate="expJob2Dates">Aralık 2023 - Haziran 2024</span></p>
+                            <ul data-translate="expJob2Resp"></ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 data-translate="expJob3Title">Kurucu Ortak & Yazılım Test Mühendisi</h3>
+                            <p class="timeline-details"><span data-translate="expJob3Company">Şen Otonom Elektrik Enerji (E-Ticaret Pazaryeri)</span> | <span data-translate="expJob3Location">Kırklareli</span> | <span data-translate="expJob3Dates">Eylül 2020 - Ocak 2023</span></p>
+                            <ul data-translate="expJob3Resp"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Education Section -->
+        <section id="education" class="content-section">
+             <div class="container">
+                 <h2 data-translate="educationTitle">Eğitim & Sertifikalar</h2>
+                 <div class="section-content-box">
+                     <div class="timeline education-timeline">
+                         <div class="timeline-item">
+                              <div class="timeline-content">
+                                 <h3 data-translate="educationUni">Doğu Akdeniz Üniversitesi, Kıbrıs</h3>
+                                 <p class="timeline-details"><span data-translate="educationDegree">Mekatronik Mühendisliği Lisans</span>, 2012 - 2019</p>
+                                 <p data-translate="educationUniDesc">Temel mühendislik derslerini ve disiplinler arası projeleri tamamladım; programlama ve sistemler konusunda temel bilgi kazandım.</p>
+                             </div>
+                         </div>
+                         <div class="timeline-item">
+                              <div class="timeline-content">
+                                 <h3 data-translate="educationCert1">ISTQB Foundation Level (Turkish Testing Board)</h3>
+                                 <p class="timeline-details" data-translate="educationCertDate">2023</p>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- YENİ EKLENEN BUTON -->
+                     <div class="see-all-link">
+                         <a href="pages/sertifikalar.html" class="btn btn-outline" data-translate="educationSeeAll">Tüm Sertifikaları Gör <i class="fas fa-chevron-right"></i></a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- 7. Blog Section -->
+        <section id="blog" class="content-section bg-alternate">
+             <div class="container">
+                 <h2 data-translate="blogTitle">Son Yazılarım</h2>
+                 <div class="card-grid blog-grid">
+                     <!-- YENİ BLOG YAZISI (Örnek olarak ilk sıraya eklendi) -->
+                     <div class="card blog-card">
+                          <!-- Görsel yolu güncellendi -->
+                          <img src="assets/images/veri-yonetim-blog.jpg" alt="Test Verisi Yönetimi Blog Yazısı Thumbnail" class="card-image">
+                          <div class="card-content">
+                             <h3>Test Projelerinde Veri Yönetimi</h3>
+                             <p>Test otomasyon projelerinde kritik rol oynayan veri yönetimi stratejileri ve deneyimlerim...</p>
+                             <!-- Blog detay linki güncellendi -->
+                             <a href="pages/blog/test-verisi-yonetimi.html" class="btn btn-sm btn-outline" data-translate="blogReadMore">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                         </div>
+                     </div>
+                     <div class="card blog-card">
+                          <!-- Görsel yolu güncellendi -->
+                          <img src="assets/images/test-projelerinde-config.jpg" alt="Test Konfigürasyon Yönetimi Blog Yazısı Thumbnail" class="card-image">
+                          <div class="card-content">
+                             <h3>Test Otomasyonunda Konfigürasyon Yönetimi</h3>
+                             <p>Test Otomasyonunda Konfigürasyon Yönetimi: Ortam Bağımlılıklarını ve Kırılganlığı Azaltmak</p>
+                             <!-- Blog detay linki güncellendi -->
+                             <a href="pages/blog/test-konfigurasyon.html" class="btn btn-sm btn-outline" data-translate="blogReadMore">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                         </div>
+                     </div>
+                     <div class="card blog-card">
+                         <img src="assets/images/api-schema.jpg" alt="API Test Otomasyonunda Şema Validasyonu Blog Yazısı Thumbnail" class="card-image">
+                          <div class="card-content">
+                             <h3>API Test Otomasyonunda Şema Validasyonu</h3>
+                             <p>API Test Otomasyonunda Şema Validasyonu: Sadece Durum Kodlarına Güvenmeyin!</p>
+                            <a href="pages/blog/api-test-schema.html" class="btn btn-sm btn-outline" data-translate="blogReadMore">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                 </div>
+                  <div class="see-all-link">
+                     <!-- Tüm Yazılar sayfasına giden link güncellendi -->
+                     <a href="pages/blog.html" class="btn btn-outline" data-translate="blogSeeAll">Tüm Yazıları Gör <i class="fas fa-chevron-right"></i></a>
+                 </div>
+             </div>
+        </section>
+
+        <!-- 8. Tools Section -->
+        <section id="tools" class="content-section">
+             <div class="container">
+                 <h2 data-translate="toolsTitle">Araçlar</h2>
+                  <p class="section-intro" data-translate="toolsIntro">Yazılım testi topluluğuna katkıda bulunmak amacıyla geliştirdiğim bazı araçlar:</p>
+                 <div class="section-content-box">
+                     <div class="card-grid tools-grid">
+                         <!-- Araç 1: ISTQB Mock Exam (Link güncellendi) -->
+                         <div class="card tool-card">
+                              <!-- Görsel yolu güncellendi -->
+                              <img src="assets/images/tool-istqb-mock-exam.jpg" alt="ISTQB Mock Exam Tool" class="card-image">
+                              <div class="card-content">
+                                 <h3 data-translate="toolMockExamTitle">ISTQB Deneme Sınavı</h3>
+                                 <p data-translate="toolMockExamDesc">ISTQB FL sınavına web üzerinden hazırlanmak için bir web uygulaması.</p>
+                                 <!-- Araç linki güncellendi -->
+                                 <a href="pages/tools/istqb-mock-exam/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" data-translate="toolAccess">Uygulamayı Aç <i class="fas fa-external-link-alt"></i></a>
+                             </div>
+                         </div>
+                         <!-- Araç 2: Flashcard Glossary (Link güncellendi) -->
+                         <div class="card tool-card">
+                             <!-- Görsel yolu güncellendi -->
+                             <img src="assets/images/tool-fl-flashcard.jpg" alt="ISTQB Flashcard Tool" class="card-image">
+                              <div class="card-content">
+                                 <h3 data-translate="toolFlashcardTitle">ISTQB Flashcard (TR/EN)</h3>
+                                 <p data-translate="toolFlashcardDesc">ISTQB terimlerini TR/EN karşılıklarıyla öğrenmek için...</p>
+                                 <!-- Araç linki güncellendi -->
+                                 <a href="pages/tools/flashcard-glossary/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" data-translate="toolAccess">Uygulamayı Aç <i class="fas fa-external-link-alt"></i></a>
+                             </div>
+                         </div>
+                           <!-- Araç 3: Flashcard Definitions (Link güncellendi) -->
+                           <div class="card tool-card">
+                               <!-- Görsel yolu güncellendi -->
+                               <img src="assets/images/tool-istqb-flashcard.jpg" alt="ISTQB Flashcard Definitions Tool Thumbnail" class="card-image">
+                                <div class="card-content">
+                                   <h3 data-translate="toolFlashcardDefinitionsTitle">ISTQB Glossary Flashcards</h3>
+                                   <p data-translate="toolFlashcardDefinitionsDesc">ISTQB Glossary Flashcards</p>
+                                   <!-- Araç linki güncellendi -->
+                                   <a href="pages/tools/flashcard-definitions/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" data-translate="toolAccess">Uygulamayı Aç <i class="fas fa-external-link-alt"></i></a>
+                               </div>
+                           </div>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- 9. Contact Section -->
+        <section id="contact" class="content-section bg-alternate">
+             <div class="container">
+                 <h2 data-translate="contactTitle">İletişime Geçin</h2>
+                 <p class="section-intro" data-translate="contactText">Projelerinizde yardımcı olabilirim veya sadece test otomasyonu hakkında sohbet etmek isterseniz, aşağıdaki kanallardan bana ulaşabilirsiniz.</p>
+                 <div class="contact-links">
+                     <a href="mailto:kara.taygun@gmail.com" class="contact-link email">
+                         <i class="fas fa-envelope"></i> <span data-translate="contactEmail">E-posta Gönder</span>
+                     </a>
+                     <a href="https://www.linkedin.com/in/taygunkara/" target="_blank" rel="noopener noreferrer" class="contact-link linkedin">
+                         <i class="fab fa-linkedin"></i> <span data-translate="contactLinkedIn">LinkedIn</span>
+                     </a>
+                     <a href="https://github.com/taygunkara" target="_blank" rel="noopener noreferrer" class="contact-link github">
+                         <i class="fab fa-github"></i> <span data-translate="contactGitHub">GitHub</span>
+                     </a>
+                 </div>
+             </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Yeni Sorumluluk Reddi Beyanı -->
+            <p class="footer-disclaimer" data-translate="footerDisclaimer">
+                Blog yazıları ve araçlarda sunulan bilgiler yalnızca bilgilendirme amaçlıdır ve hatalar içerebilir. Kullanım kendi sorumluluğunuzdadır. Herhangi bir sorumluluk kabul edilmez.
+            </p>
+            <p>© <span id="current-year"></span> <span data-translate="navLogo">Taygun Kara</span>. <span data-translate="footerText">Tüm hakları saklıdır.</span></p>
+        </div>
+    </footer>
+
+    <!-- JS Dosyaları (defer ile) -->
+    <script src="js/translations.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

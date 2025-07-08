@@ -1,0 +1,772 @@
+[
+    {
+        "question": "Which TWO of the following are **valid** test objectives for software testing?",
+        "options": [
+            "A. Proving that there are no defects left in the software.",
+            "B. Building confidence in the quality of the test object.",
+            "C. Measuring the efficiency of the development team.",
+            "D. Verifying whether specified requirements have been fulfilled."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 1.1.1 lists 'Building confidence...' and 'Verifying whether specified requirements have been fulfilled' as typical test objectives. Proving the absence of defects is not the goal of testing (Principle 1). Measuring developer efficiency is not a direct test objective.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following is a typical test objective?",
+        "options": [
+            "A. Finding defects and triggering failures.",
+            "B. Testing all possible inputs and preconditions.",
+            "C. Proving that there are no defects left in the test object.",
+            "D. Measuring the performance of the development team."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 1.1.1 lists 'Triggering failures and finding defects' as a typical objective. Exhaustive testing is generally impossible (Principle 2). Testing cannot prove the absence of defects (Principle 1). Measuring developer performance is not a direct test objective.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following is a typical test objective related to providing information to stakeholders?",
+        "options": [
+            "A. Automating the execution of test scenarios.",
+            "B. Providing information to allow stakeholders to make informed decisions.",
+            "C. Speeding up the debugging process.",
+            "D. Improving the technical skills of the test team."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The list of objectives in Text 1.1.1 includes 'Providing information to stakeholders to allow them to make informed decisions'.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "According to the text, increasing confidence in the quality of the test object is which of the following?",
+        "options": [
+            "A. A testing principle.",
+            "B. A test activity.",
+            "C. A typical test objective.",
+            "D. A drawback of independence in testing."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.1.1 lists 'Building confidence in the quality of the test object' as a typical test objective.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following relates to verifying that the test object complies with contractual, legal, and regulatory requirements?",
+        "options": [
+            "A. A debugging activity.",
+            "B. A testing principle.",
+            "C. A typical test objective.",
+            "D. A feature of a test automation tool."
+        ],
+        "correctAnswer": 2,
+        "explanation": "The list of objectives in Text 1.1.1 includes 'Verifying that a test object complies with contractual, legal, and regulatory requirements'. This is one of the typical objectives of testing.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Evaluating work products such as requirements, user stories, designs, and code is primarily considered what?",
+        "options": [
+            "A. A debugging task.",
+            "B. A typical test objective.",
+            "C. A configuration management activity.",
+            "D. A non-functional test type."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.1.1 lists 'Evaluating work products such as requirements, user stories, designs, and code' as the first typical test objective.",
+        "topic": "Chapter 1.1 - What is Testing? (Test Objectives - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "After a team member reported a payment error on an online shopping site, another member debugs the code to find the cause and then modifies the code to fix the issue. Which activity in this process corresponds to 'testing'?",
+        "options": [
+            "A. Analyzing the code to find the cause of the error.",
+            "B. Modifying the code to resolve the issue.",
+            "C. The initial reporting of the payment error (detection of the failure).",
+            "D. The confirmation testing performed to verify if the fix resolved the problem."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Testing focuses on finding defects or triggering failures (Text 1.1.2). Reporting the payment error is the moment a failure was detected during testing. Analyzing and fixing the code are debugging steps. Confirmation testing is a testing activity performed *after* the fix.",
+        "topic": "Chapter 1.1 - What is Testing? (Testing and Debugging - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which statement best describes the difference between testing and debugging?",
+        "options": [
+            "A. Testing focuses on finding defects or triggering failures, while debugging is the activity of finding, analyzing, and fixing the causes of these failures or defects.",
+            "B. Debugging is only performed during dynamic testing, whereas testing can be both static and dynamic.",
+            "C. Testing involves running the software, while debugging only involves reviewing the code.",
+            "D. Testing and debugging are synonyms and refer to the same steps in the project timeline."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 1.1.2 clearly explains this distinction: testing finds failures/defects; debugging finds the cause, analyzes, and fixes it. Debugging also occurs for defects found in static testing, and often involves running software. The text explicitly states they are separate activities.",
+        "topic": "Chapter 1.1 - What is Testing? (Testing and Debugging - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "When a defect is identified during static testing, what does the debugging process typically involve?",
+        "options": [
+            "A. Reproduction of a failure and diagnosis of the root cause.",
+            "B. Direct removal (fixing) of the defect.",
+            "C. Confirmation testing and regression testing.",
+            "D. Execution of test cases and comparison of results."
+        ],
+        "correctAnswer": 1,
+        "explanation": "As stated in Text 1.1.2, when static testing identifies a defect directly, debugging 'is concerned with removing it. There is no need for reproduction or diagnosis...'.",
+        "topic": "Chapter 1.1 - What is Testing? (Testing and Debugging - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "By whom and for what purpose is confirmation testing typically performed?",
+        "options": [
+            "A. By the developer, to verify that newly added features work as expected.",
+            "B. By an independent test team, to measure the system's performance.",
+            "C. Preferably by the person who performed the initial test, to check if the fix resolved the problem.",
+            "D. By end-users, to evaluate the software's usability."
+        ],
+        "correctAnswer": 2,
+        "explanation": "According to Text 1.1.2, confirmation testing 'checks whether the fixes resolved the problem' and is 'Preferably... done by the same person who performed the initial test.'",
+        "topic": "Chapter 1.1 - What is Testing? (Testing and Debugging - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Why is testing necessary when developing a banking application? Which of the following **best** explains this necessity?",
+        "options": [
+            "A. To ensure developers write code faster.",
+            "B. To increase the sales of testing tools.",
+            "C. To reduce the risk of software failures leading to financial loss or reputational damage, and to ensure compliance with legal regulations.",
+            "D. To provide an additional activity to fill the project schedule."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.1 and 1.2.1 mention that software failures can lead to serious problems like loss of money and reputation, and testing helps reduce these risks. Furthermore, testing is required for legal compliance in regulated sectors like banking. Other options are not primary purposes of testing.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is one of testing's contributions to success?",
+        "options": [
+            "A. Indirectly contributing to higher quality test objects by finding defects and enabling their removal (through debugging).",
+            "B. Completely taking over the tasks of the project manager.",
+            "C. Guaranteeing that the software will never fail.",
+            "D. Ensuring direct participation of users in the development process."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 1.2.1 states that testing provides a cost-effective means of detecting defects, and by enabling their removal (via debugging), it indirectly contributes to higher quality. Testing supports project management but doesn't take over, cannot guarantee no failures, and usually represents users indirectly.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following exemplifies a common reason why testing is necessary?",
+        "options": [
+            "A. To intentionally delay the project.",
+            "B. To keep the test team continuously busy.",
+            "C. To comply with legal or regulatory standards.",
+            "D. To create additional workload for developers."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.2.1 mentions that 'Testing may also be required to meet contractual or legal requirements, or to comply with regulatory standards.' This exemplifies a necessity for testing.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "How can testing's contribution to decision-making within the Software Development Lifecycle (SDLC) be exemplified?",
+        "options": [
+            "A. By testers deciding which test tools to use.",
+            "B. By developers determining which programming language to use.",
+            "C. By using test results to support decisions such as whether the project can proceed to the next stage (e.g., release decision).",
+            "D. By the project manager approving the test plan."
+        ],
+        "correctAnswer": 2,
+        "explanation": "As stated in Text 1.2.1, testing provides a means of directly evaluating quality, and 'These measures are used as part of a larger project management activity, contributing to decisions to move to the next stage of the SDLC, such as the release decision.'",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "According to the text, how do testers provide indirect representation for users?",
+        "options": [
+            "A. By designing the user interface.",
+            "B. By ensuring that their understanding of users' needs is considered throughout the development lifecycle.",
+            "C. By preparing user training materials.",
+            "D. By directly involving end-users in the development team."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.2.1 states, 'Testing provides users with indirect representation... Testers ensure that their understanding of users' needs are considered throughout the development lifecycle.'",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Contributions to Success - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Considering the relationship between Quality Assurance (QA) and Quality Control (QC), which statement is **correct**?",
+        "options": [
+            "A. QA is part of QC, focusing on finding defects.",
+            "B. Testing is part of QA, focusing on improving processes.",
+            "C. QC (e.g., testing) focuses on verifying product quality, while QA focuses on ensuring and improving the quality of the overall processes.",
+            "D. QA and QC are synonymous activities that only check the final product."
+        ],
+        "correctAnswer": 2,
+        "explanation": "According to Text 1.2.2, testing is a QC activity (product-oriented, corrective). QA is process-oriented and preventive, aiming for quality in the overall processes. QC helps achieve QA goals, but QA is a broader concept.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Testing and Quality Assurance - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the relationship between testing and Quality Assurance (QA)?",
+        "options": [
+            "A. Testing is a form of Quality Control (QC), and QA is a broader concept focusing on improving both development and testing processes.",
+            "B. QA is a subset of testing and only deals with reporting test results.",
+            "C. Testing and QA are exactly the same processes and can be used interchangeably.",
+            "D. Testing is process-oriented, while QA is product-oriented."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 1.2.2 states 'Testing is a form of quality control (QC)' and 'QA is a process-oriented, preventive approach...'. Testing is part of QC, and QA is a broader, process-focused framework. The text explicitly states they are not the same and their focuses differ.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Testing and Quality Assurance - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What is the primary focus of Quality Control (QC) activities?",
+        "options": [
+            "A. Continuous improvement of processes.",
+            "B. Product-oriented, corrective activities supporting the achievement of appropriate quality levels.",
+            "C. Management of project risks.",
+            "D. Training and development of the test team."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.2.2 defines QC as a 'product-oriented, corrective approach that focuses on those activities supporting the achievement of appropriate levels of quality'.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Testing and Quality Assurance - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What is the underlying basis of the Quality Assurance (QA) approach?",
+        "options": [
+            "A. The assumption that if a good process is followed correctly, it will generate a good product.",
+            "B. The goal of finding the maximum possible number of defects.",
+            "C. The necessity of exhaustively testing software before release.",
+            "D. The obligation to fix all defects to ensure customer satisfaction."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 1.2.2 states for QA: 'It works on the basis that if a good process is followed correctly, then it will generate a good product.'",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Testing and Quality Assurance - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "On an e-commerce site, a user clicks the 'Add to Cart' button (1) and receives an error message (2). Upon investigation, it's found that the function the button should call is missing in the code (3). The reason for this omission is that the developer misunderstood the relevant requirement (4). In this scenario, what do Error, Defect, and Failure correspond to, respectively?",
+        "options": [
+            "A. Error (4), Defect (2), Failure (3).",
+            "B. Error (1), Defect (3), Failure (2).",
+            "C. Error (4), Defect (3), Failure (2).",
+            "D. Error (3), Defect (4), Failure (1)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "According to Text 1.2.3: The developer's misunderstanding is a human mistake (Error - 4). This error led to the missing function in the code, which is a flaw (Defect - 3). The user clicking the button and getting an error message is the system not behaving as expected, which is a Failure (2). The user's click (1) is an event.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the term for when software produces an incorrect result or does something it shouldn't, contrary to expectations?",
+        "options": [
+            "A. Error.",
+            "B. Defect.",
+            "C. Failure.",
+            "D. Root Cause."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.2.3 states, 'If a defect in code is executed, the system may fail to do what it should do, or do something it shouldn't, causing a failure.' This definition corresponds to the term 'failure'.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What might be a reason why a defect present in software does not always lead to a failure?",
+        "options": [
+            "A. Because all defects are actually trivial.",
+            "B. Because debugging always prevents the failure.",
+            "C. Because the execution of the code containing the defect might depend on specific conditions or might never occur.",
+            "D. Because Quality Assurance (QA) processes prevent failures."
+        ],
+        "correctAnswer": 2,
+        "explanation": "As stated in Text 1.2.3, 'If a defect in code is executed, the system may fail... Some defects will always result in a failure if executed, while others will only result in a failure in specific circumstances, and some may never result in a failure.' This is due to the execution of the defect being conditional.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Are errors and defects the only cause of software failures? Explain.",
+        "options": [
+            "A. Yes, all failures stem directly from defects caused by human errors.",
+            "B. No, failures can also be caused by factors such as environmental conditions (e.g., radiation, electromagnetic fields).",
+            "C. Yes, but only defects found during dynamic testing lead to failures.",
+            "D. No, because sometimes errors in test tools can also cause failures."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.2.3 states, 'Errors and defects are not the only cause of failures. Failures can also be caused by environmental conditions...'.",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A programmer misunderstanding a requirement leads to incorrect code logic. This incorrect logic is an example of a ___ , while the programmer's misunderstanding is an example of an ___ .",
+        "options": [
+            "A. Failure / Error",
+            "B. Defect / Error",
+            "C. Error / Defect",
+            "D. Defect / Failure"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The programmer's misunderstanding is the human mistake (Error). This mistake leads to incorrect code logic, which is a flaw in the work product (Defect).",
+        "topic": "Chapter 1.2 - Why is Testing Necessary? (Errors, Defects, Failures - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A test team executed numerous test cases for a new mobile app and found no defects. The manager believes the app is completely defect-free. This situation indicates a potential misunderstanding related to which testing principle?",
+        "options": [
+            "A. Early testing saves time and money.",
+            "B. Testing is context dependent.",
+            "C. Exhaustive testing is impossible.",
+            "D. Testing shows the presence of defects, not their absence (and Absence-of-defects fallacy)."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Finding no defects does not mean the software is perfect. Tests cannot guarantee finding all existing defects. This situation relates directly to Principle 1 ('Testing shows the presence, not the absence of defects') and Principle 7 ('Absence-of-defects fallacy'). Finding no defects might reduce the assessed level of risk but doesn't prove absence.",
+        "topic": "Chapter 1.3 - Testing Principles (Absence-of-defects fallacy - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which statement best explains the principle 'Testing shows the presence, not the absence of defects'?",
+        "options": [
+            "A. No matter how extensive the tests are, they cannot guarantee 100% that no defects remain in the software.",
+            "B. Tests can only find defects that were already known.",
+            "C. If no defects are found during testing, the software is defect-free.",
+            "D. Tests are performed to prove that the software meets all requirements."
+        ],
+        "correctAnswer": 0,
+        "explanation": "The explanation of Principle 1 states that testing can show defects are present, but cannot prove there are no defects. The statement 'No matter how extensive the tests are, they cannot guarantee 100% that no defects remain...' accurately reflects this principle. Tests can uncover new, unknown defects. Finding no defects does not mean the software is defect-free. While tests help verify requirements, 'proving' (especially in the sense of defect absence) contradicts the principle.",
+        "topic": "Chapter 1.3 - Testing Principles (Principle 1 - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Why is the principle 'Early testing saves time and money' important?",
+        "options": [
+            "A. Because fixing defects found early is more difficult.",
+            "B. Because early testing mandates test automation.",
+            "C. Because defects found and fixed early will not cause subsequent defects in derived work products or more costly failures later in the lifecycle.",
+            "D. Because early testing guarantees faster project completion."
+        ],
+        "correctAnswer": 2,
+        "explanation": "The explanation of Principle 3 (Text 1.3) states that defects removed early will not cause subsequent defects, and the cost of quality is reduced as fewer failures occur later. Therefore, the statement 'defects found and fixed early will not cause... more costly failures later' explains its importance.",
+        "topic": "Chapter 1.3 - Testing Principles (Principle 3 - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What does the principle 'Testing is context dependent' imply?",
+        "options": [
+            "A. There is a single best testing approach applicable to all software projects.",
+            "B. Different types of projects (e.g., safety-critical system vs. website) require different testing approaches, techniques, and rigor.",
+            "C. The effectiveness of testing depends solely on the test tools used.",
+            "D. Testing should always be conducted independently of the software development context."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The explanation of Principle 6 (Text 1.3) states there is no single universally applicable approach and testing is done differently in different contexts (e.g., project type, risk level). Thus, the statement 'different projects require different testing approaches' explains this principle.",
+        "topic": "Chapter 1.3 - Testing Principles (Principle 6 - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which TWO testing principles are MOST relevant when deciding how much testing is enough?",
+        "options": [
+            "A. Testing shows the presence, not the absence of defects.",
+            "B. Early testing saves time and money.",
+            "C. Exhaustive testing is impossible.",
+            "D. Testing is context dependent.",
+            "E. Defects cluster together."
+        ],
+        "correctAnswer": [2, 3],
+        "explanation": "Deciding 'how much is enough' directly relates to the fact that testing everything is impossible (Principle 2: Exhaustive testing is impossible), forcing us to prioritize. How we prioritize and what constitutes 'enough' depends heavily on the specific situation (Principle 6: Testing is context dependent), including risks, resources, and objectives. While other principles are important, these two directly address the challenge of defining sufficient testing.",
+        "topic": "Chapter 1.3 - Testing Principles (K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following activities is an example of the main activity group 'Test Analysis' in the test process?",
+        "options": [
+            "A. Executing test cases in priority order.",
+            "B. Identifying test conditions by reviewing the requirements document.",
+            "C. Setting up and verifying the test environment.",
+            "D. Creating a defect report for a found defect."
+        ],
+        "correctAnswer": 1,
+        "explanation": "According to Text 1.4.1, Test Analysis involves 'analyzing the test basis (e.g., requirements document) to identify testable features and define associated test conditions'. The other options relate to Test Execution (A), Test Implementation (C), and Test Execution/Defect Management (D).",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which main group of activities in the test process involves running test cases, comparing actual results with expected results, and logging discrepancies (anomalies)?",
+        "options": [
+            "A. Test Analysis.",
+            "B. Test Design.",
+            "C. Test Implementation.",
+            "D. Test Execution."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Text 1.4.1 defines Test Execution as 'running the tests... Actual test results are compared with the expected results. The test results are logged. Anomalies are analyzed...'.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which main group of activities in the test process involves defining the test objectives and selecting an approach to best achieve them?",
+        "options": [
+            "A. Test Planning.",
+            "B. Test Monitoring and Control.",
+            "C. Test Analysis.",
+            "D. Test Design."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 1.4.1 defines Test Planning as 'consist[ing] of defining the test objectives and then selecting an approach that best achieves the objectives...'.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "When do 'Test Completion' activities typically occur, and what do they involve?",
+        "options": [
+            "A. Just before test execution begins; involves preparing test data.",
+            "B. During test design; involves prioritizing test cases.",
+            "C. At project milestones (e.g., end of release); involves archiving testware, identifying lessons learned, and creating a test completion report.",
+            "D. During test analysis; involves identifying test conditions."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.1 states Test Completion activities 'usually occur at project milestones (e.g., release, end of iteration...)' and involve tasks like 'Any testware that may be useful... is identified and archived... lessons learned... A test completion report is created...'.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "During which main test activity are test cases typically organized into test procedures and assembled into test suites?",
+        "options": [
+            "A. Test Analysis.",
+            "B. Test Design.",
+            "C. Test Implementation.",
+            "D. Test Execution."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.1, under Test Implementation, states that 'Test cases can be organized into test procedures and are often assembled into test suites.'",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Why would the testing process for a safety-critical air traffic control system differ significantly from that of a simple personal blog website?",
+        "options": [
+            "A. Because testing the blog site requires more automation.",
+            "B. Because testing the air traffic control system is impossible.",
+            "C. Because according to the principle 'Testing is context dependent' (Principle 6), contextual factors like risk level, legal requirements, and business domain influence the test approach, depth, and formality.",
+            "D. Because more testers work on the blog site."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.2 emphasizes that testing is context-dependent. Factors like business domain (criticality, regulations), risks, and stakeholder needs influence the test strategy, techniques, documentation level, etc. An air traffic control system (high risk, strict regulations) requires much more rigorous, formal, and in-depth testing than a personal blog site (low risk). This directly relates to Principle 6.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Process in Context - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following does **NOT** explain how the test process is influenced by the project context?",
+        "options": [
+            "A. Testing a safety-critical system might require more formality and documentation than testing an e-commerce site.",
+            "B. The test approach in an Agile project might be more flexible and less documentation-focused than in a traditional Waterfall project.",
+            "C. The personal preferences of the test analyst always determine the test strategy, regardless of the project context.",
+            "D. The project's budget and time constraints can influence the test tools used and the scope of testing applied."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.2 lists context factors (risk, SDLC, constraints, team skills, etc.) that influence the test process. The safety-critical example, Agile vs. traditional example, and budget/time constraints example illustrate this influence. The statement 'Personal preferences of the test analyst always determine...' is incorrect; the project context is the primary driver for the test strategy.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Process in Context - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "How might factors like 'Team members' skills, knowledge, and level of experience' impact the test process in a project?",
+        "options": [
+            "A. They only determine the project's budget.",
+            "B. They can influence the test techniques used, the required level of automation, and the detail of test documentation.",
+            "C. They change the type of software being tested.",
+            "D. They eliminate the need to comply with legal regulations."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.4.2 lists 'Team members (skills, knowledge, level of experience...)' as a context factor and states these factors will impact issues such as 'test strategy, test techniques used, degree of test automation, required level of coverage, level of detail of test documentation, reporting, etc.'",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Test Process in Context - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is generally **NOT** considered a typical output (testware) of 'Test Design'?",
+        "options": [
+            "A. Test cases.",
+            "B. Test data requirements.",
+            "C. Test progress report.",
+            "D. Test environment requirements."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.3 lists Test Design work products including test cases, test charters, coverage items, test data requirements, and test environment requirements. A Test progress report is an output of the Test Monitoring and Control activity.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Testware - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following testware items typically result from the Test Planning activity?",
+        "options": [
+            "A. Test Logs.",
+            "B. Automated Test Scripts.",
+            "C. Test Plan and Risk Register.",
+            "D. Defect Reports."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.3 lists 'Test planning work products include: test plan, test schedule, risk register, and entry and exit criteria'. The Test Plan and Risk Register are directly associated with this activity.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Testware - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which items are typical outputs (testware) of the 'Test Design' activity?",
+        "options": [
+            "A. Test progress reports and control directives.",
+            "B. (Prioritized) test cases, test charters, and test data requirements.",
+            "C. Test logs and defect reports.",
+            "D. Test plan and test schedule."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.4.3 lists 'Test design work products include: (prioritized) test cases, test charters, coverage items, test data requirements and test environment requirements.' Therefore, the second option includes examples of these outputs.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Testware - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "During which test activity are test environment elements (e.g., stubs, drivers, simulators) created, acquired, or set up?",
+        "options": [
+            "A. Test Analysis.",
+            "B. Test Design.",
+            "C. Test Implementation.",
+            "D. Test Execution."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.3 states 'Test implementation work products include: ... test environment elements.' Also, according to activity definitions in Text 1.4.1, Test Design *designs* the environment, while Test Implementation *builds* or *acquires* it and verifies its setup.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Testware - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Establishing traceability between the test basis (e.g., requirements) and test cases makes which of the following **easier? (Select TWO options)**",
+        "options": [
+            "A. Automating all the tests.",
+            "B. Determining which test cases are affected when a requirement changes.",
+            "C. Improving the morale of the test team.",
+            "D. Assessing which requirements are covered by which test cases.",
+            "E. Guaranteeing that all defects will be found."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 1.4.4 explains the benefits of traceability, including making it 'possible to determine the impact of changes' and 'supports coverage evaluation' (e.g., verifying that requirements are covered by test cases). It doesn't directly impact automation feasibility, morale, or guarantee finding all defects.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Traceability - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is a primary benefit of maintaining bi-directional traceability between the test basis, test conditions, test cases, and defect reports?",
+        "options": [
+            "A. It facilitates the assessment of test coverage (e.g., seeing which requirements are tested) and analyzing the impact of changes.",
+            "B. It allows measuring the performance of the test team members individually.",
+            "C. It guarantees that all tests can be automated.",
+            "D. It always reduces the debugging time by half."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 1.4.4 explicitly mentions benefits of traceability such as 'supports coverage evaluation' and 'makes it possible to determine the impact of changes'. The statement 'assessment of test coverage and analyzing the impact of changes' summarizes these benefits.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Traceability - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "How does traceability help meet IT governance criteria?",
+        "options": [
+            "A. By ensuring all tests finish on time.",
+            "B. By automatically calculating testing costs.",
+            "C. By facilitating test audits and demonstrating that requirements are covered.",
+            "D. By improving the code quality of developers."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.4 states, 'good traceability... facilitates test audits, and helps meet IT governance criteria.'",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Traceability - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "By using traceability, the level of what can be evaluated when associated with test results?",
+        "options": [
+            "A. The coding skill of the developers.",
+            "B. The residual risk in the test object.",
+            "C. The total cost of the project.",
+            "D. User satisfaction."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.4.4 provides an example: 'Traceability of test results to risks can be used to evaluate the level of residual risk in a test object.'",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Traceability - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "In an Agile team, who might take on some responsibilities belonging to the Test Management role?",
+        "options": [
+            "A. Only an externally appointed formal Test Manager.",
+            "B. Only the Scrum Master.",
+            "C. The team leader, a Test Manager, a Development Manager, or the Agile team itself (shared responsibility).",
+            "D. Only the Product Owner."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.4.5 mentions that the Test Management role can be performed by different people (team leader, test manager, development manager, etc.). It also adds that in Agile development, 'some of the test management tasks may be handled by the Agile team'.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Roles in Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the fundamental difference between the Test Management role and the Testing role as described in the syllabus?",
+        "options": [
+            "A. The Test Management role is responsible for the overall test process, planning, monitoring, and control, while the Testing role is responsible for the technical engineering aspects like analysis, design, implementation, and execution.",
+            "B. The Test Management role manages only manual testing, while the Testing role develops only automation tests.",
+            "C. The Testing role defines the overall quality strategy for the project, while the Test Management role details this strategy.",
+            "D. The Test Management role is responsible for finding defects, while the Testing role is responsible for fixing them (debugging)."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 1.4.5 clearly distinguishes these roles: Test Management takes overall responsibility, focusing on planning, monitoring, control, and completion. The Testing role takes responsibility for the engineering (technical) aspect, focusing on analysis, design, implementation, and execution.",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Roles in Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which test activities does the 'testing role' primarily focus on?",
+        "options": [
+            "A. Test planning, test monitoring and control, and test completion.",
+            "B. Test analysis, test design, test implementation, and test execution.",
+            "C. Risk management, configuration management, and budgeting.",
+            "D. User training, documentation writing, and customer support."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.4.5 states that the testing role is 'mainly focused on the activities of test analysis, test design, test implementation and test execution.'",
+        "topic": "Chapter 1.4 - Test Activities, Testware and Test Roles (Roles in Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which TWO of the following are important generic skills for an effective tester?",
+        "options": [
+            "A. Project management certification.",
+            "B. Curiosity and attention to detail.",
+            "C. Expertise in a specific programming language.",
+            "D. Analytical thinking and problem-solving.",
+            "E. Graphic design ability."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 1.5.1 lists generic skills for testers. 'Curiosity, carefulness, attention to details' and 'Analytical thinking, critical thinking' are included. Expertise in a specific programming language or a project management certification are not generic requirements for all testers. Graphic design is typically not a primary tester skill.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Generic Skills - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is **NOT** listed as a generic skill particularly relevant for a good tester?",
+        "options": [
+            "A. Analytical thinking, critical thinking, and creativity.",
+            "B. Good communication skills, active listening, and being a team player.",
+            "C. Thoroughness, carefulness, curiosity, and attention to details.",
+            "D. At least ten years of management experience in a specific business domain."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Text 1.5.1 lists generic skills for testers including testing knowledge, thoroughness/carefulness, communication, analytical thinking, technical knowledge, and domain knowledge. Extensive management experience in a specific domain is not listed as one of these *generic* skills, although domain knowledge itself is important.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Generic Skills - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Why is it important for a tester to communicate information about defects and failures constructively?",
+        "options": [
+            "A. To exaggerate the severity of the defects.",
+            "B. To prevent testing from being perceived as a destructive activity and to emphasize its contribution to project success.",
+            "C. To slow down the debugging process.",
+            "D. To put pressure on the developers."
+        ],
+        "correctAnswer": 1,
+        "explanation": "As stated in Text 1.5.1, some people may perceive testing as destructive. To improve this view, 'information about defects and failures should be communicated in a constructive way'.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Generic Skills - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Why are communication skills considered crucial for testers?",
+        "options": [
+            "A. Because testers are always the project leaders.",
+            "B. Because test results and found defects might be perceived as criticism of the product or its author and must be communicated constructively.",
+            "C. Because testers are responsible for writing all project documentation.",
+            "D. Because communication skills are necessary for test automation."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.5.1 mentions that testers are often bearers of bad news, test results may be perceived as criticism, and confirmation bias can make it hard to accept information. Therefore, communication skills are crucial to convey information about defects and failures constructively.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Generic Skills - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is a key advantage of the whole team approach?",
+        "options": [
+            "A. Ensuring everyone focuses only on their specific role.",
+            "B. Making only the testers responsible for quality.",
+            "C. Creating synergy by allowing the various skill sets within the team to be leveraged for the benefit of the project.",
+            "D. Encouraging the production of more documentation."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.5.2 states that the whole team approach 'improves team dynamics, enhances communication and collaboration within the team, and creates synergy by allowing the various skill sets within the team to be leveraged for the benefit of the project'. Quality is everyone's responsibility.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Whole Team Approach - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following is a primary advantage of the whole team approach?",
+        "options": [
+            "A. It ensures testers work completely independently.",
+            "B. Responsibility for quality is shared among all team members.",
+            "C. It always increases the amount of project documentation.",
+            "D. It mandates the standardization of test processes."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 1.5.2 states 'everyone is responsible for quality' as a fundamental principle and advantage of the whole team approach. It enhances collaboration (opposite of A), often reduces documentation (or varies by context, opposite of C), and emphasizes collaboration/flexibility over standardization (opposite of D).",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Whole Team Approach - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What is the purpose of team members sharing the same physical or virtual workspace (co-location) in the whole team approach?",
+        "options": [
+            "A. To reduce costs.",
+            "B. To make it easier to monitor individual performance.",
+            "C. To facilitate communication and interaction.",
+            "D. To ensure team members focus on only one task."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.5.2 states, 'The team members share the same workspace (physical or virtual), as co-location facilitates communication and interaction.'",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Whole Team Approach - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "In a project, testing is performed by an independent test team from a different department than the development team. What is a potential **advantage** and a potential **disadvantage** of this setup, respectively?",
+        "options": [
+            "A. Advantage: Developers lose responsibility for quality; Disadvantage: Different types of defects are found.",
+            "B. Advantage: Ability to question assumptions made by developers; Disadvantage: Communication problems with the development team.",
+            "C. Advantage: Lack of collaboration; Disadvantage: Different perspectives.",
+            "D. Advantage: Lower costs; Disadvantage: Slower testing process."
+        ],
+        "correctAnswer": 1,
+        "explanation": "According to Text 1.5.3, a benefit of independence is that 'an independent tester can verify, challenge, or disprove assumptions made by stakeholders'. A disadvantage is potential 'isolation from the development team, which may lead to a lack of collaboration, communication problems...'.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Independence of Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the main benefit of independence in testing?",
+        "options": [
+            "A. It always increases the cost of testing.",
+            "B. It completely removes the responsibility for quality from developers.",
+            "C. Independent testers are more likely to recognize different kinds of failures and defects compared to developers due to their different perspectives and biases.",
+            "D. It always slows down the testing process."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.5.3 explains the main benefit of independence as 'independent testers are likely to recognize different kinds of failures and defects compared to developers because of their different backgrounds, technical perspectives, and biases.'",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Independence of Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is a potential **drawback** of a high degree of independence in testing?",
+        "options": [
+            "A. The ability to verify, challenge, or disprove assumptions made by developers.",
+            "B. The author and the tester having different cognitive biases.",
+            "C. Independent testers being isolated from the development team, leading to a lack of collaboration or communication problems.",
+            "D. Using multiple levels of independence across different test levels (component, system, acceptance)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.5.3 lists drawbacks of independence, including that 'Independent testers may be isolated from the development team, which may lead to a lack of collaboration, communication problems, or an adversarial relationship with the development team.' The other options are generally benefits or good practices related to independence.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Independence of Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Why is it often recommended to use multiple levels of independence in testing (e.g., author, peer from same team, external test team)?",
+        "options": [
+            "A. To minimize project costs.",
+            "B. To speed up the testing process as much as possible.",
+            "C. To allow different levels of testing (e.g., component, system, acceptance) to benefit from appropriate degrees of independence.",
+            "D. To guarantee that the same types of defects are found at every level."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 1.5.3 states, 'For most projects, it is usually best to carry out testing with multiple levels of independence (e.g., developers performing component... testing, test team performing system... testing, and business representatives performing acceptance testing).' This suggests that different test levels can benefit from differing degrees of independence, making it a recommended practice.",
+        "topic": "Chapter 1.5 - Essential Skills and Good Practices (Independence of Testing - K2)",
+        "kLevel": "K2"
+    }
+]

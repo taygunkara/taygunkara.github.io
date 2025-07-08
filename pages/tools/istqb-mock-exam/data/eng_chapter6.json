@@ -1,0 +1,160 @@
+[
+    {
+        "question": "Which category of tools aims to increase test process efficiency by facilitating the management of the SDLC, requirements, tests, defects, and configuration?",
+        "options": [
+            "A. Static testing tools.",
+            "B. Test execution and coverage tools.",
+            "C. Management tools.",
+            "D. Non-functional testing tools."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 6.1 states that Management tools 'increase the test process efficiency by facilitating management of the SDLC, requirements, tests, defects, configuration'.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A tester is using a tool to automatically check code for compliance with certain standards and to find potential errors (e.g., undefined variables). Which test activity does this tool primarily support?",
+        "options": [
+            "A. Test Management.",
+            "B. Static Testing (Static Analysis).",
+            "C. Test Design and Implementation.",
+            "D. Non-functional Testing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 6.1 indicates that Static testing tools 'support the tester in performing reviews and static analysis'. Checking code standards and finding potential coding errors are typical uses of static analysis.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Tools that facilitate automated test execution and the collection of metrics like code coverage serve which TWO primary purposes?",
+        "options": [
+            "A. Generating test cases.",
+            "B. Automating test execution.",
+            "C. Supporting static analysis.",
+            "D. Measuring coverage.",
+            "E. Managing defects."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 6.1 defines the 'Test execution and coverage tools' category as tools that 'facilitate automated test execution and coverage measurement'.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which category includes tools that support the tester in performing reviews and static analysis?",
+        "options": [
+            "A. Management tools.",
+            "B. Test design and implementation tools.",
+            "C. Static testing tools.",
+            "D. DevOps tools."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 6.1 indicates that Static testing tools 'support the tester in performing reviews and static analysis'.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Tools that facilitate the generation of test cases, test data, and test procedures serve which purpose?",
+        "options": [
+            "A. Automating the management of the test process.",
+            "B. Performing non-functional testing.",
+            "C. Supporting test design and implementation.",
+            "D. Managing the CI/CD pipeline."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 6.1 states that Test design and implementation tools 'facilitate generation of test cases, test data and test procedures'.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Tools used to perform tests like performance or security testing, which are difficult or impossible to perform manually, fall into which category?",
+        "options": [
+            "A. Management tools.",
+            "B. Static testing tools.",
+            "C. Test execution and coverage tools.",
+            "D. Non-functional testing tools."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Text 6.1 states that Non-functional testing tools 'allow the tester to perform non-functional testing that is difficult or impossible to perform manually'.",
+        "topic": "Chapter 6.1 - Tool Support for Testing (Tool Categories - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is a potential benefit of using test automation?",
+        "options": [
+            "A. Completely eliminating the effort required for tool introduction, maintenance, and training.",
+            "B. Saving time by reducing repetitive manual work (e.g., executing regression tests).",
+            "C. Eliminating situations where manual testing is more appropriate.",
+            "D. Reducing the need for critical thinking by testers."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 6.2 lists among the potential benefits: 'Time saved by reducing repetitive manual work (e.g., execute regression tests, re-enter the same test data...)'. The other options represent risks or misconceptions.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Benefits - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "How can test automation help in preventing simple human errors?",
+        "options": [
+            "A. By always running tests in different orders and at different frequencies.",
+            "B. By allowing testers to be less careful.",
+            "C. Through greater consistency and repeatability (e.g., tests derived systematically, executed in the same order/frequency by a tool).",
+            "D. By automatically designing all tests."
+        ],
+        "correctAnswer": 2,
+        "explanation": "One benefit listed in Text 6.2 is the 'Prevention of simple human errors through greater consistency and repeatability (e.g., tests are consistently derived from requirements... tests are executed by a tool in the same order with the same frequency)'.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Benefits - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following is a potential **risk** of using test automation?",
+        "options": [
+            "A. Providing more objective assessment (e.g., code coverage).",
+            "B. Allowing more time for testers to design new and deeper tests.",
+            "C. Dependency on the tool vendor (e.g., vendor going out of business or providing poor support).",
+            "D. Providing faster feedback and faster time to market."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 6.2 lists among the potential risks: 'The dependency on the tool vendor which may go out of business, retire the tool... or provide poor support'. The other options are potential benefits.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Risks - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following represents a potential risk when using test automation tools?",
+        "options": [
+            "A. Providing measures that are too complicated for humans to derive.",
+            "B. Unrealistic expectations about the benefits of a tool (including functionality and ease of use).",
+            "C. Earlier defect detection.",
+            "D. Easier access to information about testing to support test management and reporting."
+        ],
+        "correctAnswer": 1,
+        "explanation": "One risk listed in Text 6.2 is: 'Unrealistic expectations about the benefits of a tool (including functionality and ease of use).' The other options are potential benefits.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Risks - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What are TWO potential benefits of test automation? (Select TWO options)",
+        "options": [
+            "A. Ignoring the need for human critical thinking.",
+            "B. Providing more objective assessment (e.g., coverage).",
+            "C. Making inaccurate estimations of time and cost to introduce and maintain the tool.",
+            "D. Reducing test execution times for earlier feedback.",
+            "E. Using a tool when manual testing is more appropriate."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 6.2 lists benefits: 'More objective assessment (e.g., coverage)...' and 'Reduced test execution times to provide earlier defect detection, faster feedback...'. A, C, and E represent potential risks.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Benefits & Risks - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following is a potential risk associated with relying too heavily on a test automation tool?",
+        "options": [
+            "A. Increased consistency in test execution.",
+            "B. Ignoring the need for human critical thinking.",
+            "C. Reduced time spent on repetitive tasks.",
+            "D. Improved test coverage measurement."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 6.2 lists 'Relying on a tool too much, e.g., ignoring the need of human critical thinking' as a potential risk of using test automation.",
+        "topic": "Chapter 6.2 - Benefits and Risks of Test Automation (Risks - K1)",
+        "kLevel": "K1"
+    }
+]

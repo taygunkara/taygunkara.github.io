@@ -1,0 +1,317 @@
+[
+    {
+        "question": "In a project using a sequential development model (e.g., V-model), what is typically the main contribution of testers in the early phases, and when does dynamic testing usually start?",
+        "options": [
+            "A. The main contribution is writing code; dynamic testing starts at the beginning of the project.",
+            "B. The main contribution is requirements review, test analysis, and design; dynamic testing usually starts in later phases when executable code is available.",
+            "C. The main contribution is designing the user interface; dynamic testing is never performed.",
+            "D. The main contribution is debugging; dynamic testing always starts before static testing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.1.1 states that in sequential models, testers in the initial phases 'typically participate in requirement reviews, test analysis, and test design'. 'The executable code is usually created in the later phases, so typically dynamic testing cannot be performed early in the SDLC.'",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Impact of SDLC - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "In an iterative and incremental model, how does the assumption that each iteration delivers a working prototype or product increment affect testing activities?",
+        "options": [
+            "A. It allows only static testing to be performed in each iteration.",
+            "B. It implies that both static and dynamic testing may be performed at all test levels in each iteration, and requires extensive regression testing due to frequent deliveries.",
+            "C. It means testing activities should only be performed in the final iteration.",
+            "D. It eliminates the need for regression testing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.1.1 states that in these models, the assumption of delivering a working product each iteration 'implies that in each iteration both static and dynamic testing may be performed at all test levels'. It also adds, 'Frequent delivery of increments requires fast feedback and extensive regression testing.'",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Impact of SDLC - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "The chosen software development lifecycle (SDLC) model **directly** influences which TWO of the following testing aspects?",
+        "options": [
+            "A. The salary of the tester.",
+            "B. The scope and timing of test activities.",
+            "C. The extent of test automation.",
+            "D. The language in which test reports are written.",
+            "E. The brand of hardware to be used."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "Text 2.1.1 lists the impacts of SDLC choice on: 'Scope and timing of test activities', 'Level of detail of test documentation', 'Choice of test techniques and test approach', 'Extent of test automation', and 'Role and responsibilities of a tester'. Salary, report language, or hardware brand are not direct impacts.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Impact of SDLC - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which TWO of the following are good testing practices applicable regardless of the chosen SDLC model?",
+        "options": [
+            "A. Performing all testing only at the end of the project.",
+            "B. Having a corresponding test activity for every development activity.",
+            "C. Different test levels having specific and different test objectives.",
+            "D. Starting test analysis and design after coding is complete.",
+            "E. Involving testers only during the coding phase."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "Good testing practices listed in Text 2.1.2 include: Having a corresponding test activity for every development activity, different test levels having different objectives, starting test analysis/design for a level during the corresponding development phase, and involving testers in reviews as soon as drafts are available. A, D, and E contradict these good practices.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Good Testing Practices - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "According to good testing practices, when should testers become involved in reviewing work products (e.g., requirements)?",
+        "options": [
+            "A. After the work product has been fully approved.",
+            "B. After coding has been completed.",
+            "C. As soon as drafts of this documentation are available.",
+            "D. During the test execution phase."
+        ],
+        "correctAnswer": 2,
+        "explanation": "One good practice from Text 2.1.2 is: 'Testers are involved in reviewing work products as soon as drafts of this documentation are available, so that this earlier testing and defect detection can support the shift-left strategy'.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Good Testing Practices - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following is an example of a 'test-first' development approach where tests drive the development?",
+        "options": [
+            "A. Waterfall Model.",
+            "B. V-Model.",
+            "C. Test-Driven Development (TDD).",
+            "D. Risk-Based Testing."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 2.1.3 lists TDD, ATDD, and BDD as 'similar development approaches, where tests are defined as a means of directing development'. TDD is one of these approaches.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Testing as a Driver - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What is a common characteristic of approaches like TDD, ATDD, and BDD?",
+        "options": [
+            "A. They only support sequential development models.",
+            "B. Tests are defined before the corresponding code is written.",
+            "C. They focus solely on manual testing.",
+            "D. They decrease code quality."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.1.3 states that these three approaches (TDD, ATDD, BDD) are similar development approaches where 'tests are defined before the code is written', implementing the 'principle of early testing' and following a 'shift-left approach'.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Testing as a Driver - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What is a benefit of the DevOps approach from a testing perspective?",
+        "options": [
+            "A. It completely eliminates the need for manual testing.",
+            "B. It provides fast feedback on code quality and whether changes adversely affect existing code.",
+            "C. It requires no additional resources for test automation.",
+            "D. It slows down the testing process."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.1.4 lists among the benefits of DevOps for testing: 'Fast feedback on the code quality, and whether changes adversely affect existing code'. DevOps does not eliminate manual testing and automation requires resources.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (DevOps and Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What are TWO potential positive impacts of the DevOps approach on testing?",
+        "options": [
+            "A. Making test automation completely unnecessary.",
+            "B. Promoting a shift-left approach through Continuous Integration (CI).",
+            "C. Increasing the need for manual testing.",
+            "D. Facilitating the establishment of stable test environments through automated processes (CI/CD).",
+            "E. Making the maintenance of test tools more difficult."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 2.1.4 lists benefits of DevOps, including 'CI promotes a shift-left approach... by encouraging developers to submit high quality code...' and 'Promotes automated processes like CI/CD that facilitate establishing stable test environments'. It doesn't make automation unnecessary or increase manual testing needs; tool maintenance might be a challenge but not a direct impact listed here.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (DevOps and Testing - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the core idea behind the 'shift-left' approach to testing?",
+        "options": [
+            "A. To concentrate all testing activities in the leftmost (earliest) phase of the project.",
+            "B. To perform testing activities earlier in the software development lifecycle (SDLC) than they might otherwise occur.",
+            "C. To hire only testers who use the left hemisphere of their brain.",
+            "D. To completely neglect testing in the later phases of the SDLC."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.1.5 defines 'shift-left' as 'an approach where testing is performed earlier in the SDLC'. It emphasizes starting earlier, not necessarily neglecting later testing.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Shift-Left Approach - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is a good practice that supports the 'shift-left' testing approach?",
+        "options": [
+            "A. Writing test cases after the code is written and integration is complete.",
+            "B. Reviewing specifications from a testing perspective to find potential defects early.",
+            "C. Performing static analysis after dynamic testing.",
+            "D. Starting non-functional testing only after the system is fully integrated."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.1.5 lists good practices illustrating shift-left, including: 'Reviewing the specification from the perspective of testing. These review activities on specifications often find potential defects, such as ambiguities, incompleteness, and inconsistencies'.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Shift-Left Approach - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A project team holds a meeting at the end of each sprint to discuss what went well, what challenges occurred, and what they could do differently in the next sprint. What is this type of meeting called and what is its primary purpose?",
+        "options": [
+            "A. Status meeting; to report progress.",
+            "B. Review; to evaluate a work product.",
+            "C. Retrospective; to enable learning and adaptation for process improvement.",
+            "D. Planning meeting; to plan future work."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 2.1.6 defines Retrospectives as meetings, often held at the end of an iteration, where participants discuss 'What was successful...?', 'What was not successful and could be improved?', and 'How to incorporate the improvements...'. The goal is continuous process improvement.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Retrospectives - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is a potential benefit of retrospectives specifically for the testing process?",
+        "options": [
+            "A. Increasing the salaries of testers.",
+            "B. Improving the quality of the test basis (e.g., by addressing deficiencies in requirements).",
+            "C. Making test automation completely unnecessary.",
+            "D. Always shortening the project duration."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.1.6 lists typical benefits for testing, including 'Improved quality of the test basis (e.g., as deficiencies in the extent and quality of the requirements could be addressed and solved)'.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Retrospectives - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which test level focuses on testing the interfaces and interactions between different components?",
+        "options": [
+            "A. Component Testing.",
+            "B. Component Integration Testing.",
+            "C. System Testing.",
+            "D. Acceptance Testing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.2.1 states that Component Integration Testing 'focuses on testing the interfaces and interactions between components'.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Levels - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which level tests the overall behavior and capabilities of an entire e-commerce site, including functional testing of end-to-end tasks and non-functional testing of quality characteristics?",
+        "options": [
+            "A. Component Integration Testing.",
+            "B. System Testing.",
+            "C. User Acceptance Testing (UAT).",
+            "D. Maintenance Testing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.2.1 defines System Testing as focusing 'on the overall behavior and capabilities of an entire system or product, often including functional testing of end-to-end tasks and the non-functional testing of quality characteristics'.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Levels - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "User Acceptance Testing (UAT), Operational Acceptance Testing, Contractual Acceptance Testing, and Alpha/Beta Testing are forms of which main test level?",
+        "options": [
+            "A. Component Testing.",
+            "B. Integration Testing.",
+            "C. System Testing.",
+            "D. Acceptance Testing."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Text 2.2.1 lists the main forms of Acceptance testing as: 'user acceptance testing (UAT), operational acceptance testing, contractual and regulatory acceptance testing, alpha testing and beta testing.'",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Levels - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which test type evaluates 'what' a system should do (its functions), versus the test type that evaluates 'how well' it works (e.g., performance, usability)?",
+        "options": [
+            "A. Black-box Testing and White-box Testing, respectively.",
+            "B. Static Testing and Dynamic Testing, respectively.",
+            "C. Functional Testing and Non-functional Testing, respectively.",
+            "D. Confirmation Testing and Regression Testing, respectively."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 2.2.2 defines Functional Testing as evaluating 'the functions that a component or system should perform' ('what' it should do), while Non-functional Testing evaluates 'attributes other than functional characteristics' ('how well the system behaves').",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Characteristics such as Performance Efficiency, Compatibility, Usability, Reliability, Security, Maintainability, and Portability (according to ISO/IEC 25010) are evaluated under which type of testing?",
+        "options": [
+            "A. Functional Testing.",
+            "B. White-box Testing.",
+            "C. Non-functional Testing.",
+            "D. Acceptance Testing."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 2.2.2 states that the main objective of Non-functional testing is 'checking the non-functional software quality characteristics' and that the ISO/IEC 25010 standard provides a classification of these (including the examples listed).",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the testing approach that derives tests from analyzing the internal structure of the system, such as code, architecture, or data flows?",
+        "options": [
+            "A. Black-box Testing.",
+            "B. White-box Testing.",
+            "C. Experience-based Testing.",
+            "D. Non-functional Testing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.2.2 defines White-box testing as being 'structure-based and derives tests from the system's implementation or internal structure (e.g., code, architecture, work-flows, and data flows)'.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "After a defect has been fixed, what is the name of the test performed to verify that the change has NOT caused adverse side effects elsewhere?",
+        "options": [
+            "A. Confirmation Testing.",
+            "B. Regression Testing.",
+            "C. Acceptance Testing.",
+            "D. Black-box Testing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.2.3 defines Regression testing as confirming 'that no adverse consequences have been caused by a change (including a fix that has already been confirmation tested).'",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Confirmation and Regression Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the fundamental difference between confirmation testing and regression testing?",
+        "options": [
+            "A. Confirmation testing is automated only, while regression testing is manual only.",
+            "B. Confirmation testing verifies that a specific defect has been fixed; regression testing verifies that a change (including a fix) has not caused unintended side effects elsewhere.",
+            "C. Confirmation testing is done only by developers, while regression testing is done only by testers.",
+            "D. Confirmation testing tests new features, while regression testing tests existing features."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.2.3 clarifies this distinction: Confirmation testing 'confirms that an original defect has been successfully fixed'. Regression testing 'confirms that no adverse consequences have been caused by a change (including a fix that has already been confirmation tested).'",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Confirmation and Regression Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is **NOT** a typical trigger for maintenance testing?",
+        "options": [
+            "A. Initial development of the software from scratch.",
+            "B. Making a planned enhancement or a corrective change to the software.",
+            "C. Upgrading the operating system on which the software runs.",
+            "D. Retirement of the application at the end of its life."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 2.3 classifies triggers for maintenance testing as 'Modifications (planned enhancements, corrective changes, hot fixes)', 'Upgrades or migrations of the operational environment', and 'Retirement'. Initial development is not maintenance.",
+        "topic": "Chapter 2.3 - Maintenance Testing (Triggers - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "The scope of testing a change made during maintenance typically depends on what factors?",
+        "options": [
+            "A. Only the experience of the developer who made the change.",
+            "B. Factors such as the degree of risk of the change, the size of the existing system, and the size of the change.",
+            "C. The current mood of the test team.",
+            "D. The programming language used."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.3 states that the scope of maintenance testing typically depends on: 'The degree of risk of the change', 'The size of the existing system', and 'The size of the change'.",
+        "topic": "Chapter 2.3 - Maintenance Testing (Scope - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "When migrating an existing system to a new platform or importing data from another application, what types of testing might be required as part of maintenance testing?",
+        "options": [
+            "A. Only hardware testing of the new platform.",
+            "B. Tests associated with the new environment and/or tests of data conversion.",
+            "C. Only the acceptance tests performed during initial development.",
+            "D. Testing of user interface mockups."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 2.3 mentions 'Upgrades or migrations of the operational environment' as a trigger, stating this 'can require tests associated with the new environment as well as of the changed software, or tests of data conversion when data from another application is migrated...'.",
+        "topic": "Chapter 2.3 - Maintenance Testing (Triggers/Scope - K2, Scenario)",
+        "kLevel": "K2"
+    }
+]

@@ -1,0 +1,537 @@
+[
+    {
+        "question": "Bir test planının temel amaçlarından biri aşağıdakilerden hangisidir?",
+        "options": [
+            "A. Yalnızca test yürütme takvimini belgelemek.",
+            "B. Gerçekleştirilen test faaliyetlerinin belirlenen kriterleri karşılayacağını sağlamaya yardımcı olmak.",
+            "C. Test otomasyonu için kullanılacak araçları seçmek.",
+            "D. Tüm proje risklerini tamamen ortadan kaldırmak."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.1'e göre, test planının amaçlarından biri 'gerçekleştirilen test faaliyetlerinin belirlenen kriterleri karşılayacağını sağlamaya yardımcı olmaktır'. Test planı ayrıca kaynakları, süreçleri belgeler, iletişim aracı olarak hizmet eder ve mevcut test politikasına/stratejisine uyumu gösterir.",
+        "topic": "Chapter 5.1 - Test Planning (Purpose and Content - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test planı genellikle aşağıdaki içeriklerden hangisini kapsar?",
+        "options": [
+            "A. Geliştiricilerin birim testlerini nasıl yapacağına dair detaylı talimatlar.",
+            "B. Ürün pazarlama stratejisi ve müşteri destek planları.",
+            "C. Test bağlamı (kapsam, hedefler, kısıtlamalar, test temeli), paydaşlar, risk listesi ve test yaklaşımı gibi konular.",
+            "D. Rakip analizleri ve pazar eğilimleri raporları."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.1.1, test planının tipik içeriğini listelerken 'test bağlamı, proje varsayımları ve kısıtlamaları, paydaşlar, iletişim, risk listesi, test yaklaşımı, bütçe ve program' gibi konuları sayar.",
+        "topic": "Chapter 5.1 - Test Planning (Purpose and Content - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi bir test planının amacını **en iyi** örnekler?",
+        "options": [
+            "A. Proje ekibi tarafından bulunan tüm kusurların detaylı bir listesini sağlamak.",
+            "B. Test hedeflerine ulaşmak için gereken araçları, kaynakları, programı ve yaklaşımı belgeleyerek paydaşlarla iletişim kurmak.",
+            "C. Yazılımın son kullanıcılar tarafından nasıl kullanılacağını adım adım açıklamak.",
+            "D. Test otomasyonu için yazılan tüm betikleri (script) içermek."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.1'de belirtildiği gibi, bir test planı hedefleri, kaynakları ve süreçleri tanımlar. İletişim aracı olarak hizmet eder ve hedeflere nasıl ulaşılacağını (araçlar, program, yaklaşım vb.) belgeler. Kusur listesi, kullanım kılavuzu veya otomasyon betikleri test planının kendisi değildir.",
+        "topic": "Chapter 5.1 - Test Planning (Purpose and Content - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "İteratif SDLC'lerde (örn. Çevik - Agile), test uzmanları iterasyon planlamasına nasıl değer katar?",
+        "options": [
+            "A. Yalnızca test otomasyon betiklerini yazarak.",
+            "B. Detaylı risk analizi yaparak, kullanıcı hikayelerinin test edilebilirliğini belirleyerek ve test görevlerine efor tahminleri yaparak.",
+            "C. Kullanıcı hikayelerini ve kabul kriterlerini tek başlarına tanımlayarak.",
+            "D. Sadece test ortamını kurarak."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.2'ye göre, iterasyon planlamasına katılan test uzmanları 'kullanıcı hikayelerinin detaylı risk analizine katılır, kullanıcı hikayelerinin test edilebilirliğini belirler, kullanıcı hikayelerini görevlere (özellikle test görevlerine) ayırır ve tüm test görevleri için test eforunu tahmin eder'.",
+        "topic": "Chapter 5.1 - Test Planning (Tester's Contribution - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bir test uzmanı, yayın (release) planlaması sırasında aşağıdakilerden hangisine katkıda bulunur?",
+        "options": [
+            "A. Kodun derlenmesi.",
+            "B. Test edilebilir kullanıcı hikayeleri ve kabul kriterleri yazımına katılım.",
+            "C. Müşteri destek taleplerinin yanıtlanması.",
+            "D. Veritabanı şemasının tasarlanması."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.2, yayın planlamasına katılan test uzmanlarının 'test edilebilir kullanıcı hikayeleri ve kabul kriterleri yazımına katıldığını', risk analizlerine katıldığını, efor tahmini yaptığını, test yaklaşımını belirlediğini ve yayın için testi planladığını belirtir.",
+        "topic": "Chapter 5.1 - Test Planning (Tester's Contribution - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Giriş kriterleri (entry criteria) ve çıkış kriterleri (exit criteria) arasındaki temel fark nedir?",
+        "options": [
+            "A. Giriş kriterleri bir aktiviteyi tamamlamak için neyin başarılması gerektiğini tanımlarken, çıkış kriterleri bir aktiviteye başlamak için ön koşulları tanımlar.",
+            "B. Giriş kriterleri bir aktiviteye başlamak için ön koşulları tanımlarken, çıkış kriterleri bir aktiviteyi tamamlamak için neyin başarılması gerektiğini tanımlar.",
+            "C. Giriş kriterleri yalnızca test planlama aşamasında kullanılırken, çıkış kriterleri yalnızca test yürütme aşamasında kullanılır.",
+            "D. Giriş kriterleri nicel (quantitative) ölçümler içerirken, çıkış kriterleri nitel (qualitative) ölçümler içerir."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.3, 'Giriş kriterleri belirli bir aktiviteye başlamak için ön koşulları tanımlar.' ve 'Çıkış kriterleri, bir aktivitenin tamamlandığını ilan etmek için neyin başarılması gerektiğini tanımlar.' şeklinde ayrımı yapar. Eğer giriş kriterleri karşılanmazsa, aktivite daha zorlu ve riskli olabilir.",
+        "topic": "Chapter 5.1 - Test Planning (Entry and Exit Criteria - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test seviyesi için 'Gerekli test ortamının hazır ve doğrulanmış olması' ifadesi neyi temsil eder?",
+        "options": [
+            "A. Tipik bir çıkış kriteri.",
+            "B. Tipik bir giriş kriteri.",
+            "C. Bir test prensibi.",
+            "D. Bir test metriği."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.3, tipik giriş kriterleri arasında kaynakların (ortamlar dahil) mevcudiyetini listeler. Test ortamının hazır olması, test yürütme aktivitesine başlamak için bir ön koşuldur, dolayısıyla bir giriş kriteridir.",
+        "topic": "Chapter 5.1 - Test Planning (Entry and Exit Criteria - K2, Scenario)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Aşağıdakilerden hangisi, bir test aktivitesi için tipik bir **çıkış kriteri** örneğidir?",
+        "options": [
+            "A. Test temeli dokümanlarının mevcut olması.",
+            "B. Test ekibinin gerekli eğitimleri almış olması.",
+            "C. Hedeflenen kod kapsamı seviyesine ulaşılmış olması.",
+            "D. Test verilerinin hazırlanmış olması."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.1.3, tipik çıkış kriterlerini 'kapsamlılık ölçümleri (örn. ulaşılan kapsama seviyesi...)' ve 'tamamlama kriterleri (örn. planlanan testlerin yürütülmüş olması...)' olarak listeler. Ulaşılan kapsama seviyesi, aktivitenin tamamlanması için gereken bir ölçümdür. Diğer seçenekler genellikle giriş kriterleridir.",
+        "topic": "Chapter 5.1 - Test Planning (Entry and Exit Criteria - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir önceki benzer projede geliştirme eforunun test eforuna oranının 2:1 olduğu belirlenmiştir. Mevcut projede geliştirme eforunun 300 kişi-gün olması bekleniyorsa, 'Oranlara Dayalı Tahminleme' (Estimation based on ratios) tekniği kullanılarak test eforu yaklaşık kaç kişi-gün olarak tahmin edilir?",
+        "options": [
+            "A. 100 kişi-gün.",
+            "B. 150 kişi-gün.",
+            "C. 200 kişi-gün.",
+            "D. 600 kişi-gün."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.4'teki orana dayalı tahminleme örneğine benzer şekilde: Geliştirme/Test oranı 2/1 ise, Test Eforu = Geliştirme Eforu / 2'dir. Geliştirme eforu 300 kişi-gün ise, tahmini test eforu 300 / 2 = 150 kişi-gündür.",
+        "topic": "Chapter 5.1 - Test Planning (Estimation Techniques - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir Çevik (Agile) takım, gelecek sprintteki test eforunu tahmin etmek için son üç sprintteki ortalama test eforunu kullanıyor. Bu hangi tahminleme tekniğine bir örnektir?",
+        "options": [
+            "A. Oranlara Dayalı Tahminleme (Estimation based on ratios).",
+            "B. Genişletme/Dış Değer Kestirimi (Extrapolation).",
+            "C. Geniş Bant Delphi (Wideband Delphi).",
+            "D. Üç Nokta Tahminleme (Three-point estimation)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.4, Genişletme (Extrapolation) tekniğini 'mevcut projeden erken ölçümler yaparak veri toplama' ve 'kalan iş için gereken eforu bu veriyi genişleterek (genellikle matematiksel bir model uygulayarak) tahmin etme' olarak tanımlar. Geçmiş iterasyonların ortalamasını kullanarak gelecek iterasyonu tahmin etmek bu tekniğe bir örnektir.",
+        "topic": "Chapter 5.1 - Test Planning (Estimation Techniques - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir test projesi için test eforunu tahmin etmek amacıyla Üç Nokta Tahmin (Three-point estimation) tekniğini kullanıyorsunuz. En iyimser (a) tahmininiz 80 kişi-saat, en olası (m) tahmininiz 120 kişi-saat ve en kötümser (b) tahmininiz 220 kişi-saat ise, yaygın formül olan E = (a + 4m + b) / 6'yı kullanarak tahmin edilen test eforu (E) kaç kişi-saattir?",
+        "options": [
+            "A. 130 kişi-saat.",
+            "B. 126.67 kişi-saat.",
+            "C. 140 kişi-saat.",
+            "D. 420 kişi-saat."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Üç Nokta Tahmin formülü E = (a + 4m + b) / 6'dır. Verilen değerlerle hesaplama: E = (80 + 4 * 120 + 220) / 6 = (80 + 480 + 220) / 6 = 780 / 6 = 130 kişi-saat. Seçenek A doğru hesaplamayı vermektedir.",
+        "topic": "Chapter 5.1 - Test Planning (Estimation Techniques - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir projenin risk analizi sonucunda, 'Ödeme İşlemleri' modülünün en yüksek riske sahip olduğu belirlenmiştir. Risk Temelli Önceliklendirme (Risk-based prioritization) stratejisine göre, hangi test senaryoları ilk olarak yürütülmelidir?",
+        "options": [
+            "A. En kolay otomatikleştirilebilen test senaryoları.",
+            "B. En fazla kod kapsamı sağlayan test senaryoları.",
+            "C. 'Ödeme İşlemleri' modülünü kapsayan test senaryoları.",
+            "D. En son eklenen gereksinimleri test eden senaryolar."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.1.5, Risk Temelli Önceliklendirmeyi 'test yürütme sırasının risk analizi sonuçlarına dayandığı' bir strateji olarak tanımlar ve 'En önemli riskleri kapsayan test senaryoları ilk olarak yürütülür.' der. Bu durumda, en yüksek riskli 'Ödeme İşlemleri' modülünü test eden senaryolar öncelikli olmalıdır.",
+        "topic": "Chapter 5.1 - Test Planning (Test Case Prioritization - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Test senaryolarını önceliklendirirken, yüksek öncelikli bir test senaryosu (TS_High), daha düşük öncelikli bir test senaryosuna (TS_Low) bağımlıysa (örn. TS_High'ın çalışması için TS_Low'un önce çalışması gerekiyorsa) nasıl bir yol izlenmelidir?",
+        "options": [
+            "A. Her zaman TS_High önce çalıştırılmalıdır.",
+            "B. TS_Low, bağımlılığı gidermek için önce çalıştırılmalıdır.",
+            "C. Her iki test senaryosu da atlanmalıdır.",
+            "D. Rastgele bir sıra seçilmelidir."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.5, ideal olarak testlerin öncelik seviyelerine göre sıralanacağını ancak 'test senaryoları veya test edilen özelliklerin bağımlılıkları varsa bu uygulamanın işe yaramayabileceğini' belirtir. 'Eğer yüksek öncelikli bir test senaryosu daha düşük öncelikli bir test senaryosuna bağımlıysa, daha düşük öncelikli test senaryosu önce yürütülmelidir.'",
+        "topic": "Chapter 5.1 - Test Planning (Test Case Prioritization - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir projede aşağıdaki test senaryoları bulunmaktadır. Test yürütme sırasını Belirtim Temelli Önceliklendirme (Requirements-based prioritization) stratejisine göre belirleyeceksiniz. Gereksinim öncelikleri paydaşlar tarafından aşağıdaki gibi verilmiştir:\n\nGereksinim 1 (Öncelik: Yüksek) -> Test Senaryosu TS_A, TS_B\nGereksinim 2 (Öncelik: Orta) -> Test Senaryosu TS_C\nGereksinim 3 (Öncelik: Yüksek) -> Test Senaryosu TS_D, TS_E\nGereksinim 4 (Öncelik: Düşük) -> Test Senaryosu TS_F\n\nBağımlılıklar dikkate alınmazsa, bu stratejiye göre ilk çalıştırılması gereken test senaryoları hangileridir?",
+        "options": [
+            "A. TS_F, TS_C, TS_A.",
+            "B. TS_A, TS_B, TS_D, TS_E.",
+            "C. TS_C, TS_F.",
+            "D. TS_B, TS_C, TS_E."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Belirtim Temelli Önceliklendirme (Requirements-based prioritization) stratejisinde, test senaryoları ilişkili oldukları gereksinimlerin önceliklerine göre sıralanır. En önemli gereksinimlerle ilişkili test senaryoları ilk çalıştırılır. Yüksek öncelikli gereksinimler (1 ve 3) ile ilişkili test senaryoları TS_A, TS_B, TS_D, TS_E'dir. Bu test senaryoları, orta veya düşük öncelikli gereksinimlerle ilişkili senaryolardan (TS_C, TS_F) önce gelmelidir.",
+        "topic": "Chapter 5.1 - Test Planning (Test Case Prioritization - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Test Piramidi (Test Pyramid) modeline göre, piramidin alt katmanlarındaki testlerin (örn. birim testleri) tipik özellikleri nelerdir?",
+        "options": [
+            "A. Karmaşık, yüksek seviyeli, uçtan uca ve yavaş.",
+            "B. Küçük, izole, hızlı ve fonksiyonelliğin küçük bir parçasını kontrol eden.",
+            "C. Yalnızca manuel olarak yürütülebilen.",
+            "D. En az sayıda olan ve en geniş kapsamı sağlayan."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.6, piramidin alt katmanındaki testlerin 'küçük, izole, hızlı olduğunu ve fonksiyonelliğin küçük bir parçasını kontrol ettiğini, bu yüzden makul bir kapsama ulaşmak için genellikle çok sayıda gerektirdiğini' belirtir.",
+        "topic": "Chapter 5.1 - Test Planning (Test Pyramid - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Test Piramidi (Test Pyramid) kavramı, test otomasyonu ve efor dağılımı açısından neyi temsil eder?",
+        "options": [
+            "A. Farklı test seviyelerinin (örn. birim, servis, UI) farklı granülerlik, izolasyon ve hız seviyelerine sahip olduğunu ve genellikle alt katmanlarda daha çok, üst katmanlarda daha az test bulunduğunu.",
+            "B. Tüm testlerin aynı seviyede otomasyon gerektirdiğini.",
+            "C. Yalnızca manuel testlerin bir piramit şeklinde düzenlenmesi gerektiğini.",
+            "D. Test eforunun projenin en sonunda yoğunlaşması gerektiğini."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 5.1.6, Test Piramidini 'farklı testlerin farklı granülerlik seviyelerine sahip olduğunu gösteren bir model' olarak tanımlar. Piramit katmanları, farklı test otomasyonu seviyelerini destekler. Alt katmanlar (birim testleri) daha küçük, izole ve hızlıdır (çok sayıda), üst katmanlar (UI testleri) daha karmaşık ve yavaştır (daha az sayıda).",
+        "topic": "Chapter 5.1 - Test Planning (Test Pyramid - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Test Dörtlüleri (Testing Quadrants) modelinde, iş odaklı (business-facing) ve ürünü eleştiren (critique the product) testleri içeren çeyrek hangisidir?",
+        "options": [
+            "A. Çeyrek Q1.",
+            "B. Çeyrek Q2.",
+            "C. Çeyrek Q3.",
+            "D. Çeyrek Q4."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.1.7, Çeyrek Q3'ü 'iş odaklı, ürünü eleştirir' olarak tanımlar ve 'keşif testi, kullanılabilirlik testi, kullanıcı kabul testi içerir. Bu testler kullanıcı odaklıdır ve genellikle manueldir.'",
+        "topic": "Chapter 5.1 - Test Planning (Testing Quadrants - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test Dörtlüleri (Testing Quadrants) modelinin temel amacı nedir?",
+        "options": [
+            "A. Hangi test aracının kullanılacağını belirlemek.",
+            "B. Test seviyelerini uygun test türleri, aktiviteleri ve iş ürünleriyle gruplayarak test yönetimini görselleştirmeye yardımcı olmak.",
+            "C. Yalnızca Çevik (Agile) projelerde kusur sayısını tahmin etmek.",
+            "D. Test uzmanlarının performansını değerlendirmek."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.7, modelin 'tüm uygun test türlerinin ve seviyelerinin SDLC'ye dahil edildiğinden emin olmak için bunları görselleştirmede test yönetimine yardımcı olduğunu' belirtir. Ayrıca test türlerinin farklı seviyelerle ilişkisini ve paydaşlara farklı test türlerini açıklamayı kolaylaştırır.",
+        "topic": "Chapter 5.1 - Test Planning (Testing Quadrants - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, Test Dörtlüleri modelindeki 1. Çeyrek (Quadrant Q1) için doğrudur?",
+        "options": [
+            "A. İş odaklıdır (Business-facing) ve ürünü eleştirir (critique the product).",
+            "B. Teknoloji odaklıdır (Technology-facing) ve ekibi destekler (support the team). Bileşen (component) ve bileşen entegrasyon testlerini içerir.",
+            "C. Genellikle manuel testler içerir.",
+            "D. Kullanılabilirlik (usability) testlerini içerir."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.1.7, 1. Çeyreği (Quadrant Q1) 'teknoloji odaklı, ekibi destekler' olarak tanımlar ve 'bileşen ve bileşen entegrasyon testlerini içerir. Bu testler otomatikleştirilmeli ve CI sürecine dahil edilmelidir.'",
+        "topic": "Chapter 5.1 - Test Planning (Testing Quadrants - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Risk seviyesi (risk level), bir riskin hangi iki faktörünün birleşimiyle belirlenir?",
+        "options": [
+            "A. Risk tanımı ve risk kontrolü.",
+            "B. Risk olasılığı (risk likelihood) ve risk etkisi (risk impact).",
+            "C. Proje riski ve ürün riski.",
+            "D. Risk tespiti ve risk değerlendirmesi."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.2.1, bir riskin 'risk olasılığı (gerçekleşme olasılığı)' ve 'risk etkisi (gerçekleşmesinin sonuçları)' olmak üzere iki faktörle karakterize edilebileceğini ve bu iki faktörün risk seviyesini ifade ettiğini belirtir.",
+        "topic": "Chapter 5.2 - Risk Management (Risk Definition and Attributes - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bir yazılım projesinde 'kilit personelin projeden ayrılması' ne tür bir risktir?",
+        "options": [
+            "A. Ürün Riski (Product Risk).",
+            "B. Proje Riski (Project Risk).",
+            "C. Teknik Risk (Technical Risk - Proje Riski Alt Kategorisi).",
+            "D. Kalite Riski (Quality Risk - Ürün Riski ile ilgili)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.2.2, proje risklerini proje yönetimi ve kontrolüyle ilgili riskler olarak tanımlar ve 'Personel sorunları (örn. yetersiz beceriler, çatışmalar, iletişim sorunları, personel eksikliği)'nı proje riski örnekleri arasında sayar. Kilit personelin ayrılması bu kategoriye girer.",
+        "topic": "Chapter 5.2 - Risk Management (Project Risks and Product Risks - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi bir **proje riski** örneğidir?",
+        "options": [
+            "A. Yazılımın yanlış hesaplama yapması.",
+            "B. Yetersiz kullanıcı deneyimi.",
+            "C. İş ürünü teslimatlarında gecikmeler (örn. belirtimlerin gecikmesi).",
+            "D. Güvenlik açıkları."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.2.2, proje risklerinin proje yönetimi ve kontrolüyle ilgili olduğunu belirtir. Örnekler arasında organizasyonel sorunlar (örn. iş ürünü teslimatlarında gecikmeler, yanlış tahminler, maliyet kısıtlamaları), personel sorunları, teknik sorunlar ve tedarikçi sorunları bulunur. Yanlış hesaplama, kullanıcı deneyimi ve güvenlik açıkları ise ürün riskleridir.",
+        "topic": "Chapter 5.2 - Risk Management (Project Risks and Product Risks - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Ürün riskleri (product risks) genellikle neyle ilişkilidir ve ne tür olumsuz sonuçlara yol açabilir?",
+        "options": [
+            "A. Proje yönetimiyle ilişkilidir ve bütçe ile programı etkiler.",
+            "B. Ürün kalitesi özellikleriyle ilişkilidir ve kullanıcı memnuniyetsizliği, gelir kaybı, itibar kaybı gibi sonuçlara yol açabilir.",
+            "C. Yalnızca geliştirme sürecindeki hatalarla ilişkilidir ve sadece kod kusurlarına neden olur.",
+            "D. Yalnızca çevresel faktörlerle ilişkilidir ve donanım arızalarına neden olur."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.2.2, ürün risklerinin 'ürün kalitesi özellikleriyle ilişkili olduğunu' ve meydana geldiklerinde 'kullanıcı memnuniyetsizliği, gelir kaybı, itibar, üçüncü taraflara zarar, yüksek bakım maliyetleri, cezai yaptırımlar ve hatta aşırı durumlarda fiziksel hasar/yaralanma/ölüm' gibi çeşitli olumsuz sonuçlara yol açabileceğini belirtir.",
+        "topic": "Chapter 5.2 - Risk Management (Project Risks and Product Risks - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir ürün risk analizinde, belirli bir özelliğin yüksek riskli (yüksek olasılık ve yüksek etki) olarak değerlendirilmesi, test sürecini nasıl etkilemelidir?",
+        "options": [
+            "A. Bu özellik için daha az test yapılmalıdır.",
+            "B. Bu özellik için testler tamamen atlanmalıdır.",
+            "C. Bu özelliğe yönelik testler önceliklendirilmeli ve daha kapsamlı/derinlemesine test edilmelidir.",
+            "D. Yalnızca geliştiricilerin bu özelliği test etmesi yeterlidir."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.2.3, ürün risk analizinin 'test çabasını kalan ürün risk seviyesini en aza indirecek şekilde odaklamak' için kullanıldığını belirtir. Yüksek riskli olarak değerlendirilen alanlar, kusurları mümkün olduğunca erken bulmak amacıyla daha fazla test çabası (daha kapsamlı, daha derinlemesine, öncelikli) gerektirir.",
+        "topic": "Chapter 5.2 - Risk Management (Product Risk Analysis - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Ürün risk analizi (product risk analysis), test sürecini nasıl etkileyebilir?",
+        "options": [
+            "A. Test otomasyonu kullanımını zorunlu kılar.",
+            "B. Testin kapsamını ve derinliğini (thoroughness) etkileyerek test çabasının kalan risk seviyesini en aza indirecek şekilde odaklanmasını sağlar.",
+            "C. Yalnızca manuel test tekniklerinin kullanılmasını gerektirir.",
+            "D. Test sürecindeki tüm belirsizlikleri ortadan kaldırır."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.2.3, ürün risk analizinin amacının 'test çabasını kalan ürün risk seviyesini en aza indirecek şekilde odaklamak için ürün riski farkındalığı sağlamak' olduğunu belirtir. Analizin sonuçları testin kapsamını ve derinliğini (thoroughness) belirlemek için kullanılır.",
+        "topic": "Chapter 5.2 - Risk Management (Product Risk Analysis - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Ürün risklerini test yoluyla azaltmak (mitigate) için alınabilecek **İKİ** önlem nedir?",
+        "options": [
+            "A. Riski tamamen görmezden gelmek.",
+            "B. Etkilenen kalite özelliklerini ele alan uygun test türlerini uygulamak.",
+            "C. Test sürecini hızlandırmak için bağımsızlık seviyesini düşürmek.",
+            "D. Gözden geçirmeler yapmak ve statik analiz gerçekleştirmek.",
+            "E. Riski başka bir şirkete transfer etmek."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Metin 5.2.4, ürün risklerini test yoluyla azaltmak için alınabilecek aksiyonları listeler. Bunlar arasında 'Etkilenen kalite özelliklerini ele alan uygun test türlerini uygulamak' ve 'Gözden geçirmeler yapmak ve statik analiz gerçekleştirmek' bulunur. Bağımsızlık seviyesini düşürmek genellikle risk azaltma ile çelişir. Riski görmezden gelmek veya transfer etmek test yoluyla azaltma değildir.",
+        "topic": "Chapter 5.2 - Risk Management (Product Risk Control - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Analiz edilmiş ürün risklerine yanıt olarak alınabilecek önlemler arasında hangileri bulunur?",
+        "options": [
+            "A. Yalnızca riski kabul etmek.",
+            "B. Riski transfer etmek, kaçınmak veya tamamen göz ardı etmek.",
+            "C. Riski azaltma ( mitigation) (test faaliyetleri dahil), riski kabul etme, riski transfer etme veya acil durum planı (contingency plan).",
+            "D. Yalnızca sorumlu geliştiriciyi değiştirmek."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.2.4, analiz edilmiş ürün risklerine yanıt olarak çeşitli seçeneklerin bulunduğunu belirtir: 'risk azaltma ( mitigation) (test yoluyla), risk kabul etme, riski transfer etme veya acil durum planı (contingency plan)'. Test faaliyetleri de risk azaltma önlemlerinden biridir (örn. doğru test uzmanlarını seçme, bağımsızlık düzeyi uygulama, gözden geçirme yapma, statik analiz yapma, uygun test teknikleri ve türlerini uygulama, dinamik test yapma).",
+        "topic": "Chapter 5.2 - Risk Management (Product Risk Control - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, testin maliyetiyle ilgili tipik bir test metriğidir?",
+        "options": [
+            "A. Bulunan kusur sayısı.",
+            "B. Gereksinim kapsamı yüzdesi.",
+            "C. Test etme maliyeti veya kalitenin organizasyonel maliyeti.",
+            "D. Ortalama yanıtlama süresi."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.3.1, yaygın test metrikleri arasında 'Maliyet metrikleri (örn. test etme maliyeti, kalitenin organizasyonel maliyeti)' kategorisini listeler.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Metrics - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, test ilerlemesini (test progress) ölçmek için kullanılabilecek bir test metriği örneğidir?",
+        "options": [
+            "A. Geliştirici başına yazılan kod satırı sayısı.",
+            "B. Test ortamı hazırlık ilerlemesi ve çalıştırılan/çalıştırılmayan test senaryosu sayısı.",
+            "C. Proje ekibinin ortalama yaşı.",
+            "D. Pazarlamada harcanan toplam bütçe."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.3.1, yaygın test metriklerini listeler. 'Test ilerlemesi metrikleri (örn. test senaryosu uygulama ilerlemesi, test ortamı hazırlık ilerlemesi, çalıştırılan/çalıştırılmayan test senaryosu sayısı, geçti/kaldı, test yürütme süresi)' bu listeye dahildir.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Metrics - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Kusur yoğunluğu (defect density) metriği neyi ifade eder?",
+        "options": [
+            "A. Belirli bir süre içinde bulunan toplam kusur sayısını.",
+            "B. Belirli bir iş ürünü boyutuna (örn. kod satırı sayısı) düşen kusur sayısını.",
+            "C. Bir kusurun düzeltilmesinin ne kadar sürdüğünü.",
+            "D. En kritik kusurların yüzdesini."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.3.1'deki liste, kusur metrikleri arasında 'kusur yoğunluğunu' (defect density) sayar. Genellikle birim başına (örn. bin kod satırı başına) düşen kusur sayısı olarak ifade edilir.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Metrics - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Bir test tamamlama raporu (test completion report) genellikle ne zaman hazırlanır ve hangi bilgileri içerir?",
+        "options": [
+            "A. Test başlamadan önce; risk listesini içerir.",
+            "B. Test yürütme sırasında günlük olarak; sadece başarısız olan testleri içerir.",
+            "C. Bir proje, test seviyesi veya iterasyon tamamlandığında; test özeti, plana göre sapmalar, metrikler ve öğrenilen dersleri içerir.",
+            "D. Geliştirme tamamlandığında; yalnızca kod kapsamı sonuçlarını içerir."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.3.2, test tamamlama raporunun 'bir proje, test seviyesi veya test türü tamamlandığında ve ideal olarak çıkış kriterleri karşılandığında test tamamlama sırasında hazırlandığını' belirtir. Tipik içeriği 'test özeti, orijinal plana dayalı test ve ürün kalitesi değerlendirmesi, plandan sapmalar, test metrikleri, hafifletilmemiş riskler, düzeltilmeyen kusurlar ve testle ilgili öğrenilen dersler' içerir.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Test Reports - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test raporlarının içeriği ve sıklığı neden farklı paydaşlara göre değişiklik gösterebilir?",
+        "options": [
+            "A. Çünkü tüm paydaşlar her zaman aynı detay seviyesinde bilgiye ihtiyaç duyar.",
+            "B. Çünkü farklı paydaşların farklı bilgilere ihtiyacı vardır ve bu durum raporlamanın resmiyet derecesini ve sıklığını etkiler.",
+            "C. Çünkü test uzmanları rapor yazmaktan hoşlanmaz.",
+            "D. Çünkü raporlama standartları her proje için aynıdır."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.3.2, 'Farklı hedef kitleler raporlarda farklı bilgiler gerektirir ve raporlama resmiyetini ve sıklığını etkiler.' der. Örneğin, aynı takımdaki diğer kişilere yapılan raporlama sık ve gayri resmi olabilirken, proje yöneticisine veya müşteriye yapılan raporlama daha resmi ve özetleyici olabilir.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Test Reports - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test ilerleme raporlarının temel amacı nedir?",
+        "options": [
+            "A. Yalnızca bulunan kusurların listesini sunmak.",
+            "B. Testin devam eden kontrolünü desteklemek ve plana sapma veya değişen koşullar nedeniyle test programı, kaynaklar veya test planında değişiklik yapılması gerektiğinde yeterli bilgi sağlamak.",
+            "C. Sadece test otomasyonunun başarısını belgelemek.",
+            "D. Geliştiricilere işlerini hızlandırmaları için baskı yapmak."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.3.2, test ilerleme raporlarının amacını 'testin devam eden kontrolünü desteklemek ve plana sapma veya değişen koşullar nedeniyle test programı, kaynaklar veya test planında değişiklik yapılması gerektiğinde yeterli bilgi sağlamak' olarak belirtir. Paydaşları bilgilendirmek için düzenli olarak oluşturulurlar.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Test Reports - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir Çevik (Agile) takımda, sprint ilerlemesini ve kalan iş miktarını göstermek için sıkça kullanılan görsel iletişim aracı nedir?",
+        "options": [
+            "A. Resmi Test Tamamlama Raporu.",
+            "B. Burn-down grafiği (Burn-down chart).",
+            "C. Kullanıcı Kılavuzu.",
+            "D. Risk Listesi."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.3.3, test durumunu iletme seçenekleri arasında 'Gösterge panelleri (örn. CI/CD gösterge panelleri, görev panoları ve burn-down grafikleri)'ni listeler. Burn-down grafikleri, özellikle çevik takımlarda kalan işi ve ilerlemeyi görselleştirmek için yaygın olarak kullanılır.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Communicating Status - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Testin durumu farklı paydaşlara (örn. aynı takımdaki diğer kişiler vs. proje yöneticisi) nasıl iletişim kurulmalıdır?",
+        "options": [
+            "A. Her zaman aynı düzeyde resmiyet ve sıklıkta raporlama yapılmalıdır.",
+            "B. İletişim, paydaşların gerektirdiği bilgi türüne ve raporlama sıklığına göre uyarlanmalıdır.",
+            "C. Yalnızca test tamamlama raporları oluşturulmalıdır.",
+            "D. Sadece sözlü iletişim kullanılmalıdır."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.3.3, 'Farklı hedef kitleler raporlarda farklı bilgiler gerektirir ve raporlama resmiyetini ve sıklığını etkiler.' ifadesini kullanır. Ayrıca 'iletişimin buna göre uyarlanması gerektiği' belirtilir. Aynı takımdaki raporlama sıklıkla daha sık ve gayri resmi olabilirken, tamamlanmış projeler için raporlar belirli bir şablonu takip eder ve bir kez sunulur.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Communicating Status - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test durumunu iletmek için kullanılabilecek iletişim yöntemlerine örnekler nelerdir?",
+        "options": [
+            "A. Yalnızca resmi test tamamlama raporları.",
+            "B. Yalnızca test senaryosu dokümantasyonu.",
+            "C. Sözlü iletişim, gösterge panelleri (dashboards), elektronik iletişim kanalları (e-posta, sohbet) ve resmi test raporları.",
+            "D. Yalnızca kaynak kod incelemeleri."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 5.3.3, test durumunu iletmek için kullanılabilecek seçenekleri listeler: 'Sözlü iletişim', 'Gösterge panelleri (örn. CI/CD gösterge panelleri, görev panoları, burn-down grafikleri)', 'Elektronik iletişim kanalları (örn. e-posta, sohbet)', 'Çevrimiçi dokümantasyon' ve 'Resmi test raporları'.",
+        "topic": "Chapter 5.3 - Test Monitoring, Test Control and Test Completion (Communicating Status - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Konfigürasyon Yönetimi (CM), test sürecini nasıl destekler?",
+        "options": [
+            "A. Yalnızca yazılımın dağıtımını otomatikleştirerek.",
+            "B. Test planları, test stratejileri, test senaryoları ve test sonuçları gibi iş ürünlerinin tanımlanması, kontrol edilmesi ve izlenmesi için bir disiplin sağlayarak, böylece izlenebilirliğin korunmasına yardımcı olarak.",
+            "C. Test otomasyon betiklerini otomatik olarak yazarak.",
+            "D. Tüm kusurların otomatik olarak düzeltilmesini sağlayarak."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.4, CM'nin test sürecini desteklediğini belirtir. CM, 'test planları, test stratejileri, test koşulları, test senaryoları, test betikleri, test sonuçları, test günlükleri ve test raporları gibi iş ürünlerini konfigürasyon öğeleri olarak tanımlama, kontrol etme ve izleme disiplini' sağlar. Bu, izlenebilirliğin sürdürülmesine yardımcı olur.",
+        "topic": "Chapter 5.4 - Configuration Management (CM Support for Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Konfigürasyon Yönetimi (CM) kullanmanın test için sağladığı bir fayda nedir?",
+        "options": [
+            "A. Her zaman daha az test senaryosu yazılmasını sağlar.",
+            "B. Önceki test sonuçlarını yeniden üretmek için önceki bir temel duruma (baseline) geri dönmeyi mümkün kılar.",
+            "C. Test yürütme süresini otomatik olarak kısaltır.",
+            "D. Manuel testlerin gereksiz hale gelmesini sağlar."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.4, CM'nin bir faydası olarak 'önceki test sonuçlarını yeniden üretmek için önceki bir temel duruma (baseline) geri dönmenin mümkün olduğunu' belirtir. Ayrıca izlenebilirliği korumaya ve test dokümantasyonunda öğeleri net bir şekilde referanslamaya yardımcı olur.",
+        "topic": "Chapter 5.4 - Configuration Management (CM Support for Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test uzmanı, dinamik test sırasında bir anormallik tespit ediyor ve bir kusur raporu hazırlıyor. Aşağıdaki bilgilerden hangisi, kusurun geliştiriciler tarafından yeniden üretilmesine ve çözülmesine yardımcı olmak için raporda **mutlaka** bulunmalıdır?",
+        "options": [
+            "A. Test uzmanının kişisel yorumları ve duyguları.",
+            "B. Anormalliği tespit eden adımları içeren başarısızlığın açıklaması, ilgili günlükler veya ekran görüntüleri.",
+            "C. Test otomasyon aracının lisans anahtarı.",
+            "D. Projenin toplam bütçesi."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.5, tipik bir kusur raporunun 'yeniden üretmeyi ve çözmeyi sağlamak için başarısızlığın tanımını (anormalliği tespit eden adımlar dahil) ve ilgili test günlükleri, veritabanı dökümleri, ekran görüntüleri veya kayıtları' içermesi gerektiğini belirtir. Bu bilgi, geliştiricinin sorunu anlaması ve düzeltmesi için kritiktir.",
+        "topic": "Chapter 5.5 - Defect Management (Defect Report Content - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir kusur raporunda 'Kusurun ciddiyeti (severity)' alanı neyi ifade eder?",
+        "options": [
+            "A. Kusurun ne kadar acil düzeltilmesi gerektiğini.",
+            "B. Kusurun paydaşların veya gereksinimlerin çıkarları üzerindeki etki derecesini.",
+            "C. Kusuru bulan test uzmanının deneyim seviyesini.",
+            "D. Kusurun hangi test seviyesinde bulunduğunu."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 5.5, kusur raporu içeriğinde 'Kusurun ciddiyeti (paydaşların veya gereksinimlerin çıkarları üzerindeki etki derecesi)' maddesini listeler. Düzeltme aciliyeti ise 'Öncelik (Priority)' ile ifade edilir.",
+        "topic": "Chapter 5.5 - Defect Management (Defect Report Content - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Aşağıdaki bilgilerden hangisi dinamik test sırasında bulunan bir kusur raporuna dahil edilmelidir? (İKİ SEÇENEK SEÇİN)",
+        "options": [
+            "A. Kusurun benzersiz tanımlayıcısı (Unique identifier).",
+            "B. Test ekibinin haftalık toplantı notları.",
+            "C. Beklenen sonuç ve gerçekleşen sonuç.",
+            "D. Rakip ürünlerin analizi.",
+            "E. Proje yöneticisinin iletişim bilgileri."
+        ],
+        "correctAnswer": [0, 2],
+        "explanation": "Metin 5.5, dinamik test kusur raporunun tipik içeriğini listelerken 'Benzersiz tanımlayıcı' ve 'Beklenen sonuçlar ve gerçekleşen sonuçlar' maddelerini içerir. Toplantı notları, rakip analizi veya yönetici iletişim bilgileri genellikle doğrudan kusur raporunun içeriği değildir.",
+        "topic": "Chapter 5.5 - Defect Management (Defect Report Content - K3, Format: Select TWO)",
+        "kLevel": "K3"
+    }
+]

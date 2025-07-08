@@ -1,0 +1,1871 @@
+[
+  {
+    "id": "aksiyon_kelimesi_gudumlu_test",
+    "term": "Aksiyon Kelimesi Güdümlü Test",
+    "definition": "Test girdilerini içeren dosyada sadece test verilerinin ve beklenen sonuçların değil, aynı zamanda test senaryosunu oluşturacak aksiyon kelimelerinin de bulunduğu test etme tekniği. Aksiyon kelimeleri kontrol betiği tarafından çağrılan yardımcı betikler tarafından yorumlanır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "alfa_testi",
+    "term": "Alfa Testi",
+    "definition": "Potansiyel kullanıcı/müşteri veya bağımsız test ekibi tarafından yazılım geliştiricinin kendi ortamında fakat yazılım geliştirme ekibinin kontrolü dışında yapılan operasyonel test. Alfa testi genellikle iç kabul testleri şeklinde paket yazılımlar için yapılmaktadır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "alt_seviye_test_senaryosu",
+    "term": "Alt Seviye Test Senaryosu",
+    "definition": "Girdiler ve beklenen sonuç için somut değerleri olantest senaryosu. Bu test senaryo çeşidinde üst seviyetest senaryolarındaki mantıksal operatörleramaçlarına karşılık gelen gerçek değerlerledeğiştirilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "anomali",
+    "term": "Anomali",
+    "definition": "Gereksinimden, tasarımdan, kullanıcı dökümanından,standartlardan, beklenti, tecrübe veya algıdan sapma durumu.Anormallikler gözden geçirme, test, analiz, derleme veya ürünün kullanımı sırasında ortaya çıkabilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "arayuz_testi",
+    "term": "Arayüz Testi",
+    "definition": "Bileşenler veya sistemler arasındaki arayüzlerin testleriyle ilgili bir entegrasyon test çeşidi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ariza_durumu",
+    "term": "Arıza Durumu",
+    "definition": "Bir arızanın fiziksel veya fonksiyonel göstergesidir.Örneğin,arıza durumundaki bir sistemin yavaş çalışması, yanlış çıktılar üretmesi veya tamamen çalışmasını sonlandırması olarak nitelendirilebilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ariza_durumu_ve_etki_analizi",
+    "term": "Arıza Durumu Ve Etki Analizi",
+    "definition": "Riskleri belirlemek, olası arıza durumlarını analiz etmek ve bunların oluşmasını engellemeye çalışmak için kullanılan sistematik bir yaklaşım",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ariza_orani",
+    "term": "Arıza Oranı",
+    "definition": "Arıza sayısının belirli bir ölçü birimine göre oranlanması. Örn: belirli bir zamanda alınan arıza sayısı, bilgisayar başına alınan arıza sayısı",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "arizalar_arasinda_gecen_ortalama_sure",
+    "term": "Arızalar Arasında Geçen Ortalama Süre",
+    "definition": "Bir sistemin arızaları arasında geçen ortalama zaman.Güvenilirlik büyüme modelinin bir parçasıdır",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "arka_arkaya_test_etme",
+    "term": "Arka-Arkaya Test Etme",
+    "definition": "Bir bileşenin veya sistemin iki veya daha fazla varyansının aynı girdilerle test edilmesi, çıktılarının karşılaştırılması ve tutarsızlık durumunda analiz edilmesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "artimli_gelistirme_modeli",
+    "term": "Artımlı Geliştirme Modeli",
+    "definition": "Projenin aşamalara bölündüğü ve proje gereksinimlerine göre gerçekleştirilecek tüm fonksiyonalitenin her aşamada bir kısmının geliştirildiği bir yazılım geliştirme hayat döngüsü.Gereksinimler önceliklendirilir ve ilgili aşamanın öncelik sırasına göre ele alınır. Bu döngü modelinin bazı çeşitlerinde, her alt proje kendi tasarım,kodlama ve test aşamalarıyla küçük bir V-modeli oluşturur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "artkosul",
+    "term": "Artkoşul",
+    "definition": "Testin veya test prosedürünün koşturulmasından sonra ortaya çıkması gereken ortam ve durum koşulları",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "atomik_kosul",
+    "term": "Atomik Koşul",
+    "definition": "Parçalara bölünemeyen durum. Örneğin 'VE', 'VEYA', 'DIŞLAMALI VEYA' gibi mantıksal operatörlerle birleştirilmiş iki veya daha fazla tek koşulu barındırmayan bir durumdur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "avrupa_kalite_yonetimi_kurumu_modeli",
+    "term": "Avrupa Kalite Yönetimi Kurumu Modeli",
+    "definition": "Avrupa Kalite Yönetimi Kurumu tarafından tanımlanan bir organizasyonun kalite yönetim sistemi için çerçeve. Beş başarı kriteri (organizasyonun ne yaptığı kapsayan) ve dört sonuç kriterini (bir organizasyonun başardıkları) temel alır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "bakim",
+    "term": "Bakım",
+    "definition": "Hataların giderilmesi, performansın arttırılması,yazılımın niteliklerinin arttırılması veya yazılımın değişen bir ortama uyumlu hale getirilmesi için yazılımda yapılan değişiklikler.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "bakim_testi",
+    "term": "Bakım Testi",
+    "definition": "İşletimde olan bir sisteme yapılan değişiklerin veya değişmiş bir ortamın işletimde olan bir sisteme etkisinin test edilmesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "basarili_basarisiz_kriteri",
+    "term": "Başarılı/Başarısız Kriteri",
+    "definition": "Bir test öğesinin (fonksiyon) veya özelliğin başarılı veya başarısız olup olmadığını belirlemek için kullanılan karar verme kuralları.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "beklenen_sonuc",
+    "term": "Beklenen Sonuç",
+    "definition": "Gereksinimlere göre bileşenin veya sistemin tahmin edilen davranışı",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "bellek_sizintisi",
+    "term": "Bellek Sızıntısı",
+    "definition": "Bir programdaki dinamik bellek kullanma mantığındaki hataya istinaden oluşan bir bellek erişim arızası. Belleğin kullanımı bitmesine rağmen,belleğin serbest bırakılmamasına sebebiyet verir.Sonunda bellek yetersizliği sebebiyle program sonlanır",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "beta_testi",
+    "term": "Beta Testi",
+    "definition": "Potansiyel ve/veya varolan, harici konumda bulup, geliştiricilere dahil olmayan kullanıcı/müşterinin, bir bileşenin veya sistemin, kullanıcı/müşteri ihtiyaçlarına ve iş süreçlerine uygunluğuna karar vermesi için yürütülen işletimsel test. Beta testi genel olarak harici kabul testi olarak paket yazılım ürününün üzerinde pazardan geri bildirim almak amacı ile gerçekleştirilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "betiklestirilmis_test",
+    "term": "Betikleştirilmiş Test",
+    "definition": "Hazırlanmış test senaryolarının sıralı komutlar halinde koşturulması sonucu yapılan test",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "beyaz_kutu_test_teknigi",
+    "term": "Beyaz Kutu Test Tekniği",
+    "definition": "Bir sistemin veya bir bileşenin iç yapısının analizini baz alan test koşullarının seçim ve/veya çıkarım prosedürü.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "beyaz_kutu_testi",
+    "term": "Beyaz Kutu Testi",
+    "definition": "Bir sistemin veya bir bileşenin iç yapısının analizine bağlı olarak test etme yöntemi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "bilesen",
+    "term": "Bileşen",
+    "definition": "Tek başına test edilebilen en küçük yazılım öğesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "bilesen_testi",
+    "term": "Bileşen Testi",
+    "definition": "Bileşenlerinin tek başına test edilmesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "birim_testi_cercevesi",
+    "term": "Birim Testi Çerçevesi",
+    "definition": "Birim veya bileşen testi için ortam sağlayan bir yazılım aracı. Bir bileşen uygun taklit uygulama ve sürücülerile veya tek başına test edilebilir. Hata ayıklama gibi yazılımcılar için farklı destekler sağlayabilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "birlikte_calisabilirlik",
+    "term": "Birlikte Çalışabilirlik",
+    "definition": "Yazılımın bir veya daha fazla bileşen veya sistem ile etkileşimde olabilme yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "cevik_manifesto",
+    "term": "Çevik Manifesto",
+    "definition": "Çevik yazılım geliştirmenin temellerini oluşturan değerler listesi. Bu değerler: -Süreçler ve araçlardan ziyade bireyler ve etkileşimlere -Kapsamlı dökümantasyondan ziyade çalışan yazılıma -Sözleşme pazarlıklarından ziyade müşteri ile işbirliğine -Bir plana bağlı kalmaktan ziyade değişime karşılık vermeye",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "cevik_yazilim_gelistirme",
+    "term": "Çevik Yazılım Geliştirme",
+    "definition": "Gereksinimlerin ve çözümlerin insiyatif alabilen farklı takımlar arası işbirliği ile ortaya çıktığı, artarak evrimleştiği, bir grup döngüsel yazılım geliştirme metodolojisi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "cikis_kriteri",
+    "term": "Çıkış Kriteri",
+    "definition": "Bir sürecin resmi olarak tamamlanmasına izin vermek için paydaşlarla kararlaştırılmış genel ve özel durumlar grubu. Çıkış kriterlerinin amacı, işin hala bitirilmemiş kısımları varken o işin tamamlanmış olarak değerlendirilmesini önlemektir. Çıkış kriterleri testin ne zaman sonlanacağını planlamak ve raporlama için kullanılır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "coklu_kosul_kapsama",
+    "term": "Çoklu Koşul Kapsama",
+    "definition": "Bir test senaryo grubunun çalıştırdığı bir komutun içerisinde bulunan tüm tekil koşul kombinasyonlarının yüzdesi. %100 çoklu koşul kapsama, %100 değiştirilmiş koşul karar kapsamayı ifade etmektedir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "coklu_kosul_testi",
+    "term": "Çoklu Koşul Testi",
+    "definition": "Test senaryolarının tek bir komut içindeki tekil koşul kombinasyonlarını çalıştırmak için tasarlandığı beyaz kutu test tekniği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "cozumlenebilirlik",
+    "term": "Çözümlenebilirlik",
+    "definition": "Yazılım ürünündeki eksikliklere veya hata nedenlerineya da değiştirilmesi gereken parçalara tanı konulabilmesi yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "dal",
+    "term": "Dal",
+    "definition": "Case, jump, go to, if-then-else gibi karar öğeleriyle iki veya daha fazla yola ayrılmış programın çalıştırılabilir bir bloğu.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "dal_kapsami",
+    "term": "Dal Kapsamı",
+    "definition": "Koşturulan testlerin dalları kapsama yüzdesi.Testlerde%100 dal kapsamı sağlandığı zaman hem %100 karar hem de %100 komut kapsamı da sağlanmış olur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "dal_testi",
+    "term": "Dal Testi",
+    "definition": "Test senaryolarının programdaki dalları yürütmek için dizayn edildiği beyaz kutu test tasarım tekniği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "deger_bazli_kalite",
+    "term": "Değer Bazlı Kalite",
+    "definition": "Kalitenin maliyet ile ölçümlendiği kalite yaklaşımı.Ürün veya servisin, kabul edilebilir bir maliyetle istenen performansı sağlaması olarak tanımlanabilir.Kalite maliyet, efor ve harcanan zaman dengesinde alınan karar sürecinin sonucudur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "degistirilebilirlik",
+    "term": "Değiştirilebilirlik",
+    "definition": "Bir yazılımın başka bir yazılımın yerine aynı amaçlar doğrultusunda aynı ortam üzerinde kullanılabilmesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "degistirilmis_kosul_karar_kapsami",
+    "term": "Değiştirilmiş Koşul Karar Kapsamı",
+    "definition": "Test senaryo grubu tarafından çalıştırılmış karar sonucunu bağımsız olarak etkileyen her tekil koşulun sonucunun yüzdesel oranı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "degistirilmis_kosul_karar_testi",
+    "term": "Değiştirilmiş Koşul Karar Testi",
+    "definition": "Test senaryolarının karar sonucunu bağımsız olarak etkileyen tekil koşul sonuçlarını üretmek için tasarlandığı beyaz kutu tasarım tekniği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "denetim",
+    "term": "Denetim",
+    "definition": "Yazılım ürünlerinin ya da süreçlerinin standartlara,yönergelere, özelliklere ve/veya prosedürlere uyumluluğunu nesnel kriterler baz alarak ortaya çıkaran bağımsız bir değerlendirme.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "denklik_payi",
+    "term": "Denklik Payı",
+    "definition": "Gereksinimlere göre bir bileşen veya sistemin aynı davranışları sergilediği girdi veya çıktı alanının bir kısmı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "dinamik_analiz",
+    "term": "Dinamik Analiz",
+    "definition": "Sistemin çalışması esnasında davranışının değerlendirilmesi. Örneğin: bellek performansı, CPUkullanımı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "dinamik_test",
+    "term": "Dinamik Test",
+    "definition": "Bir bileşen veya sistemin çalıştırılarak test edilmesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "dongusel_gelistirme_modeli",
+    "term": "Döngüsel Geliştirme Modeli",
+    "definition": "Projenin genelde çok sayıda döngülere bölündüğü yazılım geliştirme yaşam döngüsü. Her bir döngü,çalışabilir bir ürünün çıktığı bir sürümle veya geliştirilmekte olan son ürünün alt kümesi ile sonuçlanan tam bir geliştirme döngüsüdür. Her döngüde gitgide hedef ürüne ulaşılır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "dongusel_karmasa",
+    "term": "Döngüsel Karmaşa",
+    "definition": "Bir programdaki doğrusal, bağımsız yolların maksimum sayısı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "duman_testi",
+    "term": "Duman Testi",
+    "definition": "Bir programın en önemli fonksiyonlarının çalışıp çalışmadığını anlamak amacıyla detaylara girmeden yapılan test tekniği. Günlük derleme ve duman testi endüstrideki en iyi test pratikleri arasındadır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "durum_gecisi_testi",
+    "term": "Durum Geçişi Testi",
+    "definition": "Test senaryolarının geçerli ve geçersiz durum geçişlerini test edebilmek amacıyla tasarlandığı, kara kutu test tekniği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "elverislilik",
+    "term": "Elverişlilik",
+    "definition": "Bir bileşen veya sistemin kullanılması gerektiğinde,operasyonel ve erişilebilir olma derecesi. Genellikle yüzdesel olarak gösterilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "emulator",
+    "term": "Emülator",
+    "definition": "Test edilecek sistem gibi davranan ve onunla aynı girdileri kabul edip aynı çıktıları üreten bir cihaz,bilgisayar programı veya sistem.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "entegrasyon_testi",
+    "term": "Entegrasyon Testi",
+    "definition": "Entegre bileşenler veya sistemlerin arayüz ve etkileşimlerindeki hataları açığa çıkarmak için yapılan test.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "entegre_test_olgunluk_modeli",
+    "term": "Entegre Test Olgunluk Modeli",
+    "definition": "Beş seviyeli, basamaklı bir yapıdan oluşan, test süreçlerinin iyileştirilmesi için gerekli, etkili test süreçlerinin ana hatlarını tanımlayan, Entegre Yetenek Olgunluk Modeliyle uyumlu çerçeve model",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "entegre_yetenek_olgunluk_modeli",
+    "term": "Entegre Yetenek Olgunluk Modeli",
+    "definition": "Etkili yazılım geliştirme ve bakım süreçleri oluşturmak için anahtar öğeleri tanımlayan bir çerçeve model. Yazılım geliştirme yönetim ve bakım süreçlerinin planlama, mühendislik ve yönetimine ait en iyi uygulamaları kapsamaktadır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "es_gozden_gecirme",
+    "term": "Eş-Gözden Geçirme",
+    "definition": "Programda hataların bulunması amacıyla programın yazılımcının çalışma arkadaşları tarafından gözden geçirilmesi. Örneğin, teftiş, teknik gözden geçirme ve üzerinden geçme.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "esli_test",
+    "term": "Eşli Test",
+    "definition": "İki kişinin, örneğin iki test uzmanı, yada yazılımcı ve test uzmanı, yada son kullanıcı ve test uzmanının hata bulmak üzere beraber çalışması. Genellikle bu iki kişi test esnasında tek bir bilgisayarı paylaşırlar.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "etki_analizi",
+    "term": "Etki Analizi",
+    "definition": "Gereksinimlerde yapılacak bir değişikliğin, yazılım geliştirme dokümantasyonu, test dokümantasyonu ve bileşenlerde oluşturacağı değişikliğin büyüklüğünün değerlendirilmesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "etkinlik",
+    "term": "Etkinlik",
+    "definition": "Planlanan sonucu üretebilme yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "fonksiyonel_olmayan_test",
+    "term": "Fonksiyonel Olmayan Test",
+    "definition": "Bir bileşen veya sistemin fonksiyonalitesiyle ilgili olmayan niteliklerinin testi, örneğin güvenilirlik,verimlilik, kullanılabilirlik, sürdürülebilirlik ve taşınabilirlik.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "fonksiyonel_test",
+    "term": "Fonksiyonel Test",
+    "definition": "Bir bileşen veya sistemin işlevsel özelliklerinin analizine dayanan test.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "gayri_resmi_gozden_gecirme",
+    "term": "Gayri Resmi Gözden Geçirme",
+    "definition": "Resmi (dokümante) bir prosedüre dayanmayan gözden geçirme",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "gecmise_donuk_toplanti",
+    "term": "Geçmişe Dönük Toplantı",
+    "definition": "Proje takımı üyelerinin projeyi değerlendirdiği vesonraki projelerde dikkat edilmesi gereken tecrübeleri paylaştığı, proje sonunda yapılan toplantı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "genis_band_delphi_test_faaliyeti_tahminleme_teknigi",
+    "term": "Geniş Band Delphi Test Faaliyeti Tahminleme Tekniği",
+    "definition": "Takım üyelerinin kollektif bilgilerine dayanarak doğru tahminlemeyi yapmayı amaçlayan uzmanlık bazlı test faaliyeti tahminleme tekniği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "genis_kapsamli_test",
+    "term": "Geniş Kapsamlı Test",
+    "definition": "Test grubunun tüm girdi ve ön koşul kombinasyonlarını kapsadığı test yaklaşımı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "gerceklesen_sonuc",
+    "term": "Gerçekleşen Sonuç",
+    "definition": "Bileşen veya sistem test edilirken ortaya çıkan/gözlemlenen davranış.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "gereksinim",
+    "term": "Gereksinim",
+    "definition": "Kullanıcının bir problemi çözmesi veya amacı gerçekleştirebilmesi için sistem veya sistem bileşeninin sahip olması veya yerine getirmesi gereken koşul veya yetenekleri tarif eden sözleşme,standart, şartname veya resmi belge.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "gereksinim_bazli_test",
+    "term": "Gereksinim Bazlı Test",
+    "definition": "Test senaryolarının gereksinimlerden elde edilen testamaçları ve test koşulları baz alınarak tasarlandığıtest etme yaklaşımı, örneğin belirli fonksiyonalite veya güvenilirlik, kullanılabilirlik gibi fonksiyonel olmayan özelliklerin test edilmesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "giris_kriteri",
+    "term": "Giriş Kriteri",
+    "definition": "Bir sürecin başlamasına veya ilerlemesine izin vermek için kullanılan genel ve özel koşullar kümesi.Giriş kriterlerinin amacı başarısız olma ihtimali yüksek bir işleme başlanmasını önleyerek verimliliği artırmaktır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "gosterge_paneli",
+    "term": "Gösterge Paneli",
+    "definition": "Bir organizasyon ya da aktiviteyle ilgili operasyonelperformansın sayaç, araba kokpit göstergesi gibibenzetmeler kullanılarak gösterilmesi. Bu şekilde birakitivitenin etkileri operasyonel hedeflerleilişkilendirilmektedir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "gozden_gecirici",
+    "term": "Gözden Geçirici",
+    "definition": "Gözden geçirilen ürün veya projedeki anormallikleri belirleyen ve tanımlayan kişi. Gözden geçirme sürecinde, gözden geçiriciler farklı bakış açılarını ve rolleri temsil eden kişilerden seçilebilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "guven_araligi",
+    "term": "Güven Aralığı",
+    "definition": "Ortaya çıkması muhtemel risklerin etkilerini azaltmak için hayata geçirilmesi planlanan beklenmedik durum aksiyonlarına gereken zaman",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "guvenilirlik",
+    "term": "Güvenilirlik",
+    "definition": "Belirli durumlar altında, belirli bir zaman aralığında veya belirli sayıda operasyonel iş için yazılımın beklenilen işlevselliklerini yerine getirebilme yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "guvenilirlik_buyume_modeli",
+    "term": "Güvenilirlik Büyüme Modeli",
+    "definition": "Yazılımın sürekli test edilerek yazılımdaki güvenilirlik hatalarının giderilmesi ve bu sayede yazılımın güvenilirliğinde gelişme sağlanmasını gösteren model",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "guvenlik",
+    "term": "Güvenlik",
+    "definition": "Yazılımın fonksiyonlarına veya verilerine yetkisiz erişimi ne kadar önleyebildiği. (kazayla veya kasti olarak )",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "guvenlik_testi",
+    "term": "Güvenlik Testi",
+    "definition": "Yazılımın ne kadar güvenli olduğunu belirlemeye yönelik yapılan testler.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "hata_ayiklama",
+    "term": "Hata Ayıklama",
+    "definition": "Yazılımdaki hataların sebeplerinin bulunup, analiz edilip,ortadan kaldırılmasına yönelik süreç.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "hata_bazli_teknik",
+    "term": "Hata Bazlı Teknik",
+    "definition": "Bir veya daha fazla hata kategorisinden hata bulmayı hedefleyen test senaryolarını belirleme / seçme prosedürü.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "hata_raporu",
+    "term": "Hata Raporu",
+    "definition": "Bir bileşen veya sistemin gereken fonksiyonlarını yerine getirmesini engelleyen kusurun raporlandığı doküman",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "hata_siniflandirmasi",
+    "term": "Hata Sınıflandırması",
+    "definition": "Hataların hiyerarşik kategorilere ayrılarak özellikle hata bazlı testlerde tekrar kullanılmasını sağlayan yöntem",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "hata_tahminleme",
+    "term": "Hata Tahminleme",
+    "definition": "Testi gerçekleştiren kişinin tecrübesinin test edilen bileşen veya sistemde hangi yanlışların olabileceğinin tahmin edilmesinde kullanılması ve testlerin bu yanlışları ortaya çıkarmak üzere tasarlanması.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "hata_tespit_yuzdesi",
+    "term": "Hata Tespit Yüzdesi",
+    "definition": "Bir test fazında bulunan hataların sayısının, aynı fazda ve daha sonraki fazlarda bulunan hataların sayısına oranı",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "hata_yogunlugu",
+    "term": "Hata Yoğunluğu",
+    "definition": "Bir sistem ya da bileşende bulunan hata sayısının sistemin büyüklüğüne oranı (örn. kod satır sayısı,sınıf sayısı, fonksiyon puanları)",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "hissedilen_kalite",
+    "term": "Hissedilen Kalite",
+    "definition": "Açık olarak kalitenin net bir şekilde tanımlı olmadığı ancak onu gördüğümüzde bildiğimiz veya olmadığında eksik olduğunu anladığımız kalite yaklaşımı. Kalite algıya ve bir grubun ürünle ilgili duygularına dayanır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ikili_test",
+    "term": "İkili Test",
+    "definition": "Programın tüm ikili girdi kombinasyonlarını çalıştırmak için test senaryolarının tasarlandığı kara kutu test tasarım tekniği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "insan_hatasi_hata",
+    "term": "İnsan Hatası/Hata",
+    "definition": "Bir insan tarafından gercekleştirilen ve doğru olmayan sonuç üreten bir eylem.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "isletilebilirlik",
+    "term": "İşletilebilirlik",
+    "definition": "Yazılımı kullanıcıya sağladığı çalıştırılma vekontrol edilebilme yeteneği .",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kabul_testi",
+    "term": "Kabul Testi",
+    "definition": "Sistemin kabul edilmesine karar vermek için yapılan,kullanıcı ihtiyaçları, gereksinimleri ve iş sürecine göre yürütülen, sistemin kabul kriterine uygunluğunu, kullanıcıyı, müşteriyi veya yetkili birimi etkin kılarak denetleyen resmi test aktivitesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kalite_gecidi",
+    "term": "Kalite Geçidi",
+    "definition": "Projede özel bir kilometre taşı. Kalite geçitleri önceki fazın çıktılarına son derecede bağımlı olan iki faz arasına konulur. Kalite geçidi bağımlı olunan fazın dokümanlarını kontrol etmeyi de içerir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kalite_guvence",
+    "term": "Kalite Güvence",
+    "definition": "Kalite gereksinimlerinin yerine getirilmesine yönelik güven sağlamaya odaklanan kalite yönetimi bölümü.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kalite_karakteristigi",
+    "term": "Kalite Karakteristiği",
+    "definition": "Bir öğenin kalitesini etkileyen özellik.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kalite_kontrol",
+    "term": "Kalite Kontrol",
+    "definition": "Kalite yönetimi kapsamında kalite gereksinimlerinin sağlanmasına odaklanan operasyonel teknikler ve aktiviteler",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kalite_riski",
+    "term": "Kalite Riski",
+    "definition": "Kalite özelliğiyle ilgili risk.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kalite_yonetimi",
+    "term": "Kalite Yönetimi",
+    "definition": "Kurum kalitesinin artırılmasına yönelik koordineli aktivitelerin yönlendirilmesi ve kontrol edilmesi. Bu aktiviteler genellikle kalite politikasının ve kalite hedeflerinin konulması, kalite planlaması, kalite kontrol, kalite güvence ve kalite iyileştirme adımlarını kapsar.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kalitenin_maliyeti",
+    "term": "Kalitenin Maliyeti",
+    "definition": "Kaliteli bir ürün elde etme yolunda karşılaşılan toplam maliyet. Toplam maliyet hatayı önleme maliyeti, değerlendirme maliyeti, arızanın oluşması durumunda iç ve dış kaynaklı maliyetleri gibi kırılımlara ayrılır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kapsam_ogesi",
+    "term": "Kapsam Öğesi",
+    "definition": "Test kapsamı için temel alınan bir öğe veya tanım, örn. denklik sınıfları veya kod komutları",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kara_kutu_teknigi",
+    "term": "Kara Kutu Tekniği",
+    "definition": "Test senaryolarının test edilecek sistemin fonksiyonel veya fonksiyonel olmayan gereksinimleri baz alınarak oluşturulduğu, sistemin iç çalışma mantığının dikkate alınmadığı test tasarım tekniği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "karar_kapsami",
+    "term": "Karar Kapsamı",
+    "definition": "Bir test grubunun koşulması sonucunda elde edilen karar çıktılarının yüzdesi. %100 karar kapsamı, %100 dal kapsamı ve %100 komut kapsamını ifade eder.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "karar_tablosu_testi",
+    "term": "Karar Tablosu Testi",
+    "definition": "Test senaryolarının bir karar tablosundaki girdi ve/veya tetikleyici (neden) kombinasyonlarını içerecek şekilde tasarlandığı kara kutu test tekniği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "karar_testi",
+    "term": "Karar Testi",
+    "definition": "Karar çıktılarının yürütülmesi için tasarlanan test senaryolarını içeren beyaz kutu test tasarım tekniği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "katip",
+    "term": "Katip",
+    "definition": "Gözden geçirme toplantısında hatayı ve süreci iyileştirmek için yapılan önerileri kaydeden kişi. Katip,kayıt formunun okunabilir ve anlaşılabilir olmasından sorumludur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kaynak_kullanimi",
+    "term": "Kaynak Kullanımı",
+    "definition": "Yazılımın yeterli düzeyde ve çeşitte kaynak kullanabilme yeteneği, örneğin program belli koşullarda çalışırken, program tarafından kullanılan ilk ve ikincil hafıza miktarı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kesif_testi",
+    "term": "Keşif Testi",
+    "definition": "Test edenin daha iyi ve daha yeni testleri tasarlamak için test yaparken edindiği bilgiyi kullanarak ve bu testleri yürüterek bilfiil test tasarımını kontrol altına aldığı gayri resmi test tasarım tekniği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kok_neden",
+    "term": "Kök Neden",
+    "definition": "Ortadan kaldırıldığında hatanın da ortadan kalktığı veya etkisinin azaldığı neden",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kok_neden_analizi",
+    "term": "Kök Neden Analizi",
+    "definition": "Hataların kök nedenlerinin belirlenmesini amaçlayan analiz tekniği. Kök nedenlerde düzeltici önlemlerin alınmasıyla hataların yinelenmesinin minimize edilmesi beklenmektedir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kombinasyonlu_test_etme",
+    "term": "Kombinasyonlu Test Etme",
+    "definition": "Parametrelerinin her birinin farklı değerler alabileceği çoklu parametreye sahip objede istenilen test kapsamına en makul şekilde ulaşmak için test kombinasyonlarından en uygun alt kümenin seçilmesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "komut_kapsama_yuzdesi",
+    "term": "Komut Kapsama Yüzdesi",
+    "definition": "Test senaryo grubu tarafından çalıştırılmış komutların yazılımdaki toplam komutlara oranı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "komut_testi",
+    "term": "Komut Testi",
+    "definition": "Test senaryolarının yazılım komutlarını çalıştıracak şekilde tasarlandığı beyaz kutu test tekniği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kontrol_akis_analizi",
+    "term": "Kontrol Akış Analizi",
+    "definition": "Bir sistemin işleyişi içindeki tekil yolların ( olayların sıralamasının) gösterimine dayanan bir statik analiz şekli. Kontrol akış analizleri, kontrol akışlarının bütünlüğünün incelenip hiç bitmeyen döngüler veulaşılamayan süreç adımları gibi olası hataların tespitini sağlar.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kontrol_akisi",
+    "term": "Kontrol Akışı",
+    "definition": "Bir sistem içerisinde gerçekleşen olaylar dizisi (yol)",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kontrol_grafigi",
+    "term": "Kontrol Grafiği",
+    "definition": "Bir sürecin izlenmesini, istatistiksel olarak kontrol edilip edilmediğinin belirlenmesini sağlayan bir istatistiksel süreç kontrol aracı. Grafiksel olarak bir sürecin ortalama, alt ve üst limit değerlerini gösterir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kosul_kapsami",
+    "term": "Koşul Kapsamı",
+    "definition": "Koşturulan testlerin koşulları kapsam yüzdesi.%100 koşul kapsamına ulaşabilmek için her bir kararın içindeki koşulların tek tek 'Doğru' ve 'Yanlış' değerlerinialması gerekmektedir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kosul_testi",
+    "term": "Koşul Testi",
+    "definition": "Test senaryolarının koşul sonuçlarını koşturacak biçimde tasarlandığı bir beyaz- kutu test tasarım tekniği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kritik_test_surecleri",
+    "term": "Kritik Test Süreçleri",
+    "definition": "Oniki kritik süreç etrafında test süreç iyileştirmesi için yapılmış içerik bazlı model. Şirketin itibar ve karlılığını etkileyen süreçleri içerir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kullanici_bazli_kalite",
+    "term": "Kullanıcı Bazlı Kalite",
+    "definition": "Kullanıcıların istek, arzu ve gereksinimlerini karşılama yeteneğinin kalite kriteri olarak algılandığı kalite yaklaşımı. Kullanıcı gereksinimlerini karşılamayan ürün veya servisi kullanıcı talep etmez yaklaşımı. Farklı iş ihtiyaçları ve kullanıcılar farklı kalitede ürünlere ihtiyaç duyduğundan, bu kalite yaklaşımında bağlam çok önemlidir .",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kullanici_hikayesi",
+    "term": "Kullanıcı Hikayesi",
+    "definition": "Genellikle çevik yazılım geliştirmede kullanılan üstseviye kullanıcı veya iş gereksinimleri.Kullanıcı hikayesi, kullanıcı bakış açısında oluşturulmuş cümlelerdir. Bu cümleler kullanıcının fonksiyonel,fonksiyonel olmayan gereksinimlerini ve kabul kriterlerini içerir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kullanici_hikayesi_testi",
+    "term": "Kullanıcı Hikayesi Testi",
+    "definition": "Kullanıcı hikayeleri baz alınarak tasarlanmış test koşullarının doğrulandığı kara kutu test tasarım tekniği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kullanilabilirlik",
+    "term": "Kullanılabilirlik",
+    "definition": "Yazılımın, belirlenmiş koşullar altında kullanıldığında,kullanıcı için çekici, kolay kullanılır, öğrenilebilir ve anlaşılabilir olma yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kullanilabilirlik_testi",
+    "term": "Kullanılabilirlik Testi",
+    "definition": "Belirlenmiş koşullar altında yazılım ürününün kullanıcıya cazip geldiğini, kolay kullanılabildiğini, kolay öğrenilebildiğini ve anlaşılabildiğini doğrulamak için yapılan test.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kullanim_senaryosu_testi",
+    "term": "Kullanım Senaryosu Testi",
+    "definition": "Kara kutu test tasarım tekniği. Bu teknikte test koşulları, kullanım senaryolarının koşulması için tasarlanır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kurtarilabilirlik",
+    "term": "Kurtarılabilirlik",
+    "definition": "Arıza sonrasında, yazılımın eski performans seviyesine geri dönmesi ve arızanın neden olduğu veri kayıplarını giderebilme yeteneği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kurulabilirlik",
+    "term": "Kurulabilirlik",
+    "definition": "Yazılımın belli bir ortama kurulabilme yeteneği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kusur_agaci_analizi",
+    "term": "Kusur Ağacı Analizi",
+    "definition": "Kusurların nedenlerini analiz etmekte kullanılan bir yöntem. Bu yöntem, arızalar ile insan hataları ve dış etkenler arasındaki mantıksal bağlantıları görsel olarak modeller.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kusur_ekimi",
+    "term": "Kusur Ekimi",
+    "definition": "Bir bileşen veya sisteme kasıtlı bir şekilde hata ekleyerek, sistemin hata bulabilme ve hatayı ortadan kaldırma oranını gözlemlemek ve kalan hata sayısını hesaplamak amacıyla gerçekleştirilen süreç. Hata ekimi genellikle programlama safhasında yapılır ve herhangi bir test seviyesinde (birim, entegrasyonveya sistem) gerçekleştirilebilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kusur_enjeksiyonu",
+    "term": "Kusur Enjeksiyonu",
+    "definition": "Bir sisteme kasıtlı bir şekilde hata ekleyerek, o sistemin hataları tespit edebilme ve hatadan kendisini kurtarabilme yetisini anlamak amacıyla gerçekleştirilen süreç. Hata enjeksiyonu ile canlıda gerçekleşebilecek arızaların taklit edilmesi amaçlanmaktatır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kusur_ortaya_cikarmaya_yonelik_saldiri",
+    "term": "Kusur Ortaya Çıkarmaya Yönelik Saldırı",
+    "definition": "Bir test objesinin kalitesinin, özellikle güvenilirliğinin,hataların oluşmasına zorlanarak doğrudan ve odaklı bir şekilde denenmesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "kusur_toleransi",
+    "term": "Kusur Toleransı",
+    "definition": "Bir kusurun ortaya çıkması durumundayazılımın belli performans seviyelerinikoruyabilme yeteneği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "master_test_plani",
+    "term": "Master Test Planı",
+    "definition": "Genellikle birden fazla test seviyesini ele alan test planı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "metrik",
+    "term": "Metrik",
+    "definition": "Ölçüm için kullanılan bir yöntem ve ölçüm cetveli.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "model_bazli_test",
+    "term": "Model Bazlı Test",
+    "definition": "Test edilen bileşen veya sistemi modelleyen test,örneğin güvenirlik büyüme modelleri, kullanım modellerini operasyonel profil olarak yada davranışsal modelleri karar tablosu veya geçiş diyagramı olarak modellemek gibi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "moderator",
+    "term": "Moderatör",
+    "definition": "Teftiş veya gözden geçirme sürecinden sorumlu lider kişi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "myers_briggs_cesit_gostergeci",
+    "term": "Myers-Briggs Çeşit Göstergeci",
+    "definition": "Farklı kişiliklerin ve kişilerin iletişim tarzlarını tanımlamaya yarayan psikolojik gösterge",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "n_anahtar_kapsama",
+    "term": "N-Anahtar Kapsama",
+    "definition": "Bir test senaryo grubu tarafından çalıştırılan N+1 geçiş dizileri yüzdesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "neden_sonuc_diyagrami",
+    "term": "Neden-Sonuç Diyagramı",
+    "definition": "Bir problemin çesitli olası kök sebepleri arasındaki ilişkileri düzenleme ve sergileme amacıyla kullanılan grafik gösterim şekli. Yatay bir ağaç yapısında bir hatanın veya arızanın gerçek veya olası nedenleri kategoriler ve alt kategoriler halinde gösterilerek hata veya arızayı temsil eden düğüm noktalarıyla ilişkilendirilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "neden_sonuc_grafigi",
+    "term": "Neden-Sonuç Grafiği",
+    "definition": "Girdiler ve/veya tetikleyiciler (nedenler) ile ilgili çıktıların (etkilerin) grafik gösterimi. Test senaryolarının tasarımında kullanılabilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "negatif_test",
+    "term": "Negatif Test",
+    "definition": "Bileşen veya sistemin çalışmadığı noktaları göstermeyi amaçlayan test. Negatif testler belli bir test yaklaşımı veya test tasarım tekniğinden ziyade test uzmanının tutumu ile ilgilidir",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ogrenilebilirlik",
+    "term": "Öğrenilebilirlik",
+    "definition": "Yazılımın, kullanıcının ürünün kullanımını öğrenmesini sağlama yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "olceklenebilirlik",
+    "term": "Ölçeklenebilirlik",
+    "definition": "Yazılım ürününün daha fazla yük kaldıracak şekilde yükseltilme yeteneği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "olceklenebilirlik_testi",
+    "term": "Ölçeklenebilirlik Testi",
+    "definition": "yazılımın ölçeklebilinirliğini belirleme testi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "olcum",
+    "term": "Ölçüm",
+    "definition": "Bir varlığa bir sayı veya kategori atamaya yönelik bir süreç. Bu sayede varlığın bir niteliği tanımlanmış olur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "olgunluk",
+    "term": "Olgunluk",
+    "definition": "Süreçlerinin ve iş uygulamalarının etkinliği ve verimliliği açısından bir kurumun sahip olduğu yeterlilik. Ayrıca bakınız Entegre Yetenek Olgunluk Modeli, Entegre Test Olgunluk Modeli. (2) Bir yazılım ürününün yazılım hataları sonucunda oluşabilecek arızaları önleme yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "oncelik",
+    "term": "Öncelik",
+    "definition": "Bir öğeye, örneğin hataya, kullanıcı bakış açısıyla atanmış itibar düzeyi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "onem_derecesi",
+    "term": "Önem Derecesi",
+    "definition": "Bir hatanın geliştirilmekte veya kullanılmakta olan bir sistem üzerindeki etki derecesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "onkosul",
+    "term": "Önkoşul",
+    "definition": "Test veya test prosedürü koşturulmadan önce yerine getirilmesi gereken ortam ve durum koşulları",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "operasyonel_kabul_testi",
+    "term": "Operasyonel Kabul Testi",
+    "definition": "Kabul testi fazında, tipik olarak operasyon ortamında yapılan (simule edilen), operasyon ve/veya sistem yönetimi yetkilileri tarafından sistemin operasyonel yönlerine odaklanılarak yapılan test.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "operasyonel_profil",
+    "term": "Operasyonel Profil",
+    "definition": "Bileşen veya sistem tarafından gerçekleştirilen,genellikle kullanıcının bileşenle veya sistemle etkileşimi sırasında davranışını ve olasılığını temel alan işlemler. Bu işlemler fizikselden ziyade mantıksaldır ve birkaç makine üzerinde veya ardışık olmayan zaman dilimlerinde çalıştırılabilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "operasyonel_profil_yaratma",
+    "term": "Operasyonel Profil Yaratma",
+    "definition": "Operasyonel profil geliştirilmesi ve uygulanması süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ortalama_tamir_suresi",
+    "term": "Ortalama Tamir Süresi",
+    "definition": "Bir sistemin herhangi bir arızadan kurtarılması için gereken ortalama zaman. Genellikle hatanın giderildiğini kontrol eden test süresini de içermektedir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "oturum_bazli_test_yonetimi",
+    "term": "Oturum Bazlı Test Yönetimi",
+    "definition": "test tasarımı, testin koşturulması gibi test faaliyetlerinin birlikte, kesintiye uğratılmadan bağımsız oturumlar içinde hayata geçirildiği bir yaklaşım. Genellikle keşif test tekniklerinde kullanılır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ozel_arac",
+    "term": "Özel Araç",
+    "definition": "Belli bir müşteri ya da kullanıcı grubu için özel olarakgeliştirilmiş yazılım aracı",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ozellik_gudumlu_gelistirme",
+    "term": "Özellik Güdümlü Geliştirme",
+    "definition": "Müşteriye değer katacak özelliklerin döngüsel ve artan bir şekilde hayata geçirildiği yazılım geliştirme yöntemi. Özellik güdümlü geliştirme çoğunlukla çevik yazılım geliştirmede kullanılmaktadır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "performans_testi",
+    "term": "Performans Testi",
+    "definition": "Bir yazılım ürününün performansını belirlemek için yürütülen test süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "performans_testi_araci",
+    "term": "Performans Testi Aracı",
+    "definition": "Genellikle iki işlevi olan performans testlerini destekleyen araç: yük oluşturma ve işlem değerlerinin ölçümü. Yük oluşturmayı hem çoklu kullanıcı, hem de yüksek hacimli veri girişi simülasyonu ile gerçekleştirebilmektedir. Performans testi aracının çalışması esnasında seçili işlemlerin yanıt süresi ölçülür ve bu ölçüm sonuçları kayıt edilir. Performans test araçları genellikle test ölçüm raporlarını ve yanıt sürelerine dayalı yük grafiklerini elde etmeye yarar.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "poker_planlama_teknigi",
+    "term": "Poker Planlama Tekniği",
+    "definition": "Çevik yazılım geliştirme yaklaşımlarında iş yükünü veya kullanıcı hikayelerinin birbirlerine göre olan ağırlıklarını mutabakata dayalı tahmin etme tekniği.Projeyi oluşturan bileşenlere ait iş yükünün sayısal değerler ile temsil edildiği numaralı kartlar kullanılara ktahmin edildiği Geniş Band Delphi metodunun bir başka çeşididir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "proje_riski",
+    "term": "Proje Riski",
+    "definition": "Projenin yönetimi ve kontrolüyle ilgili olan riskler.Örneğin personel eksikliği, katı bitiş tarihleri, sürekli değişikliğe uğrayan gereksinimler v.b",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "raci_matrisi",
+    "term": "Racı Matrisi",
+    "definition": "Bir proje veya süreçte yer alan işler veya teslim edilecek ürünlerden sorumlu rolleri anlatmaya yarayan matris. Özellikle rollerin ve sorumlulukların belirlenmesinde kullanılmaktadır. RACI kısaltması dört çeşit sorumluluk tipinin baş harflerinden oluşmaktadır: işin yapılmasından sorumlu(responsible), işin yaptırılmasından sorumlu(accountable), danışılan (consulted) ve bilgi verilen(informed)",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "rastgele_test",
+    "term": "Rastgele Test",
+    "definition": "Test senaryolarının genellikle sözde rastgele algoritmalardan seçilerek güncel hayattaki senaryolara benzetildiği kara-kutu test tekniği. Bu teknik performans ve güvenilirlik gibi fonksiyonel olmayan özelliklerin testinde kullanılabilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "regresyon",
+    "term": "Regresyon",
+    "definition": "Yazılımda yapılan değişiklik veya düzeltme sonrasında bu değişiklik veya düzeltmenin yazılımın başka yerlerinde sebep olabileceği hataları bulmaya yönelik olarak yazılımın değiştirilmeyen veya düzeltilmeyen taraflarının tekrar test edilmesi.Yazılım veya yazılımın ortamı değiştiğinde uygulanan testlerdir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "risk",
+    "term": "Risk",
+    "definition": "Gelecekte olumsuz sonuçlar doğurabilecek etken,genellikle etkisi ve gerçekleşme olasılığı baz alınarak ifade edilir",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "risk_analizi",
+    "term": "Risk Analizi",
+    "definition": "Belirlenmiş risklerin etkisini ve gerçekleşme olasılığını değerlendirme süreci",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "risk_belirleme",
+    "term": "Risk Belirleme",
+    "definition": "Beyin fırtınası, kontrol listeleri ve başarısızlık tarihçesi gibi teknikleri kullanarak riskleri belirleme işlemi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "risk_degerlendirmesi",
+    "term": "Risk Değerlendirmesi",
+    "definition": "Projenin veya ürünün, olasılığını ve etki derecelerini atayarak ve bunları toparlayıp tek bir risk öncelik seviyesine indirgeyerek, risk seviyesini belirleme süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "risk_etkisi",
+    "term": "Risk Etkisi",
+    "definition": "Riskin gerçekleşmesi durumunda sebep olacağı hasar",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "risk_olasiligi",
+    "term": "Risk Olasılığı",
+    "definition": "Bir riskin gerçekleşme olasılığı",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "risk_seviyesi",
+    "term": "Risk Seviyesi",
+    "definition": "Riskin etkisi ve olasılığı baz alınarak tanımlanan bir çeşit risk önemi. Risk seviyesi, gerçekleştirilecek testin yoğunluk oranını belirlemek içinkullanılabilir. Bir risk seviyesi nitel ( ör.Yüksek,orta,düşük) veya nicel olarak ifade edilebilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "risk_yonetimi",
+    "term": "Risk Yönetimi",
+    "definition": "Riskin belirlenmesi, analiz edilmesi, önceliklendirilmesi ve kontrol edilmesi işleri için prosedürlerin ve uygulamaların sistematik uygulanması",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "riski_azaltma",
+    "term": "Riski Azaltma",
+    "definition": "riskleri düşürmek veya belirlenen seviyelerde tutmak için kararların verilmesi ve koruyucu önlemlerin alınması işlemi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "smart_hedef_methodolojisi",
+    "term": "S.M.A.R.T. Hedef Methodolojisi",
+    "definition": "Hedeflerin net olarak tanımlandığı bir yöntem. SMART kelimesi tanımlanacak hedeflerin özellikleri olan'Specific' (kesin, belirli), Measurable (ölçümlenebilir),'Attainable' (Ulaşılabilir), 'Relevant' (uygun) ve'Timely' (zamanında) kelimelerinin baş harflerindenelde edilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "savruk_isaretci",
+    "term": "Savruk İşaretçi",
+    "definition": "Var olmayan veya alakasız bir alanı referans veren işaretçi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "sertifikasyon",
+    "term": "Sertifikasyon",
+    "definition": "Bir bileşenin, sistemin ya da kişinin belirligereksinimleri karşıladığının, örnegin bir sınavdan geçer not alarak, onaylanması süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "seviye_test_plani",
+    "term": "Seviye Test Planı",
+    "definition": "Bir test seviyesini ele alan test planı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "sezgisel_degerlendirme",
+    "term": "Sezgisel Değerlendirme",
+    "definition": "Kullanıcı arayüzü ve tasarımında, kullanılabilirlik hatalarını bulmaya yönelik bir kullanılabilirlik test tekniği. Bu teknikte testi yapan kişi arayüzün kabul edilmiş kullanılabilirlik prensiplerine uyumluluğunu sezgisel yöntemlerle değerlendirir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "simulator",
+    "term": "Simulator",
+    "definition": "Test sırasında kullanılan, kontrollü bir girdi kümesi sağlandığında gerçekte test edilecek asıl sistem gibi davranan veya çalışan bir aygıt, bilgisayar programı veya sistem",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "sistem_testi",
+    "term": "Sistem Testi",
+    "definition": "Sistemin istenilen gereksinimleri karşılayıp karşılamadığını doğrulamak amacıyla yapılan test süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "sistematik_test_ve_degerlendime_sureci",
+    "term": "Sistematik Test Ve Değerlendime Süreci",
+    "definition": "Yapısal test yöntemi, ayrıca test sürecini geliştirmek için içerik bazlı bir modelleme olarak da kullanılır.Sistematik Test ve Değerlendime Süreci (STEP)iyileştirme çalışmalarının belirli bir düzen içerisinde meydana gelmesini gerektirmez.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "sistemler_sistemi",
+    "term": "Sistemler Sistemi",
+    "definition": "Ortak bir yönetim yapısı olmadan birden çok seviyede birbiriyle entegre edilmiş belli sorunları ve amaçları çözmeye yönelik genellikle heterojen,dağıtık sistemler topluluğu",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "siniflandirma_agaci",
+    "term": "Sınıflandırma Ağacı",
+    "definition": "Denklik sınıflarını hiyerarşik sıralanmış sekilde gösteren ağaç. Bu ağaç gösterimi sınıflandırma ağacı yönteminde test senaryolarını tasarlamakta kullanılır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "siniflandirma_agaci_yontemi",
+    "term": "Sınıflandırma Ağacı Yöntemi",
+    "definition": "Bir kara-kutu test tasarım tekniği. Test senaryoları, sınıflandırma ağacında yer alan girdi ve/veya çıktıların kombinasyonları kullanılarak oluşturulur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "sinir_deger_analizi",
+    "term": "Sınır Değer Analizi",
+    "definition": "Test senaryolarının, sınır değerlerine göre tasarlandığı kara kutu test tasarım tekniği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "sinir_degeri",
+    "term": "Sınır Değeri",
+    "definition": "Denklik sınıfının kenarında veya kenar değerlerin hemen yakınında bulunan girdi veya çıktılar.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "statik_analiz",
+    "term": "Statik Analiz",
+    "definition": "Gereksinimler yada yazılan kod gibi yazılım geliştirme nesnelerinin yürütülmeden hatalarını bulmak için yapılan analiz. Statik analiz genellikle test araçlari ile yapılmaktadır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "statik_test",
+    "term": "Statik Test",
+    "definition": "Gereksinimler, tasarım ya da kod gibi yazılım geliştirme eserlerinin çalıştırılmadan, gözden geçirilerek ya da statik analiz kullanılarak hatalarını bulmak için ile yapılan testler.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "stres_testi",
+    "term": "Stres Testi",
+    "definition": "Bir sistem ya da bileşeni öngörülen veya belirlenmiş çalışma yükünün sınırlarında ya da ötesinde, ya da bellek veya sunucuya erişimi gibi kaynakların azalması durumundaki çalışma kapasitesini değerlendirmek için yürütülen bir çeşit performans testi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "surdurulebilirlik",
+    "term": "Sürdürülebilirlik",
+    "definition": "Bir yazılımda hataların giderilmesi, yeni gereksinimlerin karşılanması, gelecek bakımların kolaylaştırılması veya değişen ortama uydurulmasının kolaylığı",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "surec_degerlendirmesi",
+    "term": "Süreç Değerlendirmesi",
+    "definition": "Kurumun yazılım süreçlerinin referans bir modele göre değerlendirilmesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "surucu",
+    "term": "Sürücü",
+    "definition": "Bir bileşen veya sistemi kontrol eden ve/veya çağıran bir yazılım bileşeni veya test aracı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "taklit_uygulama",
+    "term": "Taklit Uygulama",
+    "definition": "Geliştirilmekte olan bir fonksiyonu test edebilmek gibi özel amaçlar için kullanılan, gerçek uygulamanın özelliklerini taklit edebilen sahte yazılım uygulaması.Bu sahte uygulama ihtiyaç halinde mevcut bileşenin yerine geçer.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "tanim_kullanim_cifti",
+    "term": "Tanım-Kullanım Çifti",
+    "definition": "Bir değişken tanımının bu değişkenin kullanımıyla eşleştirilmesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "tasinabilirlik",
+    "term": "Taşınabilirlik",
+    "definition": "Yazılımın bir ortamdan başka bir ortama ne kadar kolay taşınabildiği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "tepkisel_test",
+    "term": "Tepkisel Test",
+    "definition": "Testi yapılan sistemin verdiği tepkilere ve koşturulan testlerin sonucuna göre akışın belirlendiği testler.Genellikle tepkisel testlerin planlama zamanları kısadır ve test edilecek sistem veya nesne gelmeden test tasarımı ve testin uyarlanmasına başlanılmaz.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test",
+    "term": "Test",
+    "definition": "Bir ya da birden fazla test senaryoları bütünü.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_altyapisi",
+    "term": "Test Altyapısı",
+    "definition": "Test ortamından, test araçlarından, ofis ortamından veprosedürlerden oluşan, testin yapılması için gerekli organizasyonel eserler.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_baslatma_belgesi",
+    "term": "Test Başlatma Belgesi",
+    "definition": "Test hedeflerini ve testin nasıl yapılacağını belirten muhtemel test fikirlerinin bildirisi. Test başlatma belgesi araştırmacı testlerde kullanılmaktadır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_betigi",
+    "term": "Test Betiği",
+    "definition": "Genellikle test prosedürü spesifikasyonunu ifade eder, özellikle otomatize olanını.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_cesidi",
+    "term": "Test Çeşidi",
+    "definition": "Bir sistem veya bileşeni test etmeyi amaçlayan,belirli bir test hedefine odaklanmış ( fonksiyonel test,kullanılabilirlilik testi, regresyon testi gibi) bir grup test aktivitesi. Bir test çeşidi bir veya birden fazla test seviyesinde yer alabilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_direktoru",
+    "term": "Test Direktörü",
+    "definition": "Test yöneticilerini yöneten üst düzey yönetici.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_dongusu",
+    "term": "Test Döngüsü",
+    "definition": "Test sürecinin tek bir test nesnesinin test edilmesine yönelik işletilmesi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_edilebilirlilik",
+    "term": "Test Edilebilirlilik",
+    "definition": "Yazılımın üzerinde değişiklik yapıldıktan sonra da test edilmesine olanak verme yeteneği",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_esasi",
+    "term": "Test Esası",
+    "definition": "Bir sistem ve bileşeninin gereksinimlerinin çıkarılabileceği tüm belgeler. Test senaryolarının dayandırıldığı dokümantasyon. Eğer doküman sadece resmi bir prosedürü ile değiştirilebiliyorsa, test esası değişmez test esası olarak adlandırılır",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_gozetimi",
+    "term": "Test Gözetimi",
+    "definition": "Test projesinin durumunu periyodik olarak kontroleden aktiviteleri içeren süreç.Hedeflenen ile gerçekleşen aktiviteleri karşılaştıran raporlar hazırlanır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_grubu",
+    "term": "Test Grubu",
+    "definition": "Bir sistem veya bileşeni test etmek için oluşturulmuş test senaryoları kümesi. Öyle ki, bir test senaryosu için ard koşul olan bir durum bir diğeri için ön koşuldur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_gudumlu_gelistirme",
+    "term": "Test Güdümlü Geliştirme",
+    "definition": "Yazılım geliştirilirken, geliştirilecek yazılımla ilgiili öncelikle test senaryolarının yazıldığı ve genellikle otomatize edildiği yazılım geliştirme yöntemi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_kapanisi",
+    "term": "Test Kapanışı",
+    "definition": "Bir test süreci fazı olan test kapanışı sırasında test projesinde kazanılan tecrübe,test yazılımı ve metrikler toplulaştırılarak sonraki projelerde kullanılmak için arşivlenir.Test kapanışı aşaması, test projesi çıktılarını sonuçlandırma ve arşivleme, test değerlendirme raporu hazırlığı da dahil olmak üzere test sürecini değerlendirme konularından oluşur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_kaydi",
+    "term": "Test Kaydı",
+    "definition": "Testlerin yürütülmesi ile ilgili detayların kronolojik tutulması",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_kaydi_tutma",
+    "term": "Test Kaydı Tutma",
+    "definition": "Test kaydına, yürütülen testlere dair bilgi kaydetme işlemi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_kontrol",
+    "term": "Test Kontrol",
+    "definition": "Gözetim sırasında plandan bir sapma görüldüğünde test projesini yoluna koymak için geliştirilen ve uygulanan düzeltici aksiyonların yer aldığı bir test yönetim bütünü.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_kosulu",
+    "term": "Test Koşulu",
+    "definition": "Bir ya da daha çok test senaryosu ile doğrulanabilen bir bileşenin veya sistemin bir öğesi ya da olayı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_kosumu",
+    "term": "Test Koşumu",
+    "definition": "Test nesnesinin belirli bir sürümünde testin yürütülmesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_kuluckasi",
+    "term": "Test Kuluçkası",
+    "definition": "Testin yürütülmesi için gerekli olan taklit uygulamalarıve sürücüleri içeren test ortamı.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_lideri",
+    "term": "Test Lideri",
+    "definition": "Test aktivite ve kaynaklarının yönetiminden ve test nesnesinin değerlendirilmesinden sorumlu kişi. Bu kişi test nesnesinin değerlendirilme sürecinin yönlendirilmesinden, kontrolünden, yönetiminden,planlanmasından ve düzenlenmesinden sorumludur,",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_mimari",
+    "term": "Test Mimarı",
+    "definition": "(1) Bir test organizasyonu ve onun diğerdisiplinler ile olan ilişkisi için rehberlik ve stratejik yön sağlayan kişi.(2) Belirli bir sistem için test araçları, test verisi yönetimi gibi konularını da içeren yapısal test yöntemlerini belirleyen kişi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_misyonu",
+    "term": "Test Misyonu",
+    "definition": "Test politikasının bir parçası olarak dokümante edilen,bir organizasyon için testin amacını tanımlayan cümle.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_nesnesi",
+    "term": "Test Nesnesi",
+    "definition": "Teste tabi tutulacak bileşen ya da sistem.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_ogesi",
+    "term": "Test Öğesi",
+    "definition": "Teste tabi tutulacak münferit öğe. Genellikle tek bir test nesnesi ve bir çok test öğesi olur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_ortami",
+    "term": "Test Ortamı",
+    "definition": "Testin yapılması için gerek duyulan, donanım, aygıt,simülatörler, yazılım araçları ve diğer destekleyici öğeleri içeren ortam.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_oturumu",
+    "term": "Test Oturumu",
+    "definition": "Testler yürütülürken kesinti olmaksızın harcanan zaman aralığı. Keşif testlerinde, her test oturumu başlatma belgesini baz alır, fakat test uzmanları oturum süresince yeni tasarımlar yaparak farklı hataları bulmaya çalışırlar. Test senaryoları anlık yaratılıp yürütülür ve hatalar kayıt altına alınır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_plani",
+    "term": "Test Planı",
+    "definition": "Kapsamı, yaklaşımı, kaynakları ve tasarlanan test aktivitelerine dair zamanlamayı tanımlayan doküman. Test öğelerini, test edilecek özellikleri,test görevlerini, her bir görevi kimin yapacağını,testin bağımsızlık derecesini, test ortamını, test tasarım tekniklerini ve kullanılacak giriş ve çıkış kriterlerini ve tercih gerekçelerini, beklenmedik durum planlaması gerektiren riskleri diğerlerinden ayırarak tanımlar. Test planlama sürecinin bir kaydıdır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_planning",
+    "term": "Test Planning",
+    "definition": "Bir test planını güncelleme veya oluşturma aktivitesi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_politikasi",
+    "term": "Test Politikası",
+    "definition": "İlkeleri, yaklaşımı ve organizasyonun teste ilişkin ana hedeflerini tanımlayan üst seviye doküman.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_puani_analizi",
+    "term": "Test Puanı Analizi",
+    "definition": "Fonksiyon puan analizine dayalı test tahminleme formülü.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_raporu",
+    "term": "Test Raporu",
+    "definition": "Test aktivitelerini ve sonuçlarını özetleyen bir doküman. Aynı zamanda test çıkış kriterlerine karşılık gelen test öğelerine bağlı ilerlemeyi de içerir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_senaryosu",
+    "term": "Test Senaryosu",
+    "definition": "Belirli bir program yolunu çalıştırmak ya da bir gereksinim ile uyumluluğunu doğrulamak gibi belirli bir amaç veya test koşulu için geliştirilen, bir dizi girdi değeri, test öncesi yürütülmesi gereken ön koşullar,test sonrası oluşması beklenen sonuçlar ve koşullar bütünü.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_seviyesi",
+    "term": "Test Seviyesi",
+    "definition": "Birlikte yönetilen ve organize edilen bir grup test aktivitesi. Test seviyesi, bir projede sorumluluklara bağlanır. Örneğin birim testi, entegrasyon testi,sistem testi ve kabul testi test seviyeleri",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_sonucu",
+    "term": "Test Sonucu",
+    "definition": "Çalıştırılan testin sonucu/çıktısı. Ekran görüntülerini,veri, rapor veya mesajlardaki değişiklikleri içerir",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_sonucunu_bilen",
+    "term": "Test Sonucunu Bilen",
+    "definition": "Testin beklenen sonucunun saptanması için kullanılan kaynak. Test sonucunu bilen mevcuttaki sistem, başka bir yazılım, kullanıcı klavuzu veya kişinin uzmanlık bilgisi olabilir, ancak kod olamaz.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_spesifikasyonu",
+    "term": "Test Spesifikasyonu",
+    "definition": "Test tasarım, test senaryosu ve/veya test prosedür spesifikasyonundan oluşan doküman",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_surec_grubu",
+    "term": "Test Süreç Grubu",
+    "definition": "Test sürecinin tanımlanması, bakımı ve iyileştirilmesini yöneten (test) uzmanları topluluğu.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_surec_iyilestirme_bildirgesi",
+    "term": "Test Süreç İyileştirme Bildirgesi",
+    "definition": "Çevik manifestodan esinlemiş bildiridir ve test sürecinin iyileştiren değerleri tanımlar.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_sureci",
+    "term": "Test Süreci",
+    "definition": "Test planlamasını ve kontrolünü, test analizini ve tasarımını, testin uyarlanmasını ve yürütülmesini, çıkış kriterlerinin değerlendirilmesini ve raporlanmasını, ve test kapanış aktivitelerini içeren temel test süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_tahminlemesi",
+    "term": "Test Tahminlemesi",
+    "definition": "Test sürecinin çeşitli yönleriyle ilgili (örn. Harcanan efor, tamamlanma tarihi, maliyetler, test senaryoları sayısı vs.) tamamlanmamış, kesin olmayan ya da bozuk olan girdilerin hesaplanmaya çalışılması",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_tasarimi",
+    "term": "Test Tasarımı",
+    "definition": "Genel test amaçlarının, somut test koşullarınave test senaryolarına dönüştürme süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_teknigi",
+    "term": "Test Tekniği",
+    "definition": "Test senaryolarını elde etmek ve/veya seçmek için kullanılan prosedür/yordam",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_uyarlama",
+    "term": "Test Uyarlama",
+    "definition": "Test prosedürlerinin geliştirilmesi ve önceliklendirilmesi, test verisinin yaratılması, test kuluçkasının hazırlanması ve otomatik test betiklerinin yazılması gibi aktiviteleri içeren süreç",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_uzmani",
+    "term": "Test Uzmanı",
+    "definition": "Bir sistemin veya bir bileşenin testini yapan vasıflı uzman kişi",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_veri_yonetimi",
+    "term": "Test Veri Yönetimi",
+    "definition": "Test verisi gereksiniminlerinin analizi, test veri yapılarının tasarlanması, test verisinin yaratılması vesürdürülmesi süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_verisi",
+    "term": "Test Verisi",
+    "definition": "Test edilen sistemin veya bileşenin etkilediği veya bunlar tarafından etkilenen, test yürütülmeden önce varolan veri(örn. bir veri tabanında) .",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_yazilimi",
+    "term": "Test Yazılımı",
+    "definition": "Test sürecinde planlama, tasarım ve yeniden test etme gereksinimleri karşılamak üzere üretilen dokümantasyon, girdiler, beklenen sonuçlar,betikler, kurulum ve temizleme prosedürleri,dosyalar, veri tabanları, ortamlar ve test için kullanılan her türlü araç veya yazılımlar gibi yapılardır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_yoneticisi",
+    "term": "Test Yöneticisi",
+    "definition": "Test aktivite ve kaynaklarının yönetiminden ve test nesnesinin değerlendirilmesinden sorumlu kişi. Bu kişi test nesnesinin değerlendirilme sürecinin yönlendirilmesinden, kontrolünden, yönetiminden,planlanmasından ve düzenlenmesinden sorumludur",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_yonetim_araci",
+    "term": "Test Yönetim Aracı",
+    "definition": "Test yönetimine ve test sürecinin bir bölümünün kontrol edilmesine destek sağlayan araç. Test projesi eserlerinin yönetimi, test zaman planlaması,sonuçların kaydının tutulması, ilerlemenin izlenmesi,olay yönetimi ve test raporlama gibi birçok yeteneği barındırır.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_yonetimi",
+    "term": "Test Yönetimi",
+    "definition": "Planlama, tahmin, gözetim ve kontrol gibi test aktivitelerini içeren süreç, genellikle test yöneticisinin sorumluluğundadır",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_yurutme",
+    "term": "Test Yürütme",
+    "definition": "Test edilen sistemde veya bileşende gerçekleşen sonuç(lar) üreten test koşum süreci",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_yurutme_araci",
+    "term": "Test Yürütme Aracı",
+    "definition": "Otomatik test betiği kullanarak başka bir yazılımı çalıştırılabilen bir test aracı türü. (örn. kaydet/oynataraçları)",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_yurutme_cizelgesi",
+    "term": "Test Yürütme Çizelgesi",
+    "definition": "Test prosedürlerinin yürütülmesi planı. Not: Test prosedürleri yürütülme sırasına ve içeriğine göre test yürütme planına dahil edilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "test_yurutumunun_otomasyonu",
+    "term": "Test Yürütümünün Otomasyonu",
+    "definition": "Test yürütümünün kontrolü, beklenen sonuçlar ile gerçekleşen sonuçların karşılaştırılması, test önkoşullarının belirlenmesi ve diğer test kontrol ve raporlama fonksiyonları için yazılım kullanılması işlemi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "testin_bagimsizligi",
+    "term": "Testin Bağımsızlığı",
+    "definition": "Sorumluluk ve kuvvetler ayrılığıdır, testleri tarafsız gerçekleştirmeyi teşvik eder.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "toplam_kalite_yonetimi",
+    "term": "Toplam Kalite Yönetimi",
+    "definition": "Organizasyondaki tüm üyelerin katılımını baz alan ve müşteri memnuniyeti üzerinden uzun vadeli başarıyı hedefleyen, organizasyondaki tüm üyelerin fayda sağladığı kalite odaklı bir yaklaşım. Toplam Kalite Yönetimi planlama, organizasyon, yönlendirme,kontrol ve kalite güvence süreçlerinden oluşur.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "tpi_next",
+    "term": "Tpı Next",
+    "definition": "Etkili ve verimli test sürecinin anahtar unsurlarını tanımlayan, test sürecinin iyileştirilmesi için sürekliliği olan iş odaklı yaklaşımı savunan çerçeve yapı",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "uretim_bazli_kalite",
+    "term": "Üretim Bazlı Kalite",
+    "definition": "Servis veya ürünün, amaç ve ihtiyaçları ne kadar karşıladığının ölçmek için kullanılan kalite bakış açısı.Kalite hayata geçirilen süreçlerin sonucudur yaklaşımını benimser.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "urun_bazli_kalite",
+    "term": "Ürün Bazlı Kalite",
+    "definition": "Kalite tanımının net tanımlanmış kalite özelliklerine dayandırıldığı kalite yaklaşımı. Bu özelliklerin nesnel ve nicel bir yöntemle ölçülmesi gerekmektedir",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "urun_riski",
+    "term": "Ürün Riski",
+    "definition": "Test edilen nesneyle doğrudan ilgili risk.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "ust_seviye_test_senaryosu",
+    "term": "Üst Seviye Test Senaryosu",
+    "definition": "Girdiler ve beklenen sonuçlar için somut değerler içermeyen test senaryosu. Mantıksal işleçler kullanılır, gerçek değerler barındıran örnekler verilmez.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "uyarlanabilirlik",
+    "term": "Uyarlanabilirlik",
+    "definition": "Yazılım ürününün, farklı özellikteki ortamlara ekstra bir aksiyon gerektirmeden adapte edilebilme yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "uyumluluk",
+    "term": "Uyumluluk",
+    "definition": "Yazılımın standartlara, sözleşme hükümlerine veya kanun ve benzeri yönergelerdeki düzenlemelere uygunluğu",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "uyumluluk_testi",
+    "term": "Uyumluluk Testi",
+    "definition": "Bir bileşen ya da sistemin uyumluluğunu saptamaya yarayan test süreci.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "v_modeli",
+    "term": "V Modeli",
+    "definition": "Gereksinim belirleme aşamasından bakıma kadarolan yazılım geliştirme döngüsünü tanımlayan çerçeve. V-modeli, yazılım geliştirme döngüsünün her aşamasına test aktivitelerinin nasıl entegre edilebileceğini gösterir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "veri_akis_analizi",
+    "term": "Veri Akış Analizi",
+    "definition": "Değişkenlerin tanım ve kullanımlarına dayanan birstatik analiz çeşidi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "veri_gudumlu_test",
+    "term": "Veri Güdümlü Test",
+    "definition": "Test girdi ve beklenen sonuçlarını bir tabloda saklayan, bu sayede tek bir test betiğinin tablodaki tüm testleri çalıştırabildiği bir test tekniği.Kaydet/oynat tarzındaki test otomasyon araçlarında sık kullanılan bir tekniktir",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "verimlilik",
+    "term": "Verimlilik",
+    "definition": "(1) Bir yazılımın belirlenen şartlar altında kullanılan kaynakların miktarına bağlı olarak uygun performansı sağlama yeteneği. (2) Kullanılan kaynak miktarına bağlı olarak bir sürecin planlanan çıktıyı üretebilme yeteneği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "web_sayfasi_analizi_ve_olcum_envanteri",
+    "term": "Web Sayfası Analizi Ve Ölçüm Envanteri",
+    "definition": "Son kullanıcı bakış açısıyla, web sitesi kullanılabilirlilik kalitesini ölçümlemek için anket bazlı kullanılabilirlilik test tekniği.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yakinsama_metrigi",
+    "term": "Yakınsama Metriği",
+    "definition": "Belirli bir kritere ulaşma konusundaki ilerlemeyigösteren metrik, örneğin koşulan toplam test sayısının, koşulması planlanan toplam test sayısına oranı",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yanlis_negatif_sonuc",
+    "term": "Yanlış Negatif Sonuç",
+    "definition": "Test nesnesinde gerçekte bir hata olmasına rağmenhatanın yakalanamayıp başarılı sonuçlanan test",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yanlis_pozitif_sonuc",
+    "term": "Yanlış Pozitif Sonuç",
+    "definition": "Test nesnesinde gerçekte bir hata olmamasına rağmen hata varmış gibi sonuçlanan test",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yapilandirma_yonetimi",
+    "term": "Yapılandırma Yönetimi",
+    "definition": "Bir yapılandırma öğesinin fonksiyonel ve fiziksel özelliklerinin tanımlanması, dökümantasyonu, bu özellikler üzerinde yapılacak değişikliklerin kontrolü,değişikliklerin yapılmasının ve hayata geçirilmesinin kayıt altına alınması ve raporlanması, gereksinimlere uyumluluğunu kapsayan disiplin",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yapisal_kapsam",
+    "term": "Yapısal Kapsam",
+    "definition": "Bir bileşenin veya sistemin iç yapısı dikkate alınarak hesaplanan kapsam",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yazilim_kullanilabilirlik_olcum_envanteri",
+    "term": "Yazılım Kullanılabilirlik Ölçüm Envanteri",
+    "definition": "Son kullanıcı bakış açısından yazılım kalitesini ölçmekiçin kullanılan anket bazlı bir kullanılabilirlik test yöntemi.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yazilim_yasam_dongusu",
+    "term": "Yazılım Yaşam Döngüsü",
+    "definition": "Bir yazılımın tasarlanmasıyla başlayan ve tamamen kullanımdan kaldırılmasına kadar geçen süreç.Yazılım yaşam döngüsü genel anlamda konsept,gereksinim toplama, tasarım, uygulama, test,kurulum ve kontrol, işletme ve bakım, ve bazen de kullanımdan kaldırılma aşamalarını içerir. Bu aşamalar eş zamanlı ya da döngüsel olarak gerçekleştirilebilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yonetim_degerlendirmesi",
+    "term": "Yönetim Değerlendirmesi",
+    "definition": "Yazılım satın alma, geliştirme, operasyon veya bakım süreçlerinin sistematik olarak yönetim tarafından veya yönetim adına değerlendirilmesi. İlerlemeyi izlemek,plan ve takvimlerin durumunu belirlemek,gereksinimleri saptamak ve sistem tahsislerini yapmak,hedefe uyum için sergilenen yönetimsel yaklaşımların verimliliğini değerlendirmek gibi aktiviteleri de içerir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yuk_profili",
+    "term": "Yük Profili",
+    "definition": "Belirlenen kullanıcı profiline ait belli sayıda sanal kullanıcının belli zaman diliminde gerçekleştirdiği işlemlerle oluşturulan yük.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  },
+  {
+    "id": "yuk_testi",
+    "term": "Yük Testi",
+    "definition": "Bir çeşit performans testi. Bir bileşen veya sistemin artan yük (ör. eşzamanlı kullanıcıların sayısı ve/veya işlem sayısı) karşısındaki davranışlarını değerlendirmek için kullanılır. Bileşen veya sistemin yükü ne kadar tölere edeceği tespit edilir.",
+    "source": "ISTQB Sözlüğü",
+    "difficulty": null, "lastReviewed": null, "nextReview": null, "timesCorrect": 0, "timesIncorrect": 0, "consecutiveCorrect": 0, "deck": "genel_sozluk"
+  }
+]

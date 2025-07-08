@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- data-translate anahtarı translation.js'e eklenecek -->
+    <title data-translate="allToolsPageTitle">Yardımcı Araçlar - Adınız Soyadınız</title>
+    <!-- CSS yolu, bulunduğu klasöre göre ayarlandı (pages'in bir üstü src) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+
+    <!-- Header (Ortak yapıdan, linkler ana dizindeki index.html'e göre ayarlandı) -->
+    <header class="navbar">
+        <div class="container">
+            <!-- Navigasyon linkleri ana dizindeki index.html'e yönlendirildi -->
+            <a href="../index.html#home" class="nav-logo" data-translate="navLogo">Adınız Soyadınız</a>
+            <nav>
+                <ul class="nav-menu">
+                     <!-- DİĞER SAYFALARIN NAVİGASYON LİNKLERİ: ANASAYFAYA VE İLGİLİ SECTİON'A YÖNLENDİRİLDİ -->
+                    <li><a href="../index.html#home" class="nav-link" data-translate="navHome">Home</a></li>
+                    <li><a href="../index.html#about" class="nav-link" data-translate="navAbout">About</a></li>
+                    <li><a href="../index.html#skills" class="nav-link" data-translate="navSkills">Skills</a></li>
+                    <li><a href="../index.html#projects" class="nav-link" data-translate="navProjects">Projects</a></li>
+                    <li><a href="../index.html#experience" class="nav-link" data-translate="navExperience">Experience</a></li>
+                    <li><a href="../index.html#education" class="nav-link" data-translate="navEducation">Education</a></li>
+                    <li><a href="../index.html#blog" class="nav-link" data-translate="navBlog">Blog</a></li>
+                    <!-- Tools linki aktif olarak işaretlendi. Bu sayfanın kendisi #all-tools section'ıdır. -->
+                    <li><a href="#all-tools" class="nav-link active" data-translate="navTools">Tools</a></li>
+                    <li><a href="../index.html#contact" class="nav-link" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+             <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="language-toggle" class="lang-btn" aria-label="Change Language">
+                    TR
+                </button>
+            </div>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sayfa Başlığı Alanı -->
+         <header class="page-header">
+             <div class="container">
+                 <!-- data-translate anahtarı translation.js'e eklenecek -->
+                <h1 data-translate="allToolsHeaderTitle">Yardımcı Araçlarım</h1>
+                 <!-- Opsiyonel: <p data-translate="allToolsIntro">Test süreçlerinizi kolaylaştırmak için geliştirdiğim araçlar...</p> -->
+             </div>
+         </header>
+
+        <!-- Tüm Araçlar Bölümü -->
+        <section id="all-tools" class="content-section">
+            <div class="container">
+                 <!-- Anasayfadaki toolsIntro metni burada da kullanılabilir -->
+                 <p class="section-intro" data-translate="toolsIntro">Yazılım testi topluluğuna katkıda bulunmak amacıyla geliştirdiğim bazı araçlar:</p>
+                <div class="section-content-box">
+                     <div class="card-grid tools-grid">
+                         <!-- Araç 1: ISTQB Mock Exam (Link güncellendi) -->
+                         <div class="card tool-card">
+                              <!-- Görsel yolu ayarlandı (pages'den assets'e 2 seviye yukarı) -->
+                              <img src="assets/images/tool-istqb-mock-exam.jpg" alt="ISTQB Mock Exam Tool" class="card-image">
+                              <div class="card-content">
+                                  <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                 <h3 data-translate="toolMockExamTitle">ISTQB Foundation Level Deneme Sınavı</h3>
+                                 <p data-translate="toolMockExamDesc">ISTQB FL sınavına web üzerinden hazırlanmak için interaktif bir deneme sınavı uygulaması.</p>
+                                 <!-- Araç linki, pages/tools/istqb-website/index.html'e yönlendirildi -->
+                                 <a href="./tools/istqb-website/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" data-translate="toolAccess">Uygulamayı Aç <i class="fas fa-external-link-alt"></i></a>
+                             </div>
+                         </div>
+                         <!-- Araç 2: Flashcard Glossary (Link güncellendi) -->
+                         <div class="card tool-card">
+                             <!-- Görsel yolu ayarlandı -->
+                             <img src="assets/images/tool-fl-flashcard.jpg" alt="ISTQB Flashcard Tool Thumbnail" class="card-image">
+                              <div class="card-content">
+                                   <!-- data-translate anahtarları translation.js'ten gelecek -->
+                                 <h3 data-translate="toolFlashcardTitle">ISTQB Terimleri Flashcard (TR/EN)</h3>
+                                 <p data-translate="toolFlashcardDesc">ISTQB terimlerini TR/EN karşılıklarıyla öğrenmek için interaktif flashcard uygulaması.</p>
+                                 <!-- Araç linki, pages/tools/flashcard-glossary/index.html'e yönlendirildi -->
+                                 <a href="./tools/flashcard-glossary/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" data-translate="toolAccess">Uygulamayı Aç <i class="fas fa-external-link-alt"></i></a>
+                             </div>
+                         </div>
+                           <!-- Araç 3: Flashcard Definitions (Link güncellendi) -->
+                           <!-- Eğer bu ayrı bir araçsa ve klasör adı flashcard-definitions ise -->
+                           <div class="card tool-card">
+                             <!-- Görsel yolu ayarlandı -->
+                             <img src="assets/images/tool-istqb-flashcard.jpg" alt="ISTQB Flashcard Definitions Tool Thumbnail" class="card-image">
+                              <div class="card-content">
+                                   <!-- data-translate anahtarları translation.js'e eklenecek -->
+                                 <h3 data-translate="toolFlashcardDefinitionsTitle">[Flashcard Tanım Başlığı]</h3>
+                                 <p data-translate="toolFlashcardDefinitionsDesc">[Flashcard Tanım Açıklaması]</p>
+                                 <!-- Araç linki, pages/tools/flashcard-definitions/index.html'e yönlendirildi -->
+                                 <a href="./tools/flashcard-definitions/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" data-translate="toolAccess">Uygulamayı Aç <i class="fas fa-external-link-alt"></i></a>
+                             </div>
+                         </div>
+
+                         <!-- Diğer araç kartlarını buraya ekleyin -->
+                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Ortak yapıdan) -->
+    <footer class="footer">
+        <div class="container">
+             <p class="footer-disclaimer" data-translate="footerDisclaimer">
+                Blog yazıları ve araçlarda sunulan bilgiler yalnızca bilgilendirme amaçlıdır ve hatalar içerebilir. Kullanım kendi sorumluluğunuzdadır. Herhangi bir sorumluluk kabul edilmez.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS Dosyaları (Ana dizin yolları ayarlandı) -->
+    <script src="../js/translations.js" defer></script>
+    <script src="../js/script.js" defer></script>
+
+</body>
+</html>

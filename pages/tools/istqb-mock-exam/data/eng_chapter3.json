@@ -1,0 +1,290 @@
+[
+    {
+        "question": "For which of the following work products is static testing **suitable** for examination? (Select TWO options)",
+        "options": [
+            "A. A compiled and executable program.",
+            "B. A test plan document.",
+            "C. Source code files.",
+            "D. Database backup files.",
+            "E. Performance measurement results generated during test execution."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "Text 3.1.1 states that static testing can be applied to almost any readable and understandable work product, including requirements, source code, test plans, and models. Executable files (especially 3rd party) and dynamic test results (performance measurements) are not typical targets for static testing.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Work Products Examinable - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Static testing techniques can be applied to which of the following work products?",
+        "options": [
+            "A. Only executable code files.",
+            "B. Readable and understandable work products such as requirements specifications, source code, test plans, and models.",
+            "C. Only executable files of third-party software.",
+            "D. Only test execution logs."
+        ],
+        "correctAnswer": 1,
+        "explanation": "According to Text 3.1.1, static testing can be applied to almost any work product, including requirement specification documents, source code, test plans, test cases, product backlog items, test charters, project documentation, contracts, and models. Being readable and understandable is key. Third-party executable code is often not analyzed for legal reasons.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Work Products Examinable - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "For static analysis to be applicable, what characteristic does a work product typically need to possess?",
+        "options": [
+            "A. It must be perfectly written.",
+            "B. It must have passed dynamic testing.",
+            "C. It needs a structure against which it can be checked (e.g., models, code, or text with a formal syntax).",
+            "D. It must be only in text format."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 3.1.1 specifies that for static analysis, work products 'need a structure against which they can be checked (e.g., models, code or text with a formal syntax)'.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Work Products Examinable - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "A team reviews requirements documents very early in a project, before any code is written, identifying potential ambiguities and omissions. This situation **exemplifies** which primary value of static testing?",
+        "options": [
+            "A. The ability to measure software performance.",
+            "B. The guarantee of finding all defects that dynamic testing might miss.",
+            "C. Enabling the early detection of defects in the SDLC by applying the principle of early testing.",
+            "D. Eliminating the need for test automation."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 3.1.2 states one value of static testing is that it 'can detect defects in the earliest phases of the SDLC, fulfilling the principle of early testing'. Early review of requirements is a prime example of this value.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Value of Static Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What types of defects can static testing identify that dynamic testing might miss?",
+        "options": [
+            "A. Only performance issues.",
+            "B. Defects in non-executable work products (e.g., omissions in requirements) or issues like unreachable code.",
+            "C. Only visual defects in the user interface.",
+            "D. Only hardware compatibility issues."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 3.1.2 states that static testing 'can also identify defects which cannot be detected by dynamic testing (e.g., unreachable code, design patterns not implemented as desired, defects in non-executable work products)'.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Value of Static Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the cost-related advantage of performing static testing (specifically reviews)?",
+        "options": [
+            "A. Although implementing reviews can be costly, the overall project costs are usually much lower because less time and effort needs to be spent on fixing defects later.",
+            "B. It is always more expensive than dynamic testing.",
+            "C. It has no impact on project costs.",
+            "D. It only provides cost benefits for small projects."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Text 3.1.2 mentions that even though reviews can be costly to implement, 'the overall project costs are usually much lower than when no reviews are performed because less time and effort needs to be spent on fixing defects later in the project.'",
+        "topic": "Chapter 3.1 - Static Testing Basics (Value of Static Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which statement regarding the comparison of static and dynamic testing is **incorrect**?",
+        "options": [
+            "A. Static testing finds defects directly, whereas dynamic testing causes failures that require analysis to determine the defects.",
+            "B. Static testing, unlike dynamic testing, can be applied to non-executable work products (e.g., requirements).",
+            "C. Dynamic testing, unlike static testing, can more easily detect defects that lie on paths through the code that are rarely executed.",
+            "D. Both types of testing can have similar objectives, such as supporting the detection of defects."
+        ],
+        "correctAnswer": 2,
+        "explanation": "According to the comparison in Text 3.1.3, static testing *may* more easily detect defects on rarely executed or hard-to-reach paths compared to dynamic testing. Option C claims the opposite, making it incorrect. A, B, and D align with the comparisons in the text.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Differences between Static and Dynamic Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following defect types is generally easier and/or cheaper to find through static testing?",
+        "options": [
+            "A. Performance defects like incorrect timing and memory leaks.",
+            "B. Inconsistencies, ambiguities, or omissions in requirements.",
+            "C. System stability issues under high stress.",
+            "D. Compatibility issues across different browsers."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 3.1.3 lists typical defects easier/cheaper to find via static testing, including 'Defects in requirements (e.g., inconsistencies, ambiguities, contradictions, omissions, inaccuracies, duplications)'. The other options are generally better found through dynamic testing.",
+        "topic": "Chapter 3.1 - Static Testing Basics (Differences between Static and Dynamic Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which quality characteristic is typically measured by static testing, and which by dynamic testing?",
+        "options": [
+            "A. Static: Performance Efficiency; Dynamic: Maintainability.",
+            "B. Static: Maintainability; Dynamic: Performance Efficiency.",
+            "C. Static: Reliability; Dynamic: Security.",
+            "D. Static: Usability; Dynamic: Portability."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 3.1.3 indicates static testing can be used to measure quality characteristics not dependent on executing code (e.g., maintainability), while dynamic testing can measure those that are dependent on execution (e.g., performance efficiency).",
+        "topic": "Chapter 3.1 - Static Testing Basics (Differences between Static and Dynamic Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is a key benefit of early and frequent stakeholder feedback?",
+        "options": [
+            "A. It always increases project costs.",
+            "B. It lowers the morale of the development team.",
+            "C. It prevents misunderstandings about requirements and ensures changes are understood and implemented earlier.",
+            "D. It eliminates the testing process entirely."
+        ],
+        "correctAnswer": 2,
+        "explanation": "According to Text 3.2.1, early and frequent feedback 'can prevent misunderstandings about requirements and ensure that changes to requirements are understood and implemented earlier'.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Benefits of Early Feedback - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What is a potential problem if stakeholders have little involvement during the development lifecycle (SDLC)?",
+        "options": [
+            "A. The project finishing earlier than expected.",
+            "B. The product being developed might not meet the stakeholder's original or current vision.",
+            "C. Reduced testing costs.",
+            "D. Automatic improvement in software quality."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 3.2.1 states, 'If there is little stakeholder involvement during the SDLC, the product being developed might not meet the stakeholder's original or current vision.' This can lead to costly rework or project failure.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Benefits of Early Feedback - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "According to the generic review process defined by ISO/IEC 20246, in which order do the activities typically occur?",
+        "options": [
+            "A. Planning -> Individual Review -> Review Initiation -> Communication and Analysis -> Fixing and Reporting.",
+            "B. Review Initiation -> Planning -> Individual Review -> Fixing and Reporting -> Communication and Analysis.",
+            "C. Planning -> Review Initiation -> Individual Review -> Communication and Analysis -> Fixing and Reporting.",
+            "D. Individual Review -> Communication and Analysis -> Planning -> Review Initiation -> Fixing and Reporting."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 3.2.2 lists the activities in the review process in the following order: Planning, Review Initiation, Individual Review, Communication and Analysis, Fixing and Reporting.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Process Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the primary goal of the 'Communication and Analysis' activity in the review process?",
+        "options": [
+            "A. To define the scope and purpose of the work product being reviewed.",
+            "B. For reviewers to individually find anomalies.",
+            "C. To discuss and decide on the status, ownership, and required actions for identified anomalies.",
+            "D. To create defect reports and report the review results."
+        ],
+        "correctAnswer": 2,
+        "explanation": "According to Text 3.2.2, during 'Communication and analysis', 'Since the anomalies identified... are not necessarily defects, all these anomalies need to be analyzed and discussed. For every anomaly, the decision should be made on its status, ownership and required actions.' This is typically done in a review meeting.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Process Activities - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "In the review process, which role is responsible for creating the work product under review and fixing identified defects?",
+        "options": [
+            "A. Manager.",
+            "B. Moderator.",
+            "C. Author.",
+            "D. Scribe."
+        ],
+        "correctAnswer": 2,
+        "explanation": "According to the role definitions in Text 3.2.3, the 'Author - creates and fixes the work product under review'.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Roles and Responsibilities - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which role ensures the effective running of review meetings, manages time, and creates a safe environment where everyone can speak freely?",
+        "options": [
+            "A. Reviewer.",
+            "B. Author.",
+            "C. Review Leader.",
+            "D. Moderator (or Facilitator)."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Text 3.2.3 defines the 'Moderator (also known as the facilitator) – ensures the effective running of review meetings, including mediation, time management, and a safe review environment in which everyone can speak freely'.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Roles and Responsibilities - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "In a review, who is responsible for collating anomalies from reviewers and recording review decisions made during the meeting?",
+        "options": [
+            "A. Manager.",
+            "B. Author.",
+            "C. Scribe (or Recorder).",
+            "D. Moderator."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 3.2.3 defines the Scribe (also known as recorder) role as 'collates anomalies from reviewers and records review information, such as decisions and new anomalies found during the review meeting'.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Roles and Responsibilities - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which review type is led by the author and can serve multiple objectives, including detecting anomalies, educating participants, and gaining consensus?",
+        "options": [
+            "A. Informal Review.",
+            "B. Technical Review.",
+            "C. Inspection.",
+            "D. Walkthrough."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Text 3.2.4 describes a Walkthrough as being 'led by the author' and serving 'many objectives, such as evaluating quality and building confidence..., educating reviewers, gaining consensus, ... and detecting anomalies.'",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which review type is performed by technically qualified reviewers, led by a moderator, with the primary objectives of gaining consensus and making decisions about a technical problem?",
+        "options": [
+            "A. Informal Review.",
+            "B. Technical Review.",
+            "C. Inspection.",
+            "D. Walkthrough."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 3.2.4 defines a Technical Review as being 'performed by technically qualified reviewers and led by a moderator. The objectives... are to gain consensus and make decisions regarding a technical problem...'.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which is the most formal type of review, with the main objective to find the maximum number of anomalies?",
+        "options": [
+            "A. Walkthrough.",
+            "B. Inspection.",
+            "C. Technical Review.",
+            "D. Informal Review."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 3.2.4 identifies Inspection as 'the most formal type of review' and states 'The main objective is to find the maximum number of anomalies.' It also notes metrics collection and that the author cannot be leader or scribe.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Review Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which of the following is an important success factor for a review?",
+        "options": [
+            "A. Making the evaluation of participants' performance the main objective.",
+            "B. Conducting reviews on the largest possible chunks of the work product.",
+            "C. Choosing the appropriate review type to achieve the given objectives.",
+            "D. Providing no preparation time for the review."
+        ],
+        "correctAnswer": 2,
+        "explanation": "One of the success factors listed in Text 3.2.5 is 'Choosing the appropriate review type to achieve the given objectives, and to suit the type of work product, the review participants, the project needs and context'. Evaluating participants should not be an objective, and reviewing small chunks with adequate prep time is recommended.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Success Factors - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Which of the following is **NOT** required for successful reviews?",
+        "options": [
+            "A. Defining clear objectives and measurable exit criteria.",
+            "B. Gaining support from management for the review process.",
+            "C. Making reviews part of the organization's culture.",
+            "D. Ensuring all participants conducting the review are software developers."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Text 3.2.5 lists factors like clear objectives/criteria, management support, and cultural integration for successful reviews. However, it is not stated that all reviewers must be developers; business experts, subject matter experts, or other stakeholders can also be reviewers (Text 3.2.3).",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Success Factors - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "What are TWO critical factors for the success of reviews? (Select TWO options)",
+        "options": [
+            "A. Keeping the meetings as long as possible.",
+            "B. Conducting reviews on small chunks of work products.",
+            "C. Providing adequate training for all participants so they know how to fulfil their role.",
+            "D. Leaving the review objectives undefined.",
+            "E. Giving feedback only to the authors."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "Text 3.2.5 lists success factors including 'Conducting reviews on small chunks...' and 'Providing adequate training for all participants so they know how to fulfil their role'. Long meetings, undefined objectives, and limiting feedback are not recommended practices.",
+        "topic": "Chapter 3.2 - Feedback and Review Process (Success Factors - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    }
+]

@@ -1,0 +1,317 @@
+[
+    {
+        "question": "Sıralı bir geliştirme modeli (örn. V-modeli) kullanan bir projede, test uzmanlarının erken aşamalardaki temel katkısı genellikle ne olur ve dinamik test ne zaman başlar?",
+        "options": [
+            "A. Temel katkı kod yazmaktır; dinamik test projenin başında başlar.",
+            "B. Temel katkı gereksinim gözden geçirme, test analizi ve tasarımıdır; dinamik test genellikle çalıştırılabilir kodun mevcut olduğu sonraki aşamalarda başlar.",
+            "C. Temel katkı kullanıcı arayüzünü tasarlamaktır; dinamik test hiç yapılmaz.",
+            "D. Temel katkı hata ayıklamadır (debugging); dinamik test her zaman statik testten önce başlar."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.1.1, sıralı modellerde test uzmanlarının ilk aşamalarda 'gereksinim gözden geçirmelerine, test analizine ve test tasarımına katıldığını' belirtir. 'Çalıştırılabilir kod genellikle sonraki aşamalarda oluşturulduğundan, tipik olarak dinamik test SDLC'de erken gerçekleştirilemez.'",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Impact of SDLC - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "İteratif ve artımlı (iterative and incremental) bir modelde, her iterasyonun çalışan bir prototip veya ürün artışı sunması varsayımı, test faaliyetlerini nasıl etkiler?",
+        "options": [
+            "A. Her iterasyonda yalnızca statik testin yapılmasına izin verir.",
+            "B. Her iterasyonda hem statik hem de dinamik testin tüm test seviyelerinde gerçekleştirilebileceği anlamına gelir ve sık teslimatlar nedeniyle kapsamlı regresyon testi gerektirir.",
+            "C. Test faaliyetlerinin yalnızca son iterasyonda yapılması gerektiği anlamına gelir.",
+            "D. Regresyon testi ihtiyacını ortadan kaldırır."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.1.1, bu modellerde her iterasyonun çalışan bir ürün sunmasının varsayıldığını ve bunun 'her iterasyonda hem statik hem de dinamik testin tüm test seviyelerinde gerçekleştirilebileceğini ima ettiğini' belirtir. Ayrıca 'Sık artış teslimatı hızlı geri bildirim ve kapsamlı regresyon testi gerektirir.'",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Impact of SDLC - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Seçilen yazılım geliştirme yaşam döngüsü (SDLC) modeli, aşağıdaki testle ilgili hususlardan hangilerini **doğrudan** etkiler? (İKİ SEÇENEK SEÇİN)",
+        "options": [
+            "A. Test uzmanının maaşını.",
+            "B. Test faaliyetlerinin kapsamını ve zamanlamasını.",
+            "C. Test otomasyonunun kapsamını.",
+            "D. Test raporlarının yazılacağı dili.",
+            "E. Kullanılacak donanım markasını."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "Metin 2.1.1, SDLC seçiminin 'test faaliyetlerinin kapsamı ve zamanlaması', 'test dokümantasyonunun detay seviyesi', 'test teknikleri ve test yaklaşımının seçimi', 'test otomasyonunun kapsamı' ve 'bir test uzmanının rolü ve sorumlulukları' üzerinde etkisi olduğunu listeler. Maaş, rapor dili veya donanım markası doğrudan etkilenmez.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Impact of SDLC - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, seçilen SDLC modelinden bağımsız olarak geçerli olan **İKİ** iyi test uygulamasıdır?",
+        "options": [
+            "A. Tüm testleri yalnızca projenin sonunda gerçekleştirmek.",
+            "B. Her geliştirme faaliyeti için karşılık gelen bir test faaliyetinin olması.",
+            "C. Farklı test seviyelerinin belirli ve farklı test hedeflerine sahip olması.",
+            "D. Test analizini ve tasarımını kodlama bittikten sonra başlatmak.",
+            "E. Test uzmanlarını yalnızca kodlama aşamasında dahil etmek."
+        ],
+        "correctAnswer": [1, 2],
+        "explanation": "Metin 2.1.2'de listelenen iyi test uygulamaları şunları içerir: Her geliştirme aktivitesine karşılık gelen bir test aktivitesi olması, farklı test seviyelerinin farklı hedeflere sahip olması, belirli bir test seviyesi için test analizi ve tasarımının ilgili geliştirme aşamasında başlaması ve test uzmanlarının iş ürünleri taslakları hazır olur olmaz gözden geçirmelere dahil olması. A, D ve E bu iyi uygulamalara aykırıdır.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Good Testing Practices - K1, Format: Select TWO)",
+        "kLevel": "K1"
+    },
+     {
+        "question": "İyi test uygulamalarına göre, test uzmanları iş ürünlerini (örn. gereksinimler) ne zaman gözden geçirmeye başlamalıdır?",
+        "options": [
+            "A. İş ürünü tamamen onaylandıktan sonra.",
+            "B. Kodlama tamamlandıktan sonra.",
+            "C. Bu dokümantasyonun taslakları mevcut olur olmaz.",
+            "D. Test yürütme aşamasında."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 2.1.2'deki iyi uygulamalardan biri: 'Test uzmanları, bu dokümantasyonun taslakları mevcut olur olmaz iş ürünlerini gözden geçirmeye dahil edilir, böylece bu erken test ve kusur tespiti sola kaydırma stratejisini destekleyebilir'.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Good Testing Practices - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, testlerin geliştirmeyi yönlendirdiği 'önce-test' (test-first) geliştirme yaklaşımlarına bir örnektir?",
+        "options": [
+            "A. Şelale (Waterfall) Modeli.",
+            "B. V-Modeli.",
+            "C. Test Güdümlü Geliştirme (Test-Driven Development - TDD).",
+            "D. Risk Temelli Test (Risk-Based Testing)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 2.1.3, TDD, ATDD ve BDD'yi 'testlerin geliştirmeyi yönlendirmek için bir araç olarak tanımlandığı benzer geliştirme yaklaşımları' olarak listeler. TDD bu yaklaşımlardan biridir.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Testing as a Driver - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "TDD, ATDD ve BDD gibi yaklaşımların ortak özelliği nedir?",
+        "options": [
+            "A. Yalnızca sıralı (sequential) geliştirme modellerini desteklemeleri.",
+            "B. Testlerin, ilgili kod yazılmadan önce tanımlanması.",
+            "C. Yalnızca manuel testlere odaklanmaları.",
+            "D. Kod kalitesini düşürmeleri."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.1.3, bu üç yaklaşımın (TDD, ATDD, BDD) 'testlerin kod yazılmadan önce tanımlandığı' ve 'erken test prensibini uygulayan' ve 'sola kaydırma yaklaşımını takip eden' benzer geliştirme yaklaşımları olduğunu belirtir.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Testing as a Driver - K1)",
+        "kLevel": "K1"
+    },
+    {
+        "question": "DevOps yaklaşımının test perspektifinden sağladığı faydalardan biri nedir?",
+        "options": [
+            "A. Manuel test ihtiyacını tamamen ortadan kaldırması.",
+            "B. Kod kalitesi ve değişikliklerin mevcut kodu olumsuz etkileyip etkilemediği konusunda hızlı geri bildirim sağlaması.",
+            "C. Test otomasyonu için ek kaynak gerektirmemesi.",
+            "D. Test sürecini yavaşlatması."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.1.4, DevOps'un test perspektifinden faydaları arasında 'Kod kalitesi ve değişikliklerin mevcut kodu olumsuz etkileyip etkilemediği konusunda hızlı geri bildirim' maddesini listeler. DevOps manuel test ihtiyacını tamamen ortadan kaldırmaz ve otomasyon ek kaynak gerektirebilir.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (DevOps and Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "DevOps yaklaşımının test üzerindeki potansiyel **İKİ** olumlu etkisi nedir?",
+        "options": [
+            "A. Test otomasyonunu tamamen gereksiz kılması.",
+            "B. Sürekli Entegrasyon (CI) yoluyla sola kaydırma yaklaşımını teşvik etmesi.",
+            "C. Manuel test ihtiyacını artırması.",
+            "D. Otomatikleştirilmiş süreçler (CI/CD) sayesinde kararlı test ortamları kurmayı kolaylaştırması.",
+            "E. Test araçlarının bakımını zorlaştırması."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Metin 2.1.4, DevOps'un faydalarını listeler. Bunlar arasında 'CI, geliştiricileri yüksek kaliteli kod sunmaya teşvik ederek sola kaydırma yaklaşımını destekler' ve 'kararlı test ortamları kurmayı kolaylaştıran CI/CD gibi otomatikleştirilmiş süreçleri teşvik eder' bulunur. Otomasyonu gereksiz kılmaz veya manuel testi artırmaz; araç bakımı bir zorluk olabilir ancak doğrudan bir etki değildir.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (DevOps and Testing - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "'Sola kaydırma' (shift-left) yaklaşımının temel fikri nedir?",
+        "options": [
+            "A. Tüm test faaliyetlerini projenin en solundaki (başlangıç) aşamaya yığmak.",
+            "B. Test faaliyetlerini yazılım geliştirme yaşam döngüsünde (SDLC) mümkün olduğunca erken gerçekleştirmek.",
+            "C. Yalnızca sol beyin lobunu kullanan test uzmanlarını işe almak.",
+            "D. SDLC'nin sonraki aşamalarındaki testleri tamamen ihmal etmek."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.1.5, 'sola kaydırmayı' 'testin SDLC'de daha erken gerçekleştirildiği bir yaklaşım' olarak tanımlar. Bu, normalde testin daha geç yapılacağı anlamına gelmez, sadece erken başlamayı vurgular.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Shift-Left Approach - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi, 'sola kaydırma' (shift-left) test yaklaşımını destekleyen iyi bir uygulamadır?",
+        "options": [
+            "A. Test senaryolarını kod yazıldıktan ve entegrasyon tamamlandıktan sonra yazmak.",
+            "B. Belirtimleri (specifications) test perspektifinden gözden geçirmek ve potansiyel kusurları erken bulmak.",
+            "C. Statik analizi dinamik testten sonra yapmak.",
+            "D. Fonksiyonel olmayan testleri yalnızca sistem tamamen entegre olduktan sonra başlatmak."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.1.5, 'sola kaydırmayı' başarmayı gösteren iyi uygulamalar arasında 'Belirtimleri test perspektifinden gözden geçirme. Belirtimler üzerindeki bu gözden geçirme faaliyetleri sıklıkla belirsizlikler, eksiklikler ve tutarsızlıklar gibi potansiyel kusurları bulur.' maddesini listeler.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Shift-Left Approach - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir proje ekibi, her sprint sonunda bir toplantı düzenleyerek nelerin iyi gittiğini, nelerin zorluk çıkardığını ve bir sonraki sprintte neleri farklı yapabileceklerini tartışıyor. Bu toplantı türü nedir ve temel amacı nedir?",
+        "options": [
+            "A. Durum toplantısı (Status meeting); ilerlemeyi raporlamak.",
+            "B. Gözden geçirme (Review); iş ürününü değerlendirmek.",
+            "C. Retrospektif (Retrospective); süreç iyileştirme için öğrenme ve adaptasyon sağlamak.",
+            "D. Planlama toplantısı (Planning meeting); gelecek işleri planlamak."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 2.1.6, Retrospektifleri, genellikle bir iterasyonun sonunda yapılan ve katılımcıların 'Neyin başarılı olduğu?', 'Neyin başarılı olmadığı ve iyileştirilebileceği?' ve 'İyileştirmelerin nasıl dahil edileceği?' gibi konuları tartıştığı toplantılar olarak tanımlar. Amaç, sürekli süreç iyileştirmesidir.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Retrospectives - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Retrospektiflerin test süreci için sağladığı potansiyel faydalardan biri aşağıdakilerden hangisidir?",
+        "options": [
+            "A. Test uzmanlarının maaşlarını artırmak.",
+            "B. Test temelinin (test basis) kalitesini iyileştirmek (örn. gereksinimlerdeki eksiklikleri ele alarak).",
+            "C. Test otomasyonunu tamamen gereksiz kılmak.",
+            "D. Proje süresini her zaman kısaltmak."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.1.6, test için tipik faydalar arasında 'Test temelinin kalitesinin iyileştirilmesi (örn. gereksinimlerin kapsamı ve kalitesindeki eksiklikler ele alınabildiği ve çözülebildiği için)' maddesini listeler.",
+        "topic": "Chapter 2.1 - Testing in the Context of a SDLC (Retrospectives - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Aşağıdaki test seviyelerinden hangisi, farklı bileşenler arasındaki arayüzleri ve etkileşimleri test etmeye odaklanır?",
+        "options": [
+            "A. Bileşen Testi (Component Testing).",
+            "B. Bileşen Entegrasyon Testi (Component Integration Testing).",
+            "C. Sistem Testi (System Testing).",
+            "D. Kabul Testi (Acceptance Testing)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.2.1, Bileşen Entegrasyon Testinin 'bileşenler arasındaki arayüzleri ve etkileşimleri test etmeye odaklandığını' belirtir.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Levels - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Bir e-ticaret sitesinin tamamının davranışını ve yeteneklerini, uçtan uca görevlerin fonksiyonel testleri ve kalite özelliklerinin fonksiyonel olmayan testleri dahil olmak üzere test eden seviye hangisidir?",
+        "options": [
+            "A. Bileşen Entegrasyon Testi.",
+            "B. Sistem Testi.",
+            "C. Kullanıcı Kabul Testi (UAT).",
+            "D. Bakım Testi."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.2.1, Sistem Testinin 'tüm bir sistemin veya ürünün genel davranışına ve yeteneklerine odaklandığını, genellikle uçtan uca görevlerin fonksiyonel testini ve kalite özelliklerinin fonksiyonel olmayan testini içerdiğini' belirtir.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Levels - K2, Scenario)",
+        "kLevel": "K2"
+    },
+      {
+        "question": "Kullanıcı Kabul Testi (UAT), Operasyonel Kabul Testi, Sözleşmesel Kabul Testi ve Alfa/Beta Testi hangi ana test seviyesinin biçimleridir?",
+        "options": [
+            "A. Bileşen Testi.",
+            "B. Entegrasyon Testi.",
+            "C. Sistem Testi.",
+            "D. Kabul Testi."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Metin 2.2.1, Kabul Testinin ana biçimlerini 'kullanıcı kabul testi (UAT), operasyonel kabul testi, sözleşmesel ve düzenleyici kabul testi, alfa testi ve beta testi' olarak listeler.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Levels - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir sistemin 'ne yapması gerektiğini' (fonksiyonlarını) değerlendiren test türü ile 'ne kadar iyi çalıştığını' (performans, kullanılabilirlik gibi özellikleri) değerlendiren test türü sırasıyla hangileridir?",
+        "options": [
+            "A. Kara Kutu Testi ve Beyaz Kutu Testi.",
+            "B. Statik Test ve Dinamik Test.",
+            "C. Fonksiyonel Test ve Fonksiyonel Olmayan Test.",
+            "D. Onay Testi ve Regresyon Testi."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 2.2.2, Fonksiyonel Testin 'bir bileşenin veya sistemin gerçekleştirmesi gereken fonksiyonları değerlendirdiğini' ('ne' yapmalı) belirtirken, Fonksiyonel Olmayan Testin 'bir bileşenin veya sistemin fonksiyonel olmayan özelliklerini değerlendirdiğini' ('ne kadar iyi davrandığını') belirtir.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "ISO/IEC 25010 standardına göre Performans Verimliliği, Uyumluluk, Kullanılabilirlik, Güvenilirlik, Güvenlik, Sürdürülebilirlik ve Taşınabilirlik gibi özellikler hangi test türü kapsamında değerlendirilir?",
+        "options": [
+            "A. Fonksiyonel Test.",
+            "B. Beyaz Kutu Testi.",
+            "C. Fonksiyonel Olmayan Test.",
+            "D. Kabul Testi."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 2.2.2, Fonksiyonel Olmayan Testin ana hedefinin 'fonksiyonel olmayan yazılım kalitesi özelliklerini kontrol etmek' olduğunu belirtir ve ISO/IEC 25010 standardının bu özelliklerin bir sınıflandırmasını sağladığını (listelenen örnekler dahil) ifade eder.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Kodun, mimarinin veya veri akışlarının iç yapısını analiz ederek testleri türeten test yaklaşımı nedir?",
+        "options": [
+            "A. Kara Kutu Testi.",
+            "B. Beyaz Kutu Testi.",
+            "C. Deneyim Tabanlı Test.",
+            "D. Fonksiyonel Olmayan Test."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.2.2, Beyaz Kutu testinin 'yapı tabanlı olduğunu ve testleri sistemin uygulamasından veya iç yapısından (örn. kod, mimari, iş akışları ve veri akışları) türettiğini' belirtir.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Test Types - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir kusur düzeltildikten sonra, yapılan değişikliğin başka hiçbir yerde olumsuz bir yan etkiye neden olmadığını doğrulamak için yapılan teste ne ad verilir?",
+        "options": [
+            "A. Onay Testi (Confirmation Testing).",
+            "B. Regresyon Testi (Regression Testing).",
+            "C. Kabul Testi (Acceptance Testing).",
+            "D. Kara Kutu Testi (Black-box Testing)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.2.3, Regresyon testinin 'bir değişikliğin (zaten onay testi yapılmış bir düzeltme dahil) olumsuz sonuçlara neden olmadığını onayladığını' belirtir.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Confirmation and Regression Testing - K2)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Onay testi (confirmation testing) ile regresyon testi (regression testing) arasındaki temel fark nedir?",
+        "options": [
+            "A. Onay testi yalnızca otomatik, regresyon testi yalnızca manuel yapılır.",
+            "B. Onay testi belirli bir hatanın düzeltildiğini doğrular; regresyon testi ise bir değişikliğin (düzeltme dahil) başka yerlerde istenmeyen yan etkilere neden olmadığını doğrular.",
+            "C. Onay testi yalnızca geliştiriciler, regresyon testi yalnızca test uzmanları tarafından yapılır.",
+            "D. Onay testi yeni özellikleri, regresyon testi ise mevcut özellikleri test eder."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.2.3 bu ayrımı netleştirir: Onay testi 'orijinal bir kusurun başarıyla düzeltildiğini onaylar'. Regresyon testi ise 'bir değişikliğin (zaten onay testi yapılmış bir düzeltme dahil) olumsuz sonuçlara neden olmadığını onaylar'.",
+        "topic": "Chapter 2.2 - Test Levels and Test Types (Confirmation and Regression Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi bakım testini (maintenance testing) tetikleyen bir durum **değildir**?",
+        "options": [
+            "A. Yazılımın tamamen yeni geliştirilmesi.",
+            "B. Yazılıma planlı bir iyileştirme veya düzeltici bir değişiklik yapılması.",
+            "C. Yazılımın çalıştığı işletim sisteminin yükseltilmesi.",
+            "D. Uygulamanın kullanım ömrünün sonuna gelmesi (emekliye ayrılması)."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Metin 2.3, bakım testinin tetikleyicilerini 'Modifikasyonlar (planlı iyileştirmeler, düzeltici değişiklikler, acil düzeltmeler)', 'Operasyonel ortamın yükseltmeleri veya geçişleri' ve 'Emeklilik' olarak sınıflandırır. Yazılımın tamamen yeni geliştirilmesi ise bakım değil, ilk geliştirme sürecidir.",
+        "topic": "Chapter 2.3 - Maintenance Testing (Triggers - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bakım (maintenance) sırasında yapılan bir değişikliğin testinin kapsamı genellikle neye bağlıdır?",
+        "options": [
+            "A. Yalnızca değişikliği yapan geliştiricinin deneyimine.",
+            "B. Değişikliğin riski, mevcut sistemin boyutu ve değişikliğin boyutu gibi faktörlere.",
+            "C. Test ekibinin o anki ruh haline.",
+            "D. Kullanılan programlama diline."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.3, bakım testinin kapsamının tipik olarak 'Değişikliğin risk derecesi', 'Mevcut sistemin boyutu' ve 'Değişikliğin boyutu' gibi faktörlere bağlı olduğunu belirtir.",
+        "topic": "Chapter 2.3 - Maintenance Testing (Scope - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Mevcut bir sistemi bir platformdan diğerine taşırken (migration) veya başka bir uygulamadan veri aktarırken hangi tür testler bakım testinin bir parçası olarak gerekebilir?",
+        "options": [
+            "A. Yalnızca yeni platformun donanım testi.",
+            "B. Yeni ortamla ilişkili testler ve/veya veri dönüştürme (data conversion) testleri.",
+            "C. Yalnızca ilk geliştirme sırasındaki kabul testleri.",
+            "D. Kullanıcı arayüzü maketlerinin (mockup) testi."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 2.3, bakım testi tetikleyicilerinden biri olarak 'operasyonel ortamın yükseltmelerini veya geçişlerini' belirtir ve bunun 'yeni ortamla ilişkili testler ve ayrıca değiştirilmiş yazılımın veya başka bir uygulamadan veri taşındığında veri dönüştürme testleri gerektirebileceğini' ifade eder.",
+        "topic": "Chapter 2.3 - Maintenance Testing (Triggers/Scope - K2, Scenario)",
+        "kLevel": "K2"
+    }
+]

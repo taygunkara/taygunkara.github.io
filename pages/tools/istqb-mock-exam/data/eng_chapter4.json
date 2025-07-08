@@ -1,0 +1,485 @@
+[
+    {
+        "question": "A tester is designing test cases by analyzing the source code to ensure that specific parts of the code (e.g., all branches of `if` statements) are exercised. Which TWO test technique categories is this tester using?",
+        "options": [
+            "A. Black-box.",
+            "B. White-box.",
+            "C. Experience-based.",
+            "D. Structure-based.",
+            "E. Specification-based."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Text 4.1 and 4.3 state that deriving test cases by analyzing the internal structure of the code (like branches) falls under the White-box or Structure-based techniques category. Black-box (Specification-based) focuses on external behavior, and Experience-based relies on the tester's knowledge.",
+        "topic": "Chapter 4.1 - Test Techniques Overview (Technique Classification - K2, Scenario, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which category of test techniques is based on an analysis of the specified behavior of the test object without reference to its internal structure?",
+        "options": [
+            "A. White-box test techniques.",
+            "B. Black-box test techniques.",
+            "C. Experience-based test techniques.",
+            "D. Static Analysis techniques."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.1 states that Black-box test techniques (also known as specification-based techniques) 'are based on an analysis of the specified behavior of the test object without reference to its internal structure.'",
+        "topic": "Chapter 4.1 - Test Techniques Overview (Technique Classification - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Which category of test techniques effectively uses the knowledge and experience of testers for the design and implementation of test cases?",
+        "options": [
+            "A. Black-box test techniques.",
+            "B. White-box test techniques.",
+            "C. Experience-based test techniques.",
+            "D. Structure-based test techniques."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.1 states that Experience-based test techniques 'effectively use the knowledge and experience of testers for the design and implementation of test cases.' The effectiveness heavily depends on the tester's skills.",
+        "topic": "Chapter 4.1 - Test Techniques Overview (Technique Classification - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A tester is designing tests based on requirements specifications and user manuals, without looking at the code. Which category of techniques is primarily being used?",
+        "options": [
+            "A. White-box.",
+            "B. Experience-based.",
+            "C. Black-box (Specification-based).",
+            "D. Static analysis."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.1 defines Black-box (or Specification-based) techniques as being based on analysis of specified behavior (found in requirements, user manuals, etc.) without reference to internal structure (code).",
+        "topic": "Chapter 4.1 - Test Techniques Overview (Technique Classification - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "An online store determines shipping costs based on order amount: 10 TL for 0-50 TL, 5 TL for 50.01-200 TL, and free shipping for 200.01 TL and above. Using Equivalence Partitioning (EP), how many valid equivalence partitions are identified for the order amount?",
+        "options": [
+            "A. Two.",
+            "B. Three.",
+            "C. Four.",
+            "D. Five."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The system behaves in three distinct ways based on the order amount (10 TL shipping, 5 TL shipping, free shipping). Therefore, there are three valid equivalence partitions for the order amount: [0, 50.00], [50.01, 200.00], and [200.01, ∞).",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Equivalence Partitioning - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "A mobile application accepts a PIN code that must be exactly 4 or 6 digits long. You want to derive test cases for the PIN length using Equivalence Partitioning (EP). Which of the following test data represents an **invalid** partition?",
+        "options": [
+            "A. 1234 (4 digits).",
+            "B. 123456 (6 digits).",
+            "C. 12345 (5 digits).",
+            "D. 9876 (4 digits)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Valid PIN lengths are 4 and 6. These represent the valid partitions. Invalid partitions would be lengths less than 4, greater than 6, or between 4 and 6 (which is 5 in this case). 12345 (5 digits) represents an invalid partition.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Equivalence Partitioning - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "An age input field accepts values between 18 and 65 (inclusive). Using the Equivalence Partitioning (EP) technique, how many **invalid** equivalence partitions should be identified for this field?",
+        "options": [
+            "A. One.",
+            "B. Two.",
+            "C. Three.",
+            "D. Zero."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The valid partition is [18, 65]. Invalid partitions are values outside this range. In this case, values less than 18 (< 18) form one invalid partition, and values greater than 65 (> 65) form a second invalid partition. Therefore, there are two invalid partitions.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Equivalence Partitioning - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Consider an input field that accepts integer values from 10 to 100 (inclusive). Using Equivalence Partitioning, identify one valid and two invalid partitions.",
+        "options": [
+            "A. Valid: 5; Invalid: 10, 100.",
+            "B. Valid: 50; Invalid: 9, 101.",
+            "C. Valid: 10; Invalid: 9, 100.",
+            "D. Valid: 101; Invalid: 50, 9."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The valid partition includes integers from 10 to 100. Invalid partitions are integers less than 10 and integers greater than 100. Option B correctly identifies 50 as being in the valid partition, 9 in the 'less than 10' invalid partition, and 101 in the 'greater than 100' invalid partition.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Equivalence Partitioning - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "A flight reservation system accepts bookings for a minimum of 1 and a maximum of 6 passengers at a time. Using the **3-value** version of Boundary Value Analysis (BVA), which set of test values should be derived for the number of passengers?",
+        "options": [
+            "A. 1, 6.",
+            "B. 0, 1, 6, 7.",
+            "C. 1, 2, 5, 6.",
+            "D. 0, 1, 2, 5, 6, 7."
+        ],
+        "correctAnswer": 3,
+        "explanation": "The valid partition is [1, 6]. Boundaries are 1 and 6. 3-value BVA tests the boundary and both its neighbors. For lower boundary (1): 0 (neighbor <1), 1 (boundary), 2 (neighbor >1). For upper boundary (6): 5 (neighbor <6), 6 (boundary), 7 (neighbor >6). The complete set is 0, 1, 2, 5, 6, 7.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Boundary Value Analysis - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "A password field must be between 8 and 12 characters long (inclusive). Using the **2-value** version of Boundary Value Analysis (BVA), which of the following test inputs should be derived?",
+        "options": [
+            "A. 7, 8, 12, 13.",
+            "B. 7, 8, 9, 11, 12, 13.",
+            "C. 8, 12.",
+            "D. 7, 13."
+        ],
+        "correctAnswer": 0,
+        "explanation": "The boundaries are 8 (lower) and 12 (upper). 2-value BVA tests the boundary value itself and its closest neighbor in the adjacent partition. For the lower boundary (8), the values are 8 and 7 (7 is the neighbor in the <8 partition). For the upper boundary (12), the values are 12 and 13 (13 is the neighbor in the >12 partition). Thus, the test values are 7, 8, 12, 13.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Boundary Value Analysis - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "A system calculates discounts based on purchase amount: 0% for 0-100, 5% for 100.01-500, 10% for 500.01 and above. What are the boundary values to be tested using 2-value BVA?",
+        "options": [
+            "A. 0, 100, 500.",
+            "B. 0, 100, 100.01, 500, 500.01.",
+            "C. 0, 100.01, 500.01.",
+            "D. -0.01, 0, 100, 100.01, 500, 500.01, and a large value."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The equivalence partitions are [0, 100.00], [100.01, 500.00], [500.01, ∞). The boundaries are 0, 100.00, 100.01, 500.00, 500.01. 2-value BVA tests each boundary value and its immediate neighbor in the adjacent partition. Tests: 0 and -0.01 (or nearest invalid negative if applicable); 100.00 and 100.01; 500.00 and 500.01. Option B includes the relevant boundary values themselves: 0, 100, 100.01, 500, 500.01. (Technically 0's neighbor is -0.01 and 500.01's neighbor is a larger value, but BVA focuses on the boundary points identified.)",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Boundary Value Analysis - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Rules for a credit card application: If applicant's annual income is > 50k TL (Condition 1) AND credit score is > 700 (Condition 2), approve application (Action 1). If income > 50k TL BUT credit score <= 700, requires further review (Action 2). If income <= 50k TL, reject application (Action 3). In a decision table for these rules, which action should be marked for the column (rule) where 'Income > 50k' = True (T) and 'Credit Score > 700' = False (F)?",
+        "options": [
+            "A. Action 1: Approve (X).",
+            "B. Action 2: Further Review (X).",
+            "C. Action 3: Reject (X).",
+            "D. No action should be marked."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The scenario describes the rule: 'If income > 50k TL BUT credit score <= 700, requires further review'. This corresponds to the condition C1=T and C2=F. The action for this rule is 'Further Review' (Action 2).",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Decision Table Testing - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "A temperature control system turns the heater on if the temperature drops below 20 degrees, turns the air conditioner on if it exceeds 25 degrees, and does nothing otherwise (between 20-25 degrees inclusive). The following Decision Table is given for testing these rules:\n\nCondition 1: Temp < 20\nCondition 2: Temp > 25\n---------------------\nAction 1: Heater On\nAction 2: AC On\n\nRule 1 | Rule 2 | Rule 3\n---------------------\nT | F | F\nF | T | F\n---------------------\nX |   |  \n  | X |  \n\nWhich temperature value is appropriate to test Rule 3 (Heater and AC are off)?",
+        "options": [
+            "A. 18.",
+            "B. 28.",
+            "C. 22.",
+            "D. 20."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Rule 3 in the decision table represents the case where both 'Temp < 20' (Condition 1) and 'Temp > 25' (Condition 2) are False (F). This means the temperature is between 20 and 25 (inclusive). Among the options, only 22 falls within this range. 18 tests Rule 1; 28 tests Rule 2. 20 also falls under Rule 3 but 22 is a clearer example within the range.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Decision Table Testing - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "In decision table testing, what are the coverage items?",
+        "options": [
+            "A. The conditions listed in the rows.",
+            "B. The actions listed in the rows.",
+            "C. The columns (decision rules) containing feasible combinations of conditions.",
+            "D. The individual cells where True/False values are entered."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.2.3 states: 'In decision table testing, the coverage items are the columns containing feasible combinations of conditions. To achieve 100% coverage with this technique, test cases must exercise all these columns.'",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Decision Table Testing - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "A music player application has states: Stopped, Playing, Paused. Events are: Play, Pause, Stop, Resume. Which of the following transitions is likely **invalid**?\nStopped -> (Play) -> Playing\nPlaying -> (Pause) -> Paused\nPaused -> (Resume) -> Playing\nPaused -> (Stop) -> Stopped\nPlaying -> (Play) -> Playing",
+        "options": [
+            "A. 'Play' event when in Stopped state.",
+            "B. 'Pause' event when in Playing state.",
+            "C. 'Resume' event when in Paused state.",
+            "D. 'Play' event again when already in Playing state."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Typically, issuing a 'Play' command when a music player is already playing is either ignored (invalid transition leading nowhere or back to the same state without action) or simply restarts the track, but it's often considered an invalid or redundant transition in state modeling. The other transitions are standard and valid.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (State Transition Testing - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "An ATM PIN entry process has states: Idle, Card Read, PIN Wait, Main Menu, Card Swallowed. Which sequence of states represents a **single valid test case path** covering a successful login?",
+        "options": [
+            "A. Idle -> Card Read -> PIN Wait -> Card Swallowed.",
+            "B. Idle -> Card Read -> Main Menu.",
+            "C. Idle -> Card Read -> PIN Wait -> Main Menu.",
+            "D. Idle -> PIN Wait -> Main Menu."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Based on typical ATM logic (and aligning with Q23's implied diagram), a successful login path involves inserting the card (Idle to Card Read), entering the PIN (Card Read to PIN Wait), and then entering the correct PIN (PIN Wait to Main Menu). Option C represents this valid sequence.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (State Transition Testing - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "In state transition testing, what does 'All Transitions Coverage' aim to achieve?",
+        "options": [
+            "A. Visiting every state at least once.",
+            "B. Exercising every valid transition at least once.",
+            "C. Exercising all valid transitions and attempting to execute all invalid transitions shown in the state table.",
+            "D. Exercising only the transitions that lead to an error state."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.2.4 defines All Transitions Coverage: 'To achieve 100% all transitions coverage, test cases must exercise all the valid transitions and attempt to execute invalid transitions.' It covers both valid and invalid paths as depicted, typically in a state table.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (State Transition Testing - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "What is the primary purpose of the State Transition Testing technique?",
+        "options": [
+            "A. To test all possible input values.",
+            "B. To test how a system changes its state and takes actions in response to different events.",
+            "C. To verify that every line of code is executed at least once.",
+            "D. To evaluate the usability of the user interface."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.2.4 states that State Transition Testing 'models the behavior of a system by showing its possible states and valid state transitions.' Tests verify how events change the system's state and which actions are triggered.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (State Transition Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A tester wants to ensure that every single executable line of code in a module has been run at least once by their test suite. Which coverage criterion are they aiming for?",
+        "options": [
+            "A. Branch Coverage.",
+            "B. Decision Coverage.",
+            "C. Statement Coverage.",
+            "D. Path Coverage."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.3.1 defines Statement Testing where 'the coverage items are executable statements' and the aim is to 'exercise statements in the code'. 100% statement coverage ensures all executable statements have been exercised at least once.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Statement Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Achieving 100% Statement Coverage does **NOT** guarantee which of the following?",
+        "options": [
+            "A. That all executable statements in the code have been exercised at least once.",
+            "B. That all decision logic in the code (e.g., both true and false branches of if statements) has been tested.",
+            "C. The possibility that a statement containing a defect will be executed.",
+            "D. Finding some defects in the code."
+        ],
+        "correctAnswer": 1,
+        "explanation": "As mentioned in Text 4.3.1, 100% statement coverage 'does not ensure that all the decision logic has been tested as, for instance, it may not exercise all the branches... in the code'. Exercising every statement doesn't mean exercising every decision outcome.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Statement Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What does Branch Testing primarily aim to cover?",
+        "options": [
+            "A. Every line of code.",
+            "B. Every function call within the program.",
+            "C. Every transfer of control (branch) between nodes in the control flow graph, both conditional and unconditional.",
+            "D. Every possible combination of inputs."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.3.2 states that in Branch Testing 'the coverage items are branches and the aim is to design test cases to exercise branches...'. A branch is defined as a transfer of control between two nodes in the control flow graph.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Branch Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the relationship between Branch Testing and Statement Testing coverage?",
+        "options": [
+            "A. Statement coverage subsumes branch coverage (100% statement => 100% branch).",
+            "B. Branch coverage subsumes statement coverage (100% branch => 100% statement).",
+            "C. The two coverage criteria are completely independent.",
+            "D. Both measure exactly the same thing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.3.2 explicitly states: 'Branch coverage subsumes statement coverage. This means that any set of test cases achieving 100% branch coverage also achieves 100% statement coverage (but not vice versa).' Therefore, branch coverage is a stronger criterion.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Branch Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is a fundamental strength of white-box testing techniques?",
+        "options": [
+            "A. They always require less effort than black-box testing.",
+            "B. They facilitate defect detection even when the software specification is vague, outdated, or incomplete.",
+            "C. They are the most effective way to find user interface defects.",
+            "D. They guarantee that the application meets all requirements."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.3.3 states a fundamental strength is 'that the entire software implementation is taken into account during testing, which facilitates defect detection even when the software specification is vague, outdated or incomplete.'",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Value of White-box Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What objective measurement, not typically provided by black-box testing alone, is offered by white-box testing?",
+        "options": [
+            "A. Percentage of requirements met.",
+            "B. Number of functions tested.",
+            "C. An objective measurement of actual code coverage.",
+            "D. Total number of defects found."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.3.3 states, 'Performing only black-box testing does not provide a measure of actual code coverage. White-box coverage measures provide an objective measurement of coverage...'. This information allows for generating additional tests to increase coverage.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Value of White-box Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A tester, recalling frequent 'leap year' bugs encountered in previous projects involving date input fields, designs test cases specifically targeting the last days of February and the first days of March. Which experience-based technique is this tester primarily using?",
+        "options": [
+            "A. Exploratory Testing.",
+            "B. Checklist-Based Testing.",
+            "C. Error Guessing.",
+            "D. Usability Testing."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.4.1 defines Error Guessing as using the 'tester's knowledge... to anticipate the occurrence of errors, defects, and failures'. This knowledge can include past experience with similar applications or common errors. Targeting specific error-prone areas based on past experience is characteristic of Error Guessing.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Error Guessing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is the Error Guessing technique based upon?",
+        "options": [
+            "A. Only the software specifications.",
+            "B. The tester's knowledge, experience, and ability to anticipate the likely occurrence of errors, defects, and failures.",
+            "C. Structural analysis of the code.",
+            "D. Random data generation."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.4.1 states Error Guessing is 'a technique used to anticipate the occurrence of errors, defects, and failures, based on the tester's knowledge'. This knowledge can include how the application worked previously, developer tendencies, and errors in similar applications.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Error Guessing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "A tester freely tests a new feature of an application within a defined time-box, guided by a test charter (containing test objectives), taking notes of findings, and developing new test ideas during the session. Which testing technique does this describe?",
+        "options": [
+            "A. Error Guessing.",
+            "B. Exploratory Testing - possibly Session-based.",
+            "C. Checklist-Based Testing.",
+            "D. Regression Testing."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.4.2 defines Exploratory Testing as a technique where 'tests are simultaneously designed, executed, and evaluated while the tester learns about the test object'. It also mentions it's 'sometimes conducted using session-based testing... within a defined time-box... using a test charter'.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Exploratory Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "In which situations is Exploratory Testing particularly useful?",
+        "options": [
+            "A. When there are very detailed and complete specifications.",
+            "B. When there is no time pressure on the project.",
+            "C. When there are few or inadequate specifications, or there is significant time pressure on testing.",
+            "D. When the tester is inexperienced."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.4.2 mentions that Exploratory Testing 'is useful when there are few or inadequate specifications or there is significant time pressure on the testing.' It's also useful to complement other, more formal techniques.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Exploratory Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Testing a website's usability against a list containing Nielsen's 10 heuristic principles is an example of which experience-based technique?",
+        "options": [
+            "A. Error Guessing.",
+            "B. Exploratory Testing.",
+            "C. Checklist-Based Testing.",
+            "D. Black-Box Testing."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.4.3 states that in Checklist-Based Testing, a tester designs tests to cover conditions from a checklist, and gives an example: 'Checklists can be created to support various test types, including... non-functional testing (e.g., 10 heuristics for usability testing...)'.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Checklist-Based Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "How does Checklist-Based Testing work?",
+        "options": [
+            "A. The tester performs completely random tests.",
+            "B. The tester designs, implements, and executes tests to cover test conditions from a checklist.",
+            "C. The tester compares every line of code against a checklist.",
+            "D. The tester uses a tool that automatically scans the user interface based on a checklist."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.4.3 explains that in Checklist-Based Testing, 'a tester designs, implements, and executes tests to cover test conditions from a checklist.' Checklists can be based on experience, knowledge, or understanding of how software fails.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Checklist-Based Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "An Agile team, including business representatives, developers, and testers, meets to discuss the details, scope, and acceptance criteria of a new user story. This process is part of which testing approach, and what is its primary goal?",
+        "options": [
+            "A. Exploratory Testing; to find defects.",
+            "B. Collaborative User Story Writing; to achieve a shared understanding among all stakeholders and prevent defects.",
+            "C. Checklist-Based Testing; to check compliance with standards.",
+            "D. Error Guessing; to anticipate potential errors."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.5.1 describes Collaborative User Story Writing. It states 'The collaboration allows the team to obtain a shared vision of what should be delivered, by taking into account three perspectives: business, development and testing.' The goal focuses on defect *avoidance* through communication and shared understanding.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (Collaborative User Story Writing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What are the characteristics of a good user story according to the INVEST criteria?",
+        "options": [
+            "A. Intricate, Non-negotiable, Valueless, Estimable, Epic, Testable.",
+            "B. Independent, Negotiable, Valuable, Estimable, Small, Testable.",
+            "C. Integrated, Non-negotiable, Verified, Easy, Singular, Technical.",
+            "D. Important, Novel, Verifiable, Extensible, Secure, Timely."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.5.1 states that good user stories should have the characteristics represented by the acronym INVEST: Independent, Negotiable, Valuable, Estimable, Small, and Testable.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (Collaborative User Story Writing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What is an example of the Scenario-Oriented format commonly used for writing acceptance criteria?",
+        "options": [
+            "A. A bulleted verification list.",
+            "B. A table showing inputs and expected outputs.",
+            "C. The Given/When/Then format used in BDD.",
+            "D. A user interface flowchart."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Text 4.5.2 identifies 'Scenario-oriented (e.g., Given/When/Then format used in BDD)' as one of the two most common formats for writing acceptance criteria.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (Acceptance Criteria - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "What are TWO primary functions of acceptance criteria for user stories? (Select TWO options)",
+        "options": [
+            "A. To define the scope of the user story.",
+            "B. To document the internal structure of the code.",
+            "C. To reach consensus among the stakeholders.",
+            "D. To select test automation tools.",
+            "E. To list the project manager's tasks."
+        ],
+        "correctAnswer": [0, 2],
+        "explanation": "Text 4.5.2 states that acceptance criteria are used to: 'Define the scope of the user story', 'Reach consensus among the stakeholders', 'Describe both positive and negative scenarios', and 'Serve as a basis for the user story acceptance testing'.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (Acceptance Criteria - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "In the Acceptance Test-Driven Development (ATDD) approach, what type of behavior do the initially created test cases typically verify?",
+        "options": [
+            "A. Only exceptional conditions and error handling.",
+            "B. The correct behavior without exceptions or error conditions (positive tests).",
+            "C. Only non-functional quality characteristics.",
+            "D. Only the appearance of the user interface."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Text 4.5.3, describing the ATDD test case creation process, states: 'Typically, the first test cases are positive, confirming the correct behavior without exceptions or error conditions...'",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (ATDD - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "User Story: \"As an online banking customer, I want to view my last 5 transactions, so that I can check my spending.\"\nAcceptance Criteria (Rule-Oriented):\n- Customer must be able to select 'Account Summary' after login.\n- The 'Account Summary' page must list the last 5 transactions with date, description, and amount.\n- The list must be sorted from newest to oldest.\n\nBased on this information, which of the following test cases could be derived using the ATDD approach?",
+        "options": [
+            "A. Verify that if the customer has 3 transactions, the 'Account Summary' page lists these 3 transactions in the correct order.",
+            "B. Verify that the password reset function works.",
+            "C. Verify that the 'Account Summary' page loads in less than 2 seconds.",
+            "D. Verify that if the customer has 7 transactions, the 'Account Summary' page lists the first 5 transactions."
+        ],
+        "correctAnswer": 0,
+        "explanation": "ATDD derives test cases based on acceptance criteria. The criteria specify listing the *last* 5 transactions. If fewer than 5 exist, it's expected those existing transactions are displayed correctly. Option A tests this scenario. Option B tests a different function. Option C tests a non-functional characteristic (performance). Option D tests for the 'first 5', contradicting the 'last 5' criterion.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (ATDD - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "An ATDD workshop results in the following acceptance criterion for a login user story: \"Given the user is on the login page, When the user enters a valid username and a valid password, Then the user should be redirected to the dashboard page.\" Which test case directly verifies this criterion?",
+        "options": [
+            "A. Enter an invalid username and a valid password, verify error message is shown.",
+            "B. Enter a valid username and an invalid password, verify error message is shown.",
+            "C. Navigate to the login page, enter 'user_valid' and 'pass_valid', verify the dashboard page is displayed.",
+            "D. Navigate to the dashboard page directly without logging in, verify redirection to login page."
+        ],
+        "correctAnswer": 2,
+        "explanation": "The acceptance criterion describes the 'happy path' or positive scenario using the Given/When/Then format. Option C directly follows this structure: sets the precondition (login page), performs the action (enter valid credentials), and checks the expected outcome (redirected to dashboard). Options A and B test negative scenarios. Option D tests a different security aspect.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (ATDD - K3, Scenario)",
+        "kLevel": "K3"
+    }
+]

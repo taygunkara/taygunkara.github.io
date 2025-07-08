@@ -1,0 +1,1330 @@
+/* --- Modern & Minimalist Portfolio Theme v4.3 (Updated ISTQB Styles) --- */
+
+/* --- Değişkenler --- */
+:root {
+    --color-primary: #3b82f6; /* Tailwind blue-500 */
+    --color-primary-hover: #2563eb; /* Tailwind blue-600 */
+    --color-primary-dark: #60a5fa; /* Tailwind blue-400 */
+
+    --color-secondary: #6b7280; /* Tailwind gray-500 */
+    --color-secondary-hover: #4b5563; /* Tailwind gray-600 */
+
+    --color-link: var(--color-primary);
+    --color-link-hover: var(--color-primary-hover);
+
+    --bg-light: #f9fafb; /* Tailwind gray-50 */
+    --bg-alternate-light: #ffffff; /* Tailwind white */
+    --bg-dark: #111827; /* Tailwind gray-900 */
+    --bg-alternate-dark: #1f2937; /* Tailwind gray-800 */
+
+    --card-bg-light: #ffffff; /* Tailwind white */
+    --card-bg-dark: #1f2937; /* Tailwind gray-800 */
+
+    --text-light-primary: #1f2937; /* Tailwind gray-900 */
+    --text-light-secondary: #6b7280; /* Tailwind gray-500 */
+    --text-dark-primary: #f3f4f6; /* Tailwind gray-100 */
+    --text-dark-secondary: #9ca3af; /* Tailwind gray-400 */
+
+    --border-light: #e5e7eb; /* Tailwind gray-200 */
+    --border-dark: #374151; /* Tailwind gray-700 */
+
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --line-height: 1.7;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1.25rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 10px 10px -5px rgba(0, 0, 0, 0.03); /* Adjusted shadow-xl */
+
+    --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ISTQB Uygulaması İçin Tema Renk Değişkenleri (Tailwind renklerinden türetildi) */
+    /* Light Mode Türevler */
+    --istqb-secondary-light: #10b981; /* Tailwind green-500 */
+    --istqb-danger-light: #ef4444; /* Tailwind red-500 */
+    --istqb-answered-light: #f97316; /* Tailwind orange-500 */
+    --istqb-current-light: var(--color-primary); /* Primary ile aynı */
+
+    --istqb-secondary-light-lighter: #d1fae5; /* Tailwind green-100 */
+    --istqb-secondary-light-darker: #047857; /* Tailwind green-700 */
+    --istqb-danger-light-lighter: #fee2e2; /* Tailwind red-100 */
+    --istqb-danger-light-darker: #b91c1c; /* Tailwind red-700 */
+    --istqb-answered-light-lighter: #ffedd5; /* Tailwind orange-100 */
+    --istqb-answered-light-darker: #9a3412; /* Tailwind orange-700 */
+
+    /* Dark Mode Türevler */
+    --istqb-secondary-dark: #34d399; /* Tailwind green-400 */
+    --istqb-danger-dark: #f87171; /* Tailwind red-400 */
+    --istqb-answered-dark: #fb923c; /* Tailwind orange-400 */
+    --istqb-current-dark: var(--color-primary-dark); /* Primary-dark ile aynı */
+
+    --istqb-secondary-dark-lighter: #a7f3d0; /* Tailwind green-200 */ /* Adjusted */
+    --istqb-danger-dark-lighter: #fecaca; /* Tailwind red-200 */ /* Adjusted */
+    --istqb-answered-dark-lighter: #fed7aa; /* Tailwind orange-200 */ /* Adjusted */
+    /* Added darker shades for dark mode text */
+    --istqb-secondary-dark-darker: #065f46; /* Tailwind green-900 */
+    --istqb-danger-dark-darker: #7f1d1d; /* Tailwind red-900 */
+    --istqb-answered-dark-darker: #7c2d12; /* Tailwind orange-900 */
+
+
+}
+
+/* --- Global Reset & Base --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    background-color: var(--bg-light);
+    color: var(--text-light-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+    display: flex; /* ISTQB app min-height için eklendi */
+    flex-direction: column; /* ISTQB app min-height için eklendi */
+    min-height: 100vh; /* ISTQB app min-height için eklendi */
+}
+body.no-scroll { overflow: hidden; }
+
+/* --- Dark Mode Overrides --- */
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark-primary);
+    --bg-light: var(--bg-dark);
+    --bg-alternate-light: var(--bg-alternate-dark);
+    --card-bg-light: var(--card-bg-dark);
+    --text-light-primary: var(--text-dark-primary);
+    --text-light-secondary: var(--text-dark-secondary);
+    --border-light: var(--border-dark);
+    --color-primary: var(--color-primary-dark);
+    --color-link-hover: #93c5fd; /* Lighter blue for dark mode link hover */
+    --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    --shadow-md: 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 15px 20px -5px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 25px 30px -10px rgba(0, 0, 0, 0.2);
+
+    /* ISTQB Uygulaması İçin Dark Mode Türevleri Kullanımı */
+    /* Bu değişkenler, ISTQB'nin Light mode değişkenlerinin üzerine yazarak Dark Mode'u uygular */
+    --istqb-secondary-light-lighter: var(--istqb-secondary-dark-lighter);
+    --istqb-secondary-light-darker: var(--istqb-secondary-dark-darker); /* Use darker dark green */
+    --istqb-danger-light-lighter: var(--istqb-danger-dark-lighter);
+    --istqb-danger-light-darker: var(--istqb-danger-dark-darker); /* Use darker dark red */
+    --istqb-answered-light-lighter: var(--istqb-answered-dark-lighter);
+    --istqb-answered-light-darker: var(--istqb-answered-dark-darker); /* Use darker dark orange */
+}
+
+/* Specific dark mode styles (Portfolyo) */
+body.dark-mode .navbar { background-color: rgba(17, 24, 39, 0.75); }
+body.dark-mode .navbar.scrolled { background-color: rgba(17, 24, 39, 0.9); border-bottom-color: var(--border-dark); }
+body.dark-mode .nav-logo { color: var(--text-dark-primary); }
+body.dark-mode .nav-link { color: var(--text-dark-secondary); }
+body.dark-mode .nav-link:hover, body.dark-mode .nav-link.active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+body.dark-mode .hamburger .bar { background-color: var(--text-dark-primary); }
+/* Tema ve Dil Butonları Dark Mode */
+body.dark-mode .theme-btn, body.dark-mode .lang-btn { background-color: rgba(255,255,255,0.1); color: var(--text-dark-secondary);} /* Added text color */
+body.dark-mode .theme-btn:hover, body.dark-mode .lang-btn:hover { background-color: rgba(255,255,255,0.15); }
+body.dark-mode .theme-btn i { color: #facc15; } /* Yellow icon */
+
+body.dark-mode .hero { background: linear-gradient(to bottom, rgba(17, 24, 39, 0.6), var(--bg-dark)), var(--bg-alternate-dark); }
+body.dark-mode .profile-pic { border-color: var(--card-bg-dark); }
+body.dark-mode .subtitle { color: var(--text-dark-secondary); }
+body.dark-mode .description { color: var(--text-dark-secondary); }
+body.dark-mode .btn-primary { background-color: var(--color-primary); color: #111827; /* Dark text for dark mode primary */ border-color: var(--color-primary);} /* Ensure border color matches */
+body.dark-mode .btn-primary:hover { background-color: #93c5fd; border-color: #93c5fd; } /* Lighter blue hover */
+body.dark-mode .btn-secondary { background-color: #374151; border-color: #374151; color: var(--text-dark-primary); }
+body.dark-mode .btn-secondary:hover { background-color: #4b5563; border-color: #4b5563; }
+body.dark-mode .btn-outline { color: var(--text-dark-secondary); border-color: var(--border-dark); background-color: transparent;} /* Ensure bg is transparent */
+body.dark-mode .btn-outline:hover { color: var(--color-primary); border-color: var(--color-primary); background-color: rgba(96, 165, 250, 0.1); }
+body.dark-mode .btn-link { color: var(--text-dark-secondary); }
+body.dark-mode .btn-link:hover { color: var(--color-primary); background-color: rgba(96, 165, 250, 0.1); }
+body.dark-mode .section-content-box { background-color: var(--card-bg-dark); border-color: var(--border-dark); box-shadow: var(--shadow-md); }
+body.dark-mode h2 { color: var(--text-dark-primary); }
+body.dark-mode h2::after { background-color: var(--color-primary); }
+body.dark-mode .section-intro { color: var(--text-dark-secondary); }
+body.dark-mode .card { background-color: #2a3647; border: 1px solid #374151; box-shadow: none; }
+body.dark-mode .card:hover { border-color: #4b5563; }
+body.dark-mode .card h3 { color: var(--text-dark-primary); }
+body.dark-mode .card p { color: var(--text-dark-secondary); }
+body.dark-mode .blog-date { color: var(--text-dark-secondary); }
+body.dark-mode .skill-item { background-color: var(--card-bg-dark); border-color: var(--border-dark); }
+body.dark-mode .skill-item:hover { background-color: #374151; }
+body.dark-mode .skill-name { color: var(--text-dark-secondary); }
+body.dark-mode .timeline::before { background-color: var(--border-dark); }
+body.dark-mode .timeline-item::before { background-color: var(--card-bg-dark); border-color: var(--color-primary); box-shadow: 0 0 0 4px var(--card-bg-dark); }
+body.dark-mode .timeline-details { color: var(--text-dark-secondary); }
+body.dark-mode .timeline-content { background-color: transparent; }
+body.dark-mode .timeline-item ul li { color: var(--text-dark-secondary); }
+body.dark-mode .contact-link { background-color: var(--card-bg-dark); border-color: var(--border-dark); color: var(--text-dark-secondary); }
+body.dark-mode .contact-link:hover { background-color: #374151; color: var(--color-primary); border-color: #374151; }
+body.dark-mode .footer { background-color: var(--bg-alternate-dark); border-top-color: var(--border-dark); color: var(--text-dark-secondary); }
+body.dark-mode .footer a { color: var(--text-dark-secondary); } /* Added dark mode link color */
+body.dark-mode .footer a:hover { color: var(--color-primary); } /* Added dark mode link hover color */
+body.dark-mode .footer-disclaimer { color: var(--text-dark-secondary); opacity: 0.7; }
+body.dark-mode .footer-made-with { color: #4b5563; } /* Slightly lighter gray in dark mode */
+
+/* --- Genel Elementler --- */
+.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; flex-grow: 1; /* ISTQB app min-height için eklendi */ }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0.8rem; line-height: 1.4; font-weight: var(--font-weight-semibold); color: var(--text-light-primary); }
+h1 { font-size: 2.6rem; margin-bottom: 1rem; font-weight: var(--font-weight-bold); }
+h2 { font-size: 1.8rem; margin-bottom: 3rem; text-align: center; position: relative; color: var(--text-light-primary); font-weight: var(--font-weight-semibold); }
+h3 { font-size: 1.2rem; font-weight: var(--font-weight-semibold); }
+h4 { font-size: 1rem; font-weight: var(--font-weight-semibold); } /* Added h4 style for review */
+p { margin-bottom: 1.1rem; color: var(--text-light-secondary); font-weight: var(--font-weight-normal); }
+p.description { font-size: 1.05rem; }
+a { color: var(--color-link); text-decoration: none; transition: var(--transition); }
+a:hover { color: var(--color-link-hover); }
+img { max-width: 100%; height: auto; display: block; border-radius: var(--radius-md); }
+ul { list-style: none; }
+/* Re-add list styles for review/welcome sections if needed and if not covered by .welcome-section ul, .detail-page-container ul */
+/* li { margin-bottom: 0.5rem; color: var(--text-light-secondary); } */
+
+
+.bg-alternate { background-color: var(--bg-alternate-light); }
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -0.7rem;
+    /* Fix: Corrected typo from -5-% to -50% */
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-full);
+}
+.section-intro { text-align: center; max-width: 600px; margin: -1.8rem auto 2.5rem auto; color: var(--text-light-secondary); font-size: 1rem; }
+
+/* --- Butonlar --- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.65rem 1.5rem; border: 1px solid transparent; border-radius: var(--radius-full); cursor: pointer; font-family: inherit; font-size: 0.9rem; font-weight: var(--font-weight-medium); text-align: center; transition: var(--transition); box-shadow: var(--shadow-sm); }
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn i { font-size: 0.9em; }
+/* Primary button colors */
+.btn-primary { background-color: var(--color-primary); border-color: var(--color-primary); color: white; }
+.btn-primary:hover { background-color: var(--color-primary-hover); border-color: var(--color-primary-hover); }
+/* Secondary button colors */
+.btn-secondary { background-color: var(--color-secondary); border-color: var(--color-secondary); color: white; }
+.btn-secondary:hover { background-color: var(--color-secondary-hover); border-color: var(--color-secondary-hover); }
+/* Outline button colors */
+.btn-outline { background-color: transparent; border: 1px solid var(--border-light); color: var(--text-light-secondary); box-shadow: none; }
+body.dark-mode .btn-outline { color: var(--text-dark-secondary); border-color: var(--border-dark); background-color: transparent;} /* Ensure bg is transparent */
+.btn-outline:hover { background-color: rgba(59, 130, 246, 0.05); border-color: var(--color-primary); color: var(--color-primary); }
+body.dark-mode .btn-outline:hover { color: var(--color-primary); border-color: var(--color-primary); background-color: rgba(96, 165, 250, 0.1); }
+/* Link button colors */
+.btn-link { background: none; border: none; color: var(--text-light-secondary); padding: 0.3rem 0.5rem; font-weight: var(--font-weight-medium); box-shadow: none; border-radius: var(--radius-sm); }
+body.dark-mode .btn-link { color: var(--text-dark-secondary); }
+.btn-link:hover { color: var(--color-primary); background-color: rgba(59, 130, 246, 0.05); text-decoration: none; }
+body.dark-mode .btn-link:hover { color: var(--color-primary); background-color: rgba(96, 165, 250, 0.1); }
+/* Small button size */
+.btn-sm { padding: 0.4rem 1rem; font-size: 0.8rem; }
+/* Icon only button */
+.btn.icon-only { padding: 0.6rem; line-height: 1; width: 2.2rem; height: 2.2rem; }
+.btn.icon-only i { margin-left: 0; }
+
+/* --- Navbar --- */
+.navbar { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 0.7rem 0; border-bottom: 1px solid transparent; position: sticky; top: 0; z-index: 1000; transition: background-color 0.3s ease, box-shadow 0.3s ease, border-bottom-color 0.3s ease; box-shadow: none; }
+.navbar.scrolled { box-shadow: var(--shadow-md); background-color: rgba(255, 255, 255, 0.9); border-bottom-color: var(--border-light); }
+body.dark-mode .navbar.scrolled { background-color: rgba(17, 24, 39, 0.9); border-bottom-color: var(--border-dark); }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-logo { font-size: 1.3rem; font-weight: var(--font-weight-bold); color: var(--text-light-primary); }
+body.dark-mode .nav-logo { color: var(--text-dark-primary); }
+.nav-logo:hover { color: var(--color-primary); }
+.nav-menu { display: flex; list-style: none; gap: 1.2rem; }
+.nav-link { color: var(--text-light-secondary); font-weight: var(--font-weight-medium); padding: 0.5rem 0.2rem; border-bottom: 2px solid transparent; transition: color 0.2s ease, border-bottom-color 0.2s ease; font-size: 0.9rem;}
+body.dark-mode .nav-link { color: var(--text-dark-secondary); }
+.nav-link:hover { color: var(--color-primary); border-bottom-color: transparent; }
+body.dark-mode .nav-link:hover, body.dark-mode .nav-link.active { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+.nav-link.active { color: var(--color-primary); font-weight: var(--font-weight-semibold); border-bottom-color: var(--color-primary); }
+.nav-controls { display: flex; align-items: center; gap: 0.6rem; }
+/* Tema ve Dil Butonları Ortak Stil */
+.theme-btn, .lang-btn { background-color: rgba(0,0,0,0.03); border: 1px solid transparent; border-radius: var(--radius-full); cursor: pointer; padding: 0.5rem; display: inline-flex; align-items: center; justify-content: center; transition: var(--transition); width: 2.2rem; height: 2.2rem; font-size: 0.8rem; font-weight: var(--font-weight-semibold); color: var(--text-light-secondary); line-height: 1; }
+body.dark-mode .theme-btn, body.dark-mode .lang-btn { background-color: rgba(255,255,255,0.1); color: var(--text-dark-secondary);} /* Added text color */
+.theme-btn:hover, .lang-btn:hover { background-color: rgba(0,0,0,0.06); }
+body.dark-mode .theme-btn:hover, body.dark-mode .lang-btn:hover { background-color: rgba(255,255,255,0.15); }
+.theme-btn i { font-size: 1rem; transition: color 0.3s ease;}
+body.light-mode .theme-btn i { color: #f59e0b; } /* Amber icon */
+body.dark-mode .theme-btn i { color: #facc15; } /* Yellow icon */
+
+/* Hamburger Menu */
+.hamburger { display: none; cursor: pointer; padding: 0.5rem; }
+.hamburger .bar { display: block; width: 20px; height: 2px; margin: 4px auto; background-color: var(--text-light-primary); border-radius: var(--radius-full); transition: all 0.3s ease-in-out; }
+body.dark-mode .hamburger .bar { background-color: var(--text-dark-primary); }
+
+/* --- Hero Section --- */
+.hero {
+    min-height: 70vh;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+    padding: 4rem 0 3rem 0; position: relative;
+    background: linear-gradient(to bottom, #ffffff, var(--bg-alternate-light));
+}
+body.dark-mode .hero { background: linear-gradient(to bottom, rgba(17, 24, 39, 0.6), var(--bg-dark)), var(--bg-alternate-dark); }
+.hero-content { z-index: 2; }
+.profile-pic { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.2rem auto; border: 5px solid var(--bg-light); box-shadow: var(--shadow-lg); } /* Border color updated to use var */
+body.dark-mode .profile-pic { border-color: var(--card-bg-dark); }
+.hero h1 { font-size: 2.4rem; margin-bottom: 0.4rem; font-weight: var(--font-weight-bold); }
+.hero .subtitle { font-size: 1.2rem; color: var(--text-light-secondary); margin-bottom: 1.2rem; }
+body.dark-mode .hero .subtitle { color: var(--text-dark-secondary); }
+.hero .description { max-width: 500px; margin-left: auto; margin-right: auto; margin-bottom: 2rem; font-size: 0.95rem; }
+body.dark-mode .hero .description { color: var(--text-dark-secondary); }
+.hero .btn-primary { padding: 0.75rem 1.8rem; font-size: 0.9rem; }
+
+/* --- Content Sections --- */
+.content-section { padding: 4.5rem 0; position: relative; }
+.content-section.bg-alternate { background-color: var(--bg-alternate-light); }
+
+/* Yuvarlak İçerik Kutusu */
+.section-content-box {
+    background-color: var(--card-bg-light);
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--border-light);
+}
+body.dark-mode .section-content-box { background-color: var(--card-bg-dark); border-color: var(--border-dark); box-shadow: var(--shadow-md); }
+
+.content-section h2 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 3rem;
+}
+body.dark-mode h2 { color: var(--text-dark-primary); }
+
+/* --- About Section --- */
+.about-content { display: flex; gap: 2.5rem; align-items: flex-start; }
+.about-text { flex: 1; }
+.cv-download { margin-top: 1.5rem; }
+.cv-download .btn { margin-right: 0.5rem; margin-bottom: 0.5rem; }
+.cv-download .btn i { margin-right: 0.4rem; }
+
+/* --- Skills Section (Sabit Boyutlu Kutular) --- */
+.skills-grid-icons { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; justify-items: center; text-align: center; }.skill-item {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    width: 100px;
+    height: 90px;
+    padding: 0.8rem 0.5rem;
+    background-color: var(--bg-alternate-light);
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+    border: 1px solid var(--border-light);
+}
+body.dark-mode .skill-item { background-color: var(--card-bg-dark); border-color: var(--border-dark); }
+.skill-item:hover { transform: translateY(-3px); background-color: var(--bg-alternate-light); box-shadow: var(--shadow-sm); } /* Hover bg light mode */
+body.dark-mode .skill-item:hover { background-color: var(--bg-alternate-dark); } /* Hover bg dark mode */
+
+.skill-icon { font-size: 1.8rem; margin-bottom: 0.5rem; color: var(--color-primary); line-height: 1; flex-shrink: 0; }
+.skill-icon-img { width: 30px; height: 30px; margin-bottom: 0.5rem; object-fit: contain; flex-shrink: 0; }
+.skill-name { font-size: 0.75rem; font-weight: var(--font-weight-medium); color: var(--text-light-secondary); line-height: 1.3; word-break: break-word; }
+body.dark-mode .skill-name { color: var(--text-dark-secondary); }
+
+/* --- Kart Yapısı (Projeler, Blog, Araçlar) --- */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 1.5rem; justify-content: center; }
+.card { background-color: var(--card-bg-light); border: 1px solid var(--border-light); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column; }
+body.dark-mode .card { background-color: #2a3647; border: 1px solid #374151; box-shadow: none; }
+.card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+body.dark-mode .card:hover { border-color: #4b5563; }
+.card-image { width: 100%; height: 160px; object-fit: cover; border-bottom: 1px solid var(--border-light); margin-bottom: 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+.card-content { padding: 1.2rem; display: flex; flex-direction: column; flex-grow: 1; }
+.card-content h3 { margin-top: 0; margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--text-light-primary); font-weight: var(--font-weight-semibold);}
+body.dark-mode .card-content h3 { color: var(--text-dark-primary); }
+.card-content p { font-size: 0.88rem; color: var(--text-light-secondary); flex-grow: 1; margin-bottom: 1rem; line-height: 1.6; }
+body.dark-mode .card-content p { color: var(--text-dark-secondary); }
+.blog-date { font-size: 0.7rem; color: var(--text-light-secondary); margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.5px;}
+body.dark-mode .blog-date { color: var(--text-dark-secondary); }
+.card-buttons { margin-top: auto; display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+.blog-card { box-shadow: none; border: 1px solid var(--border-light); } /* Blog card specific style */
+body.dark-mode .blog-card { box-shadow: none; border: 1px solid var(--border-dark); }
+.blog-card:hover { box-shadow: var(--shadow-md); } /* Blog card specific hover */
+.blog-card .card-content { padding-top: 1.2rem; }
+
+/* --- Timeline --- */
+.timeline { position: relative; max-width: 700px; margin: 0 auto; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 10px; bottom: 10px; width: 2px; background-color: var(--border-light); border-radius: var(--radius-full); }
+body.dark-mode .timeline::before { background-color: var(--border-dark); }
+.timeline-item { position: relative; margin-bottom: 1.5rem; padding-left: 35px; }
+.timeline-item::before { content: ''; position: absolute; left: 1px; top: 8px; width: 15px; height: 15px; background-color: var(--bg-alternate-light); border: 3px solid var(--color-primary); border-radius: 50%; z-index: 1; box-shadow: 0 0 0 4px var(--bg-alternate-light); }
+body.dark-mode .timeline-item::before { background-color: var(--bg-alternate-dark); box-shadow: 0 0 0 3px var(--bg-alternate-dark);}
+/* Timeline Kutu içindeyse arkaplanı ayarla */
+.section-content-box .timeline-item::before { background-color: var(--card-bg-light); box-shadow: 0 0 0 3px var(--card-bg-light); }
+body.dark-mode .section-content-box .timeline-item::before { background-color: var(--card-bg-dark); box-shadow: 0 0 0 3px var(--card-bg-dark);}
+
+.timeline-content { padding: 0.1rem 0 0.5rem 0; background-color: transparent; border: none; box-shadow: none; }
+.timeline-item h3 { margin-top: 0; margin-bottom: 0.2rem; font-size: 1.1rem; color: var(--text-light-primary); font-weight: var(--font-weight-semibold);}
+body.dark-mode .timeline-item h3 { color: var(--text-dark-primary); }
+.timeline-details { font-size: 0.8rem; color: var(--text-light-secondary); margin-bottom: 0.5rem; }
+body.dark-mode .timeline-details { color: var(--text-dark-secondary); }
+.timeline-item ul { list-style: none; padding-left: 0; margin-top: 0.4rem; font-size: 0.9rem; color: var(--text-light-secondary); }
+body.dark-mode .timeline-item ul { color: var(--text-dark-secondary); }
+.timeline-item ul li { margin-bottom: 0.3rem; position: relative; padding-left: 15px; }
+.timeline-item ul li::before { content: '-'; position: absolute; left: 0; color: var(--color-primary); font-weight: bold; }
+
+/* --- See All Link --- */
+.see-all-link { text-align: center; margin-top: 2rem; }
+.see-all-link .btn { font-weight: var(--font-weight-medium); }
+.see-all-link .btn i { font-size: 0.8em; vertical-align: middle; margin-left: 0.3rem; }
+
+/* --- Contact Section --- */
+#contact .container { text-align: center; }
+#contact .contact-links { margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; } /* Added flex properties */
+.contact-link { font-size: 0.9rem; font-weight: var(--font-weight-medium); display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.7rem 1.5rem; border: 1px solid var(--border-light); border-radius: var(--radius-full); background-color: var(--card-bg-light); color: var(--text-light-secondary); transition: var(--transition); box-shadow: var(--shadow-sm); }
+body.dark-mode .contact-link { background-color: var(--card-bg-dark); border-color: var(--border-dark); color: var(--text-dark-secondary); }
+.contact-link:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); color: var(--color-primary); border-color: var(--color-primary); background-color: var(--card-bg-light); } /* Added bg color on hover */
+body.dark-mode .contact-link:hover { background-color: #374151; color: var(--color-primary); border-color: #374151; }
+.contact-link i { font-size: 1.1rem; color: var(--color-primary); }
+
+/* --- Footer --- */
+.footer { background-color: var(--bg-light); border-top: 1px solid var(--border-light); color: var(--text-light-secondary); text-align: center; padding: 2rem 0; margin-top: 4rem; font-size: 0.85rem; flex-shrink: 0; /* ISTQB app min-height için eklendi */ }
+body.dark-mode .footer { background-color: var(--bg-alternate-dark); border-top-color: var(--border-dark); color: var(--text-dark-secondary); }
+.footer p { margin-bottom: 0.3rem; line-height: 1.5; }
+.footer-disclaimer {
+    font-size: 0.75rem;
+    color: var(--text-light-secondary);
+    opacity: 0.8;
+    margin-bottom: 0.8rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.dark-mode .footer-disclaimer { color: var(--text-dark-secondary); opacity: 0.7; }
+body.dark-mode .footer a { color: var(--text-dark-secondary); } /* Added dark mode link color */
+body.dark-mode .footer a:hover { color: var(--color-primary); } /* Added dark mode link hover color */
+.footer-made-with { font-size: 0.75rem; color: #cbd5e1; margin-top: 0.8rem; }
+body.dark-mode .footer-made-with { color: #4b5563; } /* Slightly lighter gray in dark mode */
+
+
+/* --- Detay Sayfaları Stilleri (Blog Detay, Proje Detay, Araç Uygulamaları) --- */
+/* Ortak konteyner stili */
+.detail-page-container {
+    max-width: 750px; /* Diğer detay sayfaları için bu dar genişliği koru */
+    margin: 3rem auto 4rem auto;
+    padding: 2.5rem;
+    background-color: var(--card-bg-light);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    /* Ensure flex items within main take space */
+    flex-grow: 1;
+}
+body.dark-mode .detail-page-container {
+     background-color: var(--card-bg-dark); border-color: var(--border-dark); box-shadow: var(--shadow-md);
+}
+
+/* --- ISTQB Mock Exam Uygulaması Özel Stilleri --- */
+/* ISTQB uygulamasının konteynerinin genişliğini artır - Fix 1 */
+#istqb-app-container {
+     max-width: 1200px; /* Daha geniş bir max-width belirleyerek ekran alanını daha iyi kullan */
+     /* margin: 3rem auto 4rem auto; /* .detail-page-container'dan miras alınacak */
+     /* padding: 2.5rem; /* .detail-page-container'dan miras alınacak */
+     /* border, border-radius, box-shadow, flex-grow da miras alınacak */
+     /* Sadece max-width'i override ediyoruz, diğer stiller genel detay sayfasından gelsin */
+}
+
+/* Dark mode için de max-width aynı kalır */
+body.dark-mode #istqb-app-container {
+     /* Sadece renkler/gölgeler dark mode'a geçecek, max-width aynı */
+}
+
+/* Detay sayfası başlıkları */
+.detail-page-container h1 { font-size: 1.8rem; text-align: center; margin-bottom: 2rem; color: var(--color-primary); }
+.detail-page-container h2 { font-size: 1.3rem; text-align: left; padding-bottom: 0.4rem; margin-bottom: 1rem; border-bottom: 2px solid var(--color-primary); display: inline-block; font-weight: var(--font-weight-semibold);}
+.detail-page-container h2::after { display: none; } /* Detay sayfasında h2 altındaki çizgiyi kaldır */
+.detail-page-container h3 { font-size: 1.1rem; margin-top: 1.8rem; margin-bottom: 0.8rem; color: var(--text-light-primary); font-weight: var(--font-weight-semibold);}
+body.dark-mode .detail-page-container h3 { color: var(--text-dark-primary);}
+
+/* Detay sayfası listeleri */
+.detail-page-container ul { list-style: disc; padding-left: 20px; margin-bottom: 1.5rem; }
+.detail-page-container ul li { margin-bottom: 0.5rem; color: var(--text-light-secondary); font-size: 0.9rem; }
+body.dark-mode .detail-page-container ul li { color: var(--text-dark-secondary); }
+.detail-page-container ul li::marker { color: var(--color-primary); }
+
+/* Detay sayfası strong metinleri */
+.detail-page-container strong { font-weight: var(--font-weight-semibold); color: var(--text-light-primary); }
+body.dark-mode .detail-page-container strong { color: var(--text-dark-primary); }
+
+/* Proje görselleri */
+.project-image { border-radius: var(--radius-md); margin-bottom: 2rem; box-shadow: var(--shadow-md); }
+
+/* Teknoloji stack etiketleri */
+.tech-stack { margin: 1.5rem 0; display: flex; flex-wrap: wrap; gap: 0.6rem;} /* Tech stack gap eklendi */
+.tech-stack span { display: inline-block; background-color: rgba(59, 130, 246, 0.1); color: var(--color-primary); padding: 0.4rem 0.9rem; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: var(--font-weight-medium); border: 1px solid transparent; }
+body.dark-mode .tech-stack span { background-color: rgba(96, 165, 250, 0.15); color: #93c5fd; } /* Adjusted color for dark mode */
+
+/* Detay sayfası buton grubu */
+.detail-page-actions { margin-top: 2.5rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;}
+
+/* --- ISTQB Mock Exam Uygulaması Stilleri --- */
+
+/* App Container */
+#istqb-app-container {
+     /* Detail page container zaten flex-grow: 1 ve ortalanmış bir max-width'e sahip */
+     /* İstqb uygulamasının kendi içindeki layout (flex, grid vb.) burada veya ISTQB HTML'inde tanımlanmalıydı */
+     /* HTML'de bırakılan flex, grid gibi sınıfların karşılıklarını buraya ekleyelim */
+     display: flex;
+     flex-direction: column;
+     /* gap: 1.5rem; Ana layout gap'i HTML'de veriliyor */
+}
+
+/* Welcome Screen */
+#welcome-container {
+    /* bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 max-w-4xl mx-auto */
+    /* Bu stiller .detail-page-container tarafından sağlanıyor */
+}
+
+#welcome-container h1 {
+    /* text-3xl font-bold text-primary-light dark:text-primary-dark */
+     font-size: 1.875rem; /* text-3xl */
+     font-weight: var(--font-weight-bold);
+     color: var(--color-primary); /* text-primary-light */
+}
+body.dark-mode #welcome-container h1 {
+     color: var(--color-primary-dark); /* dark:text-primary-dark */
+}
+
+#welcome-container p.text-lg {
+    /* text-lg text-left mb-6 text-gray-700 dark:text-gray-300 */
+    font-size: 1.125rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: var(--text-light-primary); /* gray-700 */
+}
+body.dark-mode #welcome-container p.text-lg {
+     color: var(--text-dark-secondary); /* gray-300 */
+}
+
+/* Welcome Section */
+.welcome-section {
+    /* border-top, padding-top, margin-top zaten yukarıda .welcome-section sınıfında tanımlandı */
+}
+.welcome-section h3 {
+     /* text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100 */
+     /* Yukarıda .detail-page-container h3 veya genel h3'ten farklıysa burada tanımlanır */
+     font-size: 1.125rem; /*text-lg, not text-xl as in ISTQB HTML comment */
+     font-weight: var(--font-weight-semibold);
+     margin-bottom: 0.75rem;
+     color: var(--text-light-primary); /* gray-800 */
+}
+body.dark-mode .welcome-section h3 {
+     color: var(--text-dark-primary); /* gray-100 */
+}
+.welcome-section ul { list-style: none; padding-left: 0; }
+.welcome-section li { display: flex; align-items: center; margin-bottom: 0.5rem; } /* items-center */
+.welcome-section li i {
+     margin-right: 0.6rem;
+     color: var(--color-primary); /* primary-light */
+     width: 1.1em;
+     text-align: center;
+     flex-shrink: 0; /* İkonun küçülmesini engelle */
+}
+body.dark-mode .welcome-section li i {
+     color: var(--color-primary-dark); /* primary-dark */
+}
+.welcome-section p {
+    /* margin-bottom: 1rem; color: #4b5563; */
+    /* Zaten genel p stili var, gerekirse override edilir */
+}
+.welcome-section a {
+    /* color: #3b82f6; text-decoration: underline; */
+     /* Zaten genel a stili var */
+}
+.welcome-section strong {
+    /* color: #111827; */
+     /* Zaten genel strong stili var */
+}
+
+/* Exam Main Content */
+#exam-main-content {
+     /* display: none başlangıçta JS tarafından yönetilir */
+}
+
+#exam-main-content header {
+    /* bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-6 */
+     background-color: var(--card-bg-light);
+     border-radius: var(--radius-xl); /* Used xl radius */
+     box-shadow: var(--shadow-lg); /* Used lg shadow here */
+     padding: 1.5rem; /* p-6 */
+     margin-bottom: 1.5rem; /* mb-6 */
+     border: 1px solid var(--border-light); /* Added border for consistency */
+}
+body.dark-mode #exam-main-content header {
+     background-color: var(--card-bg-dark);
+     box-shadow: var(--shadow-md); /* Used md shadow in dark mode */
+     border-color: var(--border-dark);
+}
+
+#exam-main-content header h1 {
+     /* text-2xl font-bold text-primary-light dark:text-primary-dark */
+     font-size: 1.5rem; /* text-2xl */
+     font-weight: var(--font-weight-bold);
+     color: var(--color-primary);
+     margin-bottom: 0; /* Adjusted margin */
+}
+body.dark-mode #exam-main-content header h1 {
+     color: var(--color-primary-dark);
+}
+
+/* Header Question Count and Timer - Fix 5 */
+#exam-main-content header .flex.justify-between.items-center.mt-4 {
+    width: 100%; /* Tam genişlik almasını sağla */
+    gap: 1rem; /* Aralarına boşluk ekle */
+}
+
+/* Soru sayısı div'indeki span'lere boşluk */
+#exam-main-content header .flex.justify-between.items-center.mt-4 > div:first-child span {
+    margin: 0 4px; /* Sayılar ve '/' arasına boşluk ekle */
+}
+#exam-main-content header .flex.justify-between.items-center.mt-4 > div:first-child span:first-child {
+     margin-right: 8px; /* "Soru" etiketi ile ilk sayı arasına biraz daha boşluk */
+}
+
+/* Timer - Fix 5 */
+#exam-main-content header #timer {
+    flex-shrink: 0; /* Timer div'inin küçülmesini engelle */
+    margin-left: auto; /* Flex içinde sağa yaslanmasını sağlar */
+    /* text-red-500 dark:text-red-400 font-bold */
+    color: var(--istqb-danger-light); /* red-500 */
+    font-weight: var(--font-weight-bold);
+}
+body.dark-mode #exam-main-content header #timer {
+    color: var(--istqb-danger-dark); /* red-400 */
+}
+#timer.animate-pulse {
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .5; }
+}
+
+
+/* Progress Bar */
+.progress-bar {
+     height: 8px; /* h-2.5 */
+     background-color: var(--color-primary); /* bg-blue-600 */
+     border-radius: var(--radius-full);
+     transition: width 0.3s ease;
+}
+body.dark-mode .progress-bar {
+    background-color: var(--color-primary-dark); /* dark:bg-blue-500 */
+}
+
+
+/* Question Container */
+.question-container {
+    /* bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-4 */
+    background-color: var(--card-bg-light);
+    border-radius: var(--radius-xl); /* Used xl radius */
+    box-shadow: var(--shadow-md);
+    padding: 1.5rem; /* p-6 */
+    margin-bottom: 1rem; /* mb-4 */
+     border: 1px solid var(--border-light); /* Added border */
+}
+body.dark-mode .question-container {
+    background-color: var(--card-bg-dark);
+    box-shadow: var(--shadow-sm); /* Used sm shadow */
+    border-color: var(--border-dark);
+}
+
+.question-container h3 {
+    /* text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100 */
+    font-size: 1.125rem; /* text-lg */
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 1rem; /* mb-4 */
+    color: var(--text-light-primary); /* gray-800 */
+}
+body.dark-mode .question-container h3 {
+     color: var(--text-dark-primary); /* gray-100 */
+}
+
+/* Options List */
+.options-list {
+     /* space-y-3 */
+     display: flex;
+     flex-direction: column;
+     gap: 0.75rem; /* space-y-3 */
+}
+.options-list label.option {
+    /* p-3 border border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-800 dark:text-gray-200 flex items-center space-x-3 */
+    padding: 0.75rem; /* p-3 */
+    border: 1px solid var(--border-light); /* border-gray-300 */
+    border-radius: var(--radius-lg); /* rounded-lg */
+    cursor: pointer;
+    transition: var(--transition); /* transition-colors */
+    background-color: var(--bg-alternate-light); /* bg-white */
+    color: var(--text-light-primary); /* text-gray-800 */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    gap: 0.75rem; /* space-x-3 */
+}
+body.dark-mode .options-list label.option {
+    border-color: var(--border-dark); /* dark:border-gray-600 */
+    background-color: var(--card-bg-dark); /* dark:bg-gray-800 */
+    color: var(--text-dark-primary); /* dark:text-gray-200 */
+}
+.options-list label.option:hover {
+    background-color: var(--bg-light); /* hover:bg-gray-100 */
+}
+body.dark-mode .options-list label.option:hover {
+     background-color: var(--border-dark); /* dark:hover:bg-gray-700 */
+}
+
+/* Selected Option Style */
+.options-list label.option.selected {
+    background-color: rgba(59, 130, 246, 0.1); /* primary-light with opacity */
+    border-color: var(--color-primary); /* primary-light */
+    font-weight: var(--font-weight-medium); /* Added font-weight */
+}
+body.dark-mode .options-list label.option.selected {
+     background-color: rgba(96, 165, 250, 0.15); /* primary-dark with opacity */
+     border-color: var(--color-primary-dark); /* primary-dark */
+}
+
+/* Hide default radio/checkbox appearance and style custom */
+/* This part is tricky without a CSS framework, keeping default for now or requires complex CSS */
+/* For native inputs, ensure they don't have default margins/paddings if needed */
+.options-list label.option input {
+    /* h-4 w-4 text-primary-light border-gray-300 focus:ring-primary-light dark:border-gray-600 dark:bg-gray-700 dark:focus:ring-primary-dark shrink-0 */
+    /* Keeping some basic size and shrink properties, colors controlled by browser or form library */
+    height: 1rem; /* h-4 */
+    width: 1rem; /* w-4 */
+    flex-shrink: 0; /* shrink-0 */
+    /* Add basic styling if needed, but browser defaults are often okay */
+    /* border: 1px solid var(--border-light); */
+    /* background-color: var(--bg-alternate-light); */
+    /* appearance: none; /* Hide default */
+    /* custom styling here */
+}
+/* Ensure custom styling for checked/focused states matches theme */
+
+
+/* Result Container */
+#result-container {
+    /* bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mt-6 max-w-4xl mx-auto */
+     /* max-w-4xl ve mx-auto ortalama için */
+     max-width: 56rem; /* max-w-4xl */
+     margin-left: auto; margin-right: auto; /* mx-auto */
+     margin-top: 1.5rem; /* mt-6 */
+     background-color: var(--card-bg-light);
+     border-radius: var(--radius-xl);
+     box-shadow: var(--shadow-lg);
+     padding: 1.5rem; /* p-6 */
+     border: 1px solid var(--border-light); /* Added border */
+}
+body.dark-mode #result-container {
+     background-color: var(--card-bg-dark);
+     box-shadow: var(--shadow-md);
+     border-color: var(--border-dark);
+}
+
+#result-container h2 {
+    /* text-2xl font-bold mb-6 text-gray-800 dark:text-gray-100 */
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1.5rem; /* mb-6 */
+    color: var(--text-light-primary); /* gray-800 */
+    text-align: left; /* Override center align from general h2 */
+    position: static; /* Override position from general h2 */
+}
+body.dark-mode #result-container h2 {
+     color: var(--text-dark-primary); /* gray-100 */
+}
+#result-container h2::after { display: none; } /* Remove underline from result title */
+
+
+/* Score Circle */
+.relative { position: relative; } .w-40 { width: 10rem; } .h-40 { height: 10rem; }
+.absolute { position: absolute; } .top-0 { top: 0; } .left-0 { left: 0; }
+.w-full { width: 100%; } .h-full { height: 100%; }
+.flex-col { flex-direction: column; } .items-center { align-items: center; } .justify-center { justify-content: center; }
+.text-gray-200 { color: #e5e7eb; } /* gray-200 */
+body.dark-mode .text-gray-700 { color: #374151; } /* gray-700 dark */
+.text-primary-light { color: var(--color-primary); }
+body.dark-mode .dark\:text-primary-dark { color: var(--color-primary-dark); }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem;}
+.font-bold { font-weight: var(--font-weight-bold); }
+.text-gray-800 { color: var(--text-light-primary); }
+body.dark-mode .text-gray-100 { color: var(--text-dark-primary); }
+.text-sm { font-size: 0.875rem; }
+.text-green-600 { color: #059669; } /* green-600 */
+body.dark-mode .text-green-400 { color: #4ade80; } /* green-400 */
+.text-red-600 { color: #dc2626; } /* red-600 */
+body.dark-mode .text-red-400 { color: #f87171; } /* red-400 */
+
+
+/* Correct/Incorrect Counts */
+.bg-green-100 { background-color: var(--istqb-secondary-light-lighter); }
+body.dark-mode .dark\:bg-green-900\/30 { background-color: rgba(16, 185, 129, 0.3); } /* green-500 opacity */
+.text-green-700 { color: var(--istqb-secondary-light-darker); }
+body.dark-mode .dark\:text-green-400 { color: var(--istqb-secondary-dark); } /* green-400 */
+.bg-red-100 { background-color: var(--istqb-danger-light-lighter); }
+body.dark-mode .dark\:bg-red-900\/30 { background-color: rgba(239, 68, 68, 0.3); } /* red-500 opacity */
+.text-red-700 { color: var(--istqb-danger-light-darker); }
+body.dark-mode .dark\:text-red-400 { color: var(--istqb-danger-dark); } /* red-400 */
+.p-4 { padding: 1rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.text-center { text-align: center; }
+.border-green-200 { border-color: var(--istqb-secondary-light-lighter); }
+body.dark-mode .dark\:border-green-800 { border-color: var(--istqb-secondary-dark); } /* green-800 */
+.border-red-200 { border-color: var(--istqb-danger-light-lighter); }
+body.dark-mode .dark\:border-red-800 { border-color: var(--istqb-danger-dark); } /* red-800 */
+.text-2xl { font-size: 1.5rem; line-height: 2rem;}
+
+/* Review Section */
+#question-review {
+    /* space-y-6 border-t border-gray-200 dark:border-gray-700 pt-4 */
+    display: flex; flex-direction: column; gap: 1.5rem; /* space-y-6 */
+    border-top: 1px solid var(--border-light); /* border-t border-gray-200 */
+    padding-top: 1rem; /* pt-4 */
+}
+body.dark-mode #question-review {
+    border-top-color: var(--border-dark); /* dark:border-gray-700 */
+}
+
+/* Fix 7: Review item header flex layout adjustments */
+#question-review .mb-6 > div.flex {
+    /* Mevcut: flex justify-between items-start mb-2 */
+    display: flex; /* flex */
+    /* justify-content: space-between; */ /* Kaldırıyoruz veya override ediyoruz */
+    align-items: center; /* items-start yerine center */
+    /* mb-2 (margin-bottom: 0.5rem) HTML'de kalabilir veya buraya taşınabilir */
+    gap: 0.75rem; /* Başlık ve durum kutusu arasına boşluk ekle (Tailwind gap-3 gibi) */
+    flex-wrap: wrap; /* Dar ekranlarda sarmalamaya izin ver */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+#question-review h4 {
+    /* font-medium text-gray-800 dark:text-gray-100 */
+    /* ... mevcut h4 stilleri ... */
+    font-size: 1rem; /* text-base */
+    font-weight: var(--font-weight-medium);
+    color: var(--text-light-primary); /* gray-800 */
+    margin-bottom: 0; /* Flex içindeki h4'ün alt marginini kaldır */
+    flex-grow: 1; /* Kalan alanı kaplamasını sağla */
+    /* Uzun kelimelerde taşmayı engelle */
+    overflow-wrap: break-word; /* Modern */
+    word-break: break-word; /* Geriye dönük uyumluluk */
+}
+body.dark-mode #question-review h4 {
+     color: var(--text-dark-primary); /* gray-100 */
+}
+
+/* Fix 7: Review status span adjustments */
+#question-review .mb-6 > div.flex > span.px-2.py-1 {
+    /* px-2 py-1 rounded text-xs ... */
+    flex-shrink: 0; /* Küçülmesini engelle (zaten vardı, kalsın) */
+    flex-grow: 0; /* Büyümesini engelle */
+    width: 70px; /* Sabit genişlik (ihtiyaca göre ayarlanabilir) */
+    text-align: center; /* Metni ortala (zaten vardı, kalsın) */
+    /* min-width: 60px; /* Sabit genişlik olduğu için min-width çok gerekli değil ama kalabilir */
+    /* padding ve border-radius HTML class'larından geliyor */
+    /* Renk class'ları HTML'de var */
+    line-height: 1.2; /* Metin dikey hizalaması için satır yüksekliği */
+    padding-top: 0.1rem; /* Dikey paddingi biraz azalt */
+    padding-bottom: 0.1rem; /* Dikey paddingi biraz azalt */
+}
+
+/* Review Option Colors (Using ISTQB variables) */
+.review-option {
+    /* p-2 border rounded text-sm flex justify-between items-center */
+    padding: 0.5rem; /* p-2 */
+    border: 1px solid; /* border */
+    border-radius: var(--radius-sm); /* rounded */
+    font-size: 0.875rem; /* text-sm */
+    display: flex; /* flex */
+    /* justify-content: space-between; */ /* Bu artık mobil ve genel için aşağıda ayarlanacak */
+    align-items: center; /* items-center */
+    transition: all 0.2s ease; /* Geçiş eklendi */
+
+    /* Fix 9: Make review options wrap their content */
+    flex-direction: row; /* İçerik varsayılan olarak yan yana */
+    flex-wrap: wrap; /* Alan yetmediğinde alt satıra geç */
+    gap: 0.5rem; /* İç elemanlar (metin, etiket, ikon) arasına boşluk */
+    justify-content: space-between; /* Varsayılan olarak metin ve ikon/etiketi ayır */
+}
+
+/* Fix 9: Control sizing and wrapping of inner elements */
+.review-option > span:first-child { /* The main option text */
+     flex-grow: 1; /* Metnin kalan alanı kaplamasına izin ver */
+     flex-shrink: 1; /* Metnin küçülmesine izin ver (sığmazsa) */
+     word-break: break-word; /* Uzun kelimeleri kır */
+     overflow-wrap: break-word; /* Modern alternatif */
+}
+
+.review-option span.text-xs.italic, /* The '(Cevabın)' span */
+.review-option i { /* The check/times icon */
+     flex-shrink: 0; /* Bu öğelerin küçülmesini engelle */
+     flex-grow: 0; /* Bu öğelerin büyümesini engelle (sabit boyutlarını korusunlar) */
+}
+
+
+.review-option.correct {
+    /* Light Mode */
+    background-color: var(--istqb-secondary-light-lighter); /* green-100 */
+    border-color: var(--istqb-secondary-light); /* green-500 */
+    color: var(--istqb-secondary-light-darker); /* green-700 */
+    font-weight: var(--font-weight-medium);
+}
+body.dark-mode .review-option.correct {
+    /* Dark Mode */
+    background-color: rgba(52, 211, 164, 0.2); /* secondary-dark (green-400) %20 opaklık */
+    border-color: var(--istqb-secondary-dark); /* green-400 */
+    color: var(--istqb-secondary-dark); /* Yeşil (dark) metin */
+}
+.review-option.incorrect-user {
+    /* Light Mode */
+    background-color: var(--istqb-danger-light-lighter); /* red-100 */
+    border-color: var(--istqb-danger-light); /* red-500 */
+    color: var(--istqb-danger-light-darker); /* red-700 */
+}
+body.dark-mode .review-option.incorrect-user {
+    /* Dark Mode */
+    background-color: rgba(248, 113, 96, 0.2); /* danger-dark (red-400) %20 opaklık */
+    border-color: var(--istqb-danger-dark); /* red-400 */
+    color: var(--istqb-danger-dark); /* Kırmızı (dark) metin */
+}
+.review-option.plain {
+    border-color: var(--border-light);
+     background-color: var(--bg-alternate-light); /* Match card/background */
+    color: var(--text-light-primary);
+}
+body.dark-mode .review-option.plain {
+    border-color: var(--border-dark);
+    background-color: var(--card-bg-dark); /* Match card/background */
+    color: var(--text-dark-primary);
+}
+
+/* Explanation Block */
+.explanation {
+    /* bg-gray-50 dark:bg-gray-700/30 p-3 rounded border border-gray-200 dark:border-gray-700 */
+    background-color: var(--bg-light); /* bg-gray-50 */
+    padding: 0.75rem; /* p-3 */
+    border-radius: var(--radius-sm); /* rounded */
+    border: 1px solid var(--border-light); /* border border-gray-200 */
+}
+body.dark-mode .explanation {
+    background-color: rgba(55, 65, 81, 0.3); /* dark:bg-gray-700/30 */
+    border-color: var(--border-dark); /* dark:border-gray-700 */
+}
+.explanation div.text-sm.font-semibold {
+    /* text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 */
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-light-primary); /* gray-700 */
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+body.dark-mode .explanation div.text-sm.font-semibold {
+     color: var(--text-dark-secondary); /* gray-300 */
+}
+.explanation div.text-sm.text-gray-600 {
+    /* text-sm text-gray-600 dark:text-gray-400 */
+    font-size: 0.875rem;
+    color: var(--text-light-secondary); /* gray-600 */
+}
+body.dark-mode .explanation div.text-sm.text-gray-600 {
+     color: var(--text-dark-secondary); /* gray-400 */
+}
+
+/* Confirmation Modal */
+#confirm-modal {
+     /* fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 px-4 */
+     position: fixed;
+     top: 0; left: 0; bottom: 0; right: 0; /* inset-0 */
+     background-color: rgba(0, 0, 0, 0.5); /* bg-black bg-opacity-50 */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 50;
+     padding: 0 1rem; /* px-4 */
+}
+#confirm-modal > div {
+     /* bg-white dark:bg-gray-800 rounded-xl p-6 max-w-md w-full shadow-2xl */
+     background-color: var(--card-bg-light);
+     border-radius: var(--radius-xl);
+     padding: 1.5rem; /* p-6 */
+     max-width: 28rem; /* max-w-md */
+     width: 100%;
+     box-shadow: var(--shadow-xl); /* Using shadow-xl */
+     border: 1px solid var(--border-light); /* Added border */
+}
+body.dark-mode #confirm-modal > div {
+     background-color: var(--card-bg-dark);
+     box-shadow: var(--shadow-lg); /* Using shadow-lg in dark mode */
+     border-color: var(--border-dark);
+}
+
+#confirm-modal h3 {
+    /* text-xl font-bold mb-4 text-gray-800 dark:text-gray-100 */
+    font-size: 1.25rem; /* text-xl */
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1rem; /* mb-4 */
+    color: var(--text-light-primary); /* gray-800 */
+}
+body.dark-mode #confirm-modal h3 {
+     color: var(--text-dark-primary); /* gray-100 */
+}
+
+#confirm-modal p {
+    /* mb-6 text-gray-600 dark:text-gray-300 */
+    margin-bottom: 1.5rem; /* mb-6 */
+    color: var(--text-light-secondary); /* gray-600 */
+}
+body.dark-mode #confirm-modal p {
+     color: var(--text-dark-secondary); /* gray-300 */
+}
+
+#confirm-modal .flex {
+     /* flex justify-end space-x-3 */
+     display: flex;
+     justify-content: flex-end; /* justify-end */
+     gap: 0.75rem; /* space-x-3 */
+}
+
+
+/* Question Navigator */
+#question-navigator-container { flex-shrink: 0; }
+#exam-container { flex-grow: 1; }
+#question-navigator {
+    display: grid;
+    gap: 0.25rem; /* gap-1 */
+    justify-content: center;
+    /* Scrollbar stilleri ISTQB'nin kendi CSS'inden taşındı */
+    max-height: calc(100vh - 250px); /* Adjusted height */
+    overflow-y: auto;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--text-light-secondary) var(--border-light); /* Firefox */
+}
+body.dark-mode #question-navigator {
+     scrollbar-color: var(--text-dark-secondary) var(--border-dark);
+}
+
+#question-navigator::-webkit-scrollbar { width: 8px; }
+#question-navigator::-webkit-scrollbar-track { background: var(--border-light); border-radius: 4px; }
+body.dark-mode #question-navigator::-webkit-scrollbar-track { background: var(--border-dark); }
+#question-navigator::-webkit-scrollbar-thumb { background-color: var(--text-light-secondary); border-radius: 4px; border: 2px solid var(--border-light); }
+body.dark-mode #question-navigator::-webkit-scrollbar-thumb { background-color: var(--text-dark-secondary); border-color: var(--border-dark); }
+
+
+/* Nav Item Styles - Fix 4 */
+.nav-item {
+    width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid var(--border-light); /* border-gray-300 */
+    border-radius: var(--radius-sm); /* rounded-sm for smaller items */
+    cursor: pointer;
+    transition: var(--transition); /* all 0.2s ease */
+    font-size: 0.75rem; /* text-xs */
+    margin: 1px;
+    line-height: 1;
+    background-color: var(--card-bg-light); /* bg-white */
+    color: var(--text-light-secondary); /* gray-600 */
+    border-color: var(--border-light); /* gray-300 */
+}
+body.dark-mode .nav-item {
+    background-color: var(--card-bg-dark); /* bg-gray-800 */
+    color: var(--text-dark-secondary); /* gray-400 */
+    border-color: var(--border-dark); /* gray-600 */
+}
+.nav-item:hover:not(.current):not(.answered):not(.correct):not(.incorrect) { /* Added not(.correct) */
+    background-color: var(--bg-light); /* hover:bg-gray-100 */
+     color: var(--text-light-primary); /* Hover'da metin rengini belirgin yap */
+    border-color: var(--text-light-secondary); /* hover:border-gray-400 */
+}
+body.dark-mode .nav-item:hover:not(.current):not(.answered):not(.correct):not(.incorrect) { /* Added not(.correct) */
+    background-color: var(--border-dark); /* hover:bg-gray-700 */
+    color: var(--text-dark-primary); /* Dark mode hover'da metin rengini belirgin yap */
+    border-color: var(--text-dark-secondary); /* hover:border-gray-600 */
+}
+
+/* Aktif soru (sınav sırasında) */
+.nav-item.current {
+    background-color: var(--color-primary); /* Tema ana rengi */
+    color: white;
+    border-color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+    box-shadow: var(--shadow-sm); /* Küçük bir gölge ekle */
+}
+body.dark-mode .nav-item.current {
+    background-color: var(--color-primary-dark); /* Tema ana rengi (dark) */
+    border-color: var(--color-primary-dark);
+}
+
+/* Cevaplandı (sınav sırasında) */
+.nav-item.answered {
+    background-color: var(--istqb-answered-light-lighter); /* yellow-100 */
+    color: var(--istqb-answered-light-darker); /* yellow-800 */
+    border-color: var(--istqb-answered-light); /* amber-500 */
+    font-weight: var(--font-weight-medium);
+}
+body.dark-mode .nav-item.answered {
+    background-color: var(--istqb-answered-dark-lighter); /* amber-400 */
+    color: var(--istqb-answered-dark-darker); /* amber-900 */
+    border-color: var(--istqb-answered-dark); /* amber-400 */
+}
+/* Cevaplandı hover (isteğe bağlı) */
+/* .nav-item.answered:hover {} */
+
+
+/* Doğru cevap (sınav sonrası) */
+.nav-item.correct { /* Correct after exam */
+    background-color: var(--istqb-secondary-light-lighter); /* green-100 */
+    color: var(--istqb-secondary-light-darker); /* green-700 */
+    border-color: var(--istqb-secondary-light); /* green-500 */
+     font-weight: var(--font-weight-medium);
+}
+body.dark-mode .nav-item.correct {
+    background-color: var(--istqb-secondary-dark-lighter); /* green-200 */
+    color: var(--istqb-secondary-dark-darker); /* green-900 */
+    border-color: var(--istqb-secondary-dark); /* green-400 */
+}
+/* Yanlış cevap (sınav sonrası) */
+.nav-item.incorrect { /* Incorrect after exam */
+    background-color: var(--istqb-danger-light-lighter); /* red-100 */
+    color: var(--istqb-danger-light-darker); /* red-700 */
+    border-color: var(--istqb-danger-light); /* red-500 */
+     font-weight: var(--font-weight-medium);
+}
+body.dark-mode .nav-item.incorrect {
+    background-color: var(--istqb-danger-dark-lighter); /* red-200 */
+    color: var(--istqb-danger-dark-darker); /* red-900 */
+    border-color: var(--istqb-danger-dark); /* red-400 */
+}
+
+
+/* Navigation buttons container - Fix 2 */
+#exam-main-content .flex.justify-between.items-center.mt-6 {
+    gap: 1rem; /* Tailwind gap-4'e karşılık gelir */
+    flex-wrap: wrap; /* Küçük ekranlarda sarmalamaya izin ver */
+    justify-content: center; /* Butonları küçük ekranlarda ortala */
+}
+
+
+/* Force Utilities (From ISTQB CSS) */
+.force-hidden { display: none !important; }
+.force-flex { display: flex !important; }
+.hidden { display: none !important; } /* ISTQB HTML'de hidden sınıfı kullanılıyorsa */
+body.no-scroll { overflow: hidden !important; } /* Body scroll engelleme */
+/* Modal arkaplanı ve kendisi için z-index tanımları */
+#confirm-modal { z-index: 50; } /* veya sitenizdeki en üst z-index'ten daha yüksek bir değer */
+
+
+/* Responsive Ayarlar */
+@media (max-width: 992px) { /* Tablet */
+    html { font-size: 15px; } /* Optional: slightly smaller base font on tablet */
+    h1 { font-size: 2.4rem; } h2 { font-size: 1.7rem; margin-bottom: 2.5rem; }
+    .container { max-width: 960px; padding: 0 15px; }
+    .nav-menu { gap: 1rem; }
+    .hero { padding: 5rem 0 3rem 0; min-height: 65vh; }
+    .about-content { flex-direction: column; text-align: center; }
+    .card-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.5rem; }
+    .skills-grid-icons { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 0.8rem;}
+    .skill-item { width: 90px; height: 80px; }
+    .skill-icon { font-size: 1.6rem; } .skill-icon-img { width: 28px; height: 28px;} .skill-name { font-size: 0.7rem;}
+    .timeline::before { left: 6px; }
+    .timeline-item { padding-left: 30px; margin-bottom: 1.2rem; }
+    .timeline-item::before { left: 0px; top: 8px; width: 13px; height: 13px; border-width: 2px; box-shadow: 0 0 0 3px var(--bg-alternate-light); }
+    body.dark-mode .timeline-item::before { box-shadow: 0 0 0 3px var(--bg-alternate-dark);}
+    .timeline-item h3 { font-size: 1.1rem; }
+    .contact-links { flex-direction: row; align-items: center; gap: 1rem; } /* Keep row layout for tablet */
+    .content-section { padding: 4rem 0; }
+    .section-content-box { padding: 2rem; }
+     h2 { font-size: 1.5rem; margin-bottom: 2.5rem; }
+     h2::after { bottom: -0.6rem; }
+     .section-intro { margin-top: -1.5rem; margin-bottom: 2rem; }
+    .footer { padding: 2rem 0; } /* Adjusted padding */
+
+     /* ISTQB app tablet adjustments - Fix 1 */
+    #istqb-app-container {
+        max-width: 960px; /* Tablet boyutunda da daha geniş olabilir */
+         /* padding: 2rem; /* Adjust padding for tablet nested container if needed */
+    }
+
+     /* ISTQB app tablet adjustments */
+    #istqb-app-container { gap: 1rem; } /* Smaller gap */
+    #exam-main-content header h1 { font-size: 1.3rem; } /* Smaller exam title */
+    #question-navigator { max-height: calc(100vh - 200px); /* Adjusted height */ }
+     #result-container { max-width: 50rem; } /* Smaller max-width */
+
+    /* Navigation buttons container tablet - Fix 2 */
+    #exam-main-content .flex.justify-between.items-center.mt-6 {
+        gap: 0.8rem; /* Tablette biraz daha küçük boşluk */
+        padding: 1.2rem; /* Tablet padding ayarı */
+    }
+    #exam-main-content .flex.justify-between.items-center.mt-6 .btn {
+         padding: 0.6rem 1.5rem; /* Tablette buton paddingi ayarı */
+    }
+}
+
+@media (max-width: 768px) { /* Mobil */
+    html { font-size: 15px; }
+    h1 { font-size: 2rem; } h2 { font-size: 1.5rem; margin-bottom: 2.5rem; }
+    .container { padding: 0 15px; }
+    /* Mobil Menu */
+    .nav-menu { position: fixed; left: -100%; top: 53px; flex-direction: column; background-color: var(--card-bg-light); width: 100%; height: calc(100vh - 53px); text-align: left; transition: left 0.35s ease-out; box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.08); gap: 0; padding: 1rem 0; overflow-y: auto; z-index: 999; }
+    body.dark-mode .nav-menu { background-color: var(--card-bg-dark); box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2); }
+    .nav-menu.active { left: 0; }
+    .nav-menu li { width: 100%; border-bottom: 1px solid var(--border-light); }
+    body.dark-mode .nav-menu li { border-bottom-color: var(--border-dark); }
+    .nav-menu li:last-child { border-bottom: none; }
+    .nav-link { display: block; padding: 0.9rem 1.5rem; font-size: 0.95rem; border-bottom: none !important; color: var(--text-light-primary); }
+    body.dark-mode .nav-link { color: var(--text-dark-primary); }
+    .nav-link.active { color: var(--color-primary); background-color: rgba(59, 130, 246, 0.05); font-weight: var(--font-weight-semibold); }
+    body.dark-mode .nav-link.active { background-color: rgba(96, 165, 250, 0.1); }
+    .hamburger { display: block; z-index: 1001; padding: 0.4rem;}
+    .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .hamburger.active .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.active .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    .hero { padding: 3rem 0 2rem 0; min-height: 60vh; }
+    .profile-pic { width: 100px; height: 100px; }
+    .hero .btn-primary { padding: 0.7rem 1.6rem; font-size: 0.9rem;}
+    .card-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .card-image { height: 150px; }
+    .skills-grid-icons { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); gap: 0.7rem;}
+    .skill-item { width: 85px; height: 75px; }
+    .skill-icon { font-size: 1.6rem; } .skill-icon-img { width: 28px; height: 28px;} .skill-name { font-size: 0.7rem;}
+    .timeline::before { left: 6px; }
+    .timeline-item { padding-left: 30px; margin-bottom: 1.2rem; }
+    .timeline-item::before { left: 0px; top: 8px; width: 13px; height: 13px; border-width: 2px; box-shadow: 0 0 0 3px var(--bg-alternate-light); }
+    body.dark-mode .timeline-item::before { box-shadow: 0 0 0 3px var(--bg-alternate-dark);}
+
+    .timeline-item h3 { font-size: 1.1rem; }
+    .contact-links { flex-direction: column; align-items: stretch; gap: 0.8rem; } /* Adjusted for mobile */
+    .contact-link { justify-content: center; } /* Centered on mobile */
+    .content-section { padding: 3.5rem 0; }
+    .section-content-box { padding: 1.8rem; }
+     h2 { font-size: 1.5rem; margin-bottom: 2.5rem; }
+     h2::after { bottom: -0.6rem; }
+     .section-intro { margin-top: -1.5rem; margin-bottom: 2rem; }
+    .footer { padding: 2rem 0; margin-top: 3rem; }
+    .footer-disclaimer { padding: 0 10px; }
+
+    /* ISTQB app mobile adjustments - Fix 1 */
+    #istqb-app-container {
+         max-width: 100%; /* Mobilde tam genişlik kullan */
+         /* padding inherited from .detail-page-container is 2.5rem, let's use the container's mobile padding */
+         padding-left: 15px;
+         padding-right: 15px;
+         /* Mobil breakpoint'teki .container padding ile uyumlu */
+    }
+
+     /* ISTQB app mobile adjustments */
+    #istqb-app-container { gap: 1rem; } /* Smaller gap */
+    #exam-main-content header h1 { font-size: 1.2rem; } /* Smaller exam title */
+     #exam-main-content .flex.flex-col.md\:flex-row { flex-direction: column; gap: 1.5rem;} /* Mobile layout - Matches HTML structure */
+     #question-navigator-container { order: 2; width: 100%;}
+     #exam-container { order: 1;}
+     #question-navigator { grid-template-columns: repeat(auto-fill, minmax(32px, 1fr)); max-height: none; overflow-y: visible; } /* Auto fill for navigator */
+     #result-container { max-width: 95%; padding: 1.5rem;} /* Adjusted padding and max-width */
+
+    /* Review Option mobile layout - Fix 9 */
+    .review-option {
+        /* Removed conflicting mobile stacking rules from Fix 7/8 */
+        flex-direction: row; /* Always row */
+        flex-wrap: wrap; /* Always wrap */
+        align-items: center; /* Center vertically */
+        gap: 0.5rem; /* Space between items */
+
+        /* Specific mobile alignment */
+        justify-content: flex-start; /* Mobilde sola hizala */
+        width: 100%; /* Ensure it takes full width if not already */
+        padding-left: 0.75rem; /* Ekstra sol padding ekleyerek metni daha içeri al */
+        padding-right: 0.75rem; /* Sağ padding */
+    }
+     .review-option > span:first-child { /* The main option text */
+         flex-grow: 1; /* Kalan alanı kapla */
+         flex-shrink: 1; /* Küçülebilir */
+         word-break: break-word;
+         overflow-wrap: break-word;
+     }
+     .review-option span.text-xs.italic, /* The '(Cevabın)' span */
+     .review-option i { /* The icon */
+         flex-shrink: 0; /* Küçülmesini engelle */
+         flex-grow: 0; /* Büyümesini engelle */
+         /* icon ml-1 margin HTML'de var, gap ile birleşecektir */
+     }
+
+
+    /* Navigation buttons container mobile - Fix 2 */
+    #exam-main-content .flex.justify-between.items-center.mt-6 {
+        gap: 0.75rem; /* Mobilde biraz daha küçük boşluk */
+        padding: 1rem; /* Mobil padding ayarı */
+    }
+    #exam-main-content .flex.justify-between.items-center.mt-6 .btn {
+         padding: 0.6rem 1.2rem; /* Mobilde buton paddingi ayarı */
+    }
+}
+
+/* Fix 7: Adjust layout for very small screens - Keep this only for the HEADER flex */
+@media (max-width: 600px) { /* Smaller breakpoint if needed for specific overrides */
+     /* Only keep rules that are specifically for the review ITEM HEADER (Question + Status) */
+    #question-review .mb-6 > div.flex { /* This targets the div holding H4 and STATUS SPAN */
+         flex-direction: column; /* Stack H4 and STATUS SPAN */
+         align-items: flex-start; /* Align H4 and STATUS SPAN to the left */
+         gap: 0.25rem; /* Smaller gap when stacked */
+         /* margin-bottom: 0.5rem; is already on the parent div */
+    }
+     #question-review h4 { /* Specific adjustments for H4 when stacked */
+         margin-bottom: 0.25rem; /* Add some bottom margin to H4 when stacked */
+         flex-grow: 1; /* Ensure it still grows if needed (less likely when column) */
+     }
+     /* Remove conflicting .review-option rule from here */
+    /* #question-review .mb-6 > div.flex > span.px-2.py-1 { /* Keep the status span width adjustments */
+         /* width: auto; /* Allow status span to take auto width when stacked */
+         /* min-width: auto; */
+         /* padding-top: 0.25rem; */
+         /* padding-bottom: 0.25rem; */
+    /* } */
+     /* Fix 7 status span width/padding should probably be adjusted in the 768px rule */
+}
+/* Re-evaluate Fix 7 status span adjustments within 768px media query */
+@media (max-width: 768px) {
+     /* Fix 7: Status span width adjustments for mobile */
+     #question-review .mb-6 > div.flex > span.px-2.py-1 {
+         width: auto; /* Mobilde sabit genişliği kaldır */
+         min-width: 60px; /* Minimum genişlik belirle */
+         padding-top: 0.25rem;
+         padding-bottom: 0.25rem;
+         /* align-self: flex-end; /* İstiflenirse sağa yasla (isteğe bağlı) */
+     }
+}
+
+
+/* Force Utilities (From ISTQB CSS) */
+.force-hidden { display: none !important; }
+.force-flex { display: flex !important; }
+.hidden { display: none !important; } /* ISTQB HTML'de hidden sınıfı kullanılıyorsa */
+body.no-scroll { overflow: hidden !important; } /* Body scroll engelleme */
+/* Modal arkaplanı ve kendisi için z-index tanımları */
+#confirm-modal { z-index: 50; } /* veya sitenizdeki en üst z-index'ten daha yüksek bir değer */
+/* --- Print Styles (Optional) --- */
+@media print {
+    .navbar, .footer, .nav-controls, .hamburger, #loading-indicator, #confirm-modal, #question-navigator-container, #timer, .progress-bar, .see-all-link, .cv-download, .contact-links, .card-buttons, .filter-button, #result-container .flex.justify-center.gap-4 { display: none !important; }
+    body { background-color: #fff; color: #000; overflow: visible !important; min-height: auto; }
+    h1, h2, h3, h4 { color: #000 !important; break-after: avoid; }
+    p, li { color: #000 !important; break-inside: avoid; }
+    a { color: #000 !important; text-decoration: underline; }
+    .content-section { padding: 0; }
+    .section-content-box, .detail-page-container, #result-container { box-shadow: none !important; border: none !important; padding: 0 !important; margin: 1rem auto !important; max-width: 100% !important; }
+    .card { border: 1px solid #ccc; box-shadow: none; break-inside: avoid; }
+    .card-image { max-height: 100px; }
+    .skill-item { border: 1px solid #ccc; break-inside: avoid; }
+    .timeline::before, .timeline-item::before { background-color: #000; border-color: #000; box-shadow: none; }
+     .question-container { display: block !important; page-break-inside: avoid; margin-bottom: 1rem; border: 1px solid #ccc; padding: 1rem; }
+     .question-container.active { animation: none; }
+     #exam-main-content { display: block !important; }
+     #result-container { display: block !important; }
+     .review-option { background-color: transparent !important; border-color: #ccc !important; color: #000 !important; display: flex !important; flex-direction: row !important; align-items: center !important; gap: 0.5rem !important; padding: 0.5rem !important;}
+      .review-option.correct { color: green !important; border-color: green !important; }
+      .review-option.incorrect-user { color: red !important; border-color: red !important; }
+      .explanation { background-color: #eee !important; border-color: #ccc !important; padding: 0.5rem; font-size: 0.9em; }
+      .explanation div { color: #000 !important; }
+}

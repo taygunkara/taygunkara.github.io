@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Başlık, güncellenmiş çeviri anahtarını kullanıyor -->
+    <title data-translate="projectSeleniumTitle">Hibrit Test Altyapısı Projesi - Taygun Kara</title>
+    <!-- Ana portfolyo CSS yolu ayarlandı (pages/projects'den src'ye 2 seviye yukarı) -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Font Awesome ve Google Fonts (Inter) ana siteden kopyalandı -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+
+    <!-- Portfolyo Header (Ortak yapıdan, linkler ana dizine göre ayarlandı) -->
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html#home" class="nav-logo" data-translate="navLogo">Taygun Kara</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html#home" class="nav-link" data-translate="navHome">Home</a></li>
+                    <li><a href="../../index.html#about" class="nav-link" data-translate="navAbout">About</a></li>
+                    <li><a href="../../index.html#skills" class="nav-link" data-translate="navSkills">Skills</a></li>
+                     <!-- Projects linki aktif olarak işaretlendi -->
+                    <li><a href="../../index.html#projects" class="nav-link active" data-translate="navProjects">Projects</a></li>
+                    <li><a href="../../index.html#experience" class="nav-link" data-translate="navExperience">Experience</a></li>
+                    <li><a href="../../index.html#education" class="nav-link" data-translate="navEducation">Education</a></li>
+                    <li><a href="../blog.html" class="nav-link" data-translate="navBlog">Blog</a></li>
+                    <li><a href="../../index.html#tools" class="nav-link" data-translate="navTools">Tools</a></li>
+                    <li><a href="../../index.html#contact" class="nav-link" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+             <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="language-toggle" class="lang-btn" aria-label="Change Language">
+                    TR
+                </button>
+            </div>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ana İçerik Alanı -->
+    <main>
+         <section class="content-section">
+              <div class="container">
+                   <div class="detail-page-container">
+                       <!-- Proje Başlığı (GÜNCELLENDİ) -->
+                       <h1 data-translate="projectSeleniumTitleHeader">🚀 UI Flaky Test Sorununa Çözüm: Selenium + API ile Dayanıklı Hibrit Test Altyapısı</h1>
+
+                       <!-- Proje Giriş Paragrafı (GÜNCELLENDİ) -->
+                       <p data-translate="projectSeleniumIntro">
+                           Test otomasyonunda en çok canımı sıkan şeylerden biri, yavaş ve sürekli bozulan ('flaky') UI testleriydi...
+                       </p>
+
+                       <!-- Mimari Bölümü (YENİ) -->
+                       <h2 data-translate="projectSeleniumArchTitle">🔧 Peki, Bu Sistem Nasıl Çalışıyor? Mimarinin Temel Taşları</h2>
+                       <ul data-translate="projectSeleniumArchPoints">
+                           <!-- Bu liste JS tarafından doldurulacak -->
+                       </ul>
+
+                       <!-- Zorluklar Bölümü (YENİ) -->
+                       <h2 data-translate="projectSeleniumChallengeTitle">⚠️ Yolda Karşılaştığım En Büyük Zorluk (ve En Değerli Ders)</h2>
+                       <p data-translate="projectSeleniumChallengeText">
+                            Bu projeyi geliştirirken en çok başımı ağrıtan konu...
+                       </p>
+
+                       <!-- Gelecek Planları Bölümü (YENİ) -->
+                       <h2 data-translate="projectSeleniumFutureTitle">📚 Bir Proje Asla Bitmez, Sadece Gelişir: Gelecek Planlarım</h2>
+                       <ul data-translate="projectSeleniumFuturePoints">
+                           <!-- Bu liste JS tarafından doldurulacak -->
+                       </ul>
+
+                       <!-- GitHub Bağlantısı -->
+                       <div class="detail-page-actions">
+                           <a href="https://github.com/taygunkara/selenium-qacart-todo" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-translate="projectSeleniumGithubLink">
+                               <i class="fab fa-github mr-2"></i>
+                               <span>GitHub Repo</span>
+                           </a>
+                       </div>
+
+                   </div>
+               </div>
+         </section>
+    </main>
+
+    <!-- Portfolyo Footer (Ortak yapıdan) -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-disclaimer" data-translate="footerDisclaimer">
+                Blog yazıları ve araçlarda sunulan bilgiler yalnızca bilgilendirme amaçlıdır ve hatalar içerebilir. Kullanım kendi sorumluluğunuzdadır. Herhangi bir sorumluluk kabul edilmez.
+            </p>
+            <p>© <span id="current-year"></span> <span data-translate="navLogo">Taygun Kara</span>. <span data-translate="footerText">Tüm hakları saklıdır.</span></p>
+            <p class="footer-made-with">Minimalist theme inspired by simplicity.</p>
+        </div>
+    </footer>
+
+    <!-- JS Dosyaları -->
+    <script src="../../js/translations.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+
+</body>
+</html>

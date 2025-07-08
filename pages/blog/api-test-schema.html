@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Test Otomasyonunda Şema Validasyonu: Sadece Durum Kodlarına Güvenmeyin!</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html#home" class="nav-logo" data-translate="navLogo">Adınız Soyadınız</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html#home" class="nav-link" data-translate="navHome">Home</a></li>
+                    <li><a href="../../index.html#about" class="nav-link" data-translate="navAbout">About</a></li>
+                    <li><a href="../../index.html#skills" class="nav-link" data-translate="navSkills">Skills</a></li>
+                    <li><a href="../../index.html#projects" class="nav-link" data-translate="navProjects">Projects</a></li>
+                    <li><a href="../../index.html#experience" class="nav-link" data-translate="navExperience">Experience</a></li>
+                    <li><a href="../../index.html#education" class="nav-link" data-translate="navEducation">Education</a></li>
+                    <li><a href="../../pages/blog.html" class="nav-link active" data-translate="navBlog">Blog</a></li>
+                    <li><a href="../../pages/tools.html" class="nav-link" data-translate="navTools">Tools</a></li>
+                    <li><a href="../../index.html#contact" class="nav-link" data-translate="navContact">Contact</a></li>
+                </ul>
+            </nav>
+             <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button id="language-toggle" class="lang-btn" aria-label="Change Language">
+                    TR
+                </button>
+            </div>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="container">
+                <div class="detail-page-container">
+
+                    <h1>API Test Otomasyonunda Şema Validasyonu: Sadece Durum Kodlarına Güvenmeyin!</h1>
+
+                    <p class="section-intro" style="text-align: left; max-width: none; margin-top: 0; margin-bottom: 2rem; font-size: 1rem;">Herkese merhaba,</p>
+
+                    <p>API test otomasyonu dünyasında, testlerin yalnızca HTTP durum kodlarını (örneğin, 200 OK, 400 Bad Request) kontrol etmenin yeterli olup olmadığı sorusuyla sıkça karşılaşırız. İlk bakışta, "işlem başarılı oldu" mesajı almak yeterli gibi görünebilir. Ancak e-ticaret projelerimde edindiğim tecrübeler, bu yaklaşımın önemli eksiklikleri olduğunu ve API kontratlarının (yani, API'nin beklenen yanıt yapısının ve veri tiplerinin) bozulduğunu fark edemediğim durumlara yol açabildiğini gösterdi.</p>
+
+                    <p>Bir API'dan 200 OK yanıtı almak, her zaman her şeyin yolunda olduğu anlamına gelmeyebilir. Ya dönen JSON yanıtındaki bir alanın veri tipi değiştiyse? Ya gerekli bir alan boş geldiyse veya tamamen eksikse? Bu durumlar, özellikle servisler arası iletişimde veya UI'da o API yanıtını kullanan bileşenlerde beklenmedik hatalara ve hatta sistem çöküşlerine neden olabilir. Bu yazıda, API testlerimde şema validasyonunun önemini ve bu tür sorunların önüne geçmek için kullandığım yaklaşımları paylaşacağım.</p>
+
+                    <h2>Şema Validasyonu Neden Hayati Önem Taşıyor?</h2>
+
+                    <p>API'lar, modern yazılım mimarilerinin bel kemiğidir ve farklı servislerin birbiriyle konuştuğu dili oluşturur. Bu dilin (API kontratının) istikrarlı ve doğru olması, tüm sistemin güvenilirliği için kritik öneme sahiptir. İşte şema validasyonunun neden bu kadar önemli olduğunu düşündüğüm bazı noktalar:</p>
+                    <ul>
+                        <li><b>Kontrat Bütünlüğü:</b> API'ler, belirli bir çıktı formatına (şemaya) bağlı çalışır. Şema validasyonu, bu kontratın değişmeden kaldığını veya beklenen değişikliklerin doğru şekilde yansıtıldığını doğrular. Bu, özellikle farklı ekipler tarafından geliştirilen servislerin uyumlu kalmasını sağlar.</li>
+                        <li><b>Veri Tutarlılığı:</b> Yanıtın sadece var olup olmadığını değil, aynı zamanda beklenen veri tiplerine (örneğin, "fiyat" alanının sayısal olması, "ürün adı"nın string olması) uygun olup olmadığını kontrol eder. Bu sayede, dönen yanlış tipteki verinin başka bir yerde hataya yol açması engellenir.</li>
+                        <li><b>Kırılganlığı Azaltma:</b> Sadece durum koduna ve birkaç basit değere bağlı testler, API'deki ufak değişiklikler (örneğin, yeni bir alan eklenmesi, opsiyonel bir alanın zorunlu hale gelmesi) karşısında yetersiz kalır ve sorunları gözden kaçırabilir. Şema validasyonu, bu tür "sessiz" hataları yakalar.</li>
+                        <li><b>Daha Güvenilir Entegrasyonlar:</b> E-ticaret platformlarında ödeme sistemleri, stok yönetimi veya kampanya servisleri gibi birçok harici API ile entegrasyon bulunur. Bu entegrasyonların sorunsuz çalışması için, alınan yanıtların her zaman beklendiği formatta olması zorunludur.</li>
+                        <li><b>Profesyonel Yaklaşım:</b> Kapsamlı şema validasyonu yapmak, test mühendisinin detaylara ne kadar önem verdiğini ve API'lerin sadece fonksiyonel değil, aynı zamanda yapısal kalitesini de güvence altına alabildiğini gösterir. Bu, iş görüşmelerinde de öne çıkarabileceğin önemli bir beceridir.</li>
+                    </ul>
+
+                    <h2>Şema Validasyonuna Yönelik Yaklaşımlarım</h2>
+
+                    <p>API test otomasyon projelerimde şema validasyonunu nasıl ele aldığıma dair deneyimlerimi ve kullandığım araçları aşağıda detaylandırıyorum:</p>
+
+                    <h3>1. Postman ile API Yanıt Yapılarının Kontrolü</h3>
+
+                    <p>API testlerine başladığımda, Postman benim için vazgeçilmez bir araçtı ve API yanıtlarının sadece durum kodlarını değil, aynı zamanda içeriğini de derinlemesine incelememe olanak tanıdı.</p>
+                     <ul>
+                         <li><b>Nasıl Uyguladım?</b>
+                            <ul>
+                                <li>Her API isteği için Postman'deki "Tests" sekmesini aktif olarak kullandım.</li>
+                                <li>`pm.response.json()` metodu ile dönen JSON yanıtını parse ederek, belirli alanların varlığını (`expect(jsonData.fieldName).to.exist`), veri tiplerini (`expect(typeof jsonData.fieldName).to.equal('string')` veya `expect(Number.isInteger(jsonData.id)).to.be.true`), ve null olup olmadığını (`expect(jsonData.optionalField).to.not.be.null`) kontrol ettim.</li>
+                                <li>Özellikle kritik senaryolarda, örneğin ürün detayları veya sipariş onayı API'larında, dönen her bir nesnenin (ürün listesi, adres bilgisi vb.) beklenen alt alanlara sahip olduğundan ve bunların doğru yapıda olduğundan emin oldum.</li>
+                            </ul>
+                         </li>
+                          <li><b>E-Ticaret Uygulamaları:</b>
+                            <ul>
+                                <li>B2B ve B2C e-ticaret projelerimde, `ürün listeleme` API'sının her bir ürün nesnesinin `id`, `ad`, `fiyat`, `stok` gibi alanlara sahip olduğunu ve bunların doğru tiplerde döndüğünü Postman testleri ile doğruladım.</li>
+                                <li>`sipariş durumu` API'sında, `durum kodu` (string), `toplam tutar` (sayısal) gibi alanların varlığını ve tipini kontrol ettim.</li>
+                            </ul>
+                         </li>
+                         <li><b>Avantajları:</b>
+                            <ul>
+                                <li>API'leri hızlıca manuel olarak test ederken bile otomatik şema kontrolleri eklememi sağladı.</li>
+                                <li>Ek bir kütüphaneye veya karmaşık kuruluma ihtiyaç duymadan, yerleşik yetenekleriyle pratik bir çözüm sundu.</li>
+                            </ul>
+                         </li>
+                         <li><b>Karşılaştığım Zorluklar:</b>
+                            <ul>
+                                <li>Çok karmaşık veya derin iç içe geçmiş JSON yapıları için Postman'deki JavaScript tabanlı testler, zamanla karmaşıklaşabilir ve bakımı zorlaşabilir.</li>
+                                <li>Büyük şemaların tüm detaylarını manuel olarak yazmak zaman alıcıdır.</li>
+                            </ul>
+                         </li>
+                    </ul>
+
+                     <h3>2. RestAssured ile Kod Bazlı Şema Doğrulamaları</h3>
+
+                    <p>Java tabanlı otomasyon projelerimde API testlerini RestAssured ile gerçekleştirirken, Postman'de yaptığım kontrolleri daha kod tabanlı ve otomatik bir şekilde yapma imkanı buldum.</p>
+                     <ul>
+                         <li><b>Nasıl Uyguladım?</b>
+                            <ul>
+                                <li>RestAssured'un `body()` metodu ile path'ler üzerinden belirli alanlara erişip, bunları `Matchers` (örneğin Hamcrest matchers) kullanarak doğruladım.</li>
+                                <li>`given().when().get("/products").then().body("products[0].name", is(notNullValue()), "products[0].price", isA(Double.class))` gibi ifadelerle, ürün listesindeki ilk ürünün adının boş olmadığını ve fiyatının double tipinde olduğunu kontrol ettim.</li>
+                                <li>Listelerin boyutlarını, belirli koleksiyonların boş olup olmadığını da bu yolla doğrulayarak API'nin beklenen veri setini döndürdüğünden emin oldum.</li>
+                            </ul>
+                         </li>
+                          <li><b>E-Ticaret Uygulamaları:</b>
+                            <ul>
+                                <li>Login sonrası dönen kullanıcı objesinin `token`, `userId`, `username` gibi alanlarını ve tiplerini kontrol ettim.</li>
+                                <li>Sepete ürün ekleme veya çıkarma gibi operasyonların sonucunda dönen sepet özetinin (`totalAmount`, `itemCount`) doğru formatta ve tipte olduğunu doğruladım.</li>
+                            </ul>
+                         </li>
+                         <li><b>Avantajları:</b>
+                            <ul>
+                                <li>Test kodumla entegre, tam otomatik ve tekrar tekrar çalıştırılabilir şema kontrolleri sağladım.</li>
+                                <li>Versiyon kontrol sistemlerinde (Git) test kodumla birlikte şema kontrolleri de takip edilebilir hale geldi.</li>
+                            </ul>
+                         </li>
+                         <li><b>Karşılaştığım Zorluklar:</b>
+                            <ul>
+                                <li>Çok büyük ve kompleks API yanıtları için her alanı tek tek `body()` metoduyla kontrol etmek, test kodunun uzun ve karmaşık olmasına neden olabilir.</li>
+                                <li>Şema değiştikçe, bu kontrollerin güncellenmesi ek efor gerektirebilir.</li>
+                            </ul>
+                         </li>
+                    </ul>
+
+                    <h3>3. Daha Yapısal Şema Validasyon Yaklaşımları (JSON Schema, OpenAPI)</h3>
+
+                    <p>Benim yukarıda bahsettiğim uygulamalar, API yanıtlarını belirli kurallara göre kontrol etmek için oldukça pratik ve etkili yollardı. Ancak sektörde, API kontratlarını daha resmi ve kapsamlı bir şekilde tanımlamak ve otomatize etmek için kullanılan bazı standart ve yaklaşımlar da bulunuyor.</p>
+                     <ul>
+                         <li><b>Nasıl Çalışır (Genel Bakış)?</b>
+                            <ul>
+                                <li><b>JSON Schema:</b> JSON verilerinin yapısını ve kısıtlamalarını tanımlamak için kullanılan, endüstri standardı bir dildir. Bir JSON yanıtının belirli bir şemaya uyup uymadığını otomatik olarak doğrulamayı sağlar. Örneğin, bir alanın `string` mi, `integer` mı olması gerektiğini, `required` olup olmadığını veya belirli bir `pattern`e uyup uymadığını tanımlar.</li>
+                                <li><b>OpenAPI (eski adıyla Swagger):</b> RESTful API'leri tanımlamak için kullanılan, dilden bağımsız bir arayüz tanımlama formatıdır. API'nin tüm endpoint'lerini, parametrelerini, yanıtlarını ve hata kodlarını açıkça belirtir. Oluşturulan bu OpenAPI spesifikasyonu, hem dokümantasyon hem de otomatik test araçları için bir temel oluşturur.</li>
+                            </ul>
+                         </li>
+                          <li><b>API Test Otomasyonunda Potansiyel Kullanım Alanları:</b>
+                            <ul>
+                                <li>Postman ve RestAssured gibi araçlar, bu tür resmi şemaları (JSON Schema veya OpenAPI tanımları) kullanarak API yanıtlarını otomatik olarak doğrulamak için entegrasyon yeteneklerine sahip olabilir. Bu, el ile her alanı kontrol etmek yerine, tek bir şema dosyasına karşı tüm yanıtı doğrulamayı mümkün kılar.</li>
+                                <li>Geliştirme ekiplerinin API'leri tasarlarken bu şemaları kullanması, test ekiplerinin beklentilerini netleştirir ve test süreçlerini daha verimli hale getirir.</li>
+                            </ul>
+                         </li>
+                         <li><b>Avantajları:</b>
+                            <ul>
+                                <li>API kontratlarının tek bir resmi kaynakta tanımlanmasını sağlar, bu da tutarsızlıkları azaltır.</li>
+                                <li>Büyük ve karmaşık API'ler için otomasyonlu ve kapsamlı şema validasyonu sunar.</li>
+                            </ul>
+                         </li>
+                         <li><b>Karşılaşılabilecek Zorluklar:</b>
+                            <ul>
+                                <li>Şemaların doğru bir şekilde tanımlanması ve sürdürülmesi ek bir çaba gerektirir.</li>
+                                <li>Küçük ve basit API'ler için başlangıçta aşırıya kaçan bir çözüm olarak görülebilir.</li>
+                            </ul>
+                         </li>
+                    </ul>
+
+                    <h2>Kendi Deneyimlerimden İpuçları</h2>
+
+                    <p>API testlerinde şema validasyonu konusunda öğrendiğim bazı dersler:</p>
+                    <ul>
+                        <li><b>Sadece Durum Koduna Güvenmeyin:</b> Her zaman dönen yanıtta sadece HTTP durum kodunu değil, aynı zamanda beklenen verilerin tipini, varlığını ve boş olup olmadığını kontrol edin.</li>
+                        <li><b>Kritik Alanlara Odaklanın:</b> Tüm yanıtı en ince ayrıntısına kadar doğrulamak yerine, uygulamanız için en kritik ve hata potansiyeli yüksek alanlara öncelik verin.</li>
+                        <li><b>Geliştiricilerle İletişim:</b> API kontratlarındaki olası değişiklikleri veya belirsizlikleri geliştirmecilerle erkenden konuşun. Bu, testlerinizin kırılmasını önler.</li>
+                        <li><b>Araçlarınızın Yeteneklerini Keşfedin:</b> Kullandığınız Postman, RestAssured gibi araçların şema validasyonuna yönelik sunduğu yerleşik veya entegre edilebilen yetenekleri öğrenin ve bunları test süreçlerinize dahil edin.</li>
+                        <li><b>Ölçeklenebilirliği Düşünün:</b> Projeniz büyüdükçe veya API'leriniz karmaşıklaştıkça, JSON Schema veya OpenAPI gibi daha yapısal yaklaşımları değerlendirmeyi göz önünde bulundurun.</li>
+                    </ul>
+
+                    <h2>Sonuç</h2>
+
+                    <p>API test otomasyonunda şema validasyonu, sadece bir "ekstra kontrol" olmaktan çok öte, API'lerinizin ve genel sisteminizin güvenilirliğini artıran temel bir adımdır. Sadece 200 OK yanıtına takılıp kalmak, altta yatan yapısal sorunları gözden kaçırmanıza neden olabilir. Kendi e-ticaret projelerimde hem Postman hem de RestAssured ile uyguladığım pratik şema kontrolleri, birçok potansiyel hatanın önüne geçmemi sağladı.</p>
+
+                    <p>Bu yaklaşım, sizin bir test mühendisi olarak detaylara verdiğiniz önemi, kapsamlı test yapabilme yeteneğinizi ve bir API'nin sadece fonksiyonel değil, aynı zamanda yapısal kalitesini de güvence altına alabildiğinizi gösterir. Bu, hem teknik ekibin hem de İK'cıların gözünde değerinizi artıracaktır.</p>
+
+                    <p>Umarım bu bilgiler, sizin projelerinizde de faydalı olur.</p>
+
+                    <p>Okuduğunuz için teşekkürler!</p>
+
+                    <div class="detail-page-actions">
+                        <a href="../blog.html" class="btn btn-outline" data-translate="backToBlog"><i class="fas fa-arrow-left"></i> Tüm Yazılara Geri Dön</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+             <p class="footer-disclaimer" data-translate="footerDisclaimer">
+                Blog yazıları ve araçlarda sunulan bilgiler yalnızca bilgilendirme amaçlıdır ve hatalar içerebilir. Kullanım kendi sorumluluğunuzdadır. Herhangi bir sorumluluk kabul edilmez.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../js/translations.js" defer></script>
+    <script src="../../js/script.js" defer></script>
+
+</body>
+</html>

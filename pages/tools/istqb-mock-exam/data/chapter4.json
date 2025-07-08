@@ -1,0 +1,407 @@
+[
+    {
+        "question": "Bir test uzmanı, bir uygulamanın kaynak kodunu inceleyerek kodun belirli bölümlerini (örneğin, tüm `if` deyimlerinin dallarını) çalıştıracak test senaryoları tasarlıyor. Bu uzman hangi **İKİ** test tekniği kategorisini kullanmaktadır?",
+        "options": [
+            "A. Kara Kutu (Black-box).",
+            "B. Beyaz Kutu (White-box).",
+            "C. Deneyim Tabanlı (Experience-based).",
+            "D. Yapı Tabanlı (Structure-based).",
+            "E. Belirtim Tabanlı (Specification-based)."
+        ],
+        "correctAnswer": [1, 3],
+        "explanation": "Metin 4.1 ve 4.3, kodun iç yapısını (dallar gibi) analiz ederek test senaryoları türetmenin Beyaz Kutu veya Yapı Tabanlı teknikler kategorisine girdiğini belirtir. Kara Kutu (Belirtim Tabanlı) dışsal davranışa, Deneyim Tabanlı ise test uzmanının bilgisine odaklanır.",
+        "topic": "Chapter 4.1 - Test Techniques Overview (Technique Classification - K2, Scenario, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test nesnesinin belirtilen davranışını iç yapısına referans vermeden analiz etmeye dayanan test tekniği kategorisi hangisidir?",
+        "options": [
+            "A. Beyaz Kutu (White-box) test teknikleri.",
+            "B. Kara Kutu (Black-box) test teknikleri.",
+            "C. Deneyim Tabanlı (Experience-based) test teknikleri.",
+            "D. Statik Analiz (Static Analysis) teknikleri."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.1, Kara Kutu test tekniklerinin (belirtim tabanlı teknikler olarak da bilinir) 'test nesnesinin iç yapısına referans vermeden belirtilen davranışının analizine dayandığını' belirtir.",
+        "topic": "Chapter 4.1 - Test Techniques Overview (Technique Classification - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Test uzmanının bilgi ve deneyimini test senaryolarının tasarımı ve uygulanması için etkin bir şekilde kullanan test tekniği kategorisi hangisidir?",
+        "options": [
+            "A. Kara Kutu (Black-box) test teknikleri.",
+            "B. Beyaz Kutu (White-box) test teknikleri.",
+            "C. Deneyim Tabanlı (Experience-based) test teknikleri.",
+            "D. Yapı Tabanlı (Structure-based) test teknikleri."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 4.1, Deneyim Tabanlı test tekniklerinin 'test senaryolarının tasarımı ve uygulanması için test uzmanlarının bilgi ve deneyimini etkin bir şekilde kullandığını' belirtir. Bu tekniklerin etkinliği büyük ölçüde test uzmanının becerilerine bağlıdır.",
+        "topic": "Chapter 4.1 - Test Techniques Overview (Technique Classification - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir online mağaza, sipariş tutarına göre kargo ücreti belirlemektedir: 0-50 TL arası için 10 TL, 50.01-200 TL arası için 5 TL, 200.01 TL ve üzeri için ücretsiz kargo. Eşdeğerlik Paylaştırma (EP) tekniği kullanarak sipariş tutarı için kaç tane geçerli (valid) eşdeğerlik bölümü tanımlanır?",
+        "options": [
+            "A. İki.",
+            "B. Üç.",
+            "C. Dört.",
+            "D. Beş."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Sistem, sipariş tutarına göre üç farklı şekilde davranmaktadır (10 TL kargo, 5 TL kargo, ücretsiz kargo). Dolayısıyla, sipariş tutarı için üç geçerli eşdeğerlik bölümü vardır: [0, 50.00], [50.01, 200.00], [200.01, ∞).",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Equivalence Partitioning - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir mobil uygulama, kullanıcının girdiği PIN kodunun 4 veya 6 haneli olmasını kabul ediyor. Eşdeğerlik Paylaştırma (EP) kullanarak PIN uzunluğu için test senaryoları türetmek istiyorsunuz. Aşağıdaki test verilerinden hangisi **geçersiz (invalid)** bir bölümü temsil eder?",
+        "options": [
+            "A. 1234 (4 hane).",
+            "B. 123456 (6 hane).",
+            "C. 12345 (5 hane).",
+            "D. 9876 (4 hane)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Geçerli PIN uzunlukları 4 ve 6'dır. Bu iki değer geçerli bölümleri temsil eder. Geçersiz bölümler ise 4'ten az, 6'dan fazla veya 4 ile 6 arasında olan (bu durumda 5) uzunluklardır. 12345 (5 hane) geçersiz bir bölümü temsil eder.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Equivalence Partitioning - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir yaş giriş alanı 18 ile 65 yaş arasındaki (18 ve 65 dahil) değerleri kabul etmektedir. Eşdeğerlik Paylaştırma (EP) tekniği kullanarak, bu alan için kaç tane **geçersiz (invalid)** eşdeğerlik bölümü tanımlanmalıdır?",
+        "options": [
+            "A. Bir.",
+            "B. İki.",
+            "C. Üç.",
+            "D. Sıfır."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Geçerli bölüm [18, 65]'tir. Geçersiz bölümler ise geçerli aralığın dışındaki değerlerdir. Bu durumda, 18'den küçük değerler (< 18) bir geçersiz bölüm, 65'ten büyük değerler (> 65) ise ikinci bir geçersiz bölümdür. Dolayısıyla toplam iki geçersiz bölüm vardır.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Equivalence Partitioning - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir uçuş rezervasyon sistemi, tek seferde en az 1, en fazla 6 yolcu için rezervasyon kabul etmektedir. Sınır Değer Analizi (BVA) tekniğinin **3-değerli (3-value)** versiyonunu kullanarak yolcu sayısı için hangi test değerleri seti türetilmelidir?",
+        "options": [
+            "A. 1, 6.",
+            "B. 0, 1, 6, 7.",
+            "C. 1, 2, 5, 6.",
+            "D. 0, 1, 2, 5, 6, 7."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Geçerli bölüm [1, 6]'dır. Sınırlar 1 ve 6'dır. 3-değerli BVA, her sınır için sınır değerini ve her iki komşusunu test eder. Alt sınır (1) için: 0 (<1 bölümünden komşu), 1 (sınır), 2 (>1 bölümünden komşu). Üst sınır (6) için: 5 (<6 bölümünden komşu), 6 (sınır), 7 (>6 bölümünden komşu). Tüm bu değerleri içeren set: 0, 1, 2, 5, 6, 7.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Boundary Value Analysis - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir şifre alanı 8 ile 12 karakter uzunluğunda (8 ve 12 dahil) olmalıdır. Sınır Değer Analizi (Boundary Value Analysis - BVA) tekniğinin **2-değerli (2-value)** versiyonunu kullanarak aşağıdaki test girdilerinden hangileri türetilmelidir?",
+        "options": [
+            "A. 7, 8, 12, 13.",
+            "B. 7, 8, 9, 11, 12, 13.",
+            "C. 8, 12.",
+            "D. 7, 13."
+        ],
+        "correctAnswer": 0,
+        "explanation": "Sınırlar 8 (alt sınır) ve 12'dir (üst sınır). 2-değerli BVA, her sınır için sınır değerini ve bitişik bölümdeki en yakın komşusunu test eder. Alt sınır (8) için test edilecek değerler 8 ve 7'dir (7, <8 bölümünün komşusudur). Üst sınır (12) için test edilecek değerler 12 ve 13'tür (13, >12 bölümünün komşusudur). Dolayısıyla test değerleri 7, 8, 12, 13'tür.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Boundary Value Analysis - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir kredi kartı başvurusu için kurallar şöyledir: Eğer başvuranın yıllık geliri 50.000 TL'den fazla (Koşul 1) VE kredi notu 700'den yüksekse (Koşul 2), başvuru onaylanır (Aksiyon 1). Eğer gelir 50.000 TL'den fazla AMA kredi notu 700 veya altındaysa, ek inceleme gerekir (Aksiyon 2). Eğer gelir 50.000 TL veya altındaysa, başvuru reddedilir (Aksiyon 3). Bu kuralları test etmek için oluşturulan bir karar tablosunda, 'Gelir > 50.000' = Doğru (T) ve 'Kredi Notu > 700' = Yanlış (F) olan sütun (kural) için hangi aksiyon işaretlenmelidir?",
+        "options": [
+            "A. Aksiyon 1: Onayla (X).",
+            "B. Aksiyon 2: Ek İnceleme (X).",
+            "C. Aksiyon 3: Reddet (X).",
+            "D. Hiçbir aksiyon işaretlenmemelidir."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Senaryo, 'Gelir 50.000 TL'den fazla AMA kredi notu 700 veya altındaysa, ek inceleme gerekir' kuralını tanımlar. Bu, K1=T ve K2=F durumuna karşılık gelir. Bu durumda gerçekleştirilmesi gereken aksiyon 'Ek İnceleme'dir (Aksiyon 2).",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Decision Table Testing - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir sıcaklık kontrol sistemi, sıcaklık 20 derecenin altına düşerse ısıtıcıyı açar, 25 derecenin üstüne çıkarsa klimayı açar, aksi halde (20-25 derece arası dahil) bir şey yapmaz. Bu kuralları test etmek için aşağıdaki Karar Tablosu (Decision Table) verilmiştir:\n\nKoşul 1: Sıcaklık < 20\nKoşul 2: Sıcaklık > 25\n---------------------\nAksiyon 1: Isıtıcıyı Aç\nAksiyon 2: Klimayı Aç\n\nKural 1 | Kural 2 | Kural 3\n---------------------\nT | F | F\nF | T | F\n---------------------\nX |   |  \n  | X |  \n\nBu tabloya göre Kural 3'ü (ısıtıcı ve klimanın kapalı olduğu durum) test etmek için uygun bir sıcaklık değeri hangisidir?",
+        "options": [
+            "A. 18.",
+            "B. 28.",
+            "C. 22.",
+            "D. 20."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Karar tablosunda Kural 3, hem 'Sıcaklık < 20' (Koşul 1) hem de 'Sıcaklık > 25' (Koşul 2) koşullarının Yanlış (F) olduğu durumu temsil eder. Bu durum, sıcaklığın 20 ile 25 arasında (dahil) olduğu anlamına gelir. Seçenekler arasında bu aralığa giren tek değer 22'dir. 18, Kural 1'i; 28, Kural 2'yi test eder. 20 değeri de Kural 3'e girer ancak 22 daha net bir örnektir.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (Decision Table Testing - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir müzik çalar uygulamasının durumları: Durduruldu, Çalıyor, Duraklatıldı. Olaylar: Çal, Duraklat, Durdur, Devam Et. Aşağıdaki geçişlerden hangisi **geçersizdir**?\nDurduruldu -> (Çal) -> Çalıyor\nÇalıyor -> (Duraklat) -> Duraklatıldı\nDuraklatıldı -> (Devam Et) -> Çalıyor\nDuraklatıldı -> (Durdur) -> Durduruldu\nÇalıyor -> (Çal) -> Çalıyor",
+        "options": [
+            "A. Durduruldu durumundayken 'Çal' olayı.",
+            "B. Çalıyor durumundayken 'Duraklat' olayı.",
+            "C. Duraklatıldı durumundayken 'Devam Et' olayı.",
+            "D. Çalıyor durumundayken tekrar 'Çal' olayı."
+        ],
+        "correctAnswer": 3,
+        "explanation": "Genellikle bir müzik çalar çalarken tekrar 'Çal' komutu vermek anlamsız veya geçersiz bir geçiştir (veya mevcut durumu değiştirmez). Diğer geçişler (Durdurulmuşken Çal, Çalarken Duraklat, Duraklatılmışken Devam Et) standart ve geçerli geçişlerdir.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (State Transition Testing - K3, Scenario)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Bir ATM'de PIN girme işlemi için aşağıdaki durum geçiş diyagramı verilmiştir: Boşta -> (Kart Tak) -> Kart Okundu -> (PIN İste) -> PIN Bekleniyor. PIN Bekleniyor durumundan sonra: (Doğru PIN Gir) -> Ana Menü; (Yanlış PIN Gir, deneme < 3) -> PIN Bekleniyor; (Yanlış PIN Gir, deneme = 3) -> Kartı Yut. Geçerli Geçiş Kapsamı (Valid Transitions Coverage / 0-switch coverage) hedefine ulaşmak için aşağıdaki olay dizilerinden hangisi **en az** gereklidir?",
+        "options": [
+            "A. Kart Tak, PIN İste, Doğru PIN Gir.",
+            "B. Kart Tak, PIN İste, Yanlış PIN Gir, Doğru PIN Gir, Yanlış PIN Gir, Yanlış PIN Gir.",
+            "C. Kart Tak, PIN İste, Doğru PIN Gir; Kart Tak, PIN İste, Yanlış PIN Gir, Yanlış PIN Gir, Yanlış PIN Gir.",
+            "D. Kart Tak, PIN İste, Yanlış PIN Gir, Doğru PIN Gir."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Geçerli Geçiş Kapsamı, her bir geçerli geçişin en az bir kez çalıştırılmasını gerektirir. Diyagramdaki geçerli geçişler şunlardır: Boşta'dan Kart Okundu'ya, Kart Okundu'dan PIN Bekleniyor'a, PIN Bekleniyor'dan Ana Menü'ye (doğru PIN), PIN Bekleniyor'dan PIN Bekleniyor'a (yanlış PIN, deneme<3), PIN Bekleniyor'dan Kartı Yut'a (yanlış PIN, deneme=3). Seçenek C, bu beş geçerli geçişin hepsini kapsayan iki ayrı test senaryosu dizisi içerir. Diğer seçenekler tüm geçerli geçişleri kapsamaz.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (State Transition Testing - K3)",
+        "kLevel": "K3"
+    },
+    {
+        "question": "Durum Geçiş Testi (State Transition Testing) tekniğinin temel amacı nedir?",
+        "options": [
+            "A. Mümkün olan tüm girdi değerlerini test etmek.",
+            "B. Bir sistemin farklı olaylara yanıt olarak durumlarını nasıl değiştirdiğini ve hangi aksiyonları aldığını test etmek.",
+            "C. Kodun her satırının en az bir kez çalıştırıldığını doğrulamak.",
+            "D. Kullanıcı arayüzünün kullanılabilirliğini değerlendirmek."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.2.4, Durum Geçiş Testinin 'bir sistemin davranışını olası durumlarını ve geçerli durum geçişlerini göstererek modellediğini' belirtir. Testler, olayların sistemin durumunu nasıl değiştirdiğini ve hangi aksiyonların tetiklendiğini doğrular.",
+        "topic": "Chapter 4.2 - Black-Box Test Techniques (State Transition Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test uzmanı, yazdığı test senaryolarının kaynak koddaki tüm çalıştırılabilir satırları en az bir kez çalıştırdığından emin olmak istiyor. Hangi test kapsamı (coverage) ölçütünü hedeflemektedir?",
+        "options": [
+            "A. Dal Kapsamı (Branch Coverage).",
+            "B. Karar Kapsamı (Decision Coverage).",
+            "C. Deyim Kapsamı (Statement Coverage).",
+            "D. Yol Kapsamı (Path Coverage)."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 4.3.1, Deyim Testi'nin amacının 'koddaki deyimleri çalıştırmak' olduğunu ve Deyim Kapsamı'nın 'test senaryoları tarafından çalıştırılan deyimlerin sayısının koddaki toplam çalıştırılabilir deyim sayısına bölünmesiyle ölçüldüğünü' belirtir.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Statement Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "%100 Deyim Kapsamı (Statement Coverage) elde etmek neyi garanti **etmez**?",
+        "options": [
+            "A. Koddaki tüm çalıştırılabilir deyimlerin en az bir kez çalıştırıldığını.",
+            "B. Koddaki tüm karar mantığının (örn. if deyimlerinin hem true hem false dalları) test edildiğini.",
+            "C. Kusurlu bir deyimin çalıştırılma olasılığını.",
+            "D. Koddaki bazı kusurların bulunmasını."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.3.1'de belirtildiği gibi, %100 deyim kapsamı 'tüm karar mantığının test edildiğini garanti etmez, örneğin, koddaki tüm dalları (branches) çalıştırmayabilir'. Her deyimi çalıştırmak, her karar sonucunu test etmek anlamına gelmez.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Statement Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Dal Testi (Branch Testing) neyi hedefler?",
+        "options": [
+            "A. Kodun her satırını test etmeyi.",
+            "B. Programdaki tüm fonksiyon çağrılarını test etmeyi.",
+            "C. Kontrol akış grafiğindeki düğümler arasındaki tüm kontrol transferlerini (dalları), koşullu veya koşulsuz, test etmeyi.",
+            "D. Tüm olası girdi kombinasyonlarını test etmeyi."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 4.3.2, Dal Testi'nde 'kapsama öğelerinin dallar olduğunu ve amacın kabul edilebilir bir kapsama seviyesine ulaşılana kadar koddaki dalları çalıştıran test senaryoları tasarlamak olduğunu' belirtir. Bir dal, kontrol akış grafiğindeki iki düğüm arasındaki kontrol transferidir.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Branch Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Dal Testi (Branch Testing) ile Deyim Testi (Statement Testing) arasındaki ilişki nedir?",
+        "options": [
+            "A. Deyim kapsamı, dal kapsamını kapsar (%100 deyim => %100 dal).",
+            "B. Dal kapsamı, deyim kapsamını kapsar (%100 dal => %100 deyim).",
+            "C. İki kapsama ölçütü tamamen bağımsızdır.",
+            "D. Her ikisi de aynı şeyi ölçer."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.3.2 sonunda açıkça '%100 dal kapsamı sağlayan herhangi bir test senaryosu kümesinin aynı zamanda %100 deyim kapsamı da sağladığını (ancak tersi geçerli değildir)' belirtir. Yani, dal kapsamı daha güçlü bir kriterdir.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Branch Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Beyaz kutu (white-box) test tekniklerinin temel bir gücü nedir?",
+        "options": [
+            "A. Her zaman kara kutu testinden daha az çaba gerektirmesi.",
+            "B. Yazılım belirtimi belirsiz, güncel olmayan veya eksik olduğunda bile kusur tespitini kolaylaştırması.",
+            "C. Kullanıcı arayüzü hatalarını bulmada en etkili yöntem olması.",
+            "D. Uygulamanın tüm gereksinimleri karşıladığını garanti etmesi."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.3.3, beyaz kutu tekniklerinin temel bir gücünün 'test sırasında tüm yazılım uygulamasının dikkate alınması olduğunu, bu da yazılım belirtimi belirsiz, güncel olmayan veya eksik olduğunda bile kusur tespitini kolaylaştırdığını' belirtir.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Value of White-box Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Kara kutu testi tek başına yapıldığında sağlanamayan, ancak beyaz kutu testinin sağladığı objektif ölçüm nedir?",
+        "options": [
+            "A. Gereksinimlerin karşılanma oranı.",
+            "B. Test edilen fonksiyon sayısı.",
+            "C. Gerçek kod kapsamının (code coverage) objektif bir ölçümü.",
+            "D. Bulunan kusurların toplam sayısı."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 4.3.3, 'Yalnızca kara kutu testi yapmak gerçek kod kapsamının bir ölçümünü sağlamaz. Beyaz kutu kapsama ölçümleri, kapsamın objektif bir ölçümünü sağlar...' ifadesini kullanır. Bu bilgi, kapsamı artırmak için ek testler oluşturmaya olanak tanır.",
+        "topic": "Chapter 4.3 - White-Box Test Techniques (Value of White-box Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test uzmanı, daha önceki projelerde tarih girişi alanlarında sıkça karşılaşılan 'artık yıl' hatalarını düşünerek, özellikle Şubat ayının son günleri ve Mart ayının ilk günleri için test senaryoları tasarlıyor. Bu test uzmanı hangi deneyim tabanlı tekniği kullanmaktadır?",
+        "options": [
+            "A. Keşif Testi (Exploratory Testing).",
+            "B. Kontrol Listesi Tabanlı Test (Checklist-Based Testing).",
+            "C. Hata Tahmini (Error Guessing).",
+            "D. Kullanılabilirlik Testi."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 4.4.1, Hata Tahmini tekniğinin 'test uzmanının bilgisine dayanarak hataların, kusurların ve başarısızlıkların oluşumunu tahmin etmek için kullanıldığını' belirtir. Bu bilgi, uygulamanın geçmişte nasıl çalıştığı, geliştiricilerin eğilimleri veya benzer uygulamalardaki hataları içerebilir. Test uzmanının önceki deneyimlerine dayanarak belirli hata türlerini hedeflemesi Hata Tahmini'ne örnektir.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Error Guessing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+     {
+        "question": "Hata Tahmini (Error Guessing) tekniği neye dayanır?",
+        "options": [
+            "A. Yalnızca yazılım belirtimlerine.",
+            "B. Test uzmanının bilgisine, deneyimine ve hataların, kusurların ve başarısızlıkların olası oluşumunu tahmin etme yeteneğine.",
+            "C. Kodun yapısal analizine.",
+            "D. Rastgele veri üretimine."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.4.1, Hata Tahmini tekniğinin 'test uzmanının bilgisine dayanarak hataların, kusurların ve başarısızlıkların oluşumunu tahmin etmek için kullanıldığını' belirtir. Bu bilgi, uygulamanın geçmişte nasıl çalıştığı, geliştiricilerin eğilimleri ve benzer uygulamalardaki hataları içerebilir.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Error Guessing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir test uzmanı, belirli bir süre (time-box) içinde, bir test charter'ı (test hedefleri içeren) rehber olarak kullanarak bir uygulamanın yeni özelliğini serbestçe test ediyor, bulgularını not alıyor ve test sırasında yeni test fikirleri geliştiriyor. Bu hangi test tekniğini tanımlamaktadır?",
+        "options": [
+            "A. Hata Tahmini (Error Guessing).",
+            "B. Keşif Testi (Exploratory Testing) - muhtemelen Oturum Tabanlı (Session-based).",
+            "C. Kontrol Listesi Tabanlı Test (Checklist-Based Testing).",
+            "D. Regresyon Testi."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.4.2, Keşif Testi'ni 'testlerin, test uzmanı test nesnesi hakkında bilgi edinirken eş zamanlı olarak tasarlandığı, yürütüldüğü ve değerlendirildiği' bir teknik olarak tanımlar. Ayrıca, 'bazen tanımlanmış bir zaman kutusu içinde... bir test charter kullanarak... Oturum Tabanlı test kullanılarak yapıldığını' belirtir.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Exploratory Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Keşif Testi (Exploratory Testing) hangi durumlarda özellikle faydalıdır?",
+        "options": [
+            "A. Çok detaylı ve eksiksiz belirtimler olduğunda.",
+            "B. Proje üzerinde zaman baskısı olmadığında.",
+            "C. Az sayıda veya yetersiz belirtim olduğunda veya önemli zaman baskısı olduğunda.",
+            "D. Test uzmanı deneyimsiz olduğunda."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 4.4.2, Keşif Testinin 'az sayıda veya yetersiz belirtim olduğunda veya test üzerinde önemli zaman baskısı olduğunda faydalı olduğunu' belirtir. Ayrıca diğer daha resmi teknikleri tamamlamak için de kullanışlıdır.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Exploratory Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir web sitesinin kullanılabilirliğini test etmek için Nielsen'in 10 sezgisel (heuristic) prensibini içeren bir liste kullanılarak yapılan test, hangi deneyim tabanlı tekniğe örnektir?",
+        "options": [
+            "A. Hata Tahmini.",
+            "B. Keşif Testi.",
+            "C. Kontrol Listesi Tabanlı Test.",
+            "D. Kara Kutu Testi."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 4.4.3, Kontrol Listesi Tabanlı Test'te test uzmanının bir kontrol listesindeki koşulları kapsayacak testler tasarladığını belirtir ve 'Kontrol listeleri, fonksiyonel ve fonksiyonel olmayan test dahil olmak üzere çeşitli test türlerini desteklemek için oluşturulabilir (örn. kullanılabilirlik testi için 10 sezgisel yöntem)' örneğini verir.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Checklist-Based Testing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Kontrol Listesi Tabanlı Test (Checklist-Based Testing) nasıl çalışır?",
+        "options": [
+            "A. Test uzmanı tamamen rastgele testler yapar.",
+            "B. Test uzmanı, bir kontrol listesinden test koşullarını kapsayacak şekilde testler tasarlar, uygular ve yürütür.",
+            "C. Test uzmanı, kodun her satırını bir kontrol listesiyle karşılaştırır.",
+            "D. Test uzmanı, kullanıcı arayüzünü otomatik olarak tarayan bir araç kullanır."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.4.3, Kontrol Listesi Tabanlı Testte 'bir test uzmanının bir kontrol listesinden test koşullarını kapsayacak şekilde testler tasarladığını, uyguladığını ve yürüttüğünü' açıklar. Kontrol listeleri deneyime, bilgiye veya yazılımın neden/nasıl başarısız olduğuna dair anlayışa dayanabilir.",
+        "topic": "Chapter 4.4 - Experience-based Test Techniques (Checklist-Based Testing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Bir Çevik (Agile) takım, yeni bir kullanıcı hikayesi üzerinde çalışırken iş temsilcileri, geliştiriciler ve test uzmanları bir araya gelerek hikayenin detaylarını, kapsamını ve kabul kriterlerini tartışıyorlar. Bu süreç hangi test yaklaşımının bir parçasıdır ve temel amacı nedir?",
+        "options": [
+            "A. Keşif Testi; hataları bulmak.",
+            "B. İşbirlikçi Kullanıcı Hikayesi Yazımı; tüm paydaşların ortak bir anlayışa ulaşmasını sağlamak ve kusurları önlemek.",
+            "C. Kontrol Listesi Tabanlı Test; standartlara uyumu kontrol etmek.",
+            "D. Hata Tahmini; olası hataları tahmin etmek."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.5.1, İşbirlikçi Kullanıcı Hikayesi Yazımı'nı tanımlar. Bu yaklaşımda 'işbirliği, ekibin üç perspektifi (iş, geliştirme ve test) dikkate alarak neyin teslim edilmesi gerektiğine dair ortak bir vizyon elde etmesini sağlar'. Amaç, iletişimi artırarak ve ortak anlayış oluşturarak kusurları önlemeye de odaklanmaktır.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (Collaborative User Story Writing - K2, Scenario)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "İyi bir kullanıcı hikayesinin sahip olması gereken özellikler (INVEST kriterleri) nelerdir?",
+        "options": [
+            "A. Karmaşık (Intricate), Değişmez (Non-negotiable), Değersiz (Valueless), Tahmin Edilemez (Estimable), Büyük (Epic), Test Edilemez (Testable).",
+            "B. Bağımsız (Independent), Tartışılabilir (Negotiable), Değerli (Valuable), Tahmin Edilebilir (Estimable), Küçük (Small), Test Edilebilir (Testable).",
+            "C. Entegre (Integrated), Sabit (Non-negotiable), Doğrulanmış (Verified), Kolay (Easy), Tekil (Singular), Teknik (Technical).",
+            "D. Önemli (Important), Yeni (Novel), Doğrulanabilir (Verifiable), Genişletilebilir (Extensible), Güvenli (Secure), Hızlı (Timely)."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.5.1, iyi kullanıcı hikayelerinin INVEST kısaltmasıyla ifade edilen özelliklere sahip olması gerektiğini belirtir: Bağımsız (Independent), Tartışılabilir (Negotiable), Değerli (Valuable), Tahmin Edilebilir (Estimable), Küçük (Small) ve Test Edilebilir (Testable).",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (Collaborative User Story Writing - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Kabul kriterleri (acceptance criteria) için yaygın olarak kullanılan Senaryo Odaklı formatın bir örneği nedir?",
+        "options": [
+            "A. Madde imli bir doğrulama listesi.",
+            "B. Girdi ve beklenen çıktıları gösteren bir tablo.",
+            "C. BDD'de kullanılan Given/When/Then (Verildiğinde/Yapıldığında/O Zaman) formatı.",
+            "D. Kullanıcı arayüzü akış şeması."
+        ],
+        "correctAnswer": 2,
+        "explanation": "Metin 4.5.2, kabul kriterleri yazma formatlarından biri olarak 'Senaryo odaklı (örn. BDD'de kullanılan Given/When/Then formatı)' formatını belirtir.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (Acceptance Criteria - K2)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Kullanıcı hikayeleri için kabul kriterlerinin temel işlevleri nelerdir? (İKİ SEÇENEK SEÇİN)",
+        "options": [
+            "A. Kullanıcı hikayesinin kapsamını tanımlamak.",
+            "B. Kodun iç yapısını belgelemek.",
+            "C. Paydaşlar arasında fikir birliğine varmak.",
+            "D. Test otomasyon araçlarını seçmek.",
+            "E. Proje yöneticisinin görevlerini listelemek."
+        ],
+        "correctAnswer": [0, 2],
+        "explanation": "Metin 4.5.2, kabul kriterlerinin 'Kullanıcı hikayesinin kapsamını tanımlamak', 'Paydaşlar arasında fikir birliğine varmak', 'Hem pozitif hem de negatif senaryoları tanımlamak' ve 'Kullanıcı hikayesi kabul testi için temel olarak hizmet etmek' için kullanıldığını belirtir.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (Acceptance Criteria - K2, Format: Select TWO)",
+        "kLevel": "K2"
+    },
+    {
+        "question": "Kabul Testi Güdümlü Geliştirme (ATDD) yaklaşımında, genellikle ilk oluşturulan test senaryoları ne tür davranışları doğrular?",
+        "options": [
+            "A. Yalnızca istisnai durumları ve hata koşullarını.",
+            "B. İstisnalar veya hata koşulları olmadan doğru davranışı (pozitif testler).",
+            "C. Yalnızca fonksiyonel olmayan kalite özelliklerini.",
+            "D. Sadece kullanıcı arayüzünün görünümünü."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Metin 4.5.3, ATDD'de test senaryosu oluşturma sürecini açıklarken 'Tipik olarak, ilk test senaryoları pozitiftir, istisnalar veya hata koşulları olmadan doğru davranışı onaylar...' der.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (ATDD - K3)",
+        "kLevel": "K3"
+    },
+     {
+        "question": "Kullanıcı Hikayesi: \"Bir online bankacılık müşterisi olarak, son 5 işlemimi görüntülemek istiyorum, böylece harcamalarımı kontrol edebilirim.\"\nKabul Kriteri (Kural Odaklı): \n- Müşteri giriş yaptıktan sonra 'Hesap Özeti' seçeneğini seçebilmeli.\n- 'Hesap Özeti' sayfasında son 5 işlem tarih, açıklama ve tutar bilgileriyle listelenmeli.\n- Liste en yeniden en eskiye doğru sıralanmalı.\n\nBu bilgilere dayanarak ATDD yaklaşımıyla aşağıdaki test senaryolarından hangisi türetilebilir?",
+        "options": [
+            "A. Müşterinin 3 işlemi varsa, 'Hesap Özeti' sayfasında bu 3 işlemin doğru sırada listelendiğini doğrula.",
+            "B. Şifre sıfırlama fonksiyonunun çalıştığını doğrula.",
+            "C. 'Hesap Özeti' sayfasının 2 saniyeden kısa sürede yüklendiğini doğrula.",
+            "D. Müşterinin 7 işlemi varsa, 'Hesap Özeti' sayfasında ilk 5 işlemin listelendiğini doğrula."
+        ],
+        "correctAnswer": 0,
+        "explanation": "ATDD, kabul kriterlerine dayalı test senaryoları türetir. Verilen kriterler son 5 işlemin listelenmesini belirtir. Eğer müşterinin 5'ten az işlemi varsa, mevcut işlemlerin doğru sırada gösterilmesi beklenir. Seçenek A bu durumu test eder. Seçenek B farklı bir fonksiyon, Seçenek C fonksiyonel olmayan bir özellik (performans), Seçenek D ise 'ilk 5' yerine 'son 5' kuralına aykırı bir durumu test eder.",
+        "topic": "Chapter 4.5 - Collaboration-based Test Approaches (ATDD - K3, Scenario)",
+        "kLevel": "K3"
+    }
+]
