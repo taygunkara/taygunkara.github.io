@@ -140,7 +140,7 @@ const translations = {
             `<strong>Environment-Ready with One Command</strong><p>Running <code>mvn test -Denv=PRODUCTION</code> is enough. The <code>ConfigUtils</code> class automatically fetches the correct configuration for the selected environment.</p>`,
             `<strong>Reports That Speak for Themselves</strong><p>With <strong>Allure Report</strong>, test results are transformed into interactive reports that include every step, API call, and even screenshots on failure.</p>`
         ],
-        projectSeleniumChallengeTitle: "The Biggest Challenge (And Most Valuable Lesson)",
+        projectSeleniumChallengeTitle: "The Biggest Challenge",
         projectSeleniumChallengeText: "The toughest problem was managing WebDriver instances in parallel tests. My initial Singleton approach caused chaos. This painful experience led me to adopt a <code>ThreadLocal</code>-based <code>DriverFactory</code>, a crucial lesson for stable parallel execution.",
         projectSeleniumFutureTitle: "A Project Is Never Finished, Only Improved: What’s Next?",
         projectSeleniumFuturePoints: [
@@ -430,7 +430,7 @@ const translations = {
             `<strong>Farklı Ortamlarda Tek Komutla Test</strong><p><code>mvn test -Denv=PRODUCTION</code> komutunu çalıştırmak yeterli. <code>ConfigUtils</code> sınıfı, seçilen ortam için doğru yapılandırmayı otomatik olarak getiriyor.</p>`,
             `<strong>Sonuçları Konuşan Raporlar</strong><p><strong>Allure Report</strong> ile test sonuçlarını, her adımı, API çağrılarını ve hata anındaki ekran görüntülerini içeren interaktif raporlara dönüştürüyorum.</p>`
         ],
-        projectSeleniumChallengeTitle: "Yolda Karşılaştığım En Büyük Zorluk (ve En Değerli Ders)",
+        projectSeleniumChallengeTitle: "Yolda Karşılaştığım En Büyük Zorluk",
         projectSeleniumChallengeText: "En büyük zorluk, paralel testlerde WebDriver'ı yönetmekti. Başlangıçtaki Singleton yapım kaosa neden oldu. Bu acı tecrübe, beni stabil paralel koşumlar için kritik olan <code>ThreadLocal</code> tabanlı bir <code>DriverFactory</code> kurmaya itti.",
         projectSeleniumFutureTitle: "Bir Proje Asla Bitmez, Sadece Gelişir: Gelecek Planlarım",
         projectSeleniumFuturePoints: [
