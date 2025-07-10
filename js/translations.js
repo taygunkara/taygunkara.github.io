@@ -61,7 +61,7 @@ const translations = {
         expJob1Title: "Freelance Software Test Engineer",
         expJob1Company: "Professional Development and Independent Work",
         expJob1Location: "Remote / Istanbul",
-        expJob1Dates: "June 2024 - Present",
+        expJob1Dates: "July 2024 - Present",
         expJob1Resp: [
             "ISTQB & TTB 'CT-GenAI' Certification Syllabus Development - Beta Review Team Member",
             "Developing Independent Software Test Automation Projects on GitHub (Java, Selenium, Rest Assured),",
@@ -351,7 +351,7 @@ const translations = {
         expJob1Title: "Bağımsız Yazılım Test Mühendisi",
         expJob1Company: "Profesyonel Gelişim ve Bağımsız Çalışmalar",
         expJob1Location: "Uzaktan / İstanbul",
-        expJob1Dates: "Haziran 2024 - Halen",
+        expJob1Dates: "Temmuz 2024 - Halen",
         expJob1Resp: [
             "ISTQB & TTB 'CT-GenAI' Sertifika Müfredatı Geliştirme - Beta Gözden Geçirme Ekip Üyeliği",
             "GitHub üzerinde bağımsız Yazılım Test Otomasyonu Projeleri Geliştirme (Java, Selenium, Rest Assured),",
